@@ -1,0 +1,33 @@
+@charset "utf-8";
+@use "lib/mixin";
+@use "lib/color";
+@use "lib/default";
+
+@use "base/bg";
+@use "base/ft";
+@use "base/layouts";
+@use "base/section";
+
+@use "parts/btn";
+@use "parts/svg";
+// @use "parts/form";
+
+@use "glb/header";
+@use "glb/nav";
+@use "glb/footer";
+
+@use "idx/kv";
+@use "idx/slider";
+@use "idx/charm";
+@use "idx/info";
+@use "idx/area";
+@use "idx/voice";
+@use "idx/faq";
+@use "idx/saleinformation";
+@use "idx/magazine";
+// @use "idx/contact";
+
+// @use "pg/thanks";
+// @use "pg/error";
+
+// @use "sg/news" as sgNews;

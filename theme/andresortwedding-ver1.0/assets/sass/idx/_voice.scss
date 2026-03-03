@@ -1,0 +1,106 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.voice {
+  position: relative;
+  z-index: 10;
+  &__title {
+    .jp {
+      margin-top: -24px;
+    }
+  }
+  &__inner {
+    overflow: hidden;
+  }
+  &__comment {
+    align-items: center;
+    flex-direction: column;
+    margin: 24px auto 0;
+    row-gap: 8px;
+    max-width: 336px;
+    width: 81.15%;
+    @include bp(m) {
+      flex-direction: row;
+      margin: 0 auto;
+      max-width: 1186px;
+      row-gap: 8px;
+      width: 82.36%;
+      @include flex_between;
+    }
+    &-inner {
+      align-items: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      flex-direction: column;
+      width: 100%;
+      @include bp(m) {
+        width: 46.96%;
+      }
+      &:nth-of-type(1) {
+        aspect-ratio: 336/119;
+        background-image: url(../images/idx/voice/bg_comments_01.png);
+        @include bp(m) {
+          aspect-ratio: 557/187;
+        }
+        p {
+          margin-bottom: 10px;
+        }
+      }
+      &:nth-of-type(2) {
+        aspect-ratio: 336/119;
+        background-image: url(../images/idx/voice/bg_comments_01.png);
+        transform: scale(-1, 1);
+        @include bp(m) {
+          aspect-ratio: 557/187;
+        }
+        p {
+          margin-bottom: 10px;
+          transform: scale(-1, 1);
+        }
+      }
+      &:nth-of-type(3) {
+        aspect-ratio: 336/105;
+        background-image: url(../images/idx/voice/bg_comments_02.png);
+        @include bp(m) {
+          aspect-ratio: 577/168;
+          margin-left: 2.02%;
+        }
+      }
+      &:nth-of-type(4) {
+        aspect-ratio: 336/105;
+        background-image: url(../images/idx/voice/bg_comments_02.png);
+        transform: scale(-1, 1);
+        @include bp(m) {
+          aspect-ratio: 577/168;
+          margin-left: 2.02%;
+        }
+        p {
+          transform: scale(-1, 1);
+        }
+      }
+    }
+    &-txt {
+      font-size: clamp(0px,2.41vw,10px);
+      font-weight: 500;
+      text-align: center;
+      @include bp(m) {
+        font-size: clamp(0px,0.97vw,14px);
+      }
+      span {
+        font-size: clamp(0px,2.89vw,12px);
+        @include bp(m) {
+          font-size: clamp(0px,1.38vw,20px);
+        }
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: -1;
+    @include bp(m) {
+      margin: 0 auto;
+      max-width: 800px;
+      width: 55.55%;
+    }
+  }
+}

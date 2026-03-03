@@ -1,0 +1,37 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.btn {
+  &__more {
+    text-align: center;
+    > a, > button, > span {
+      column-gap: 9px;
+      display: inline-flex;
+      font-size: 16px;
+      @include flex_center;
+      @include transition;
+      &::after {
+        aspect-ratio: 48/20;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        display: inline-block;
+        width: 48px;
+        @include transition;
+      }
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    &-1 {
+      &::after {
+        background-image: url(../images/ico/ico_arrow_03.png);
+      }
+    }
+    &-2 {
+      &::after {
+        background-image: url(../images/ico/ico_arrow_02.png);
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.faq {
+  position: relative;
+  z-index: 12;
+  &__title {
+    .jp {
+      margin-top: -16px;
+      @include bp(m) {
+        margin-top: -38px;
+      }
+    }
+  }
+  &__block {
+    margin: 40px auto 0;
+    width: 88.4%;
+    @include bp(m) {
+      margin: 80px auto 0;
+      max-width: 838px;
+    }
+    &-itm {
+      margin-top: 24px;
+      .q {
+        cursor: pointer;
+        padding: 3.27%;
+        position: relative;
+        @include transition;
+        @include bp(m) {
+          padding: 1.43% 2.86%;
+        }
+        h3 {
+          align-items: baseline;
+          column-gap: 4.5%;
+          font-size: 16px;
+          font-weight: 600;
+          @include bp(m) {
+            align-items: center;
+            column-gap: 24px;
+            font-size: 18px;
+          }
+          span {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1;
+            @include ft_Optima;
+            @include bp(m) {
+              font-size: 32px;
+            }
+          }
+        }
+        &::before, &::after {
+          aspect-ratio: 8/1;
+          background-image: url(../images/ico/ico_plus.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: "";
+          display: inline-block;
+          position: absolute;
+          right: 3.27%;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 16px;
+          @include transition;
+        }
+        &::after {
+          transform: translateY(-50%) rotate(90deg);
+        }
+        &.active {
+          &::after {
+            transform: translateY(-50%);
+          }
+        }
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+      .a {
+        display: none;
+        padding: 24px 3.27% 0;
+        @include bp(m) {
+          padding: 24px 2.86% 0;
+        }
+        &__txt {
+          display: inline-block;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 1;
+          @include ft_Optima;
+          @include bp(m) {
+            font-size: 32px;
+          }
+        }
+        &__content {
+          width: 88.59%;
+          @include bp(m) {
+            width: 93.54%;
+          }
+          .a {
+            &__main {
+              font-size: 16px;
+              font-weight: 600;
+              @include bp(m) {
+                font-size: 18px;
+              }
+            }
+            &__desc {
+              font-size: 14px;
+              margin-top: 10px;
+              @include bp(m) {
+                margin-top: 12px;
+              }
+            }
+            &__img {
+              margin-top: 10px;
+              @include bp(m) {
+                column-gap: 24px;
+                margin-top: 12px;
+                justify-content: flex-start;
+              }
+              &-itm {
+                width: 48.54%;
+                @include bp(m) {
+                  width: 27.06%;
+                }
+              }
+            }
+            &__tb {
+              flex-direction: column;
+              @include bp(m) {
+                flex-direction: row;
+              }
+              .a__dt {
+                margin-top: 10px;
+                padding: 4% 5.33%;
+                width: 100%;
+                @include bp(m) {
+                  margin-top: 12px;
+                  padding: 1.62% 2.16%;
+                  width: 32.43%;
+                }
+                .inner {
+                  &__ttl {
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: center;
+                    @include bp(m) {
+                      font-size: 16px;
+                    }
+                  }
+                  &__dsc {
+                    border-top: solid 1px $color_gry-1;
+                    font-size: 12px;
+                    margin-top: 12px;
+                    padding-top: 12px;
+                    @include bp(m) {
+                      font-size: 16px;
+                    }
+                    p {
+                      margin-top: 12px;
+                      &:first-child {
+                        margin-top: 0;
+                      }
+                      @include bp(m) {
+                        flex-direction: column;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

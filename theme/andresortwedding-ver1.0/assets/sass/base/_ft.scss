@@ -1,0 +1,57 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.ft {
+  &-blk {
+    &-1 {
+      color: $color_blk-1;
+    }
+    &-2 {
+      color: $color_blk-2;
+    }
+  }
+  &-brn {
+    &-1 {
+      color: $color_brn-1;
+    }
+    &-2 {
+      color: $color_brn-2;
+    }
+  }
+  &-blu {
+    &-1 {
+      color: $color_blu-1;
+    }
+    &-2 {
+      color: $color_blu-2;
+    }
+    &-3 {
+      color: $color_blu-3;
+    }
+    &-4 {
+      color: $color_blu-4;
+    }
+  }
+  &-grn {
+    &-1 {
+      color: $color-grn-1;
+    }
+  }
+  &-org {
+    &-1 {
+      color: $color-org-1;
+    }
+  }
+  &-pnk {
+    &-1 {
+      color: $color_pnk-1;
+    }
+  }
+  &-wht {
+    &-1 {
+      color: $color_wht-1;
+    }
+    &-2 {
+      color: $color_wht-2;
+    }
+  }
+}

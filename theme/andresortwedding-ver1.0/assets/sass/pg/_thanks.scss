@@ -1,0 +1,41 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.pgThanks {
+  &__container {
+    align-items: center;
+    flex-direction: column;
+    min-height: 60vh;
+    padding: calc(15% + 40px) 3.5% 40px;
+    @include flexbox;
+    @include flex_center;
+    @include bp(m) {
+      padding: 40px 3.5% 40px;
+    }
+  }
+  &__block {
+    .t {
+      font-size: 20px;
+      text-align: center;
+    }
+    .c {
+      margin-top: 20px;
+      padding-top: 20px;
+      position: relative;
+      &::before {
+        background-color: $color_pnk-1;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        left: 50%;
+        max-width: 40px;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

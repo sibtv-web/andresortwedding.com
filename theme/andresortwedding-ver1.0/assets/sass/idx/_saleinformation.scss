@@ -1,0 +1,59 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.sale-information {
+  &__list {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    width: 88.64%;
+    @include bp(m) {
+      flex-direction: row;
+      margin: 40px auto 0;
+      padding-bottom: 80px;
+      width: 88.88%;
+    }
+    .itm {
+      aspect-ratio: 367.99/166.77;
+      margin-top: 24px;
+      position: relative;
+      width: 100%;
+      @include bp(m) {
+        aspect-ratio: 302/140;
+        margin-top: 0;
+        width: 23.59%;
+      }
+      a {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        display: block;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        @include transition;
+        img {
+          height: 100%;
+          object-fit: contain;
+          @include transition;
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      &::after {
+        background-color: rgba($color: $color_blk-1, $alpha: .2);
+        content: "";
+        display: inline-block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+      }
+    }
+  }
+}

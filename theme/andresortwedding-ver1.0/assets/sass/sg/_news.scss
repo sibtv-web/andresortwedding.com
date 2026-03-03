@@ -1,0 +1,43 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.sgNews{
+  min-height: 60vh;
+  &__container {
+    padding-top: calc(15% + 20px);
+    @include bp(m) {
+      padding-top: 20px;
+    }
+  }
+  &__block {
+    padding: 0 5.33%;
+    .title {
+      &__d {
+        font-size: 14px;
+      }
+      &__m {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 5px;
+      }
+    }
+    .contents {
+      border-top: solid 1px $color_gry-2;
+      margin-top: 20px;
+      padding-bottom: 60px;
+      padding-top: 20px;
+      & > *:first-of-type {
+        margin-top: 0;
+        padding-top: 0;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 10px;
+        text-align: left;
+      }
+      img {
+        margin-top: 10px;
+      }
+    }
+  }
+}

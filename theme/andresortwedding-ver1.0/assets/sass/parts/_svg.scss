@@ -1,0 +1,7 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.svg {
+  &-2 {
+    transform: rotate(180deg) translateY(-1px);
+  }
+}

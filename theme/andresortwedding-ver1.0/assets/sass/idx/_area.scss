@@ -1,0 +1,262 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.area {
+  position: relative;
+  z-index: 2;
+  &__block {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 120% auto;
+    height: calc(100vh);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    &.fixed {
+      position: sticky;
+    }
+    &-inner {
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+    }
+    a {
+      margin-top: auto;
+      position: relative;
+      @include bp(m) {
+        height: 100%;
+        width: 100%;
+      }
+      .cl {
+        // mask-image: linear-gradient(to top, rgb(0 0 0 / 100%) 92%, rgb(0 0 0 / 0%) 100%);
+        // -webkit-mask-image: linear-gradient(to top, rgb(0 0 0 / 100%) 92%, rgb(0 0 0 / 0%) 100%);
+        // mask-composite: intersect;
+        // -webkit-mask-composite: intersect;
+        padding: clamp(0px,9.66%,40px);
+        position: relative;
+        @include bp(m) {
+          align-items: center;
+          flex-direction: column;
+          height: 100%;
+          margin-top: 0;
+          @include flexbox;
+          @include flex_center;
+        }
+        &__map {
+          position: absolute;
+          z-index: -1;
+        }
+        &__catch {
+          font-size: clamp(0px,4.83vw,16px);
+          font-weight: 500;
+          text-align: center;
+          @include bp(m) {
+            font-size: clamp(0px,1.66vw,24px);
+          }
+        }
+        &__title {
+          line-height: 1;
+          margin-top: clamp(0px,2.89vw,12px);
+          text-align: center;
+          @include bp(m) {
+            font-size: clamp(0px,1.11vw,16px);
+          }
+          .en {
+            font-size: clamp(0px,17.39vw,72px);
+            letter-spacing: 0;
+            line-height: 1;
+            @include ft_Optima;
+            @include bp(m) {
+              font-size: clamp(0px,8.33vw,120px);
+            }
+          }
+          .jp {
+            display: inline-block;
+            font-size: clamp(0px,4.83vw,20px);
+            line-height: 2.1;
+            margin-left: 12px;
+            @include bp(m) {
+              font-size: clamp(0px,2.22vw,32px);
+            }
+          }
+        }
+        &__tag {
+          text-align: center;
+          span {
+            display: inline-block;
+            font-size: clamp(0px,2.89vw,12px);
+            margin-top: clamp(0px,2.89vw,12px);
+            padding: 0 6px;
+            @include bp(m) {
+              font-size: clamp(0px,1.11vw,16px);
+              margin-top: 16px;
+            }
+          }
+        }
+        &__btn {
+          margin-top: clamp(0px,7.24vw,30px);
+          @include bp(m) {
+            margin-top: 34px;
+          }
+          > span {
+            font-size: clamp(0px,3.86vw,16px);
+            @include bp(m) {
+              font-size: clamp(0px,1.66vw,24px);
+            }
+            &::after {
+              width: clamp(0px,11.59vw,48px);
+              @include bp(m) {
+                font-size: clamp(0px,4.49vw,64px);
+              }
+            }
+          }
+        }
+        &::before {
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          content: "";
+          display: inline-block;
+          height: 100%;
+          left: 0;
+          mask-image: linear-gradient(to top, rgb(0 0 0 / 100%) 92%, rgb(0 0 0 / 0%) 100%);
+          -webkit-mask-image: linear-gradient(to top, rgb(0 0 0 / 100%) 92%, rgb(0 0 0 / 0%) 100%);
+          mask-composite: intersect;
+          -webkit-mask-composite: intersect;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: -1;
+          @include bp(m) {
+            mask-image: linear-gradient(to left, rgb(11, 57, 100) 92%, rgb(11 57 100 / 0%) 100%);
+            -webkit-mask-image: linear-gradient(to left, rgb(11 57 100 / 100%) 92%, rgb(11 57 100 / 0%) 100%);
+          }
+        }
+        &::after {
+          background: linear-gradient(180deg,rgba(11, 57, 100, 0) 0%, rgba(11, 57, 100, 0.2) 100%);
+          content: "";
+          display: inline-block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: -1;
+          @include bp(m) {
+            background: linear-gradient(90deg,rgba(11, 57, 100, 0) 0%, rgba(11, 57, 100, 0.2) 100%);
+          }
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      animation: bg-slide-lf 50s linear forwards;
+      background-image: url(../images/idx/area/bg_hawaii_sp.jpg);
+      background-position: left 0% top 50%;
+      margin-top: 40px;
+      z-index: 1;
+      @include bp(m) {
+        background-image: url(../images/idx/area/bg_hawaii_pc.jpg);
+      }
+      .cl {
+        @include bp(m) {
+          margin-left: auto;
+          width: 44.86%;
+        }
+        &__map {
+          right: 2.89%;
+          top: 0;
+          transform: translateY(-23.56%);
+          width: clamp(0px,48.3%,200px);
+          @include bp(m) {
+            right: 6.19%;
+            top: 6.16%;
+            transform: none;
+            width: 53.4%;
+          }
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      animation: bg-slide-rt 50s linear forwards;
+      background-image: url(../images/idx/area/bg_guam_sp.jpg);
+      background-position: right 0% top 50%;
+      z-index: 2;
+      @include bp(m) {
+        background-image: url(../images/idx/area/bg_guam_pc.jpg);
+      }
+      .cl {
+        @include bp(m) {
+          margin-left: 0;
+          width: 46.11%;
+        }
+        &__map {
+          left: 3.38%;
+          top: 0;
+          transform: translateY(-70.66%);
+          width: clamp(0px,24.39%,101px);
+          @include bp(m) {
+            left: auto;
+            right: 0;
+            top: 6.02%;
+            transform: translateX(58.41%);
+            width: 26.8%;
+          }
+        }
+        &::before {
+          @include bp(m) {
+            mask-image: linear-gradient(to right, rgb(0 0 0 / 100%) 92%, rgb(0 0 0 / 0%) 100%);
+            -webkit-mask-image: linear-gradient(to right, rgb(0 0 0 / 100%) 92%, rgb(0 0 0 / 0%) 100%);
+          }
+        }
+        &::after {
+          @include bp(m) {
+            background: linear-gradient(270deg,rgba(11, 57, 100, 0) 0%, rgba(11, 57, 100, 0.2) 100%);
+          }
+        }
+      }
+    }
+    &:nth-of-type(4) {
+      animation: bg-slide-lf 50s linear forwards;
+      background-image: url(../images/idx/area/bg_okinawa_sp.jpg);
+      background-position: left 0% top 50%;
+      z-index: 3;
+      @include bp(m) {
+        background-image: url(../images/idx/area/bg_okinawa_pc.jpg);
+      }
+      .cl {
+        @include bp(m) {
+          margin-left: auto;
+          width: 49.44%;
+        }
+        &__map {
+          left: 2.41%;
+          top: 0;
+          transform: translateY(-30%);
+          width: clamp(0px,21.73%,89.99px);
+          @include bp(m) {
+            left: 3.5%;
+            top: 5.61%;
+            transform: none;
+            width: 20.64%;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes bg-slide-lf {
+  from {
+    background-position: left 0% top 50%;
+  }
+  to {
+    background-position: left 100% top 50%;
+  }
+}
+@keyframes bg-slide-rt {
+  from {
+    background-position: right 0% top 50%;
+  }
+  to {
+    background-position: right 100% top 50%;
+  }
+}

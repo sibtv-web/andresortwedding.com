@@ -1,0 +1,36 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+html {
+  &:has(#header.fixed) {
+    overflow: hidden;
+  }
+}
+main {
+  padding-top: calc(28px + 10.37%);
+  @include bp(m) {
+    padding-top: calc(32px + 3.34%);
+  }
+}
+.flex {
+  @include flexbox;
+  &-bt {
+    @include flexbox;
+    @include flex_between;
+  }
+  &-cn {
+    @include flexbox;
+    @include flex_center;
+  }
+  &-al {
+    &-cn {
+      align-items: center;
+      @include flexbox;
+    }
+  }
+  &-dr {
+    &-cl {
+      flex-direction: column;
+      @include flexbox;
+    }
+  }
+}

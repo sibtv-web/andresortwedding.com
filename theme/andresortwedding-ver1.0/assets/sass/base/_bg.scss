@@ -1,0 +1,65 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.bg {
+  &-blk {
+    &-1 {
+      background-color: $color_blk-1;
+    }
+    &-2 {
+      background-color: $color_blk-2;
+    }
+  }
+  &-beg {
+    &-1 {
+      background-color: $color_beg-1;
+    }
+    &-2 {
+      background-color: $color_beg-2;
+    }
+  }
+  &-brn {
+    &-1 {
+      background-color: $color_brn-1;
+    }
+    &-2 {
+      background-color: $color_brn-2;
+    }
+  }
+  &-blu {
+    &-1 {
+      background-color: $color_blu-1;
+    }
+    &-2 {
+      background-color: $color_blu-2;
+    }
+    &-3 {
+      background-color: $color_blu-3;
+    }
+    &-4 {
+      background-color: $color_blu-4;
+    }
+  }
+  &-grn {
+    &-1 {
+      background-color: $color-grn-1;
+    }
+  }
+  &-org {
+    &-1 {
+      background-color: $color-org-1;
+    }
+  }
+  &-pnk {
+    &-1 {
+      background-color: $color_pnk-1;
+    }
+  }
+  &-wht {
+    &-1 {
+      background-color: $color_wht-1;
+    }
+    &-2 {
+      background-color: $color_wht-2;
+    }
+  }
+}

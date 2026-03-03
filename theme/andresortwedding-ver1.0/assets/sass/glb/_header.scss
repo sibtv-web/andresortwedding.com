@@ -1,0 +1,69 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+#header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  @include transition;
+}
+.h {
+  &__container {
+    align-items: center;
+    padding: 14.5px 5.79%;
+    position: relative;
+    width: 100%;
+    @include bp(m) {
+      align-items: stretch;
+      padding: 16px 2.77% 0 2.77%;
+    }
+  }
+  &__logo {
+    width: 36.88%;
+    @include bp(m) {
+      padding-bottom: 16px;
+      width: 11.32%;
+    }
+    > a {
+      @include transition;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  &__hm {
+    aspect-ratio: 48/13;
+    height: 100%;
+    position: relative;
+    width: 13.11%;
+    z-index: 999;
+    &::before, &::after {
+      background-color: $color_blk-2;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      @include transition;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    &.active {
+      &::before {
+        top: 50%;
+        transform: translateY(-50%) rotate(15deg);
+      }
+      &::after {
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%) rotate(165deg);
+      }
+    }
+  }
+}

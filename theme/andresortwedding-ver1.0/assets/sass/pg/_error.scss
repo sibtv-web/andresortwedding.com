@@ -1,0 +1,21 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.pg__error{
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+  justify-content: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  @include flexbox;
+  &-t {
+    text-align: center;
+    .m {
+      font-size: 16px;
+    }
+    .t {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@use "sass:map";
+@mixin flexbox{
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+@mixin flex-between{
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+@mixin flex-center{
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+@mixin transition{
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+//font
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../font/HelveticaNeue.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Javacom';
+  src: url('../font/Javacom.woff') format('woff');
+  font-display: swap;
+}
+@mixin ft_Optima{
+  font-family: "optima-lt-pro", 'Helvetica', "dnp-shuei-gothic-gin-std", "Noto Sans JP",sans-serif;
+  font-weight: normal;
+}
+@mixin ft_Javacom{
+  font-family: "Javacom", "dnp-shuei-gothic-gin-std", "Noto Sans JP", serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+@mixin ft_Helvetica{
+  font-family: 'Helvetica', "dnp-shuei-gothic-gin-std", "Noto Sans JP",sans-serif;
+  font-weight: normal;
+}
+@mixin ft_DNP-shuei{
+  font-family: "dnp-shuei-gothic-gin-std", "Noto Sans JP", sans-serif;
+  font-style: normal;
+}
+
+// breakpoints
+$breakpoints: (
+  "m": "screen and (min-width: 750px)",
+  "l": "screen and (min-width: 750px) and (max-width: 1280px)",
+);
+@mixin bp($breakpoint: m) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin bp($breakpoint: l) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

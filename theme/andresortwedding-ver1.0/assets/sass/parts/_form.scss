@@ -1,0 +1,54 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.form {
+  &__block {
+    margin-top: 16px;
+    .lb {
+      column-gap: 13px;
+      label {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        line-height: 1.9;
+      }
+      span {
+        border-radius: 2px;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        line-height: 1;
+        padding: 4px 6px;
+      }
+    }
+    input,textarea {
+      border: solid 2px $color_gry-3;
+      border-radius: 2px;
+      font-size: 14px;
+      margin-top: 8px;
+      padding: 10px 12px;
+      width: 100%;
+    }
+    .er {
+      font-size: 13px;
+    }
+  }
+  &__notes {
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      line-height: 1.7;
+      margin-top: 20px;
+      a {
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        @include transition;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

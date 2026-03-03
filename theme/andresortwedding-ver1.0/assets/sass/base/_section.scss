@@ -1,0 +1,57 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.section {
+  &__inner {
+    padding-top: 80px;
+    @include bp(m) {
+      padding-top: 120px;
+    }
+    &-pt-sm {
+      padding-top: 65px;
+      @include bp(m) {
+        padding-top: 120px;
+      }
+    }
+  }
+  &__title {
+    padding-top: 30px;
+    position: relative;
+    @include bp(m) {
+      padding-top: 55px;
+    }
+    .en {
+      font-size: 40px;
+      font-weight: 400;
+      left: 50%;
+      line-height: 1;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      transform: translateX(-50%) rotate(-10deg);
+      width: 90%;
+      z-index: 1;
+      @include ft_Javacom;
+      @include bp(m) {
+        font-size: 60px;
+      }
+    }
+    .jp {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      line-height: 1.3;
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      @include bp(m) {
+        font-size: 36px;
+      }
+      .ft-sm {
+        font-size: 18px;
+        @include bp(m) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

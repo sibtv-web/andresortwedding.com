@@ -1,0 +1,138 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.f {
+  padding: 56px 5.79%;
+  @include bp(m) {
+    padding: 80px 5.55%;
+  }
+  &__block {
+    flex-direction: column;
+    @include bp(m) {
+      flex-direction: row;
+    }
+  }
+  &__logo {
+    max-width: 135px;
+    width: 36.88%;
+    @include bp(m) {
+      max-width: none;
+      width: 12.03%;
+    }
+  }
+  &__nav {
+    @include bp(m) {
+      flex-grow: 1;
+    }
+    &-container {
+      flex-direction: column;
+      @include bp(m) {
+        column-gap: clamp(0px,4.86%,70px);
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .f__list {
+        margin-top: 40px;
+        @include bp(m) {
+          margin-top: 0;
+        }
+        &-ttl {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1;
+          margin-top: 24px;
+          @include bp(m) {
+            font-size: clamp(0px,1.11vw,16px);
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+          a {
+            align-items: center;
+            display: inline-flex;
+            column-gap: 4px;
+            @include transition;
+            @include bp(m) {
+              column-gap: 8px;
+            }
+            &::after {
+              aspect-ratio: 1/2;
+              background-image: url(../images/ico/ico_arrow_01.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              content: "";
+              display: inline-block;
+              width: clamp(0px,1.44vw,6px);
+            }
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+        &-itm {
+          font-size: 14px;
+          line-height: 1;
+          margin-top: 24px;
+          @include bp(m) {
+            font-size: clamp(0px,0.97vw,14px);
+          }
+          &:first-child {
+            margin-top: 40px;
+          }
+          a {
+            align-items: center;
+            display: inline-flex;
+            column-gap: 4px;
+            @include transition;
+            @include bp(m) {
+              column-gap: 8px;
+            }
+            &::after {
+              aspect-ratio: 1/2;
+              background-image: url(../images/ico/ico_arrow_01.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              content: "";
+              display: inline-block;
+              width: clamp(0px,1.44vw,6px);
+            }
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    flex-direction: column;
+    margin-top: 40px;
+    @include bp(m) {
+      flex-direction: row;
+      margin-top: 64px;
+    }
+    &-ls {
+      column-gap: 24px;
+      row-gap: 16px;
+      @include bp(m) {
+        row-gap: 3px;
+      }
+      .itm {
+        a {
+          font-size: 12px;
+          line-height: 1;
+          @include transition;
+        }
+      }
+    }
+  }
+  &__copy {
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 40px;
+    @include bp(m) {
+      margin-top: 0;
+    }
+  }
+}
