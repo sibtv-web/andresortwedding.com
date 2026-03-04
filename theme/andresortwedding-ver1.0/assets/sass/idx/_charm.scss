@@ -1,6 +1,13 @@
 @use "../lib/mixin" as *;
 @use "../lib/color" as *;
 .charm {
+  &__title {
+    .jp {
+      margin-top: -6px;
+      @include bp(m) {
+      }
+    }
+  }
   &__list {
     padding-top: 40px;
     @include bp(m) {

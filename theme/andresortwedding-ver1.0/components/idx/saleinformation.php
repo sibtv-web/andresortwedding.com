@@ -1,4 +1,4 @@
-<section id="sale-information" class="sale-information bg-blu-1">
+<section id="sale-information" class="sale-information">
   <div class="svg-3">
     <picture>
       <source
@@ -12,9 +12,9 @@
     </picture>
   </div>
   <div class="sale-information__inner section__inner fade-anime" data-fade="fade-up">
-    <div class="section__title">
+    <div class="sale-information__title section__title">
       <p class="en ft-blu-4">Sale information</p>
-      <h2 class="jp">ブライダルフェア・キャンペーン情報</h2>
+      <h2 class="jp">ブライダルフェア・<br class="sp"/>キャンペーン情報</h2>
     </div>
     <ul class="sale-information__list flex-bt fade-anime" data-fade="fade-up-cont">
       <?php 

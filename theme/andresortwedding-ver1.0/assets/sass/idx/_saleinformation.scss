@@ -1,6 +1,7 @@
 @use "../lib/mixin" as *;
 @use "../lib/color" as *;
 .sale-information {
+  background-color: rgba($color: $color_blu-1, $alpha: .5);
   &__list {
     flex-direction: column;
     margin: 0 auto;

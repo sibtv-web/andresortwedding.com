@@ -5,6 +5,13 @@
   @include bp(m) {
     padding-bottom: 120px;
   }
+  &__title {
+    .jp {
+      margin-top: -6px;
+      @include bp(m) {
+      }
+    }
+  }
   &__slider {
     margin-top: 40px;
     @include bp(m) {

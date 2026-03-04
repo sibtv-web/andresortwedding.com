@@ -1,6 +1,6 @@
 <section id="area" class="area">
   <div class="area__inner section__inner">
-    <div class="section__title fade-anime" data-fade="fade-up">
+    <div class="area__title section__title fade-anime" data-fade="fade-up">
       <p class="en ft-blu-1">Area guides</p>
       <h2 class="jp">エリア別ガイド</h2>
     </div>
@@ -35,8 +35,8 @@
     <div class="area__block" class="<?php echo $item['link'];?>">
       <div class="area__block-inner flex">
         <a href="<?php echo esc_url(home_url('/'.$item['link']));?>">
-          <div class="cl">
-            <div class="fade-anime" data-fade="fade-op">
+          <div class="cl fade-anime" data-fade="fade-op">
+            <div>
               <div class="cl__map">
                 <img
                   src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/area/img_map_0'.$count.'.png')); ?>"

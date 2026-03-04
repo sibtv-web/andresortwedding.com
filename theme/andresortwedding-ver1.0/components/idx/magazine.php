@@ -1,6 +1,6 @@
 <section id="magazine" class="magazine bg-wht-1">
   <div class="magazine__inner section__inner">
-    <div class="section__title fade-anime" data-fade="fade-up">
+    <div class="magazine__title section__title fade-anime" data-fade="fade-up">
       <p class="en ft-blu-1">Magazine</p>
       <h2 class="jp">リゾートウェディング マガジン</h2>
     </div>

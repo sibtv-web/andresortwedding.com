@@ -1,6 +1,6 @@
 <section id="charm" class="charm">
   <div class="charm__inner section__inner">
-    <div class="section__title fade-anime" data-fade="fade-up">
+    <div class="charm__title section__title fade-anime" data-fade="fade-up">
       <p class="en ft-blu-1">Charm</p>
       <h2 class="jp">リゾートウェディングの魅力</h2>
     </div>

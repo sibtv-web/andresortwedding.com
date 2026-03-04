@@ -20,7 +20,7 @@
       padding-top: 55px;
     }
     .en {
-      font-size: 40px;
+      font-size: clamp(0px,9.66vw,40px);
       font-weight: 400;
       left: 50%;
       line-height: 1;
@@ -28,7 +28,7 @@
       text-align: center;
       top: 0;
       transform: translateX(-50%) rotate(-10deg);
-      width: 90%;
+      width: 96%;
       z-index: 1;
       @include ft_Javacom;
       @include bp(m) {

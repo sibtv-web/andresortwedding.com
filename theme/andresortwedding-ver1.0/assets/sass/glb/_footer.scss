@@ -18,6 +18,12 @@
       max-width: none;
       width: 12.03%;
     }
+    a {
+      @include transition;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
   &__nav {
     @include bp(m) {
@@ -123,6 +129,9 @@
           font-size: 12px;
           line-height: 1;
           @include transition;
+          &:hover {
+            opacity: 0.6;
+          }
         }
       }
     }

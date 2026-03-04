@@ -59,7 +59,6 @@ if(slider2) {
 //magazine slider
 const magazineSlide = document.querySelector(".magazine .splide");
 if(magazineSlide) {
-  console.log("test")
   new Splide(magazineSlide,{
     type: string = 'slide',
     rewind: boolean = false,
