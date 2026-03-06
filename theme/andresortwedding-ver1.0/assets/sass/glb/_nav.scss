@@ -1,6 +1,8 @@
 @use "../lib/mixin" as *;
 @use "../lib/color" as *;
 .nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   background-color: rgba($color: $color_wht-1, $alpha: .85);
   height: calc(100vh - 100%);
   left: 0;
@@ -12,6 +14,7 @@
   z-index: 998;
   @include transition;
   @include bp(m) {
+    backdrop-filter:  none;
     background-color: transparent;
     display: block;
     flex-grow: 1;
@@ -82,6 +85,7 @@
           -webkit-mask-repeat: no-repeat;
           mask-size: contain;
           -webkit-mask-size: contain;
+          margin-left: 8px;
           max-width: 12px;
           transform: rotate(90deg);
           width: 12px;
@@ -95,6 +99,7 @@
         align-items: center;
         column-gap: 8px;
         flex-wrap: nowrap;
+        font-weight: 500;
         position: relative;
         z-index: 999;
         @include transition;
@@ -121,23 +126,24 @@
         flex-wrap: nowrap;
         z-index: -1;
         @include bp(m) {
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
           opacity: 0;
           left: 0;
           padding-top: 0;
           position: fixed;
-          top: calc(32px + 3.35%);
+          top: calc(32px + 3.2vw);
           transition: opacity 0.4s;
           visibility: hidden;
           width: 100%;
           z-index: -1;
-          @include flexbox;
           @include flex_between;
         }        
         &__ls {
           padding-top: 4px;
           width: 100%;
           @include bp(m) {
-            backdrop-filter: blur(12px);
+            // backdrop-filter: blur(12px);
             background-color: rgba($color: $color_wht-1, $alpha: .75);
           }
           &.info {
@@ -158,6 +164,7 @@
             }
             p {
               font-size: 16px;
+              font-weight: 500;
               line-height: 1;
             }
             a {
@@ -165,6 +172,7 @@
               column-gap: 8px;
               display: inline-flex;
               font-size: 16px;
+              font-weight: 500;
               line-height: 1;
               @include transition;
               &::after {
@@ -213,6 +221,7 @@
               p {
                 align-items: center;
                 font-size: clamp(0px,2.89vw,12px);
+                font-weight: 600;
                 @include bp(m) {
                   font-size: clamp(0px,1.11vw,16px);
                 }
@@ -437,6 +446,7 @@
           opacity: 1;
           visibility: visible;
           z-index: 3;
+          @include flexbox;
         }
       }
     }

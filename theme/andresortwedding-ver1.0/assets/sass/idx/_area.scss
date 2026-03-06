@@ -10,40 +10,19 @@
       }
     }
   }
-
   &__block {
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-size: 120% auto;
     flex-wrap: nowrap;
     height: calc(100vh);
     overflow: hidden;
-    position: sticky;
+    position: relative;
     top: 0;
     width: 100%;
-    &::before {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-size: 120% auto;
-      content: "";
-      display: inline-block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: -1;
-      @include transition;
-    }
-    &.fixed {
-      position: sticky;
-    }
     &-inner {
       flex-direction: column;
       height: 100vh;
+      position: relative;
       width: 100%;
+      z-index: 20;
     }
     a {
       margin-top: auto;
@@ -53,10 +32,6 @@
         width: 100%;
       }
       .cl {
-        // mask-image: linear-gradient(to top, rgb(0 0 0 / 100%) 92%, rgb(0 0 0 / 0%) 100%);
-        // -webkit-mask-image: linear-gradient(to top, rgb(0 0 0 / 100%) 92%, rgb(0 0 0 / 0%) 100%);
-        // mask-composite: intersect;
-        // -webkit-mask-composite: intersect;
         padding: clamp(0px,9.66%,40px) clamp(0px,5.79%,24px);
         position: relative;
         @include bp(m) {
@@ -179,13 +154,23 @@
     &:nth-of-type(2) {
       margin-top: 40px;
       z-index: 1;
-      &::before {
-        animation: bg-slide-lf 30s linear alternate infinite;
-        background-image: url(../images/idx/area/bg_hawaii_sp.jpg);
-        background-position: left 0% top 50%;
-        @include bp(m) {
-          animation: bg-slide-lf 50s linear alternate infinite;
-          background-image: url(../images/idx/area/bg_hawaii_pc.jpg);
+      .splide {
+        height: 100%;
+        img {
+          left: -3%;
+          transform-origin: left top;
+        }
+        .is-active{
+          img {
+            animation-duration: 4000ms;
+            animation-name: bg-slide-lf;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            @include bp(m) {
+              animation-duration: 5000ms;
+            }
+          }
         }
       }
       .cl {
@@ -209,13 +194,23 @@
     }
     &:nth-of-type(3) {
       z-index: 2;
-      &::before {
-        animation: bg-slide-rt 30s linear alternate infinite;
-        background-image: url(../images/idx/area/bg_guam_sp.jpg);
-        background-position: right 0% top 50%;
-        @include bp(m) {
-          animation: bg-slide-rt 50s linear alternate infinite;
-          background-image: url(../images/idx/area/bg_guam_pc.jpg);
+      .splide {
+        height: 100%;
+        img {
+          right: -3%;
+          transform-origin: right top;
+        }
+        .is-active{
+          img {
+            animation-duration: 4000ms;
+            animation-name: bg-slide-rt;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            @include bp(m) {
+              animation-duration: 5000ms;
+            }
+          }
         }
       }
       .cl {
@@ -251,13 +246,23 @@
     }
     &:nth-of-type(4) {
       z-index: 3;
-      &::before {
-        animation: bg-slide-lf 30s linear alternate infinite;
-        background-image: url(../images/idx/area/bg_okinawa_sp.jpg);
-        background-position: left 0% top 50%;
-        @include bp(m) {
-          animation: bg-slide-lf 50s linear alternate infinite;
-          background-image: url(../images/idx/area/bg_okinawa_pc.jpg);
+      .splide {
+        height: 100%;
+        img {
+          left: -3%;
+          transform-origin: left top;
+        }
+        .is-active{
+          img {
+            animation-duration: 4000ms;
+            animation-name: bg-slide-lf;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            @include bp(m) {
+              animation-duration: 5000ms;
+            }
+          }
         }
       }
       .cl {
@@ -279,26 +284,51 @@
         }
       }
     }
-    &:has(a:hover) {
-      &::before {
-        transform: scale(1.05);
+    // &:has(a:hover) {
+    //   &::before {
+    //     transform: scale(1.05);
+    //   }
+    // }
+  }
+  &__slide {
+    left: 0;
+    position: absolute !important;
+    top: 0;
+    &.splide {
+      height: 100%;
+    }
+    .splide {
+      &__track {
+        height: 100%;
+      }
+      &__list {
+        height: 100%;
+      }
+      &__slide {
+        height: 100%;
+        img {
+          height: 100%;
+          object-fit: cover;
+          position: relative;
+          transform: scale(103%);
+        }
       }
     }
   }
 }
 @keyframes bg-slide-lf {
   from {
-    background-position: left 0% top 50%;
+    left: 0;
   }
   to {
-    background-position: left 100% top 50%;
+    left: -3%;
   }
 }
 @keyframes bg-slide-rt {
   from {
-    background-position: right 0% top 50%;
+    right: 0;
   }
   to {
-    background-position: right 100% top 50%;
+    right: -3%;
   }
 }

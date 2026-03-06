@@ -6,10 +6,10 @@ $ogp = get_theme_file_uri('assets/images/ogp.png');
 ?>
 <meta charset="<?php bloginfo('charset'); ?>">
 <meta name="title" content="<?php echo is_front_page() ? $title : wp_title('|', true, 'right').$title; ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="format-detection" content="telephone=no">
 <meta name="description" content="<?php echo is_front_page() ? esc_attr($description) : $pgDsc; ?>">
-<meta name="theme-color" content="#27A6EC">
+<meta name="theme-color" content="#FFFFFF">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?php echo esc_url(home_url()); ?>">
 <meta property="og:title" content="<?php echo is_front_page() ? $title : wp_title('|', true, 'right').$title; ?>">

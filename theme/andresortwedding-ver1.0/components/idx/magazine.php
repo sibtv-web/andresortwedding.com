@@ -31,7 +31,7 @@
           <?php endfor; ?>
         </ul>
       </div>
-      <div class="magazine__arrow flex fade-anime" data-fade="fade-up">
+      <div class="magazine__arrow flex fade-anime" data-fade="fade-up-top">
         <div class="splide__arrows flex">
           <button class="splide__arrow splide__arrow--prev"></button>
           <button class="splide__arrow splide__arrow--next"></button>

@@ -4,7 +4,7 @@
       <a href="/">運営会社</a>
     </li>
     <li class="itm">
-      <a class="exlink" href="/"><span>プライバシーポリシー</span></a>
+      <a class="exlink" href="https://www.sib.tv/privacy/" target="_blank"><span>プライバシーポリシー</span></a>
     </li>
     <li class="itm">
       <a href="/">著作権および免責事項</a>

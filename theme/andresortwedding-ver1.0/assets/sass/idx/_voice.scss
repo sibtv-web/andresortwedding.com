@@ -9,15 +9,23 @@
     }
   }
   &__inner {
+    background-image: url(../images/idx/voice/bg_main_01.png);
+    background-position: center top -25%;
+    background-repeat: repeat;
+    background-size: 67.63%;
     overflow: hidden;
+    @include bp(m) {
+      background-position: left -25% top -25%;
+      background-size: 23.81%;
+    }
   }
   &__comment {
     align-items: center;
     flex-direction: column;
     margin: 24px auto 0;
     row-gap: 8px;
-    max-width: 336px;
-    width: 81.15%;
+    max-width: 366px;
+    width: 88.4%;
     @include bp(m) {
       flex-direction: row;
       margin: 0 auto;
@@ -80,7 +88,7 @@
       }
     }
     &-txt {
-      font-size: clamp(0px,2.41vw,10px);
+      font-size: clamp(0px,2.89vw,12px);
       font-weight: 500;
       text-align: center;
       @include bp(m) {
@@ -96,7 +104,7 @@
   }
   &__image {
     position: relative;
-    z-index: -1;
+    // z-index: -1;
     @include bp(m) {
       margin: 0 auto;
       max-width: 800px;

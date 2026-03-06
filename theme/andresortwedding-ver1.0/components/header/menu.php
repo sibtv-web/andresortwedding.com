@@ -1,3 +1,11 @@
+<?php
+  $baseUrl;
+  if(is_home() || is_front_page()) {
+    $baseUrl = home_url() . '/';
+  } else {
+    $baseUrl = home_url() . '/';
+  }
+?>
 <ul class="nav__menu flex-bt">
   <li class="nav__menu-itm">
     <p class="ttl flex ft-blk-2" data-nav="nav-1">
@@ -84,12 +92,12 @@
     </div>
   </li>
   <li class="nav__menu-itm">
-    <a class="ttl flex ft-blk-2" href="/">
+    <a class="ttl flex ft-blk-2" href="<?php echo $baseUrl?>#voice">
       <span>先輩カップルの声</span>
     </a>
   </li>
   <li class="nav__menu-itm">
-    <a class="ttl flex ft-blk-2" href="/">
+    <a class="ttl flex ft-blk-2" href="<?php echo $baseUrl?>#faq">
       <span>よくある質問</span>
     </a>
   </li>

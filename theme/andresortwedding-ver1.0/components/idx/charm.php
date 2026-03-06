@@ -45,7 +45,7 @@
         ?>
         <li class="itm flex">
           <h3 class="itm__catch"><?php echo $title[$i - 1];?></h3>
-          <div class="itm__1 flex">
+          <div class="itm__1 flex bg-blu-4">
             <p class="ft-wht-1 bg-blu-4">リゾートウェディング</p>
             <div class="img">
               <img
@@ -54,7 +54,7 @@
               >
             </div>
           </div>
-          <div class="itm__2">
+          <div class="itm__2 bg-brn-2">
             <p class="ft-wht-1 bg-brn-2">近場ウェディング</p>
             <div class="img">
               <img

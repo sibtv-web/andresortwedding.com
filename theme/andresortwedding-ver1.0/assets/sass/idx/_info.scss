@@ -16,7 +16,7 @@
     flex-direction: row;
     margin: 0 auto;
     max-width: 390px;
-    padding: 120px 0;
+    padding: 40px 0;
     width: 94.2%;
     @include bp(m) {
       align-items: center;
@@ -111,6 +111,7 @@
             align-items: center;
             display: inline-flex;
             font-size: clamp(0px,2.89vw,12px);
+            font-weight: 500;
             line-height: 1;
             margin-top: 8px;
             @include bp(m) {

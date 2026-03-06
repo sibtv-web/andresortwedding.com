@@ -90,6 +90,11 @@
           }
         }
       }
+      &--clone {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+      }
     }
     .splide__slide.is-next {
       margin-left: 0 !important;

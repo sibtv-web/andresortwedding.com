@@ -32,10 +32,30 @@
       foreach ($data as $item):
       $count++;
     ?>
-    <div class="area__block" class="<?php echo $item['link'];?>">
+    <div class="area__block slider-3" class="<?php echo $item['link'];?>">
+      <div class="area__slide splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <?php for ($i = 1; $i <= 2; $i++) :?>
+              <li class="splide__slide">
+                <picture>
+                  <source
+                    media="(min-width: 750px)"
+                    srcset="<?php echo esc_url(get_theme_file_uri('assets/images/idx/area/bg_'.$item['link'].'_0'.$i.'_pc.jpg')); ?>"
+                  >
+                  <img
+                    src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/area/bg_'.$item['link'].'_0'.$i.'_sp.jpg')); ?>"
+                    alt="背景画像<?php echo $i ;?>"
+                  >
+                </picture>
+              </li>
+            <?php endfor; ?>
+          </ul>
+        </div>
+      </div>
       <div class="area__block-inner flex">
         <a href="<?php echo esc_url(home_url('/'.$item['link']));?>">
-          <div class="cl fade-anime" data-fade="fade-op">
+          <div class="cl">
             <div>
               <div class="cl__map">
                 <img

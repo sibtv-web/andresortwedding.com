@@ -2,12 +2,38 @@
 @use "../lib/color" as *;
 .svg {
   &-kv {
-    bottom: 0;
-    left: 0;
+    bottom: -1px;
+    left: -1%;
+    overflow: hidden;
     position: relative;
     transform: translateY(-100%);
+    width: 102.5%;
+    @include bp(m) {
+      left: 0;
+      width: 100%;
+    }
+    picture {
+      display: block;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &-1 {
+    @include bp(m) {
+      transform: translateY(-1px);
+    }
   }
   &-2 {
     transform: rotate(180deg) translateY(-1px);
+    @include bp(m) {
+      transform: rotate(180deg) translateY(-1px);
+    }
+  }
+  &-3 {
+    @include bp(m) {
+      transform: translateY(-1px);
+    }
   }
 }

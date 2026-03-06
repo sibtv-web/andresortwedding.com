@@ -18,12 +18,13 @@
       background-repeat: no-repeat;
       background-size: cover;
       @include bp(m) {
+        border: solid 0.5px $color_wht-2;
         width: calc(100% / 3);
       }
       .cl {
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        padding: 48px 3.62% 20px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 48px 3.62% 24px;
         position: relative;
         @include bp(m) {
           padding: 48px 6.25% 20px;
@@ -81,11 +82,14 @@
           line-height: 1.2;
           margin-top: 25px;
           text-align: center;
+          text-shadow: 0 0 10px rgba($color: $color_blk-1, $alpha: .25);
           @include bp(m) {
             font-size: 20px;
+            line-height: 1.4;
           }
           strong {
             font-size: 32px;
+            font-weight: 500;
             @include bp(m) {
               font-size: 32px;
             }
@@ -152,31 +156,55 @@
           flex-wrap: nowrap;
           width: 57.97%;
           @include bp(m) {
+            border-radius: 6px 0 0 6px;
+            overflow: hidden;
             width: 58.53%;
           }
           p {
             font-size: clamp(0px,4.83vw,20px);
             padding: 5px 0;
             text-align: center;
+            @include bp(m) {
+              font-size: clamp(0px,1.38vw,20px);
+              padding: 5px 0 clamp(0px,0.34vw,5px);
+            }
           }
           .img {
             height: 100%;
+            @include bp(m) {
+              height: auto;
+              margin-top: auto;
+            }
             img {
               height: 100%;
               object-fit: cover;
               object-position: top center;
+              @include bp(m) {
+                height: auto;
+              }
             }
           }
         }
         &__2 {
           width: calc(100% - 57.97%);
           @include bp(m) {
+            border-radius: 0 6px 6px 0;
+            overflow: hidden;
             width: calc(100% - 58.53%);
           }
           p {
             font-size: clamp(0px,3.38vw,14px);
             padding: 10px 0;
             text-align: center;
+            @include bp(m) {
+              font-size: clamp(0px,0.97vw,20px);
+              padding: clamp(0px,0.69vw,10px) 0;
+            }
+          }
+          .img {
+            @include bp(m) {
+              margin-top: auto;
+            }
           }
         }
       }

@@ -59,7 +59,7 @@ if (urlHash) {
     setTimeout(() => {
       const target = document.querySelector(urlHash);
       if (!target) return;
-      const position = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 30;
+      const position = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
       window.scrollTo({
         top: position,
         behavior: 'auto'
@@ -94,7 +94,7 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
       {y:"auto",opacity:1,
         scrollTrigger: {
           trigger: el,
-          start: 'top center',
+          start: 'top center+=200',
           toggleActions: 'play none none none',
         },
         ease: Power0.easeNone,
@@ -114,7 +114,7 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
       },
       scrollTrigger:{
         trigger:targets,
-        start:'top center+=100'
+        start:'top center+=200'
       },
       clearProps: "opacity,visibility,transform",
       onComplete: () => {
@@ -128,7 +128,7 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
       {opacity:1,
         scrollTrigger: {
           trigger: el,
-          start: 'top center',
+          start: 'top center+=200',
           toggleActions: 'play none none none',
         },
         ease: Power0.easeNone,
@@ -148,8 +148,22 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
       },
       scrollTrigger:{
         trigger:targets,
-        start:'top center+=100'
+        start:'top center+=200'
       }
   })
+  }
+  if(fade == "fade-up-top"){
+    gsap.fromTo(el, 
+      {y:"30px",opacity:0}, 
+      {y:"auto",opacity:1,
+        scrollTrigger: {
+          trigger: el,
+          start: 'top center+=300',
+          toggleActions: 'play none none none',
+        },
+        ease: Power0.easeNone,
+        duration:0.5,
+      },
+    )
   }
 });

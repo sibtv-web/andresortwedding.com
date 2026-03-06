@@ -70,6 +70,16 @@
               display: inline-block;
               width: clamp(0px,1.44vw,6px);
             }
+            &.exlink {
+              &::after {
+                aspect-ratio: 1/1;
+                background-image: url(../images/ico/ico_arrow_04.png);
+                width: clamp(0px,2.89vw,12px);
+                @include bp(m) {
+                  width: 12px;
+                }
+              }
+            }
             &:hover {
               opacity: 0.6;
             }
@@ -131,6 +141,24 @@
           @include transition;
           &:hover {
             opacity: 0.6;
+          }
+          &.exlink {
+            align-items: center;
+            column-gap: 4px;
+            display: inline-flex;
+            &::after {
+              aspect-ratio: 1/1;
+              background-image: url(../images/ico/ico_arrow_04.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              content: "";
+              display: inline-block;
+              width: clamp(0px,2.89vw,12px);
+              @include bp(m) {
+                width: 12px;
+              }
+            }
           }
         }
       }
