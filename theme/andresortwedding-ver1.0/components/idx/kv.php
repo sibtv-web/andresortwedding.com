@@ -13,7 +13,7 @@
           srcset="<?= esc_url(get_theme_file_uri('assets/images/idx/kv/bg_bottom_pc.svg')) ?>"
         >
         <img
-          src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/kv/bg_bottom_sp.svg')); ?>"
+          src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/kv/bg_bottom_sp.png')); ?>"
           alt="背景1"
         >
       </picture>

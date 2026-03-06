@@ -78,20 +78,22 @@
         }
         &-txt {
           font-size: 20px;
-          font-weight: 500;
+          font-weight: 600;
           line-height: 1.2;
           margin-top: 25px;
           text-align: center;
           text-shadow: 0 0 10px rgba($color: $color_blk-1, $alpha: .25);
           @include bp(m) {
             font-size: 20px;
+            font-weight: 500;
             line-height: 1.4;
           }
           strong {
             font-size: 32px;
-            font-weight: 500;
+            font-weight: 600;
             @include bp(m) {
               font-size: 32px;
+              font-weight: 500;
             }
           }
         }
@@ -99,7 +101,7 @@
     }
   }
   &__block {
-    margin-top: 40px;
+    margin-top: 60px;
     @include bp(m) {
       margin-top: 64px;
     }
