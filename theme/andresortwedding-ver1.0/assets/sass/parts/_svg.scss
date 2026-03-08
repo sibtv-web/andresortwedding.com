@@ -70,8 +70,24 @@
     }
   }
   &-3 {
+    overflow: hidden;
+    width: 100%;
     @include bp(m) {
       transform: translateY(-1px);
     }
+    picture {
+      display: block;
+      left: -1%;
+      position: relative;
+      width: 102.5%;
+      @include bp(m) {
+        left: 0;
+        width: 100%;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }    
   }
 }
