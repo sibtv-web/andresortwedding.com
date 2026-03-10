@@ -18,17 +18,49 @@
     </div>
     <ul class="sale-information__list flex-bt">
       <?php 
-        for ($i = 1; $i <= 4; $i++) :
+        $bnrImages = [
+          [
+            'name' => 'bnr_260310-1.jpg',
+            'link' => 'https://www.his-wedding.com/fair/the_sale/',
+            'title' => '春キャンペーン',
+          ],
+          [
+            'name' => 'bnr_260310-2.jpg',
+            'link' => 'https://www.jtb.co.jp/wed/coupon/',
+            'title' => '割引クーポン',
+          ],
+          [
+            'name' => 'bnr_260310-3.jpg',
+            'link' => 'https://www.arluis.com/fair-cp/premierphotowedding/',
+            'title' => '他にない新しいフォトウェディング',
+          ],
+          [
+            'name' => 'bnr_260310-4.jpg',
+            'link' => '',
+            'title' => '挙式料 50% OFF',
+          ],
+        ];
+        $counter = 1;
+        foreach ($bnrImages as $bnrImage):
       ?>
-        <li class="itm" style="background-image:url(<?php echo esc_url(get_theme_file_uri('assets/images/idx/bnr/bnr_sample_'.$i.'.jpg')); ?>);">
-          <a href="/" target="_blank">
-            <img
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/bnr/bnr_sample_'.$i.'.jpg')); ?>"
-              alt="バナー画像"
-            >
-          </a>
+        <li class="itm" style="background-image:url(<?php echo esc_url(get_theme_file_uri('assets/images/idx/bnr/'.$bnrImage['name'])); ?>);">
+          <?php if ($bnrImage['link']) :?>
+            <a href="<?php echo esc_url($bnrImage['link']); ?>" target="_blank">
+              <img
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/bnr/'.$bnrImage['name'])); ?>"
+                alt="<?php echo $bnrImage['title']; ?>"
+              >
+            </a>
+          <?php else :?>
+            <span>
+              <img
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/bnr/'.$bnrImage['name'])); ?>"
+                alt="<?php echo $bnrImage['title']; ?>"
+              >
+            </span>
+          <?php endif; ?>
         </li>
-      <?php endfor; ?>
+      <?php endforeach; ?>
     </ul>
   </div>
 </section>
