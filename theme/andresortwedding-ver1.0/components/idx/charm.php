@@ -4,7 +4,7 @@
       <p class="en ft-blu-1">Charm</p>
       <h2 class="jp">リゾートウェディングの魅力</h2>
     </div>
-    <ul class="charm__list flex fade-anime" data-fade="fade-up-cont">
+    <ul class="charm__list flex fade-anime" data-fade="slide-up-cont-01">
       <?php 
         for ($i = 1; $i <= 3; $i++) :
         $text = [
@@ -15,20 +15,23 @@
       ?>
         <li class="charm__list-itm <?php echo "no".$i;?>" style="background-image:url(<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_charm_0'.$i.'.jpg')); ?>);">
           <div class="cl">
-            <p class="cl-no">No<span><?php echo "0".$i;?></span></p>
-            <div class="cl-img">
-              <img
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_charm_0'.$i.'.jpg')); ?>"
-                alt="魅力<?php echo $i;?> イメージ画像"
-              >
+            <div class="cl__inner">
+              <p class="cl-no">No<span><?php echo "0".$i;?></span></p>
+              <div class="cl-img">
+                <img
+                  src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_charm_0'.$i.'.jpg')); ?>"
+                  alt="魅力<?php echo $i;?> イメージ画像"
+                >
+              </div>
+              <p class="cl-txt ft-wht-1"><?php echo $text[$i - 1];?></p>
             </div>
-            <p class="cl-txt ft-wht-1"><?php echo $text[$i - 1];?></p>
           </div>
+          <span class="mask bg-beg-2"></span>
         </li>
       <?php endfor; ?>
     </ul> 
-    <div class="charm__block fade-anime" data-fade="fade-up">
-      <div class="charm__block-ttl">
+    <div class="charm__block">
+      <div class="charm__block-ttl fade-anime" data-fade="fade-up">
         <img
           src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_title_01.png')); ?>"
           alt="近場ウェディングとどこが違う？"
@@ -43,24 +46,28 @@
             "ルールやマナーにとらわれない<br/><strong>ふたりらしさ</strong>",
           ];
         ?>
-        <li class="itm flex">
-          <h3 class="itm__catch"><?php echo $title[$i - 1];?></h3>
-          <div class="itm__1 flex bg-blu-4">
-            <p class="ft-wht-1 bg-blu-4">リゾートウェディング</p>
-            <div class="img">
-              <img
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_comparison_0'.$i.'_a.jpg')); ?>"
-                alt="イメージ画像<?php echo $i;?>"
-              >
+        <li class="itm">
+          <h3 class="itm__catch fade-anime" data-fade="fade-up"><?php echo $title[$i - 1];?></h3>
+          <div class="flex fade-anime" data-fade="slide-up-cont-02">
+            <div class="itm__1 flex bg-blu-4">
+              <p class="ft-wht-1 bg-blu-4">リゾートウェディング</p>
+              <div class="img">
+                <img
+                  src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_comparison_0'.$i.'_a.jpg')); ?>"
+                  alt="イメージ画像<?php echo $i;?>"
+                >
+              </div>
+              <span class="mask bg-beg-2"></span>
             </div>
-          </div>
-          <div class="itm__2 bg-brn-2">
-            <p class="ft-wht-1 bg-brn-2">近場ウェディング</p>
-            <div class="img">
-              <img
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_comparison_0'.$i.'_b.jpg')); ?>"
-                alt="イメージ画像<?php echo $i;?>"
-              >
+            <div class="itm__2 bg-brn-2">
+              <p class="ft-wht-1 bg-brn-2">近場ウェディング</p>
+              <div class="img">
+                <img
+                  src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_comparison_0'.$i.'_b.jpg')); ?>"
+                  alt="イメージ画像<?php echo $i;?>"
+                >
+              </div>
+              <span class="mask bg-beg-2"></span>
             </div>
           </div>
         </li>

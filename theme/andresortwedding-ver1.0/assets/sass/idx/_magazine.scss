@@ -82,7 +82,7 @@
         transform-origin: left top;
         @include transition;
         &:hover {
-          opacity: 0.6;
+          // opacity: 0.6;
           .magazine__slider-img {
             img {
               transform: scale(1.1);

@@ -103,7 +103,7 @@
   </li>
   <li class="nav__menu-itm">
     <a class="ttl flex ft-blk-2" href="/">
-      <span>マガジン</span>
+      <span>お役立ち記事</span>
     </a>
   </li>
 </ul>

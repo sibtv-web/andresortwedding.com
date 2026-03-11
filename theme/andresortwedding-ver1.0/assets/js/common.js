@@ -86,6 +86,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // fadein animation
+const callBack_01 = (el) => {
+  var cl = el.querySelector(".cl__inner");
+  gsap.fromTo(cl,
+    {
+      opacity: 0,
+      transformOrigin: "top"
+    },
+    {
+      opacity: 1,
+      ease: "power4.out",
+      duration: 1.5,
+    }
+  );
+
+}
 gsap.utils.toArray(".fade-anime").forEach((el) => {
   var fade = el.getAttribute('data-fade');
   if(fade == "fade-up"){
@@ -165,5 +180,75 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
         duration:0.5,
       },
     )
+  }
+  if(fade == "slide-up-cont-01"){
+    var targets = el.querySelectorAll(':scope > *');
+    var targetMask = [];
+    targets.forEach((el,i) => {
+      let mask = el.querySelector(".mask");
+      targetMask.push(mask);
+      gsap.fromTo(mask,
+        {
+          scaleY: 1,
+          transformOrigin: "top"
+        },
+        {
+          scaleY: 0,
+          ease: "power4.out",
+          duration: 1,
+          delay: i * 0.1,
+          scrollTrigger: {
+            trigger: el,
+            start: "top center"
+          },
+          onComplete: function() {
+            callBack_01(el);
+          }
+        }
+      );
+    })
+    // gsap.fromTo(targetMask,
+    //   {
+    //     scaleY: 1,
+    //     transformOrigin: "top"
+    //   },
+    //   {
+    //     scaleY: 0,
+    //     ease: "power4.out",
+    //     duration:1.5,
+    //     stagger:{
+    //       each: 0.3
+    //     },
+    //     scrollTrigger:{
+    //       trigger:targets,
+    //       start:'top center'
+    //     },
+    //     onComplete: () => {
+    //       callBack_01(this.targets()[0]);
+    //     }
+    //   }
+    // )
+  }
+  if(fade == "slide-up-cont-02"){
+    var targets = el.querySelectorAll(':scope > *');
+    targets.forEach((el,i) => {
+      let mask = el.querySelector('.mask');
+      gsap.fromTo(mask,
+        {
+          scaleY: 1,
+          transformOrigin: "top"
+        },
+        {
+          scaleY: 0,
+          ease: "power4.out",
+          duration: 1,
+          delay: (i+1) * 0.2,
+          scrollTrigger: {
+            trigger: el,
+            start: "top center"
+          },
+        }
+      );
+    })
   }
 });

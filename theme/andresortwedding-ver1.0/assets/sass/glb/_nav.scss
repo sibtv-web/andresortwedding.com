@@ -222,6 +222,7 @@
                 align-items: center;
                 font-size: clamp(0px,2.89vw,12px);
                 font-weight: 600;
+                @include transition;
                 @include bp(m) {
                   font-size: clamp(0px,1.11vw,16px);
                 }
@@ -300,47 +301,52 @@
                   width: clamp(0px,0.41vw,6px);
                 }
               }
-            }
-            &:nth-of-type(2),&:nth-of-type(6) {
-              a {
-                &::after {
-                  background-color: $color_blu-1;
-                }
-                &:hover {
-                  border: solid 1px $color_blu-1;
+              &:hover {
+                p {
+                  transform: scale(1.08);
                 }
               }
             }
-            &:nth-of-type(3),&:nth-of-type(7) {
-              a {
-                &::after {
-                  background-color: $color_grn-1;
-                }
-                &:hover {
-                  border: solid 1px $color_grn-1;
-                }
-              }
-            }
-            &:nth-of-type(4),&:nth-of-type(8) {
-              a {
-                &::after {
-                  background-color: $color_org-1;
-                }
-                &:hover {
-                  border: solid 1px $color_org-1;
-                }
-              }
-            }
-            &:nth-of-type(5),&:nth-of-type(9) {
-              a {
-                &::after {
-                  background-color: $color_pnk-1;
-                }
-                &:hover {
-                  border: solid 1px $color_pnk-1;
-                }
-              }
-            }
+            // &:nth-of-type(2),&:nth-of-type(6) {
+            //   a {
+            //     &::after {
+            //       background-color: $color_blu-1;
+            //     }
+            //     &:hover {
+            //       border: solid 1px $color_blu-1;
+            //     }
+            //   }
+            // }
+            // &:nth-of-type(3),&:nth-of-type(7) {
+            //   a {
+            //     &::after {
+            //       background-color: $color_grn-1;
+            //     }
+            //     &:hover {
+            //       border: solid 1px $color_grn-1;
+            //     }
+            //   }
+            // }
+            // &:nth-of-type(4),&:nth-of-type(8) {
+            //   a {
+            //     &::after {
+            //       background-color: $color_org-1;
+            //     }
+            //     &:hover {
+            //       border: solid 1px $color_org-1;
+            //     }
+            //   }
+            // }
+            // &:nth-of-type(5),&:nth-of-type(9) {
+            //   a {
+            //     &::after {
+            //       background-color: $color_pnk-1;
+            //     }
+            //     &:hover {
+            //       border: solid 1px $color_pnk-1;
+            //     }
+            //   }
+            // }
           }
           &-area {
             aspect-ratio: 1/1;

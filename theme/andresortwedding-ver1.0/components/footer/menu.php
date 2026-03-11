@@ -51,7 +51,7 @@
         <a href="/"><span>よくある質問</span></a>
       </li>
       <li class="f__list-ttl">
-        <a href="/"><span>マガジン</span></a>
+        <a href="/"><span>お役立ち記事</span></a>
       </li>
       <li class="f__list-ttl">
         <a class="exlink" href="/"><span>公式Instagram</span></a>
