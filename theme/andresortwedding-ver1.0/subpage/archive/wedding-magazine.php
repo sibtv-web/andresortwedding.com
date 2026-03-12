@@ -15,7 +15,7 @@ $has_filter = !empty($selected_categories) || !empty($selected_tags);
     <div class="pg_magazine_container">
       <div class="section__title fade-anime" data-fade="fade-up">
         <p class="en ft-blu-1">Magazine</p>
-        <h2 class="jp">リゾートウェディングの魅力</h2>
+        <h2 class="jp">お役立ち記事</h2>
       </div>
     </div>
   </section>
@@ -120,7 +120,7 @@ $has_filter = !empty($selected_categories) || !empty($selected_tags);
                     }
                   ?>
                     <li class="subList-item">
-                      <a href="<?php echo home_url();?>/wedding-magazine/<?php echo $slug;?>">
+                      <a href="<?php echo home_url();?>/article/<?php echo $slug;?>">
                         <div class="image" style="background-image: url(
                           <?php if (has_post_thumbnail()) : ?>
                             <?php the_post_thumbnail_url(); ?>

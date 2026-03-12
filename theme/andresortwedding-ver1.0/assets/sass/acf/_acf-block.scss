@@ -1,0 +1,415 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+
+.wp-acf {
+	&-contents {
+		// margin-top: 0;
+		@include bp(m) {
+			@include flexbox;
+			@include flex_between;
+			align-items: flex-start;
+			// margin-top: 0;
+		}
+
+		&-txt {
+			margin-top: 24px;
+			@include bp(m) {
+				// width: 62.84%;
+				margin-top: 0;
+				max-width: 450px;
+				width: 60%;
+			}
+
+			&.flow-1 {
+				flex-grow: 1;
+			}
+		}
+
+		>p {
+			margin-top: 0;
+		}
+
+		&.al-center {
+			justify-content: center;
+		}
+	}
+
+	&-cade {
+		background-color: #FBF8F6;
+		margin-top: 48px;
+		padding: 24px;
+
+		@include bp(m) {
+			// margin-top: 20px;
+		}
+
+		&-image {
+			margin: 0 auto;
+			overflow: hidden;
+			width: 100%;
+
+			@include bp(m) {
+				margin: 0;
+				max-width: 234px;
+				width: 31%;
+			}
+		}
+
+		&-title {
+			line-height: 1;
+			padding: 0 0 16px;
+
+			@include bp(m) {
+				display: inline-flex;
+				flex-direction: column;
+				padding: 0 0 16px;
+				width: 100%;
+			}
+
+			&>p {
+				font-size: 20px;
+				letter-spacing: 0.03em;
+				line-height: 1.3;
+				margin: 0;
+				// text-align: center;
+				font-weight: 500;
+				// @include ft_YuGothic_Bold;
+
+				@include bp(m) {
+					font-size: 20px;
+					padding-bottom: 16px;
+					text-align: left;
+				}
+			}
+
+			& .subtitle::after {
+				@include bp(m) {
+					content: " |";
+					display: inline;
+				}
+			}
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 100%;
+				height: 1px;
+				background-image: url(../../assets/images/bg_dots-grn-2.svg);
+				background-position: top left;
+				background-repeat: repeat-x;
+				background-size: auto 100%;
+
+				@include bp(m) {
+					vertical-align: top;
+				}
+			}
+		}
+
+		&-item {
+			margin-top: 8px;
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+			justify-content: space-between;
+			&:first-child {
+				margin-top: 0;
+			}
+			@include bp(m) {
+				margin-top: 12px;
+			}
+
+			>p,
+			>a {
+				font-size: 16px;
+				letter-spacing: 0.03em;
+				line-height: 1.5;
+				margin: 0;
+				width: calc(100% - 30px);
+				word-break: break-word;
+
+				@include bp(m) {
+					font-size: 16px;
+				}
+			}
+			>a {
+				color: #3AA5E1;
+			}
+
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 18px;
+				height: 24px;
+				aspect-ratio: 1 / 1;
+				background-position: center center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-size: 100%;
+			}
+		}
+
+		&-price::before {
+			background-image: url(../../assets/images/ico/article/ico_price.png);
+		}
+
+		&-time::before {
+			background-image: url(../../assets/images/ico/article/ico_clock.png);
+		}
+
+		&-map {
+			margin-top: 0;
+			::before {
+				// background-image: url(../../assets/images/ico/article/ico_map.png);
+			}
+		}
+
+		&-address::before {
+			background-image: url(../../assets/images/ico/article/ico_pin.png);
+		}
+
+		&-link::before {
+			background-image: url(../../assets/images/ico/article/ico_clip.png);
+		}
+
+		&-free {
+			line-height: 1;
+
+			&::before {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 1px;
+				margin-top: 12px;
+				background-image: url(../../assets/images/bg_dots-grn-2.svg);
+				background-position: top left;
+				background-repeat: repeat-x;
+				background-size: auto 100%;
+
+				@include bp(m) {
+					margin-top: 16px;
+				}
+			}
+
+			p {
+				// color: $color_blu-1;
+				line-height: 1.5;
+				margin-top: 12px;
+				text-align: center;
+				font-weight: 500;
+				// @include ft_YuGothic_Bold;
+
+				@include bp(m) {
+					margin-top: 16px;
+					text-align: left;
+				}
+			}
+
+			ul {
+				margin-top: 10px;
+
+				@include bp(m) {
+					margin-top: 12px;
+				}
+
+				>li {
+					line-height: 1.5;
+					margin-top: 8px;
+					padding-left: 25px;
+					text-indent: -25px;
+
+					@include bp(m) {
+						font-size: 15px;
+					}
+
+					&::before {
+						content: "●";
+						margin-right: 6px;
+						font-size: 10px;
+						color: $color_blu-4;
+					}
+				}
+			}
+		}
+	}
+
+	&-wide {
+		position: relative;
+
+		&-contents {
+			background-color: $color_wht-1;
+
+			@include bp(m) {
+				border-radius: 20px;
+				max-width: 850px;
+				margin: 0 auto;
+				overflow: hidden;
+				// width: 88.88%;
+			}
+
+			.title {
+				background-color: $color_beg-2;
+				// column-gap: 4.37%;
+				margin-top: 0;
+				padding: 5.79%;
+				@include flexbox;
+				flex-wrap: nowrap;
+				font-weight: 500;
+				// @include ft_YuGothic_Bold;
+
+				@include bp(m) {
+					padding: 2.87% 6%;
+				}
+
+				&-sub {
+					color: $color_org-1;
+					font-size: 18px;
+					letter-spacing: 0;
+					margin: 0 !important;
+					// min-width: 100px;
+					text-align: left;
+					width: auto !important;
+					@include flexbox;
+					flex-wrap: nowrap;
+
+					@include bp(m) {
+						font-size: 24px;
+						// min-width: 140px;
+					}
+
+					>span {
+						display: inline-block;
+						margin-right: 12px;
+						white-space: nowrap;
+					}
+
+					&::after {
+						background-color: $color_org-1;
+						content: "";
+						display: block;
+						height: 100%;
+						// margin-left: 19.75%;
+						width: 1px;
+					}
+				}
+
+				&-main {
+					// flex-grow: 3;
+					font-size: 18px;
+					margin: 0 !important;
+					padding-left: 16px;
+					text-align: left;
+					width: auto !important;
+
+					@include bp(m) {
+						font-size: 22px;
+					}
+				}
+			}
+
+			.block {
+				&-inner {
+					padding: 0 0 24px;
+
+					@include bp(m) {
+						padding: 0 6% 24px;
+					}
+
+					figure {
+						margin-top: 0;
+						width: 100% !important;
+
+						figcaption {
+							font-size: 12px;
+							margin-top: 12px;
+							text-align: center;
+						}
+					}
+
+					img {
+						margin-top: 24px;
+						width: 100%;
+
+						@include bp(m) {
+							margin-top: 48px;
+						}
+					}
+
+					p {
+						font-size: 16px;
+						line-height: 2;
+						margin-top: 24px;
+						padding: 0 5.79%;
+						text-align: left;
+						width: 100%;
+
+						@include bp(m) {
+							margin-top: 48px;
+							padding: 0;
+						}
+					}
+
+					.wp-acf-cade {
+						margin: 24px auto 0;
+						width: 88.4%;
+
+						@include bp(m) {
+							padding: 3.4% 2.27%;
+							width: 100%;
+						}
+
+						&-image {
+							img {
+								margin-top: 0;
+							}
+						}
+
+						&-title {
+							p {
+								line-height: 1.3;
+								margin: 0;
+								text-align: center;
+
+								@include bp(m) {
+									font-size: 20px;
+									text-align: left;
+								}
+							}
+						}
+
+						&-item {
+							p {
+								line-height: 1.5;
+								margin: 0;
+								padding: 0;
+								width: calc(100% - 36px);
+							}
+						}
+					}
+				}
+			}
+
+			&.editor {
+				background-color: $color_beg-1;
+			}
+		}
+
+		+.wp-acf-wide {
+			margin-top: 60px;
+
+			&::before {
+				background-image: url(../../assets/images/ico_connect.png);
+				background-position: center top;
+				background-repeat: repeat-y;
+				background-size: 100%;
+				content: "";
+				display: inline-block;
+				height: 36px;
+				left: 50%;
+				position: absolute;
+				top: calc(-36px - 12px);
+				transform: translateX(-50%);
+				width: 4px;
+			}
+		}
+	}
+}

@@ -7,7 +7,7 @@
 
     <div class="pgarea_other_cont">
       <div class="pgarea_other_bnr">
-        <a href="" style="background-image: url(<?php echo esc_url(get_theme_file_uri('assets/images/area/common/area_bg_hawaii.jpg')); ?>); background-position: right bottom;">
+        <a href="<?php echo esc_url(home_url());?>/hawaii/" style="background-image: url(<?php echo esc_url(get_theme_file_uri('assets/images/area/common/area_bg_hawaii.jpg')); ?>); background-position: right bottom;">
           <div class="pgarea_other_bnr_wrap">
             <p class="pgarea_other_bnr_catch">ハネムーンも大人気！<br>誰もが憧れる海外リゾート</p>
             <h3 class="pgarea_other_bnr_ttl">
@@ -15,13 +15,13 @@
               <span class="jp">ハワイ</span>
             </h3>
             <p class="pgarea_other_bnr_btn cl__btn btn__more">
-              <span class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>"><span>くわしく見る</span></ｓ>
+              <span class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>/hawaii/"><span>くわしく見る</span></span>
             </p>
           </div>
         </a>
       </div>
       <div class="pgarea_other_bnr">
-        <a href="" style="background-image: url(<?php echo esc_url(get_theme_file_uri('assets/images/area/common/area_bg_guam.jpg')); ?>); background-position: right center;">
+        <a href="<?php echo esc_url(home_url());?>/guam/" style="background-image: url(<?php echo esc_url(get_theme_file_uri('assets/images/area/common/area_bg_guam.jpg')); ?>); background-position: right center;">
           <div class="pgarea_other_bnr_wrap">
             <p class="pgarea_other_bnr_catch">フライトわずか約3.5時間、時差も+1時間！<br>海外なのに招待しやすい気軽なリゾート</p>
             <h3 class="pgarea_other_bnr_ttl">
@@ -29,7 +29,7 @@
               <span class="jp">グアム</span>
             </h3>
             <p class="pgarea_other_bnr_btn cl__btn btn__more">
-              <span class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>"><span>くわしく見る</span></ｓ>
+              <span class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>/guam/"><span>くわしく見る</span></span>
             </p>
           </div>
         </a>

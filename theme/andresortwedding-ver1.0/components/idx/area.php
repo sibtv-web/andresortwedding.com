@@ -4,7 +4,7 @@
       <p class="en ft-blu-1">Area guides</p>
       <h2 class="jp">エリア別ガイド</h2>
     </div>
-    <?php 
+    <?php
       $data = [
         [
           'catch' => 'ハネムーンも大人気！<br/>誰もが憧れる海外リゾート',
@@ -69,7 +69,7 @@
                 <span class="jp"><?php echo $item['name-jp'];?></span>
               </h3>
               <p class="cl__tag ft-wht-1">
-                <?php 
+                <?php
                   $count2 = 1;
                   foreach ($item['tag'] as $tag):
                 ?>
@@ -79,11 +79,11 @@
                   }?>
                 <?php
                 $count2++;
-                  endforeach; 
+                  endforeach;
                 ?>
               </p>
               <p class="cl__btn btn__more">
-                <span class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>"><span>くわしく見る</span></ｓ>
+                <span class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>"><span>くわしく見る</span></span>
               </p>
             </div>
           </div>

@@ -215,6 +215,7 @@
 //   window.addEventListener('resize',addDots);
 // }
 
+document.addEventListener('DOMContentLoaded', function () {
 const mediaQuery = window.matchMedia('(max-width: 750px)');
 
 // =================================================================
@@ -235,15 +236,12 @@ if(acSpecialSlide.length > 0){
 			speed: 800,
 			perPage: number = 1,
 			perMove: number = 1,
-			//   padding: { left: '5.55%', right: '5.55%' },
 			gap: number = '6.25%',
 			arrows: boolean = arrowsValue,
 			pagination: boolean = true,
 			breakpoints: {
 				750: {
-					//   padding: { left: '5.79%', right: '5.79%' },
 					gap: number = '24px',
-					// perPage: number = 1,
 				},
 			},
 		}).mount();
@@ -253,45 +251,56 @@ if(acSpecialSlide.length > 0){
 // =================================================================
 // マガジン一覧ページ：絞り込みアコーディオン
 // =================================================================
-
 const accordionItems = document.querySelectorAll('.pg_magazine_nav_cmn');
-// const mediaQuery = window.matchMedia('(max-width: 750px)');
 
-function accordionInit(e) {
+if (accordionItems.length > 0) {
+	function accordionInit(e) {
+		accordionItems.forEach((item) => {
+		const trigger = item.querySelector('.pg_magazine_nav_cmn_label');
+		const content = item.querySelector('.pg_magazine_nav_cmn_list');
+		const checkedInput = item.querySelector('input[type="checkbox"]:checked');
 
-accordionItems.forEach((item) => {
-	const trigger = item.querySelector('.pg_magazine_nav_cmn_label');
-	const content = item.querySelector('.pg_magazine_nav_cmn_list');
+		if (!trigger || !content) return;
 
-	if (!trigger || !content) return;
+		if (e.matches) {
+			// SP時
+			if (checkedInput) {
+			item.classList.add('is-open');
+			content.style.maxHeight = content.scrollHeight + 'px';
+			} else {
+			item.classList.remove('is-open');
+			content.style.maxHeight = '0px';
+			}
 
-	if (e.matches) {
-	// 750px以下
-	content.style.maxHeight = '0px';
+			trigger.onclick = function () {
+			const isOpen = item.classList.contains('is-open');
 
-	trigger.onclick = function () {
-		const isOpen = item.classList.contains('is-open');
+			if (isOpen) {
+				content.style.maxHeight = '0px';
+				item.classList.remove('is-open');
+			} else {
+				content.style.maxHeight = content.scrollHeight + 'px';
+				item.classList.add('is-open');
+			}
+			};
 
-		if (isOpen) {
-		content.style.maxHeight = '0px';
-		item.classList.remove('is-open');
 		} else {
-		content.style.maxHeight = content.scrollHeight + 'px';
-		item.classList.add('is-open');
+			// PC時は常に開く
+			content.style.maxHeight = 'none';
+			item.classList.remove('is-open');
+			trigger.onclick = null;
 		}
-	};
-
-	} else {
-	// PC時は常に開く
-	content.style.maxHeight = 'none';
-	item.classList.remove('is-open');
-	trigger.onclick = null;
+		});
 	}
-});
-}
 
-accordionInit(mediaQuery);
-mediaQuery.addEventListener('change', accordionInit);
+	accordionInit(mediaQuery);
+
+	if (mediaQuery.addEventListener) {
+		mediaQuery.addEventListener('change', accordionInit);
+	} else {
+		mediaQuery.addListener(accordionInit);
+	}
+}
 
 
 
@@ -312,7 +321,7 @@ if(document.getElementById('ez-toc-container')){
 //share btn
 // =================================================================
 function copyURL(url) {
-	let message = document.querySelectorAll('span.copyBtn')
+	let message = document.querySelectorAll('span.copyBtn');
 	navigator.clipboard.writeText(url).then(
 		(success) => message[0].className = 'copied',
 		(error) => console.log(url + ':' + error)
@@ -344,114 +353,168 @@ if(document.getElementById('area-fvslider')){
 //slide-1
 const slider1 = document.querySelector(".slider-1 .splide");
 if(slider1) {
-	new Splide(slider1,{
-		type: string = 'loop',
-		rewind: boolean = true,
-		speed: number = 700,
-		autoWidth: boolean = false,
-		arrows: boolean = false,
-		pagination: boolean = false,
-		drag: boolean = false,
-		perPage: number = 5,
-		gap: string = '24px',
+	new Splide(slider1, {
+		type: 'loop',
+		rewind: true,
+		speed: 700,
+		autoWidth: false,
+		arrows: false,
+		pagination: false,
+		drag: false,
+		perPage: 5,
+		gap: '24px',
 		autoScroll: {
 			pauseOnHover: false,
-			pauseOnFocus: boolean = false,
+			pauseOnFocus: false,
 			speed: 0.5,
 		},
 		breakpoints: {
 			750: {
-				perPage: number = 3,
-				gap: string = '12px',
+				perPage: 3,
+				gap: '12px',
 				autoScroll: {
-					speed: number = 0.5,
+					speed: 0.5,
 				},
 			},
 		}
 	}).mount(window.splide.Extensions);
 }
+
 // =================================================================
 // area マップ開閉
 // =================================================================
-const mapAccordionItems = document.querySelectorAll('.pgarea_map_list_cmn');
+// document.addEventListener('DOMContentLoaded', function () {
+  const mapItems = document.querySelectorAll('.pgarea_map_list_cmn');
+  const mapModals = document.querySelectorAll('.map-modal-cont');
 
-// 要素がなければ処理しない
-if (mapAccordionItems.length) {
-	const mapMediaQuery = window.matchMedia('(max-width: 750px)');
+  if (!mapItems.length) return;
 
-	function closeAll() {
-	mapAccordionItems.forEach((item) => {
-		const content = item.querySelector('.pgarea_map_list_cmn_cont');
-		if (!content) return;
-		item.classList.remove('is-open');
-		content.style.maxHeight = '0px';
-	});
+//   const mediaQuery = window.matchMedia('(max-width: 750px)');
+
+  function closeAllPcAccordion() {
+    mapItems.forEach((item) => {
+      const content = item.querySelector('.pgarea_map_list_cmn_cont');
+      if (!content) return;
+      item.classList.remove('is-open');
+      content.style.maxHeight = '0px';
+    });
+  }
+
+  function openPcAccordion(item) {
+    const content = item.querySelector('.pgarea_map_list_cmn_cont');
+    if (!content) return;
+    item.classList.add('is-open');
+    content.style.maxHeight = content.scrollHeight + 'px';
+  }
+
+  function closeAllSpModals() {
+    mapModals.forEach((modal) => {
+      modal.classList.remove('is-open');
+    });
+    document.body.classList.remove('is-modal-open');
+  }
+
+function getAreaClass(element) {
+  const areaClass = Array.from(element.classList).find((className) =>
+    /^cls-(okinawa|hawaii|guam)-/.test(className)
+  );
+  return areaClass || null;
+}
+
+  function bindMapEvents() {
+    mapItems.forEach((item) => {
+      const trigger = item.querySelector('.map-modal-label, .pgarea_map_list_cmn_label');
+      const content = item.querySelector('.pgarea_map_list_cmn_cont');
+
+      if (!trigger || !content) return;
+
+      const newTrigger = trigger.cloneNode(true);
+      trigger.parentNode.replaceChild(newTrigger, trigger);
+
+      const currentTrigger = item.querySelector('.map-modal-label, .pgarea_map_list_cmn_label');
+
+      item.classList.remove('is-open');
+      content.style.maxHeight = '0px';
+
+      if (mediaQuery.matches) {
+        currentTrigger.addEventListener('click', function () {
+          const areaClass = getAreaClass(item);
+          if (!areaClass) return;
+
+          closeAllSpModals();
+
+          const targetModal = document.querySelector('.map-modal-cont.' + areaClass);
+          if (targetModal) {
+            targetModal.classList.add('is-open');
+            document.body.classList.add('is-modal-open');
+          }
+
+		  console.log(1)
+        });
+      } else {
+        item.addEventListener('mouseenter', function () {
+          openPcAccordion(item);
+        });
+
+        item.addEventListener('mouseleave', function () {
+          item.classList.remove('is-open');
+          content.style.maxHeight = '0px';
+        });
+      }
+    });
+
+    mapModals.forEach((modal) => {
+      const closeButton = modal.querySelector('.map-modal-close');
+      if (!closeButton) return;
+
+      const newCloseButton = closeButton.cloneNode(true);
+      closeButton.parentNode.replaceChild(newCloseButton, closeButton);
+
+      const currentCloseButton = modal.querySelector('.map-modal-close');
+
+      currentCloseButton.addEventListener('click', function () {
+        modal.classList.remove('is-open');
+        document.body.classList.remove('is-modal-open');
+      });
+    });
+  }
+
+  bindMapEvents();
+
+  window.addEventListener('resize', function () {
+    closeAllPcAccordion();
+    closeAllSpModals();
+    bindMapEvents();
+  });
+
+
+// =================================================================
+// area magazineスライダー
+// =================================================================
+//magazine slider
+const magazineSlide = document.querySelector(".magazine .splide");
+if(magazineSlide) {
+  new Splide(magazineSlide, {
+	type: 'loop',
+	rewind: true,
+	speed: 400,
+	autoWidth: false,
+	arrows: true,
+	pagination: false,
+	drag: false,
+	gap: '48px',
+	padding: { left: '5.55%', right: '55.55%' },
+	perPage: 1,
+	perMove: 1,
+	updateOnMove: true,
+	breakpoints: {
+		750: {
+			gap: '12px',
+			perPage: 1,
+			padding: { left: '2.89%', right: '19.8%' },
+		},
 	}
-
-	function setOpen(item) {
-	const content = item.querySelector('.pgarea_map_list_cmn_cont');
-	if (!content) return;
-	item.classList.add('is-open');
-	content.style.maxHeight = content.scrollHeight + 'px';
-	}
-
-	function bindAccordion() {
-	mapAccordionItems.forEach((item) => {
-		const trigger = item.querySelector('.pgarea_map_list_cmn_label');
-		const content = item.querySelector('.pgarea_map_list_cmn_cont');
-
-		if (!trigger || !content) return;
-
-		// いったんイベント解除用に複製
-		const newTrigger = trigger.cloneNode(true);
-		trigger.parentNode.replaceChild(newTrigger, trigger);
-
-		// 再取得
-		const currentTrigger = item.querySelector('.pgarea_map_list_cmn_label');
-
-		// 初期状態
-		item.classList.remove('is-open');
-		content.style.maxHeight = '0px';
-
-		if (mapMediaQuery.matches) {
-		// SP: click
-		currentTrigger.addEventListener('click', function () {
-			const isOpen = item.classList.contains('is-open');
-
-			if (isOpen) {
-			item.classList.remove('is-open');
-			content.style.maxHeight = '0px';
-			} else {
-			item.classList.add('is-open');
-			content.style.maxHeight = content.scrollHeight + 'px';
-			}
-		});
-		} else {
-		// PC: hover
-		item.addEventListener('mouseenter', function () {
-			setOpen(item);
-		});
-
-		item.addEventListener('mouseleave', function () {
-			item.classList.remove('is-open');
-			content.style.maxHeight = '0px';
-		});
-		}
-	});
-	}
-
-	bindAccordion();
-
-	window.addEventListener('resize', function () {
-	bindAccordion();
-
-	mapAccordionItems.forEach((item) => {
-		const content = item.querySelector('.pgarea_map_list_cmn_cont');
-		if (item.classList.contains('is-open') && content) {
-		content.style.maxHeight = content.scrollHeight + 'px';
-		}
-	});
-	});
+}).mount();
 }
 
 // =================================================================
@@ -500,34 +563,4 @@ if (sliders.length) {
 	mediaQuery.addEventListener('change', initSlider);
 }
 
-
-// =================================================================
-// area magazineスライダー
-// =================================================================
-//magazine slider
-const magazineSlide = document.querySelector(".magazine .splide");
-if(magazineSlide) {
-  new Splide(magazineSlide,{
-    type: string = 'loop',
-    rewind: boolean = true,
-    speed: number = 400,
-    autoWidth: boolean = false,
-    arrows: boolean = true,
-    pagination: boolean = false,
-    drag: boolean = false,
-    gap: string = '48px',
-    padding: { left: '5.55%', right: '24.44%' },
-    padding: { left: '5.55%', right: '55.55%' },
-    perPage: number = 1,
-    // perPage: number = 2,
-    perMove: number = 1,
-    updateOnMove: true,
-    breakpoints: {
-      750: {
-      gap: string = '12px',
-      perPage: number = 1,
-      padding: { left: '2.89%', right: '19.8%' },
-      },
-    }
-  }).mount();
-}
+});

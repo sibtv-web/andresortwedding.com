@@ -124,7 +124,7 @@ $termsCat = get_the_terms($post->ID, 'magazine_category');
         <a href="<?php echo home_url();?>/#special">記事一覧に戻る</a>
       </div> -->
       <div class="magazine__btn btn__more single_magazine-container-backBtn">
-        <a class="btn__more-3-b" href="<?php echo esc_url(home_url());?>/wedding-magazine/"><span>記事一覧に戻る</span></a>
+        <a class="btn__more-3-b" href="<?php echo esc_url(home_url());?>/article/"><span>記事一覧に戻る</span></a>
       </div>
     </div>
   </section>

@@ -2,7 +2,7 @@
   <div class="magazine__inner section__inner">
     <div class="magazine__title section__title fade-anime" data-fade="fade-up">
       <p class="en ft-blu-1">Magazine</p>
-      <h2 class="jp">沖縄<br class="sp">リゾートウェディング マガジン</h2>
+      <h2 class="jp">沖縄<br class="sp">お役立ち記事</h2>
     </div>
     <div class="magazine__slider splide">
       <div class="splide__track">

@@ -14,7 +14,7 @@
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_ttl cls-grn"><span>DAY <span>1</span></span><strong>到着・沖縄を満喫</strong></p>
             <div class="pgarea_course_cmn_wrap">
-              <img class="pgarea_course_cmn_img" src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_01.jpg')); ?>" alt="到着・沖縄を満喫">
+              <div class="pgarea_course_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_01.jpg')); ?>" alt="到着・沖縄を満喫"></div>
               <div class="pgarea_course_cmn_detail">
                 <p class="pgarea_course_cmn_detail_txt">
                   那覇空港に到着したらホテルへチェックイン。<br>
@@ -33,7 +33,7 @@
             <p class="pgarea_course_cmn_ttl cls-blu"><span>DAY <span>2</span></span><strong>ウェディング当日</strong></p>
             <p class="pgarea_course_cmn_subttl"><span>8:00~11:00</span><strong>お支度</strong></p>
             <div class="pgarea_course_cmn_wrap">
-              <img class="pgarea_course_cmn_img" src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_02.jpg')); ?>" alt="ウェディング当日">
+              <div class="pgarea_course_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_02.jpg')); ?>" alt="ウェディング当日"></div>
               <div class="pgarea_course_cmn_detail">
                 <dl class="pgarea_course_cmn_detail_time">
                   <dt>8:00~10:00</dt>
@@ -57,7 +57,7 @@
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_subttl"><span>11:00~12:30</span><strong>挙式</strong></p>
             <div class="pgarea_course_cmn_wrap">
-              <img class="pgarea_course_cmn_img" src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_03.jpg')); ?>" alt="挙式">
+              <div class="pgarea_course_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_03.jpg')); ?>" alt="挙式"></div>
               <div class="pgarea_course_cmn_detail">
                 <dl class="pgarea_course_cmn_detail_time">
                   <dt>11:00~11:30</dt>
@@ -83,7 +83,7 @@
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_subttl"><span>12:30~16:00</span><strong>アフターパーティ</strong></p>
             <div class="pgarea_course_cmn_wrap">
-              <img class="pgarea_course_cmn_img" src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_04.jpg')); ?>" alt="アフターパーティ">
+              <div class="pgarea_course_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_04.jpg')); ?>" alt="アフターパーティ"></div>
               <div class="pgarea_course_cmn_detail">
                 <dl class="pgarea_course_cmn_detail_time">
                   <dt>12:30~14:00</dt>
@@ -107,7 +107,7 @@
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_subttl"><span>18:00~</span><strong>余韻を楽しむリラックスのひととき</strong></p>
             <div class="pgarea_course_cmn_wrap">
-              <img class="pgarea_course_cmn_img" src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_05.jpg')); ?>" alt="余韻を楽しむリラックスのひととき">
+              <div class="pgarea_course_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_05.jpg')); ?>" alt="余韻を楽しむリラックスのひととき"></div>
               <div class="pgarea_course_cmn_detail">
                 <div class="pgarea_course_cmn_detail_check">挙式のあとも楽しい時間が続く。余韻に浸れるのがリゾートウェディングの魅力！</div>
                 <p class="pgarea_course_cmn_detail_txt cls-s">
@@ -122,7 +122,7 @@
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_ttl cls-org"><span>DAY <span>3~</span></span><strong>ハネムーン＆沖縄観光</strong></p>
             <div class="pgarea_course_cmn_wrap">
-              <img class="pgarea_course_cmn_img" src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_06.jpg')); ?>" alt="ハネムーン＆沖縄観光">
+              <div class="pgarea_course_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_06.jpg')); ?>" alt="ハネムーン＆沖縄観光"></div>
               <div class="pgarea_course_cmn_detail">
                 <p class="pgarea_course_cmn_detail_txt">
                   レンタカーで観光へ。<br>
@@ -143,7 +143,7 @@
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_ttl cls-pnk"><span>LAST DAY</span><strong>旅の締めくくり</strong></p>
             <div class="pgarea_course_cmn_wrap">
-              <img class="pgarea_course_cmn_img" src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_07.jpg')); ?>" alt="旅の締めくくり">
+              <div class="pgarea_course_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/course_img_07.jpg')); ?>" alt="旅の締めくくり"></div>
               <div class="pgarea_course_cmn_detail">
                 <p class="pgarea_course_cmn_detail_txt">
                   チェックアウト後、那覇・国際通りへ。お土産選びや街歩きを楽しみながら、沖縄の空気を最後まで満喫します。空港近くの瀬長島に立ち寄り、海を眺めながらランチを楽しむのもおすすめ。海を望むロケーションで、旅の締めくくりにふさわしい時間を過ごせます。<br><br>
