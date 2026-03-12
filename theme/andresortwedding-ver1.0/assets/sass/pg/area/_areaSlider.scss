@@ -1,0 +1,119 @@
+@use "../../lib/mixin" as *;
+@use "../../lib/color" as *;
+
+.pgarea_kv {
+	// height: 126vw;
+	position: relative;
+	height: 41.4rem;
+	overflow: hidden;
+	width: 100%;
+
+	@include bp(m) {
+		height: 60.0rem;
+		// height: calc(100vh - 5.43vw);
+		max-height: none;
+		padding-top: 0;
+	}
+
+	&_container {
+		position: relative;
+		height: 100%;
+	}
+
+	&_inner {
+		width: 100%;
+		height: 100%;
+
+		@include bp(m) {
+			height: 100%;
+		}
+
+		img {
+			@include bp(m) {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	&_head {
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		transform: translateY(-50%);
+		color: $color_wht-1;
+		width: 100%;
+		text-align: center;
+		&_catch {
+			font-size: clamp(0px, 1.6rem, 16px);
+			line-height: 1.5em;
+			letter-spacing: 0.05em;
+			font-weight: 500;
+
+			@include bp(m) {
+				justify-content: center;
+				padding: 1.6rem;
+				font-size: clamp(12px, 2.8rem, 28px);
+			}
+		}
+		&_ttl {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			margin-top: 4.0rem;
+			@include bp(m) {
+				margin-top: 1.6rem;
+			}
+			span {
+				display: block;
+			}
+			.en {
+				font-size: clamp(0px, 17.39vw, 72px);
+				letter-spacing: 0;
+				line-height: 1;
+				@include ft_Optima;
+
+				@include bp(m) {
+					font-size: clamp(0px, 18.0rem, 180px);
+				}
+			}
+
+			.jp {
+				display: inline-block;
+				font-size: clamp(0px, 4.83vw, 20px);
+				line-height: 2.1em;
+				margin-left: 12px;
+
+				@include bp(m) {
+					font-size: clamp(0px, 4.8rem, 48px);
+					margin-left: 16px;
+				}
+			}
+		}
+		&_tag {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 1.2rem;
+			margin-top: 1.2rem;
+			@include bp(m) {
+				gap: 2.4rem;
+				margin-top: 2.4rem;
+			}
+			span {
+				font-size: clamp(0px, 1.4rem, 14px);
+				line-height: 1em;
+				letter-spacing: 0.05em;
+				font-weight: 400;
+				filter: drop-shadow(0 0 1.0rem rgba(#000, 0.25));
+
+				@include bp(m) {
+					font-size: clamp(12px, 2.0rem, 20px);
+				}
+			}
+
+		}
+	}
+
+}

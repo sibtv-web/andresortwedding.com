@@ -15,6 +15,7 @@
 @use "glb/header";
 @use "glb/nav";
 @use "glb/footer";
+@use "glb/reco";
 
 @use "idx/kv";
 @use "idx/slider";
@@ -25,3 +26,10 @@
 @use "idx/faq";
 @use "idx/saleinformation";
 @use "idx/magazine";
+
+@use "pg/area/areaKv";
+
+@use "pg/wedding-magazine";
+
+@use "single/single";
+@use "single/toc";

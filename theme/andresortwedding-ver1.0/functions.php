@@ -60,7 +60,7 @@ function remove_menus() {
   // remove_menu_page( 'edit.php' );                   // 投稿
   // remove_menu_page( 'upload.php' );                 // メディア
   // remove_menu_page( 'edit.php?post_type=page' );    // 固定ページ
-  remove_menu_page( 'edit-comments.php' );          // コメント
+  // remove_menu_page( 'edit-comments.php' );          // コメント
   // remove_menu_page( 'themes.php' );                 // 外観
   // remove_menu_page( 'plugins.php' );                // プラグイン
   // remove_menu_page( 'users.php' );                  // ユーザー
@@ -87,16 +87,16 @@ add_filter('document_title_separator', function($sep) {
   return '|';
 });
 
-// タイトルタグ変更
-add_filter('pre_get_document_title', function($title) {
-  if (is_home() || is_front_page()) {
-    return $title;
-  }
-  else {
-    return get_the_title() . "｜＆ Resort Wedding";
-  }
-  return $title;
-});
+// // タイトルタグ変更
+// add_filter('pre_get_document_title', function($title) {
+//   if (is_home() || is_front_page()) {
+//     return $title;
+//   }
+//   else {
+//     return get_the_title() . "｜＆ Resort Wedding";
+//   }
+//   return $title;
+// });
 
 // 記事全体の自動整形の無効化
 // remove_filter( 'the_content', 'wpautop' );
@@ -115,7 +115,7 @@ add_filter('pre_get_document_title', function($title) {
 // }
 // function wp_link_pages_args_prevnext_add($args) {
 //   global $page, $numpages, $more, $pagenow;
-//   if (!$args['next_or_number'] == 'next_and_number') 
+//   if (!$args['next_or_number'] == 'next_and_number')
 //     return $args;
 //     $args['next_or_number'] = 'number';
 //     if (!$more)
@@ -142,3 +142,30 @@ function custom_auto_post_slug( $slug, $post_ID, $post_status, $post_type ) {
   return $slug;
 }
 add_filter( 'wp_unique_post_slug', 'custom_auto_post_slug', 10, 4 );
+
+// 絞り込み
+function build_filter_remove_url($taxonomy, $term_id, $selected_categories, $selected_tags) {
+  $new_categories = is_array($selected_categories) ? $selected_categories : [];
+  $new_tags = is_array($selected_tags) ? $selected_tags : [];
+
+  if ($taxonomy === 'category') {
+    $new_categories = array_values(array_diff($new_categories, [$term_id]));
+  }
+
+  if ($taxonomy === 'tag') {
+    $new_tags = array_values(array_diff($new_tags, [$term_id]));
+  }
+
+  $base_url = get_post_type_archive_link('wedding-magazine');
+  $params = [];
+
+  if (!empty($new_categories)) {
+    $params['filter_category'] = $new_categories;
+  }
+
+  if (!empty($new_tags)) {
+    $params['filter_tag'] = $new_tags;
+  }
+
+  return !empty($params) ? add_query_arg($params, $base_url) : $base_url;
+}

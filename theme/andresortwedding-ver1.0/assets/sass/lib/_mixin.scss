@@ -51,6 +51,7 @@
 $breakpoints: (
   "m": "screen and (min-width: 750px)",
   "l": "screen and (min-width: 750px) and (max-width: 1280px)",
+  "b": "screen and (min-width: 1440px)",
 );
 @mixin bp($breakpoint: m) {
   @media #{map.get($breakpoints, $breakpoint)} {
@@ -58,6 +59,11 @@ $breakpoints: (
   }
 }
 @mixin bp($breakpoint: l) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin bp($breakpoint: b) {
   @media #{map.get($breakpoints, $breakpoint)} {
     @content;
   }
