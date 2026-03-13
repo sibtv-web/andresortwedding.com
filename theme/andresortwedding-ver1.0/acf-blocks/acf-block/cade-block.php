@@ -53,6 +53,20 @@
         </div>
       <?php endif; ?>
       <div class="wp-acf-contents-txt <?php echo $imgClass;?>">
+        <?php if (get_field('cade-chapel')): ?>
+          <div class="wp-acf-cade-chapel wp-acf-cade-item">
+            <p>
+              <?php echo nl2br(get_field('cade-chapel')); ?>
+            </p>
+          </div>
+        <?php endif; ?>
+        <?php if (get_field('cade-feature')): ?>
+          <div class="wp-acf-cade-feature wp-acf-cade-item">
+            <p>
+              <?php echo nl2br(get_field('cade-feature')); ?>
+            </p>
+          </div>
+        <?php endif; ?>
         <?php if (get_field('cade-price')): ?>
           <div class="wp-acf-cade-price wp-acf-cade-item">
             <p>
@@ -82,12 +96,38 @@
           </div>
         <?php endif; ?>
         <?php if (get_field('cade-link')): ?>
-          <div class="wp-acf-cade-link wp-acf-cade-item">
+          <!-- <div class="wp-acf-cade-link wp-acf-cade-item">
             <a href="<?php the_field('cade-link'); ?>" target="_blank">
               <?php the_field('cade-link'); ?>
             </a>
+          </div> -->
+        <?php endif; ?>
+
+       <?php
+        $links = get_field('cade-links');
+        ?>
+        <?php if (!empty($links['cade-links-cmn'])): ?>
+          <?php foreach ($links['cade-links-cmn'] as $item): ?>
+            <?php if (!empty($item['cade-links-cmn-url'])): ?>
+              <div class="wp-acf-cade-link wp-acf-cade-item">
+                <a href="<?php echo esc_url($item['cade-links-cmn-url']); ?>" target="_blank" rel="noopener noreferrer">
+                  <?php echo !empty($item['cade-links-cmn-txt'])
+                    ? esc_html($item['cade-links-cmn-txt'])
+                    : esc_html($item['cade-links-cmn-url']); ?>
+                </a>
+              </div>
+            <?php endif; ?>
+          <?php endforeach; ?>
+        <?php endif; ?>
+
+        <?php if (get_field('cade-company')): ?>
+          <div class="wp-acf-cade-company wp-acf-cade-item">
+            <p>
+              <?php echo nl2br(get_field('cade-company')); ?>
+            </p>
           </div>
         <?php endif; ?>
+
         <?php
           $group = get_field('cade-free');
           if ($group['cade-free-title']):

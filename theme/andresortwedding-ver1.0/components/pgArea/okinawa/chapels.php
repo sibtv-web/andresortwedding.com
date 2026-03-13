@@ -8,7 +8,7 @@
     <div class="pgarea_chapels_cont">
       <h3 class="pgarea_chapels_cont_ttl">沖縄本島</h3>
       <ul class="pgarea_chapels_list cls-big">
-        <li class="pgarea_chapels_cmn">
+        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
           <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_01.jpg')); ?>" alt="ザ・ギノザリゾート美らの教会"></div>
           <span class="pgarea_chapels_cmn_tag cls-grn">中部エリア</span>
           <h4 class="pgarea_chapels_cmn_name">ザ・ギノザリゾート美らの教会</h4>
@@ -26,7 +26,7 @@
             <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
-        <li class="pgarea_chapels_cmn">
+        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
           <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_02.jpg')); ?>" alt="瀬良垣島教会"></div>
           <span class="pgarea_chapels_cmn_tag cls-grn">中部エリア</span>
           <h4 class="pgarea_chapels_cmn_name">瀬良垣島教会</h4>
@@ -48,7 +48,7 @@
       <div class="pgarea_chapels_slider splide js-chapels-slider">
         <div class="splide__track">
           <ul class="pgarea_chapels_list splide__list cls-slider">
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_03.jpg')); ?>" alt="白の教会"></div>
               <span class="pgarea_chapels_cmn_tag cls-blu">北部エリア</span>
               <h4 class="pgarea_chapels_cmn_name">白の教会</h4>
@@ -67,7 +67,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_04.jpg')); ?>" alt="ザ・ビーチチャペル"></div>
               <span class="pgarea_chapels_cmn_tag cls-pink">南部エリア</span>
               <h4 class="pgarea_chapels_cmn_name">ザ・ビーチチャペル</h4>
@@ -86,7 +86,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_05.jpg')); ?>" alt="ザ・ヨミタンリゾート アクアグレイス・チャペル"></div>
               <span class="pgarea_chapels_cmn_tag cls-grn">中部エリア</span>
               <h4 class="pgarea_chapels_cmn_name">ザ・ヨミタンリゾート <br>アクアグレイス・チャペル</h4>
@@ -115,12 +115,12 @@
       <div class="pgarea_chapels_slider splide js-chapels-slider">
         <div class="splide__track">
           <ul class="pgarea_chapels_list splide__list cls-slider">
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_06.jpg')); ?>" alt="アイネス ヴィラ ノッツェ沖縄"></div>
               <span class="pgarea_chapels_cmn_tag cls-blu">北部エリア</span>
               <h4 class="pgarea_chapels_cmn_name">アイネス ヴィラ ノッツェ沖縄</h4>
               <p class="pgarea_chapels_cmn_desc">全面ガラス張りのオーシャンフロントチャペル。<br>3700坪の広大な敷地にチャペルや新郎新婦専用のヴィラがあり、贅沢なウェディングステイが楽しめます。</p>
-              <small class="pgarea_chapels_cmn_comp">Copyright © KURAUDIA COSTUME SERVICE. </small>
+              <small class="pgarea_chapels_cmn_comp">© KURAUDIA COSTUME SERVICE. </small>
 
               <div class="pgarea_chapels_cmn_tb">
                 <dl><dt>収容人数</dt><dd>2〜40名</dd></dl>
@@ -134,7 +134,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_07.jpg')); ?>" alt="サザンチャペル キラナリゾート沖縄"></div>
               <span class="pgarea_chapels_cmn_tag cls-pink">南部エリア</span>
               <h4 class="pgarea_chapels_cmn_name">サザンチャペル キラナリゾート沖縄</h4>
@@ -153,7 +153,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_08.jpg')); ?>" alt="ラソール シー リゾート シエール教会"></div>
               <span class="pgarea_chapels_cmn_tag cls-grn">中部エリア</span>
               <h4 class="pgarea_chapels_cmn_name">ラソール シー リゾート シエール教会</h4>
@@ -185,7 +185,7 @@
       <div class="pgarea_chapels_cont_line"></div>
       <h3 class="pgarea_chapels_cont_ttl">沖縄離島</h3>
       <ul class="pgarea_chapels_list">
-        <li class="pgarea_chapels_cmn">
+        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
           <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_09.jpg')); ?>" alt="宮古島チャペル"></div>
           <h4 class="pgarea_chapels_cmn_name">宮古島チャペル</h4>
           <p class="pgarea_chapels_cmn_desc">「ヒルトン沖縄宮古島リゾート」の最上階。<br>世界有数の美しさを誇る宮古ブルーの海と、雄大な伊良部大橋を一望する天空のチャペルです。</p>
@@ -202,7 +202,7 @@
             <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
-        <li class="pgarea_chapels_cmn">
+        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
           <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_10.jpg')); ?>" alt="アラマンダ チャペル"></div>
           <h4 class="pgarea_chapels_cmn_name">アラマンダ チャペル</h4>
           <p class="pgarea_chapels_cmn_desc">世界屈指の透明度を誇る宮古島の海を一望する、高台の独立型チャペル。ラグーンや海を望むレストランで、プライベートな空間を楽しめます。</p>
@@ -219,7 +219,7 @@
             <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
-        <li class="pgarea_chapels_cmn">
+        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
           <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_11.jpg')); ?>" alt="クルデスール・チャペル"></div>
           <h4 class="pgarea_chapels_cmn_name">クルデスール・チャペル</h4>
           <p class="pgarea_chapels_cmn_desc">日本最南端に位置する独立型チャペル。<br>国内屈指のラグジュアリーリゾート内にあり、壮大な自然とロマンチックな時間を過ごせます。</p>

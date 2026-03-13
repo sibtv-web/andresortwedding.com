@@ -7,7 +7,7 @@
 
     <div class="pgarea_chapels_cont">
       <ul class="pgarea_chapels_list cls-big">
-        <li class="pgarea_chapels_cmn">
+        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
           <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/chapels_img_01.jpg')); ?>" alt="ザ・モアナチャペル"></div>
           <span class="pgarea_chapels_cmn_tag cls-blu">ワイキキエリア</span>
           <h4 class="pgarea_chapels_cmn_name">ザ・モアナチャペル</h4>
@@ -25,11 +25,11 @@
             <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
-        <li class="pgarea_chapels_cmn">
+        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
           <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/chapels_img_02.jpg')); ?>" alt="ザ・テラスバイ・ザ・シー"></div>
           <span class="pgarea_chapels_cmn_tag cls-blu">ワイキキエリア</span>
           <h4 class="pgarea_chapels_cmn_name">ザ・テラスバイ・ザ・シー</h4>
-          <p class="pgarea_chapels_cmn_desc">ハワイのビーチとダイヤモンドヘッドを望む2つのチャペル。コアウッドを使用した温かみのあるカウイチャペルと、珊瑚からできたコーラルストーンの柱が美しい洗練されたナウパカチャペル。<br>パーティルームは、壁一面が海に面した開放的な空間で、感動的な思い出を作ることができます。</p>
+          <p class="pgarea_chapels_cmn_desc">ハワイのビーチとダイヤモンドヘッドを望む2つのチャペル。コアウッドを使用した温かみのあるカウイチャペルと、珊瑚からできたコーラルストーンの柱が美しい洗練されたナウパカチャペルです。<br>パーティルームは、壁一面が海に面した開放的な空間で、感動的な思い出を作ることができます。</p>
           <small class="pgarea_chapels_cmn_comp">© Arluis Wedding Co., Ltd. </small>
 
           <div class="pgarea_chapels_cmn_tb">
@@ -47,7 +47,7 @@
       <div class="pgarea_chapels_slider splide js-chapels-slider">
         <div class="splide__track">
           <ul class="pgarea_chapels_list splide__list cls-slider">
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/chapels_img_03.jpg')); ?>" alt="ザ・ダイアモンドヘッドチャペル"></div>
               <span class="pgarea_chapels_cmn_tag cls-blu">ワイキキエリア</span>
               <h4 class="pgarea_chapels_cmn_name">ザ・ダイアモンドヘッドチャペル</h4>
@@ -66,7 +66,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/chapels_img_04.jpg')); ?>" alt="コオリナ・チャペル・プレイス・オブ・ジョイ"></div>
               <span class="pgarea_chapels_cmn_tag cls-org">コオリナエリア</span>
               <h4 class="pgarea_chapels_cmn_name">コオリナ・チャペル・プレイス・オブ・ジョイ</h4>
@@ -85,7 +85,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/chapels_img_05.jpg')); ?>" alt="ザ・マカナチャペル"></div>
               <span class="pgarea_chapels_cmn_tag cls-blu">ワイキキエリア</span>
               <h4 class="pgarea_chapels_cmn_name">ザ・マカナチャペル</h4>
@@ -114,7 +114,7 @@
       <div class="pgarea_chapels_slider splide js-chapels-slider">
         <div class="splide__track">
           <ul class="pgarea_chapels_list splide__list cls-slider">
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/chapels_img_06.jpg')); ?>" alt="アイネス ヴィラノッツェ ワイキキレイア"></div>
               <span class="pgarea_chapels_cmn_tag cls-blu">ワイキキエリア</span>
               <h4 class="pgarea_chapels_cmn_name">アイネス ヴィラノッツェ ワイキキレイア</h4>
@@ -133,7 +133,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/chapels_img_07.jpg')); ?>" alt="キャルバリー・バイ・ザ・シー教会"></div>
               <span class="pgarea_chapels_cmn_tag cls-pink">カハラエリア</span>
               <h4 class="pgarea_chapels_cmn_name">キャルバリー・バイ・ザ・シー教会</h4>
@@ -152,7 +152,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/chapels_img_08.jpg')); ?>" alt="セント･カタリナ･シーサイドチャペル"></div>
               <span class="pgarea_chapels_cmn_tag cls-grn">東海岸エリア</span>
               <h4 class="pgarea_chapels_cmn_name">セント･カタリナ･シーサイドチャペル</h4>

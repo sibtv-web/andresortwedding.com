@@ -16,8 +16,8 @@
 			@include bp(m) {
 				// width: 62.84%;
 				margin-top: 0;
-				max-width: 450px;
-				width: 60%;
+				max-width: 490px;
+				width: 65%;
 			}
 
 			&.flow-1 {
@@ -148,6 +148,12 @@
 			}
 		}
 
+		&-chapel::before {
+			background-image: url(../../assets/images/ico/article/ico_couple.png);
+		}
+		&-feature::before {
+			background-image: url(../../assets/images/ico/article/ico_rings.png);
+		}
 		&-price::before {
 			background-image: url(../../assets/images/ico/article/ico_price.png);
 		}
@@ -169,6 +175,9 @@
 
 		&-link::before {
 			background-image: url(../../assets/images/ico/article/ico_clip.png);
+		}
+		&-company::before {
+			background-image: url(../../assets/images/ico/article/ico_company.png);
 		}
 
 		&-free {

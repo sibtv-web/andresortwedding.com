@@ -7,7 +7,7 @@
       </picture>
 
       <ul class="pgarea_map_list">
-        <li class="pgarea_map_list_cmn cls-hawaii-1 bg-org">
+        <li class="pgarea_map_list_cmn cls-hawaii-1 bg-ylw">
           <div class="pgarea_map_list_cmn_label map-modal-label">コオリナエリア</div>
           <div class="pgarea_map_list_cmn_cont">
             <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/map_img_01.jpg')); ?>" alt="背景1">
@@ -57,7 +57,7 @@
   </div>
 
   <ul class="sp">
-      <li class="pgarea_map_modal cls-hawaii-1 bg-org map-modal-cont">
+      <li class="pgarea_map_modal cls-hawaii-1 bg-ylw map-modal-cont">
         <div class="pgarea_map_modal_label map-modal-close">コオリナエリア</div>
         <div class="pgarea_map_modal_cont">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/map_img_01.jpg')); ?>" alt="背景1">

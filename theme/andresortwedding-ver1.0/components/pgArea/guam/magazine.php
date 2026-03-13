@@ -2,7 +2,7 @@
   <div class="magazine__inner section__inner">
     <div class="magazine__title section__title fade-anime" data-fade="fade-up">
       <p class="en ft-blu-1">Magazine</p>
-      <h2 class="jp">グアム<br class="sp">お役立ち記事</h2>
+      <h2 class="jp">グアム お役立ち記事</h2>
     </div>
     <div class="magazine__slider splide">
       <div class="splide__track">
@@ -37,7 +37,7 @@
           <button class="splide__arrow splide__arrow--next"></button>
         </div>
         <p class="magazine__btn btn__more">
-          <a class="btn__more-2" href="<?php echo esc_url(home_url());?>"><span>すべて見る</span></a>
+          <a class="btn__more-2" href="<?php echo esc_url(home_url());?>/article/"><span>すべて見る</span></a>
         </p>
       </div>
     </div>

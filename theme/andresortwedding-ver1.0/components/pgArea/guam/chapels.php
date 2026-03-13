@@ -7,7 +7,7 @@
 
     <div class="pgarea_chapels_cont">
       <ul class="pgarea_chapels_list cls-big">
-        <li class="pgarea_chapels_cmn">
+        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
           <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/guam/chapels_img_01.jpg')); ?>" alt="ジュエル・バイ・ザ・シー"></div>
           <h4 class="pgarea_chapels_cmn_name">ジュエル・バイ・ザ・シー</h4>
           <p class="pgarea_chapels_cmn_desc">グアムで最も海に近いオンザビーチチャペル。2025年2月にリニューアルし、ピュアホワイトのバージンロードが誕生しました。チャペルの扉を開けると、目の前には透明度抜群の海。<br><br>挙式後は「ビーチガーデン」でゲストと笑顔あふれる時間を過ごせます。</p>
@@ -24,7 +24,7 @@
             <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
-        <li class="pgarea_chapels_cmn">
+        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
           <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/guam/chapels_img_02.jpg')); ?>" alt="プレミア スカイ ウエディング"></div>
           <h4 class="pgarea_chapels_cmn_name">プレミア スカイ ウエディング</h4>
           <p class="pgarea_chapels_cmn_desc">「ザ ツバキ タワー」最上階に佇む、オープンエアのウェディング空間。タモン湾と空を一望する絶景を独占できます。<br><br>まるで青空の中に立っているような感覚で、特別な誓いの時を迎えられます。おふたり専用のオリジナルロゴが飾られ、世界にひとつだけの結婚式を。</p>
@@ -45,7 +45,7 @@
       <div class="pgarea_chapels_slider splide js-chapels-slider">
         <div class="splide__track">
           <ul class="pgarea_chapels_list splide__list cls-slider">
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/guam/chapels_img_03.jpg')); ?>" alt="クリスタルチャペル"></div>
               <h4 class="pgarea_chapels_cmn_name">クリスタルチャペル</h4>
               <p class="pgarea_chapels_cmn_desc">タモン湾を見渡す高台に佇む、グアム最長のバージンロードを誇る大聖堂が特徴。<br>祭壇には、壮大なクリスタルクロスが輝きます。</p>
@@ -63,7 +63,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/guam/chapels_img_04.jpg')); ?>" alt="デュシタニ ヴィラ アズール"></div>
               <h4 class="pgarea_chapels_cmn_name">デュシタニ ヴィラ アズール</h4>
               <p class="pgarea_chapels_cmn_desc">タモンの中心に位置するホテルの屋上に位置する、ガーデンテラス。広大なガーデンテラスの奥には、鮮やかなグアムのビーチが広がっており、プライベートなヴィラウエディングが叶います。</p>
@@ -81,7 +81,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/guam/chapels_img_05.jpg')); ?>" alt="ホワイトアロウチャペル"></div>
               <h4 class="pgarea_chapels_cmn_name">ホワイトアロウチャペル</h4>
               <p class="pgarea_chapels_cmn_desc">海と空に包まれる絶景チャペル。高台に位置するガラスの祭壇からは、青い海を一望できます。<br>バージンロードを進むと、水平線まで広がるブルーの世界が。白い羽根が舞うオリジナルセレモニーも人気です。</p>
@@ -109,7 +109,7 @@
       <div class="pgarea_chapels_slider splide js-chapels-slider">
         <div class="splide__track">
           <ul class="pgarea_chapels_list splide__list cls-slider">
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/guam/chapels_img_06.jpg')); ?>" alt="ブルーアステール"></div>
               <h4 class="pgarea_chapels_cmn_name">ブルーアステール</h4>
               <p class="pgarea_chapels_cmn_desc">全方面ガラス張りの、白亜の独立型チャペル。白砂ビーチの目の前という抜群のロケーションが魅力です。<br>大理石のバージンロードを歩むと、天井のクリスタルがおふたりを祝福します。</p>
@@ -127,7 +127,7 @@
               </div>
             </li>
 
-            <li class="pgarea_chapels_cmn splide__slide">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/guam/chapels_img_07.jpg')); ?>" alt="アクアシンフォニーチャペル"></div>
               <h4 class="pgarea_chapels_cmn_name">アクアシンフォニーチャペル</h4>
               <p class="pgarea_chapels_cmn_desc">オーシャンフロントの絶好の立地。天井は古典的なドーム型に設計されたクラシカルなチャペルです。<br>美しいパイプオルガンの音色が響き、温かみのある挙式が叶います。</p>

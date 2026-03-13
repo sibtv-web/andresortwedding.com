@@ -6,7 +6,9 @@ $termsCat = get_the_terms($post->ID, 'magazine_category');
 <article id="single_magazine">
   <section class="single_magazine">
     <div class="single_magazine-thumbnail">
-      <img src="<?php the_post_thumbnail_url();?>">
+      <div class="single_magazine-thumbnail_wrap">
+        <img src="<?php the_post_thumbnail_url();?>">
+      </div>
     </div>
     <p class="single_magazine-thumbnail-caption">
       <?php

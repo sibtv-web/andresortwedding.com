@@ -18,7 +18,7 @@ function setup() {
   add_theme_support( 'menus' );
   add_theme_support( 'custom-logo' );
   add_theme_support( 'customize-selective-refresh-widgets' );
-  add_theme_support( 'editor-color-palette' );
+  // add_theme_support( 'editor-color-palette' );
 
   // wp_head関数の出力データ削除
   remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
@@ -172,9 +172,8 @@ function build_filter_remove_url($taxonomy, $term_id, $selected_categories, $sel
 
 //ACF ブロックエディター追加
 // if ( function_exists( 'acf_custom_block_add_1' ) && function_exists( 'acf_custom_block_add_2' ) ) {
-if ( function_exists( 'acf_custom_block_add_1' )) {
+if ( function_exists( 'acf_register_block_type' ) ) {
 	add_action( 'acf/init', 'acf_custom_block_add_1' );
-	// add_action( 'acf/init', 'acf_custom_block_add_2' );
 }
 add_filter('block_categories_all', function ($categories) {
   $new_category = [

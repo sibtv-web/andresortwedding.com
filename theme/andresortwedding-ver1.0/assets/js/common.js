@@ -50,40 +50,40 @@ if(toggleItem.length > 0) {
 window.addEventListener('load',loadFunction);
 window.addEventListener('resize',loadFunction);
 
-// smooth scroll
-const headerHeight = nav ? nav.offsetHeight : 0;
-const urlHash = window.location.hash;
-if (urlHash) {
-  window.addEventListener('load', () => {
-    window.scrollTo(0, 0);
-    setTimeout(() => {
-      const target = document.querySelector(urlHash);
-      if (!target) return;
-      const position = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-      window.scrollTo({
-        top: position,
-        behavior: 'auto'
-      });
-    }, 0);
-  });
-}
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const href = this.getAttribute('href');
-    const target = href === '#' || href === '' 
-      ? document.documentElement
-      : document.querySelector(href);
-    if (!target) return;
-    const position = target.getBoundingClientRect().top + window.scrollY;
-    const headHeight = document.querySelector('#nav')?.offsetHeight || 0;
-    const targetPosition = position - headHeight;
-    window.scrollTo({
-      top: targetPosition,
-      behavior: 'smooth'
-    });
-  });
-});
+// // smooth scroll
+// const headerHeight = nav ? nav.offsetHeight : 0;
+// const urlHash = window.location.hash;
+// if (urlHash) {
+//   window.addEventListener('load', () => {
+//     window.scrollTo(0, 0);
+//     setTimeout(() => {
+//       const target = document.querySelector(urlHash);
+//       if (!target) return;
+//       const position = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+//       window.scrollTo({
+//         top: position,
+//         behavior: 'auto'
+//       });
+//     }, 0);
+//   });
+// }
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const href = this.getAttribute('href');
+//     const target = href === '#' || href === ''
+//       ? document.documentElement
+//       : document.querySelector(href);
+//     if (!target) return;
+//     const position = target.getBoundingClientRect().top + window.scrollY;
+//     const headHeight = document.querySelector('#nav')?.offsetHeight || 0;
+//     const targetPosition = position - headHeight;
+//     window.scrollTo({
+//       top: targetPosition,
+//       behavior: 'smooth'
+//     });
+//   });
+// });
 
 // fadein animation
 const callBack_01 = (el) => {
@@ -104,8 +104,8 @@ const callBack_01 = (el) => {
 gsap.utils.toArray(".fade-anime").forEach((el) => {
   var fade = el.getAttribute('data-fade');
   if(fade == "fade-up"){
-    gsap.fromTo(el, 
-      {y:"30px",opacity:0}, 
+    gsap.fromTo(el,
+      {y:"30px",opacity:0},
       {y:"auto",opacity:1,
         scrollTrigger: {
           trigger: el,
@@ -138,8 +138,8 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
     })
   }
   if(fade == "fade-op"){
-    gsap.fromTo(el, 
-      {opacity:0}, 
+    gsap.fromTo(el,
+      {opacity:0},
       {opacity:1,
         scrollTrigger: {
           trigger: el,
@@ -150,7 +150,7 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
         duration:0.5,
       },
     )
-  }  
+  }
   if(fade == "fade-op-cont"){
     var targets = el.querySelectorAll(':scope > *');
     gsap.fromTo(targets,
@@ -168,8 +168,8 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
   })
   }
   if(fade == "fade-up-top"){
-    gsap.fromTo(el, 
-      {y:"30px",opacity:0}, 
+    gsap.fromTo(el,
+      {y:"30px",opacity:0},
       {y:"auto",opacity:1,
         scrollTrigger: {
           trigger: el,

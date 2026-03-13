@@ -6,14 +6,14 @@
 	position: relative;
 	&::after {
 		position: absolute;
-		bottom: 0;
+		bottom: -0.3rem;
 		left: 0;
 		background-color: $color-beg-2;
 		content: "";
 		width: 100%;
-		height: 4.0rem;
-		mask-image: url(../images/idx/kv/bg_bottom_sp.svg);
-		-webkit-mask-image: url(../images/idx/kv/bg_bottom_sp.svg);
+		height: 4.4rem;
+		mask-image: url(../images/area/common/bg_bottom_sp.svg);
+		-webkit-mask-image: url(../images/area/common/bg_bottom_sp.svg);
 		mask-position: center bottom;
 		-webkit-mask-position: center bottom;
 		mask-size: cover;
@@ -22,9 +22,10 @@
 		-webkit-mask-repeat: no-repeat;
 
 		@include bp(m) {
-			mask-image: url(../images/idx/kv/bg_bottom_pc.svg);
-			-webkit-mask-image: url(../images/idx/kv/bg_bottom_pc.svg);
-			height: 8.0rem;
+			bottom: -0.5rem;
+			mask-image: url(../images/area/common/bg_bottom_pc.svg);
+			-webkit-mask-image: url(../images/area/common/bg_bottom_pc.svg);
+			height: 8.4rem;
 		}
 	}
 }
@@ -116,7 +117,8 @@
 			font-size: clamp(0px, 1.6rem, 16px);
 			line-height: 1.5em;
 			letter-spacing: 0.05em;
-			font-weight: 500;
+			// font-weight: 500;
+font-weight: 700;
 
 			@include bp(m) {
 				justify-content: center;
@@ -219,17 +221,18 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				gap: 1.6rem;
 				padding: 1.6rem 2.4rem;
 				background-color: $color_blu-4;
 
 				font-size: clamp(0px, 1.2rem, 12px);
 				line-height: 1.5em;
 				letter-spacing: 0.03em;
-				font-weight: 500;
+				// font-weight: 500;
+				font-weight: 700;
 				color: $color_wht-1;
 
 				@include bp(m) {
+					gap: 1.6rem;
 					justify-content: center;
 					padding: 1.6rem;
 					font-size: clamp(12px, 1.4rem, 14px);
@@ -276,6 +279,46 @@
 			font-size: clamp(12px, 1.6rem, 16px);
 		}
 	}
+
+	&.pgarea_charm-okinawa {
+		.charm__list-itm {
+			&:nth-of-type(1)::before {
+				background-color: rgba(#00458E, 0.2);
+			}
+			&:nth-of-type(2)::before {
+				background-color: transparent;
+			}
+			&:nth-of-type(3)::before {
+				background-color: rgba(#893200, 0.2);
+			}
+		}
+	}
+	&.pgarea_charm-hawaii {
+		.charm__list-itm {
+			&:nth-of-type(1)::before {
+				background-color: rgba(#0082DF, 0.2);
+			}
+			&:nth-of-type(2)::before {
+				background-color: transparent;
+			}
+			&:nth-of-type(3)::before {
+				background-color: rgba(#009369, 0.4);
+			}
+		}
+	}
+	&.pgarea_charm-guam {
+		.charm__list-itm {
+			&:nth-of-type(1)::before {
+				background-color: rgba(#0082DF, 0.2);
+			}
+			&:nth-of-type(2)::before {
+				background-color: rgba(#0D6200, 0.2);
+			}
+			&:nth-of-type(3)::before {
+				background-color: rgba(#8A0141, 0.2);
+			}
+		}
+	}
 }
 
 .pgarea_info {
@@ -308,7 +351,8 @@
 				margin-top: 1.2rem;
 				font-size: clamp(12px, 2.4rem, 24px);
 				line-height: 1em;
-				font-weight: 500;
+				// font-weight: 500;
+font-weight: 700;
 
 				@include bp(m) {
 					font-size: clamp(12px, 2.4rem, 24px);
@@ -317,7 +361,8 @@
 			&_txt {
 				margin-top: 1.6rem;
 				font-size: clamp(12px, 2.4rem, 24px);
-				font-weight: 500;
+				// font-weight: 500;
+font-weight: 700;
 				line-height: 1em;
 
 				@include bp(m) {
@@ -336,7 +381,8 @@
 				margin-top: 0.4rem;
 				font-size: clamp(8px, 1.2rem, 12px);
 				line-height: 1em;
-				font-weight: 500;
+				// font-weight: 500;
+font-weight: 700;
 
 				@include bp(m) {}
 			}
@@ -361,7 +407,8 @@
 				border-right: 1px solid $color-beg-1;
 				width: calc(100% / 6);
 				font-size: clamp(0px, 1.38rem, 13.8px);
-				font-weight: 500;
+				// font-weight: 500;
+font-weight: 700;
 				line-height: 1.5em;
 				text-align: center;
 				@include bp(m) {
@@ -385,7 +432,8 @@
 				padding: 0.2rem;
 				// width: calc((100% / 12) * 1);
 				font-size: clamp(0px, 1.2rem, 12px);
-				font-weight: 500;
+				// font-weight: 500;
+font-weight: 700;
 				line-height: 1.7em;
 				letter-spacing: 0.05em;
 				text-align: center;
@@ -517,7 +565,8 @@
 					dt {
 						display: block;
 						font-size: clamp(0px, 1.2rem, 12px);
-						font-weight: 500;
+						// font-weight: 500;
+font-weight: 700;
 						line-height: 1.3em;
 						letter-spacing: 0.05em;
 						text-align: center;
@@ -529,7 +578,7 @@
 					dd {
 						display: block;
 						margin-top: 0.6rem;
-						font-size: clamp(0px, 1.0rem, 10px);
+						font-size: clamp(0px, 1.2rem, 12px);
 						font-weight: 400;
 						line-height: 1.3em;
 						letter-spacing: 0.05em;
@@ -562,7 +611,8 @@
 	padding: 6.0rem 0 10.0rem;
 	background-color: $color_wht-1;
 	@include bp(m) {
-		padding: 8.0rem 0 16.0rem;
+		// padding: 8.0rem 0 16.0rem;
+		padding: 8.0rem 0;
 	}
 	&_inenr {
 		position: relative;
@@ -590,6 +640,10 @@
 			}
 			&.bg-org {
 				background-color: rgba(#F6DEC9, 0.2);
+
+			}
+			&.bg-ylw {
+				background-color: rgba(#F0B3A5, 0.2);
 
 			}
 			&.bg-grn {
@@ -777,7 +831,7 @@
 				font-size: clamp(0px, 1.4rem, 14px);
 				line-height: 1.5em;
 				letter-spacing: 0.03em;
-				font-weight: 500;
+				font-weight: 700;
 				color: $color_blk-1;
 
 				@include bp(m) {
@@ -837,7 +891,8 @@
 					display: block;
 					margin-top: 1.2rem;
 					font-size: clamp(0px, 1.0rem, 10px);
-					font-weight: 500;
+					// font-weight: 500;
+font-weight: 700;
 					line-height: 1.5em;
 					letter-spacing: 0.05em;
 					@include bp(m) {
@@ -881,7 +936,9 @@
 		}
 		&.bg-org {
 			background-color: rgba(#F6DEC9, 0.2);
-
+		}
+		&.bg-ylw {
+			background-color: rgba(#F0B3A5, 0.2);
 		}
 		&.bg-grn {
 			background-color: rgba(#8ED4A8, 0.2);
@@ -914,7 +971,7 @@
 			font-size: clamp(0px, 1.4rem, 14px);
 			line-height: 1.5em;
 			letter-spacing: 0.03em;
-			font-weight: 500;
+			font-weight: 700;
 			color: $color_blk-1;
 
 			& > div {
@@ -955,8 +1012,9 @@
 			p {
 				display: block;
 				margin-top: 1.2rem;
-				font-size: clamp(0px, 1.0rem, 10px);
-				font-weight: 500;
+				font-size: clamp(0px, 1.4rem, 14px);
+				// font-weight: 500;
+font-weight: 700;
 				line-height: 1.5em;
 				letter-spacing: 0.05em;
 				@include bp(m) {
@@ -983,7 +1041,8 @@
 			font-size: clamp(0px, 2.2rem, 22px);
 			line-height: 1.5em;
 			letter-spacing: 0.05em;
-			font-weight: 500;
+			// font-weight: 500;
+font-weight: 700;
 			text-align: center;
 
 			@include bp(m) {
@@ -1147,6 +1206,15 @@
 						font-size: clamp(0px, 2.4rem, 24px);
 					}
 				}
+
+				&_img {
+					&::before,
+					&::after {
+						@include bp(m) {
+							width: 3.2rem;
+						}
+					}
+				}
 			}
 		}
 		&.cls-slider {
@@ -1193,7 +1261,13 @@
 		&_img {
 			z-index: 1;
 			position: relative;
-			margin-bottom: 1.2rem;
+			margin: 0.2rem;
+			// margin-bottom: 1.2rem;
+			margin-bottom: 1.6rem;
+			@include bp(m) {
+				margin: 0.2rem;
+				margin-bottom: 1.6rem;
+			}
 			&::before,
 			&::after {
 				aspect-ratio: 1/1;
@@ -1206,14 +1280,14 @@
 
 			&::before {
 				clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
-				right: -0.3rem;
-				top: -0.1rem;
+				top: -0.2rem;
+				right: -0.2rem;
 			}
 
 			&::after {
-				bottom: -0.1rem;
 				clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
-				left: -0.3rem;
+				bottom: -0.2rem;
+				left: -0.2rem;
 			}
 			@include bp(m) {
 				margin-bottom: 1.6rem;
@@ -1228,7 +1302,8 @@
 			font-size: 10px;
 			line-height: 2em;
 			letter-spacing: 0.05em;
-			font-weight: 500;
+			// font-weight: 500;
+font-weight: 700;
 			color: $color_wht-1;
 
 			@include bp(m) {
@@ -1254,7 +1329,8 @@
 			font-size: clamp(0px, 1.8rem, 18px);
 			line-height: 1.5em;
 			letter-spacing: 0.05em;
-			font-weight: 500;
+			// font-weight: 500;
+font-weight: 700;
 
 			@include bp(m) {
 				font-size: clamp(0px, 2.0rem, 20px);
@@ -1262,7 +1338,7 @@
 		}
 		&_desc {
 			margin-top: 1.6rem;
-			font-size: clamp(0px, 1.2rem, 12px);
+			font-size: clamp(0px, 1.4rem, 14px);
 			line-height: 1.5em;
 			letter-spacing: 0.05em;
 
@@ -1313,7 +1389,8 @@
 					font-size: clamp(8px, 1.2rem, 12px);
 					line-height: 1.5em;
 					letter-spacing: 0.05em;
-					font-weight: 500;
+					// font-weight: 500;
+font-weight: 700;
 
 					@include bp(m) {
 						width: 7.3rem;
@@ -1326,7 +1403,7 @@
 						// vertical-align: middle;
 						width: 0.2rem;
 						height: 1.2rem;
-						background-color: $color_blk-1;
+						background-color: $color_gry-1;
 						mask-image: url(../../assets/images/common/svg/rec_01.svg);
 						-webkit-mask-image: url(../../assets/images/common/svg/rec_01.svg);
 						mask-position: center;
@@ -1375,7 +1452,8 @@
 					font-size: clamp(8px, 1.4rem, 14px);
 					line-height: 1em;
 					letter-spacing: 0.05em;
-					font-weight: 500;
+					// font-weight: 500;
+font-weight: 700;
 					opacity: 1;
 					@include transition;
 
@@ -1535,7 +1613,8 @@
 				gap: 2.4rem;
 				font-size: clamp(8px, 2.2rem, 22px);
 				line-height: 1.3em;
-				font-weight: 500;
+				// font-weight: 500;
+font-weight: 700;
 
 				@include bp(m) {
 					font-size: clamp(0px, 2.8rem, 28px);
@@ -1544,34 +1623,41 @@
 					content: '';
 					display: none;
 					// vertical-align: middle;
-					width: 0.4rem;
-					height: 3.4rem;
-					background-color: $color_wht-1;
-					mask-image: url(../../assets/images/common/svg/rec_01.svg);
-					-webkit-mask-image: url(../../assets/images/common/svg/rec_01.svg);
-					mask-position: center;
-					-webkit-mask-position: center;
-					mask-size: contain;
-					-webkit-mask-size: contain;
-					mask-repeat: no-repeat;
-					-webkit-mask-repeat: no-repeat;
+					width: 0.3rem;
+					height: 2.0rem;
+					width: 1.2rem;
+					height: 1.2rem;
+					background: url(../../assets/images/common/svg/rec_02.svg) center center /contain no-repeat;
 
 					@include bp(m) {
-						display: inline-flex;
+						display: block;
+						width: 0.33rem;
+						height: 2.0rem;
 					}
 				}
 			}
 
+			// &::before {
+			// 	position: absolute;
+			// 	// bottom: 1px;
+			// 	bottom: 0;
+			// 	left: 0;
+			// 	background-color: $color-beg-2;
+			// 	content: "";
+			// 	width: 100%;
+			// 	height: 1.0rem;
+			// }
 			&::after {
 				position: absolute;
-				bottom: 1px;
+				bottom: 0.2rem;
+				// bottom: 0;
 				left: 0;
 				background-color: $color-beg-2;
 				content: "";
 				width: 100%;
 				height: 1.6rem;
-				mask-image: url(../images/idx/kv/bg_bottom_sp.svg);
-				-webkit-mask-image: url(../images/idx/kv/bg_bottom_sp.svg);
+				mask-image: url(../images/area/common/bg_bottom_sp.svg);
+				-webkit-mask-image: url(../images/area/common/bg_bottom_sp.svg);
 				mask-position: center bottom;
 				-webkit-mask-position: center bottom;
 				mask-size: 100% 100%;
@@ -1581,8 +1667,8 @@
 				transform: translateY(100%) rotate(180deg);
 
 				@include bp(m) {
-					mask-image: url(../images/idx/kv/bg_bottom_pc.svg);
-					-webkit-mask-image: url(../images/idx/kv/bg_bottom_pc.svg);
+					mask-image: url(../images/area/common/bg_bottom_pc.svg);
+					-webkit-mask-image: url(../images/area/common/bg_bottom_pc.svg);
 					height: 2.4rem;
 				}
 			}
@@ -1648,32 +1734,33 @@
 				gap: 2.4rem;
 				font-size: clamp(0px, 2.0rem, 20px);
 				line-height: 1.3em;
-				font-weight: 500;
+				// font-weight: 500;
+font-weight: 700;
 
 				@include bp(m) {
 					font-size: clamp(0px, 2.0rem, 20px);
 				}
 
-				&::before {
-					content: '';
-					display: none;
-					// vertical-align: middle;
-					width: 0.4rem;
-					height: 2.0rem;
-					background-color: $color_wht-1;
-					mask-image: url(../../assets/images/common/svg/rec_01.svg);
-					-webkit-mask-image: url(../../assets/images/common/svg/rec_01.svg);
-					mask-position: center;
-					-webkit-mask-position: center;
-					mask-size: contain;
-					-webkit-mask-size: contain;
-					mask-repeat: no-repeat;
-					-webkit-mask-repeat: no-repeat;
+				// &::before {
+				// 	content: '';
+				// 	display: none;
+				// 	// vertical-align: middle;
+				// 	width: 0.4rem;
+				// 	height: 2.0rem;
+				// 	background-color: $color_wht-1;
+				// 	mask-image: url(../../assets/images/common/svg/rec_01.svg);
+				// 	-webkit-mask-image: url(../../assets/images/common/svg/rec_01.svg);
+				// 	mask-position: center;
+				// 	-webkit-mask-position: center;
+				// 	mask-size: contain;
+				// 	-webkit-mask-size: contain;
+				// 	mask-repeat: no-repeat;
+				// 	-webkit-mask-repeat: no-repeat;
 
-					@include bp(m) {
-						display: inline-flex;
-					}
-				}
+				// 	@include bp(m) {
+				// 		display: inline-flex;
+				// 	}
+				// }
 			}
 
 			&::after {
@@ -1712,7 +1799,8 @@
 			&_txt {
 				font-size: clamp(8px, 1.4em, 14px);
 				line-height: 1.8em;
-				font-weight: 500;
+				// font-weight: 500;
+font-weight: 700;
 				letter-spacing: 0;
 				@include bp(m) {
 					font-size: clamp(8px, 1.6em, 16px);
@@ -1755,7 +1843,8 @@
 						font-size: clamp(8px, 1.8em, 18px);
 						line-height: 1.5em;
 						letter-spacing: 0;
-						font-weight: 500;
+						// font-weight: 500;
+font-weight: 700;
 						color: #4C99C3;
 						@include bp(m) {
 							font-size: clamp(8px, 2.0em, 20px);
@@ -1766,7 +1855,8 @@
 						font-size: clamp(8px, 1.4em, 14px);
 						line-height: 1.8em;
 						letter-spacing: 0;
-						font-weight: 500;
+						// font-weight: 500;
+font-weight: 700;
 						@include bp(m) {
 							margin-top: 1.4rem;
 							font-size: clamp(8px, 1.4em, 14px);
@@ -1782,7 +1872,8 @@
 				font-size: clamp(8px, 1.4em, 14px);
 				line-height: 1.5em;
 				letter-spacing: 0;
-				font-weight: 500;
+				// font-weight: 500;
+font-weight: 700;
 				text-align: left;
 				@include bp(m) {
 					text-align: center;
@@ -1919,7 +2010,8 @@
 			font-size: clamp(0px, 1.4rem, 14px);
 			line-height: 1.5em;
 			letter-spacing: 0.05em;
-			font-weight: 500;
+			// font-weight: 500;
+font-weight: 700;
 			text-align: center;
 
 			@include bp(m) {

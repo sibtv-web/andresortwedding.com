@@ -96,10 +96,10 @@ video{
 //base
 html {
   scroll-behavior: smooth;
-  // scroll-padding-top: 70px;
-  // @include bp(m) {
-  //   scroll-padding-top: 80px;
-  // }
+  scroll-padding-top: 70px;
+  @include bp(m) {
+    scroll-padding-top: 160px;
+  }
 
   font-size: calc(10 / 414 * 100vw);
   @include bp(m) {

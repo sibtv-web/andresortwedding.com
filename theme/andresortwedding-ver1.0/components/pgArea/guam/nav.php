@@ -5,7 +5,7 @@
         <li><a href="#area-info">基本情報</a></li>
         <li><a href="#area-chapels">チャペル一覧</a></li>
         <li><a href="#area-course">モデルコース</a></li>
-        <li class="cls-sp-max"><a href="#magazine">グアム関連記事</a></li>
+        <li class="cls-sp-max"><a href="#magazine">グアム お役立ち記事</a></li>
       </ul>
   </div>
 </div>
