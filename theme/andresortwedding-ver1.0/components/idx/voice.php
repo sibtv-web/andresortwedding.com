@@ -4,7 +4,7 @@
       <p class="en ft-blu-1">Voice</p>
       <h2 class="jp"><span class="ft-sm">リゾートウェディングを挙げた</span><br/>先輩カップルの声</h2>
     </div>
-    <div class="voice__comment flex fade-anime" data-fade="fade-up-cont">
+    <div class="voice__comment flex">
       <?php 
         $data = [
           '最初は「準備が大変そう…費用が高そう」と、<br/>パートナーと意見が合わないことも。<br/>でも実際は<span class="ft-blu-4">想像以上に準備がスムーズ。</span><br/><span class="ft-blu-4">新婚旅行も一緒に楽しめて</span>最高の思い出になりました。',
@@ -15,8 +15,8 @@
         $count = 0;
         foreach ($data as $item):
       ?>
-        <div class="voice__comment-inner flex-cn">
-          <p class="voice__comment-txt"><?php echo $item;?></p>
+        <div class="voice__comment-inner flex-cn fade-anime" data-fade="fade-up-text">
+          <p class="voice__comment-txt split-txt"><?php echo $item;?></p>
         </div>
       <?php
         $count++;

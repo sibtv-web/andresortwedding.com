@@ -112,10 +112,14 @@
         }
         &.active {
           color: $color_blu-1;
+          @include bp(m) {
+            color: $color_blk-1;
+          }
           &::after {
             background-color: $color_blu-1;
             transform: rotate(270deg);
             @include bp(m) {
+              background-color: $color_blk-1;
               transform: rotate(90deg);
             }
           }
@@ -143,8 +147,8 @@
           padding-top: 4px;
           width: 100%;
           @include bp(m) {
-            // backdrop-filter: blur(12px);
-            background-color: rgba($color: $color_wht-1, $alpha: .75);
+            // background-color: rgba($color: $color_wht-1, $alpha: .75);
+            background-color: rgba($color: $color_wht-1, $alpha: 1);
           }
           &.info {
             @include bp(m) {
@@ -200,7 +204,7 @@
             }
             a {
               align-items: center;
-              border: solid 1px $color_wht-1;
+              border: solid 2px $color_wht-1;
               border-radius: 6px;
               box-shadow: 0 4px 20px 0 rgba($color: $color_blk-1, $alpha: .1);
               display: inline-flex;
@@ -307,46 +311,46 @@
                 }
               }
             }
-            // &:nth-of-type(2),&:nth-of-type(6) {
-            //   a {
-            //     &::after {
-            //       background-color: $color_blu-1;
-            //     }
-            //     &:hover {
-            //       border: solid 1px $color_blu-1;
-            //     }
-            //   }
-            // }
-            // &:nth-of-type(3),&:nth-of-type(7) {
-            //   a {
-            //     &::after {
-            //       background-color: $color_grn-1;
-            //     }
-            //     &:hover {
-            //       border: solid 1px $color_grn-1;
-            //     }
-            //   }
-            // }
-            // &:nth-of-type(4),&:nth-of-type(8) {
-            //   a {
-            //     &::after {
-            //       background-color: $color_org-1;
-            //     }
-            //     &:hover {
-            //       border: solid 1px $color_org-1;
-            //     }
-            //   }
-            // }
-            // &:nth-of-type(5),&:nth-of-type(9) {
-            //   a {
-            //     &::after {
-            //       background-color: $color_pnk-1;
-            //     }
-            //     &:hover {
-            //       border: solid 1px $color_pnk-1;
-            //     }
-            //   }
-            // }
+            &:nth-of-type(2),&:nth-of-type(6) {
+              a {
+                &::after {
+                  background-color: $color_blu-1;
+                }
+                &:hover {
+                  border: solid 2px $color_blu-1;
+                }
+              }
+            }
+            &:nth-of-type(3),&:nth-of-type(7) {
+              a {
+                &::after {
+                  background-color: $color_grn-1;
+                }
+                &:hover {
+                  border: solid 2px $color_grn-1;
+                }
+              }
+            }
+            &:nth-of-type(4),&:nth-of-type(8) {
+              a {
+                &::after {
+                  background-color: $color_org-1;
+                }
+                &:hover {
+                  border: solid 2px $color_org-1;
+                }
+              }
+            }
+            &:nth-of-type(5),&:nth-of-type(9) {
+              a {
+                &::after {
+                  background-color: $color_pnk-1;
+                }
+                &:hover {
+                  border: solid 2px $color_pnk-1;
+                }
+              }
+            }
           }
           &-area {
             aspect-ratio: 1/1;
@@ -437,6 +441,12 @@
             }
           }
         }
+        &#nav-1 {
+          display: block;
+          @include bp(m) {
+            display: none;
+          }
+        }
       }
       &:hover {
         .ttl {
@@ -449,10 +459,12 @@
           }
         }
         .submenu {
-          opacity: 1;
-          visibility: visible;
-          z-index: 3;
-          @include flexbox;
+          @include bp(m) {
+            display: flex !important;
+            opacity: 1;
+            visibility: visible;
+            z-index: 3;
+          }
         }
       }
     }

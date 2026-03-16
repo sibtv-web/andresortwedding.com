@@ -12,4 +12,15 @@
       z-index: 20;
     }
   }
+  &[data-fade="fade-up-text"] {
+    .split-txt {
+      div, span {
+        div {
+          div {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
 }

@@ -8,7 +8,7 @@
 ?>
 <ul class="nav__menu flex-bt">
   <li class="nav__menu-itm">
-    <p class="ttl flex ft-blk-2" data-nav="nav-1">
+    <p class="ttl flex ft-blk-2 active" data-nav="nav-1">
       <span>リゾートウェディングの基本情報</span>
     </p>
     <div id="nav-1" class="submenu">

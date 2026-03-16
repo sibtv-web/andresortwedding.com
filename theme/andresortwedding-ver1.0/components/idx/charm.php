@@ -8,7 +8,7 @@
       <?php 
         for ($i = 1; $i <= 3; $i++) :
         $text = [
-          "写真にも映える<br/><strong>最高のロケーション</strong>",
+          "写真にも映える。<br/><strong>最高のロケーション</strong>",
           "おふたりも大人数も。<br/><strong>大切な人とだけ叶う式</strong>",
           "たった3時間じゃない。<br/><strong>人生最高の3日間に</strong>",
         ];
