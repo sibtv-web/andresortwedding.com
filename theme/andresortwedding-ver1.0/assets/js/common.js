@@ -86,6 +86,8 @@ window.addEventListener('resize',loadFunction);
 // });
 
 // fadein animation
+gsap.registerPlugin(SplitText);
+const split = new SplitText(".split-txt", { type: "chars, words, lines" });
 const callBack_01 = (el) => {
   var cl = el.querySelector(".cl__inner");
   gsap.fromTo(cl,
@@ -96,10 +98,21 @@ const callBack_01 = (el) => {
     {
       opacity: 1,
       ease: "power4.out",
-      duration: 1.5,
+      duration: 1.2,
     }
   );
 
+}
+const callBack_02 = (el) => {
+  gsap.to(
+    split.chars,
+    {
+      opacity:1,
+      ease: Power0.easeNone,
+      duration:0.08,
+      stagger: 0.01,
+    },
+  )
 }
 gsap.utils.toArray(".fade-anime").forEach((el) => {
   var fade = el.getAttribute('data-fade');
@@ -196,7 +209,7 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
           scaleY: 0,
           ease: "power4.out",
           duration: 1,
-          delay: i * 0.1,
+          delay: i * 0.08,
           scrollTrigger: {
             trigger: el,
             start: "top center"
@@ -250,5 +263,27 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
         }
       );
     })
+  }
+  if(fade == "fade-up-text"){
+    gsap.fromTo(el,
+      {
+        y:"30px",
+        opacity:0
+      },
+      {
+        y:"auto",
+        opacity:1,
+        scrollTrigger: {
+          trigger: el,
+          start: 'top center+=200',
+          toggleActions: 'play none none none',
+        },
+        onComplete: function() {
+          callBack_02(el);
+        },
+        ease: Power0.easeNone,
+        duration:0.5,
+      },
+    )
   }
 });
