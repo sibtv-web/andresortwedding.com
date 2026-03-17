@@ -41,7 +41,7 @@ if ($current_terms && !is_wp_error($current_terms)) :
 			$exTitle = get_field('magazine_title_excerpt');
 			?>
 			<li class="reco_list_cmn">
-				<a href="<?php echo home_url();?>/wedding-magazine/<?php echo $slug;?>">
+				<a href="<?php echo home_url();?>/article/<?php echo $slug;?>">
 					<div class="image" style="background-image: url(
 						<?php if (has_post_thumbnail()) : ?>
 						<?php the_post_thumbnail_url(); ?>

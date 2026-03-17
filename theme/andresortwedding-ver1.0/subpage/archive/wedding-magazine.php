@@ -25,10 +25,39 @@ $has_filter = !empty($selected_categories) || !empty($selected_tags);
       <div class="pg_magazine_main">
         <div class="cls-def" <?php if ($has_filter) echo 'style="display:none;"'; ?>>
           <ul class="pg_magazine_main_links cls-def">
-            <li><a href="#section1">結婚式準備・基礎知識</a></li>
-            <li><a href="#section2">エリア・式場選び</a></li>
-            <li><a href="#section3">挙式当日</a></li>
-            <li><a href="#section4">フォトウェディング</a></li>
+          <?php
+
+          $sections = [
+            'section1' => '結婚式準備・基礎知識',
+            'section2' => 'エリア・式場選び',
+            'section3' => '挙式当日',
+            'section4' => 'フォトウェディング',
+          ];
+
+          foreach ($sections as $slug => $label) {
+
+            $args = [
+              'post_type' => 'wedding-magazine',
+              'posts_per_page' => 1, // 1件あればOK
+              'tax_query' => [
+                [
+                  'taxonomy' => 'magazine_category',
+                  'field' => 'slug',
+                  'terms' => $slug,
+                ],
+              ],
+            ];
+
+            $query = new WP_Query($args);
+
+            if ($query->have_posts()) {
+              echo '<li><a href="#'.$slug.'">'.$label.'</a></li>';
+            }
+
+            wp_reset_postdata();
+          }
+
+          ?>
           </ul>
 
 

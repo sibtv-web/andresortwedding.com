@@ -71,19 +71,19 @@
           <a href="/"><span>TOPを見る</span></a>
         </li>
         <li class="submenu__ls-area">
-          <a class="hawaii" href="<?php echo esc_url(home_url());?>">
+          <a class="hawaii" href="<?php echo esc_url(home_url());?>/hawaii/">
             <p class="jp ft-wht-1">ハワイ</p>
             <p class="en ft-wht-1">Hawaii</p>
           </a>
         </li>
         <li class="submenu__ls-area">
-          <a class="guam" href="<?php echo esc_url(home_url());?>">
+          <a class="guam" href="<?php echo esc_url(home_url());?>/guam/">
             <p class="jp ft-wht-1">グアム</p>
             <p class="en ft-wht-1">Guam</p>
           </a>
         </li>
         <li class="submenu__ls-area">
-          <a class="okinawa" href="<?php echo esc_url(home_url());?>">
+          <a class="okinawa" href="<?php echo esc_url(home_url());?>/okinawa/">
             <p class="jp ft-wht-1">沖縄</p>
             <p class="en ft-wht-1">Okinawa</p>
           </a>
@@ -102,7 +102,7 @@
     </a>
   </li>
   <li class="nav__menu-itm">
-    <a class="ttl flex ft-blk-2" href="/">
+    <a class="ttl flex ft-blk-2" href="<?php echo esc_url(home_url());?>/article/">
       <span>お役立ち記事</span>
     </a>
   </li>

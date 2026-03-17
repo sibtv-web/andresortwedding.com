@@ -21,7 +21,7 @@
 
           <div class="pgarea_chapels_cmn_links">
             <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/guam/jw/" target="_blank">公式サイト<span></span></a></div>
-            <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+            <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
         <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
@@ -38,7 +38,7 @@
 
           <div class="pgarea_chapels_cmn_links">
             <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/guam/sky/" target="_blank">公式サイト<span></span></a></div>
-            <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+            <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
       </ul>
@@ -59,7 +59,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/guam/cry/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -77,7 +77,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/guam/chapel_dusit_thani/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -95,7 +95,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/guam/wa/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
           </ul>
@@ -123,7 +123,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/guam/chapel_blueaster/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -141,7 +141,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.petitwedding.com/resorts/world/vid-44530/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://pwpr.jp/Reserve/?HPLinkCode=vid-44530&_gl=1*1k0ato0*_gcl_au*ODc2MTAzMjcxLjE3NzE1NTU4ODQ.&ugx=UU5KwxBbf2tJstue.mmiu9mb0">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://pwpr.jp/Reserve/?HPLinkCode=vid-44530&_gl=1*1k0ato0*_gcl_au*ODc2MTAzMjcxLjE3NzE1NTU4ODQ.&ugx=UU5KwxBbf2tJstue.mmiu9mb0" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
           </ul>

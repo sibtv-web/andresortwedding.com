@@ -34,13 +34,13 @@
         <span><span>エリア別ガイド</span></span>
       </li>
       <li class="f__list-itm">
-        <a href="/"><span>沖縄</span></a>
+        <a href="<?php echo esc_url(home_url());?>/okinawa/"><span>沖縄</span></a>
       </li>
       <li class="f__list-itm">
-        <a href="/"><span>ハワイ</span></a>
+        <a href="<?php echo esc_url(home_url());?>/hawaii/"><span>ハワイ</span></a>
       </li>
       <li class="f__list-itm">
-        <a href="/"><span>グアム</span></a>
+        <a href="<?php echo esc_url(home_url());?>/guam/"><span>グアム</span></a>
       </li>
     </ul>
     <ul class="f__list">
@@ -51,7 +51,7 @@
         <a href="/"><span>よくある質問</span></a>
       </li>
       <li class="f__list-ttl">
-        <a href="/"><span>お役立ち記事</span></a>
+        <a href="<?php echo esc_url(home_url());?>/article/"><span>お役立ち記事</span></a>
       </li>
       <li class="f__list-ttl">
         <a class="exlink" href="/"><span>公式Instagram</span></a>

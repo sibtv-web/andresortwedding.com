@@ -8,27 +8,69 @@
       <div class="splide__track">
         <ul class="splide__list fade-anime" data-fade="fade-up-cont">
           <?php
-            for ($i = 1; $i <= 8; $i++) :
+          $args = [
+            'post_type' => 'wedding-magazine',
+            'posts_per_page' => 8,
+            'post_status' => 'publish',
+            'tax_query' => [
+              [
+                'taxonomy' => 'magazine_tag',
+                'field' => 'name', // 「グアム」は名前指定
+                'terms' => 'グアム',
+              ],
+            ],
+          ];
+
+          $query = new WP_Query($args);
           ?>
-            <li class="splide__slide">
-              <a href="/">
-                <div class="magazine__slider-img">
-                  <img
-                    src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/magazine/imgs_sample_thumbnail.jpg')); ?>"
-                    alt="サンプル画像"
-                  >
-                </div>
-                <div class="magazine__slider-block bg-wht-1">
-                  <div class="info flex-bt">
-                    <p class="info__tg bg-beg-2">結婚式準備・基礎知識</p>
-                    <p class="info__dt">2026.03.03</p>
+
+          <?php if ($query->have_posts()) : ?>
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
+
+              <li class="splide__slide">
+                <a href="<?php the_permalink(); ?>">
+
+                  <div class="magazine__slider-img">
+                    <?php if (has_post_thumbnail()) : ?>
+                      <?php the_post_thumbnail('medium'); ?>
+                    <?php else : ?>
+                      <img src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/magazine/imgs_sample_thumbnail.jpg')); ?>" alt="">
+                    <?php endif; ?>
                   </div>
-                  <p class="hash ft-brn-1"><span>#ハワイ</span><span>#時期・ベストシーズン</span></p>
-                  <h3 class="ttl">記事タイトルが入ります記事タイトルが入ります</h3>
-                </div>
-              </a>
-            </li>
-          <?php endfor; ?>
+
+                  <div class="magazine__slider-block bg-wht-1">
+
+                    <div class="info flex-bt">
+                      <p class="info__tg bg-beg-2">
+                        <?php
+                          $terms = get_the_terms(get_the_ID(), 'magazine_category');
+                          if ($terms && !is_wp_error($terms)) {
+                            echo esc_html($terms[0]->name);
+                          }
+                        ?>
+                      </p>
+                      <p class="info__dt"><?php echo get_the_date('Y.m.d'); ?></p>
+                    </div>
+
+                    <p class="hash ft-brn-1">
+                      <?php
+                        $tags = get_the_terms(get_the_ID(), 'magazine_tag');
+                        if ($tags && !is_wp_error($tags)) {
+                          foreach ($tags as $tag) {
+                            echo '<span>#' . esc_html($tag->name) . '</span>';
+                          }
+                        }
+                      ?>
+                    </p>
+
+                    <h3 class="ttl"><?php the_title(); ?></h3>
+                  </div>
+
+                </a>
+              </li>
+
+            <?php endwhile; ?>
+          <?php endif; wp_reset_postdata(); ?>
         </ul>
       </div>
       <div class="magazine__arrow flex fade-anime" data-fade="fade-up-top">

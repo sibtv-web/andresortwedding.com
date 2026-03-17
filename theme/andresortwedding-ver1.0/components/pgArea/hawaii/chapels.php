@@ -22,7 +22,7 @@
 
           <div class="pgarea_chapels_cmn_links">
             <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/hawaii/msr/" target="_blank">公式サイト<span></span></a></div>
-            <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+            <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
         <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
@@ -40,7 +40,7 @@
 
           <div class="pgarea_chapels_cmn_links">
             <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/hawaii/tbs/" target="_blank">公式サイト<span></span></a></div>
-            <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+            <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
       </ul>
@@ -62,7 +62,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/hawaii/dia/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -81,7 +81,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/hawaii/chapel_ko_olina_place_of_joy/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -100,7 +100,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/hawaii/mkn/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
           </ul>
@@ -129,7 +129,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.couture-naoco.com/eines-waikiki/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.couture-naoco.com/onlinereserve/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.couture-naoco.com/onlinereserve/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -148,7 +148,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://dearswedding-resort.jp/place/hawaii/calvary/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://dearswedding-resort.jp/reserve/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://dearswedding-resort.jp/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -167,7 +167,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.best-anniversary.co.jp/bestbridal-resort/place/saint-catarina/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.best-anniversary.co.jp/bestbridal-resort/contact/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.best-anniversary.co.jp/bestbridal-resort/contact/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
           </ul>

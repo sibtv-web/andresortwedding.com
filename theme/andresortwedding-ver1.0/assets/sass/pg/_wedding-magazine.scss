@@ -60,8 +60,12 @@
 		}
 		li {
 			width: calc(50% - 1px);
+			&:nth-last-child(1):nth-child(3) {
+				width: 100%;
+			}
 			@include bp(m) {
-				width: calc(100% / 4 - (1.2rem * 3 / 4));
+				min-width: calc(100% / 4 - (1.2rem * 3 / 4));
+				width: 100%;
 			}
 			a {
 				display: flex;
@@ -292,7 +296,7 @@
 			font-size: 18px;
 			line-height: 1.5em;
 			letter-spacing: 0.05em;
-			font-weight: 500;
+			font-weight: 700;
 			color: $color_wht_1;
 
 			@include bp(m) {
@@ -399,16 +403,16 @@
 				}
 				.tag {
 					display: flex;
-					gap: 8px;
+					gap: 0 8px;
 					flex-wrap: wrap;
 					margin-top: 8px;
 					@include bp(m) {
-						gap: 0.8rem;
+						gap: 0 0.8rem;
 						margin-top: 0.8rem;
 					}
 					span {
 						font-size: 10px;
-						line-height: 2em;
+						line-height: 1.5em;
 						letter-spacing: 0.05em;
 						@include bp(m) {
 							font-size: clamp(0px, 1.2rem, 12px);

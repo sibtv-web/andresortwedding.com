@@ -320,7 +320,7 @@ if(document.getElementById('ez-toc-container')){
 // =================================================================
 //share btn
 // =================================================================
-function copyURL(url) {
+window.copyURL = function(url) {
 	let message = document.querySelectorAll('span.copyBtn');
 	navigator.clipboard.writeText(url).then(
 		(success) => message[0].className = 'copied',

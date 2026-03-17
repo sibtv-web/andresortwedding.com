@@ -23,7 +23,7 @@
 
           <div class="pgarea_chapels_cmn_links">
             <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/okinawa/gnz/" target="_blank">公式サイト<span></span></a></div>
-            <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+            <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
         <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
@@ -41,7 +41,7 @@
 
           <div class="pgarea_chapels_cmn_links">
             <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/okinawa/srg/" target="_blank">公式サイト<span></span></a></div>
-            <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+            <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
           </div>
         </li>
       </ul>
@@ -63,7 +63,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/okinawa/sro/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -82,7 +82,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/okinawa/nsr/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -101,7 +101,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/okinawa/chapel_aqua_grace/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
           </ul>
@@ -130,7 +130,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.couture-naoco.com/eines-okinawa/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.couture-naoco.com/eines-okinawa/">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.couture-naoco.com/eines-okinawa/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -149,7 +149,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://produce.novarese.jp/kiranah-resort-okinawa/southern-chapel/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://secure.novarese.co.jp/contact/?s_id=1471&t_id=156&_gl=1*1v05o5i*_gcl_au*MTUwNTIxMjEzMi4xNzcyNTIxNTg0&_ga=2.61386732.1765234269.1772521584-649274719.1772521584">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://secure.novarese.co.jp/contact/?s_id=1471&t_id=156&_gl=1*1v05o5i*_gcl_au*MTUwNTIxMjEzMi4xNzcyNTIxNTg0&_ga=2.61386732.1765234269.1772521584-649274719.1772521584" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -168,7 +168,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.resortwedding.net/okinawa/lazor-sea/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.resortwedding.net/okinawa/contact/?form_type=online">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.resortwedding.net/okinawa/contact/?form_type=online" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
           </ul>
@@ -184,59 +184,68 @@
     <div class="pgarea_chapels_cont">
       <div class="pgarea_chapels_cont_line"></div>
       <h3 class="pgarea_chapels_cont_ttl">沖縄離島</h3>
-      <ul class="pgarea_chapels_list">
-        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
-          <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_09.jpg')); ?>" alt="宮古島チャペル"></div>
-          <h4 class="pgarea_chapels_cmn_name">宮古島チャペル</h4>
-          <p class="pgarea_chapels_cmn_desc">「ヒルトン沖縄宮古島リゾート」の最上階。<br>世界有数の美しさを誇る宮古ブルーの海と、雄大な伊良部大橋を一望する天空のチャペルです。</p>
-          <small class="pgarea_chapels_cmn_comp">© Arluis Wedding Co., Ltd. </small>
+      <div class="pgarea_chapels_slider splide js-chapels-slider">
+        <div class="splide__track">
+          <ul class="pgarea_chapels_list splide__list cls-slider">
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
+              <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_09.jpg')); ?>" alt="宮古島チャペル"></div>
+              <h4 class="pgarea_chapels_cmn_name">宮古島チャペル</h4>
+              <p class="pgarea_chapels_cmn_desc">「ヒルトン沖縄宮古島リゾート」の最上階。<br>世界有数の美しさを誇る宮古ブルーの海と、雄大な伊良部大橋を一望する天空のチャペルです。</p>
+              <small class="pgarea_chapels_cmn_comp">© Arluis Wedding Co., Ltd. </small>
 
-          <div class="pgarea_chapels_cmn_tb">
-            <dl><dt>収容人数</dt><dd>2～26名（新郎新婦含む）</dd></dl>
-            <dl><dt>所在地</dt><dd>沖縄 宮古島（ヒルトン沖縄宮古島リゾート内）</dd></dl>
-            <dl><dt>運営会社</dt><dd>アールイズ・ウエディング</dd></dl>
-          </div>
+              <div class="pgarea_chapels_cmn_tb">
+                <dl><dt>収容人数</dt><dd>2～26名（新郎新婦含む）</dd></dl>
+                <dl><dt>所在地</dt><dd>沖縄 宮古島（ヒルトン沖縄宮古島リゾート内）</dd></dl>
+                <dl><dt>運営会社</dt><dd>アールイズ・ウエディング</dd></dl>
+              </div>
 
-          <div class="pgarea_chapels_cmn_links">
-            <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/okinawa/myc/" target="_blank">公式サイト<span></span></a></div>
-            <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.arluis.com/contact/reserve/">ご相談・来店予約<span></span></a></div>
-          </div>
-        </li>
-        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
-          <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_10.jpg')); ?>" alt="アラマンダ チャペル"></div>
-          <h4 class="pgarea_chapels_cmn_name">アラマンダ チャペル</h4>
-          <p class="pgarea_chapels_cmn_desc">世界屈指の透明度を誇る宮古島の海を一望する、高台の独立型チャペル。ラグーンや海を望むレストランで、プライベートな空間を楽しめます。</p>
-          <small class="pgarea_chapels_cmn_comp">©WATABE WEDDING </small>
+              <div class="pgarea_chapels_cmn_links">
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/okinawa/myc/" target="_blank">公式サイト<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.arluis.com/contact/reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
+              </div>
+            </li>
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
+              <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_10.jpg')); ?>" alt="アラマンダ チャペル"></div>
+              <h4 class="pgarea_chapels_cmn_name">アラマンダ チャペル</h4>
+              <p class="pgarea_chapels_cmn_desc">世界屈指の透明度を誇る宮古島の海を一望する、高台の独立型チャペル。ラグーンや海を望むレストランで、プライベートな空間を楽しめます。</p>
+              <small class="pgarea_chapels_cmn_comp">©WATABE WEDDING </small>
 
-          <div class="pgarea_chapels_cmn_tb">
-            <dl><dt>収容人数</dt><dd>50名</dd></dl>
-            <dl><dt>所在地</dt><dd>沖縄 宮古島（シギラベイサイドスイート アラマンダ内）</dd></dl>
-            <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
-          </div>
+              <div class="pgarea_chapels_cmn_tb">
+                <dl><dt>収容人数</dt><dd>50名</dd></dl>
+                <dl><dt>所在地</dt><dd>沖縄 宮古島（シギラベイサイドスイート アラマンダ内）</dd></dl>
+                <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
+              </div>
 
-          <div class="pgarea_chapels_cmn_links">
-            <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/okinawa/chapel_allamanda/" target="_blank">公式サイト<span></span></a></div>
-            <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html">ご相談・来店予約<span></span></a></div>
-          </div>
-        </li>
-        <li class="pgarea_chapels_cmn fade-anime" data-fade="fade-up-cont">
-          <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_11.jpg')); ?>" alt="クルデスール・チャペル"></div>
-          <h4 class="pgarea_chapels_cmn_name">クルデスール・チャペル</h4>
-          <p class="pgarea_chapels_cmn_desc">日本最南端に位置する独立型チャペル。<br>国内屈指のラグジュアリーリゾート内にあり、壮大な自然とロマンチックな時間を過ごせます。</p>
-          <small class="pgarea_chapels_cmn_comp">©WATABE WEDDING </small>
+              <div class="pgarea_chapels_cmn_links">
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/okinawa/chapel_allamanda/" target="_blank">公式サイト<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html" target="_blank">ご相談・来店予約<span></span></a></div>
+              </div>
+            </li>
+            <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
+              <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/okinawa/chapels_img_11.jpg')); ?>" alt="クルデスール・チャペル"></div>
+              <h4 class="pgarea_chapels_cmn_name">クルデスール・チャペル</h4>
+              <p class="pgarea_chapels_cmn_desc">日本最南端に位置する独立型チャペル。<br>国内屈指のラグジュアリーリゾート内にあり、壮大な自然とロマンチックな時間を過ごせます。</p>
+              <small class="pgarea_chapels_cmn_comp">©WATABE WEDDING </small>
 
-          <div class="pgarea_chapels_cmn_tb">
-            <dl><dt>収容人数</dt><dd>50名</dd></dl>
-            <dl><dt>所在地</dt><dd>沖縄 石垣島（ANAインターコンチネンタル石垣リゾート内）</dd></dl>
-            <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
-          </div>
+              <div class="pgarea_chapels_cmn_tb">
+                <dl><dt>収容人数</dt><dd>50名</dd></dl>
+                <dl><dt>所在地</dt><dd>沖縄 石垣島（ANAインターコンチネンタル石垣リゾート内）</dd></dl>
+                <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
+              </div>
 
-          <div class="pgarea_chapels_cmn_links">
-            <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/okinawa/chapel_crudesur/" target="_blank">公式サイト<span></span></a></div>
-            <div class="pgarea_chapels_cmn_links_cmn"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html">ご相談・来店予約<span></span></a></div>
-          </div>
-        </li>
-      </ul>
+              <div class="pgarea_chapels_cmn_links">
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/okinawa/chapel_crudesur/" target="_blank">公式サイト<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.watabe-wedding.co.jp/resort_wedding/form/realtime-booking-input.html" target="_blank">ご相談・来店予約<span></span></a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="splide__arrows pgarea_chapels_arrows">
+          <button class="splide__arrow splide__arrow--prev" type="button"></button>
+          <button class="splide__arrow splide__arrow--next" type="button"></button>
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -122,18 +122,18 @@
 
 			.tag {
 				display: flex;
-				gap: 8px;
+				gap: 0 8px;
 				flex-wrap: wrap;
 				margin-top: 8px;
 
 				@include bp(m) {
-					gap: 0.8rem;
+					gap: 0 0.8rem;
 					margin-top: 0.8rem;
 				}
 
 				span {
 					font-size: 10px;
-					line-height: 2em;
+					line-height: 1.5em;
 					letter-spacing: 0.05em;
 
 					@include bp(m) {

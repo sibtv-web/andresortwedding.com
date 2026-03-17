@@ -96,7 +96,7 @@ video{
 //base
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px;
+  scroll-padding-top: 120px;
   @include bp(m) {
     scroll-padding-top: 160px;
   }

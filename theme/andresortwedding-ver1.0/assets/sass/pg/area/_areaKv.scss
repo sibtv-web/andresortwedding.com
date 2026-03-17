@@ -6,7 +6,7 @@
 	position: relative;
 	&::after {
 		position: absolute;
-		bottom: -0.3rem;
+		bottom: -0.4rem;
 		left: 0;
 		background-color: $color-beg-2;
 		content: "";
@@ -832,7 +832,7 @@ font-weight: 700;
 				line-height: 1.5em;
 				letter-spacing: 0.03em;
 				font-weight: 700;
-				color: $color_blk-1;
+				color: $color_blk-2;
 
 				@include bp(m) {
 					gap: 1.6rem;
@@ -1047,6 +1047,13 @@ font-weight: 700;
 
 			@include bp(m) {
 				font-size: clamp(12px, 3.2rem, 32px);
+			}
+
+			& + .pgarea_chapels_slider {
+				margin-top: 4.2rem;
+				@include bp(m) {
+					margin-top: 5.0rem;
+				}
 			}
 		}
 
@@ -1631,7 +1638,7 @@ font-weight: 700;
 
 					@include bp(m) {
 						display: block;
-						width: 0.33rem;
+						width: 0.4rem;
 						height: 2.0rem;
 					}
 				}
@@ -1799,8 +1806,8 @@ font-weight: 700;
 			&_txt {
 				font-size: clamp(8px, 1.4em, 14px);
 				line-height: 1.8em;
-				// font-weight: 500;
-font-weight: 700;
+				font-weight: 500;
+// font-weight: 700;
 				letter-spacing: 0;
 				@include bp(m) {
 					font-size: clamp(8px, 1.6em, 16px);
@@ -1855,8 +1862,7 @@ font-weight: 700;
 						font-size: clamp(8px, 1.4em, 14px);
 						line-height: 1.8em;
 						letter-spacing: 0;
-						// font-weight: 500;
-font-weight: 700;
+						font-weight: 500;
 						@include bp(m) {
 							margin-top: 1.4rem;
 							font-size: clamp(8px, 1.4em, 14px);

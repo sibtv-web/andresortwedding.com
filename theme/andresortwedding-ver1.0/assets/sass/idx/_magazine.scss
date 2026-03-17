@@ -55,6 +55,7 @@
         align-items: center;
         column-gap: 4px;
         display: inline-flex;
+        flex-wrap: wrap;
         font-size: 10px;
         margin-top: 4px;
         @include bp(m) {
@@ -147,7 +148,7 @@
         }
         &:hover {
           opacity: 0.6;
-        }        
+        }
       }
       .splide__arrow--prev {
         transform: rotate(180deg);
