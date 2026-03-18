@@ -13,8 +13,8 @@
     </p>
     <div id="nav-1" class="submenu">
       <ul class="submenu__ls info flex-bt">
-        <li class="submenu__ls-ttl flex pc">
-          <p>リゾートウェディングの基本情報</p>
+        <li class="submenu__ls-ttl flex">
+          <p class="pc">リゾートウェディングの基本情報</p>
           <a href="/"><span>TOPを見る</span></a>
         </li>
         <li class="submenu__ls-itm">
@@ -66,8 +66,8 @@
     </p>
     <div id="nav-2" class="submenu">
       <ul class="submenu__ls area flex-bt">
-        <li class="submenu__ls-ttl flex pc">
-          <p>エリア別ガイド</p>
+        <li class="submenu__ls-ttl flex">
+          <p class="pc">エリア別ガイド</p>
           <a href="/"><span>TOPを見る</span></a>
         </li>
         <li class="submenu__ls-area">
