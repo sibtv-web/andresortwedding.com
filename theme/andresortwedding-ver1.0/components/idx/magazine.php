@@ -33,7 +33,7 @@
             }
           ?>
             <li class="splide__slide">
-              <a href="<?php echo home_url();?>/wedding-magazine/<?php echo $slug;?>">
+              <a href="<?php echo home_url();?>/article/<?php echo $slug;?>">
                 <div class="magazine__slider-img">
                   <img
                     src="<?php echo esc_url($imgUrl); ?>"
