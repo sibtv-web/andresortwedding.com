@@ -69,7 +69,7 @@ if(slider3.length > 1) {
       interval: number = 5000,
       speed: 5000,
       arrows: boolean = false,
-      drag: boolean = false,
+      drag: boolean = true,
       pagination: boolean = false,
       pauseOnHover: boolean = false,
       pauseOnFocus: boolean = false,

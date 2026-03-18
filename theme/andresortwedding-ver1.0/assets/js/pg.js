@@ -342,7 +342,7 @@ if(document.getElementById('area-fvslider')){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		rewind: true,     // 最後→最初へ
-		drag: false,
+		drag: true,
 		arrows: false,
 		pagination: false
 	});
@@ -360,7 +360,7 @@ if(slider1) {
 		autoWidth: false,
 		arrows: false,
 		pagination: false,
-		drag: false,
+		drag: true,
 		perPage: 5,
 		gap: '24px',
 		autoScroll: {
@@ -501,7 +501,7 @@ if(magazineSlide) {
 	autoWidth: false,
 	arrows: true,
 	pagination: false,
-	drag: false,
+	drag: true,
 	gap: '48px',
 	padding: { left: '5.55%', right: '55.55%' },
 	perPage: 1,
