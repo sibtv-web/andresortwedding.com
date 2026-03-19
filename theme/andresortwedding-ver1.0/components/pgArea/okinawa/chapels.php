@@ -96,7 +96,7 @@
               <div class="pgarea_chapels_cmn_tb">
                 <dl><dt>収容人数</dt><dd>60名</dd></dl>
                 <dl><dt>所在地</dt><dd>沖縄 読谷村</dd></dl>
-                <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
+                <dl><dt>運営会社</dt><dd>ワタベウェディング</dd></dl>
               </div>
 
               <div class="pgarea_chapels_cmn_links">
@@ -149,7 +149,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://produce.novarese.jp/kiranah-resort-okinawa/southern-chapel/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://secure.novarese.co.jp/contact/?s_id=1471&t_id=156&_gl=1*1v05o5i*_gcl_au*MTUwNTIxMjEzMi4xNzcyNTIxNTg0&_ga=2.61386732.1765234269.1772521584-649274719.1772521584" target="_blank">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://secure.novarese.co.jp/contact/?s_id=1471&t_id=156" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
 
@@ -213,7 +213,7 @@
               <div class="pgarea_chapels_cmn_tb">
                 <dl><dt>収容人数</dt><dd>50名</dd></dl>
                 <dl><dt>所在地</dt><dd>沖縄 宮古島（シギラベイサイドスイート アラマンダ内）</dd></dl>
-                <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
+                <dl><dt>運営会社</dt><dd>ワタベウェディング</dd></dl>
               </div>
 
               <div class="pgarea_chapels_cmn_links">
@@ -230,7 +230,7 @@
               <div class="pgarea_chapels_cmn_tb">
                 <dl><dt>収容人数</dt><dd>50名</dd></dl>
                 <dl><dt>所在地</dt><dd>沖縄 石垣島（ANAインターコンチネンタル石垣リゾート内）</dd></dl>
-                <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
+                <dl><dt>運営会社</dt><dd>ワタベウェディング</dd></dl>
               </div>
 
               <div class="pgarea_chapels_cmn_links">

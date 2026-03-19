@@ -68,7 +68,7 @@
       <ul class="submenu__ls area flex-bt">
         <li class="submenu__ls-ttl flex">
           <p class="pc">エリア別ガイド</p>
-          <a href="/"><span>TOPを見る</span></a>
+          <!-- <a href="/"><span>TOPを見る</span></a> -->
         </li>
         <li class="submenu__ls-area">
           <a class="hawaii" href="<?php echo esc_url(home_url());?>/hawaii/">

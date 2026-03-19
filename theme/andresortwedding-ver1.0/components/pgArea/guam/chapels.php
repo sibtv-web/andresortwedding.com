@@ -66,13 +66,13 @@
             <li class="pgarea_chapels_cmn splide__slide fade-anime" data-fade="fade-up-cont">
               <div class="pgarea_chapels_cmn_img"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/guam/chapels_img_04.jpg')); ?>" alt="デュシタニ ヴィラ アズール"></div>
               <h4 class="pgarea_chapels_cmn_name">デュシタニ ヴィラ アズール</h4>
-              <p class="pgarea_chapels_cmn_desc">タモンの中心に位置するホテルの屋上に位置する、ガーデンテラス。広大なガーデンテラスの奥には、鮮やかなグアムのビーチが広がっており、プライベートなヴィラウエディングが叶います。</p>
+              <p class="pgarea_chapels_cmn_desc">タモンの中心に位置するホテルの屋上に位置する、ガーデンテラス。広大なガーデンテラスの奥には、鮮やかなグアムのビーチが広がっており、プライベートなヴィラウェディングが叶います。</p>
               <small class="pgarea_chapels_cmn_comp">©WATABE WEDDING </small>
 
               <div class="pgarea_chapels_cmn_tb">
                 <dl><dt>収容人数</dt><dd>40名</dd></dl>
                 <dl><dt>所在地</dt><dd>デュシタニ グアム リゾート内</dd></dl>
-                <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
+                <dl><dt>運営会社</dt><dd>ワタベウェディング</dd></dl>
               </div>
 
               <div class="pgarea_chapels_cmn_links">
@@ -118,7 +118,7 @@
               <div class="pgarea_chapels_cmn_tb">
                 <dl><dt>収容人数</dt><dd>30名</dd></dl>
                 <dl><dt>所在地</dt><dd>Chamorrita Wy, Tumon, 96913</dd></dl>
-                <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
+                <dl><dt>運営会社</dt><dd>ワタベウェディング</dd></dl>
               </div>
 
               <div class="pgarea_chapels_cmn_links">
@@ -141,7 +141,7 @@
 
               <div class="pgarea_chapels_cmn_links">
                 <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://www.petitwedding.com/resorts/world/vid-44530/" target="_blank">公式サイト<span></span></a></div>
-                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://pwpr.jp/Reserve/?HPLinkCode=vid-44530&_gl=1*1k0ato0*_gcl_au*ODc2MTAzMjcxLjE3NzE1NTU4ODQ.&ugx=UU5KwxBbf2tJstue.mmiu9mb0" target="_blank">ご相談・来店予約<span></span></a></div>
+                <div class="pgarea_chapels_cmn_links_cmn cls-blank"><a href="https://pwpr.jp/Reserve/" target="_blank">ご相談・来店予約<span></span></a></div>
               </div>
             </li>
           </ul>

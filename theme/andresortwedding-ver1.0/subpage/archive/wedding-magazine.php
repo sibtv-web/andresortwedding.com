@@ -150,13 +150,13 @@ $has_filter = !empty($selected_categories) || !empty($selected_tags);
                   ?>
                     <li class="subList-item">
                       <a href="<?php echo home_url();?>/article/<?php echo $slug;?>">
-                        <div class="image" style="background-image: url(
+                        <div class="image">
                           <?php if (has_post_thumbnail()) : ?>
-                            <?php the_post_thumbnail_url(); ?>
-                            <?php else : ?>
-                              <?php echo esc_url(get_theme_file_uri('assets/images/idx/magazine/imgs_sample_thumbnail.jpg')); ?>
-                              <?php endif; ?>
-                        )"></div>
+                          <img src="<?php the_post_thumbnail_url(); ?>" alt="記事イメージ">
+                          <?php else : ?>
+                          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/magazine/imgs_sample_thumbnail.jpg')); ?>" alt="記事イメージ">
+                          <?php endif; ?>
+                        </div>
                         <div class="detail">
                           <div class="label">
                             <div class="cat">

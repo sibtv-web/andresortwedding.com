@@ -4,7 +4,7 @@
       <p class="en ft-blu-1">Information</p>
       <h2 class="jp">基本情報</h2>
     </div>
-    <ul class="pgarea_info_about">
+    <ul class="pgarea_info_about fade-anime" data-fade="fade-up">
       <li class="pgarea_info_about_cmn">
         <img src="<?php echo esc_url(get_theme_file_uri('assets/images/ico/ico_stay.svg')); ?>" alt="stay">
         <p class="pgarea_info_about_cmn_label">最短滞在期間</p>
@@ -29,7 +29,7 @@
       </li>
     </ul>
 
-    <div class="pgarea_info_main">
+    <div class="pgarea_info_main fade-anime" data-fade="fade-up">
       <div class="pc">
         <div class="pgarea_info_main_wrap">
           <ul class="pgarea_info_main_month"><li>1月</li><li>2月</li><li>3月</li><li>4月</li><li>5月</li><li>6月</li><li>7月</li><li>8月</li><li>9月</li><li>10月</li><li>11月</li><li>12月</li></ul>

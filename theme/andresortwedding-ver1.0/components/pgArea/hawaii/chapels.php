@@ -76,7 +76,7 @@
               <div class="pgarea_chapels_cmn_tb">
                 <dl><dt>収容人数</dt><dd>32名</dd></dl>
                 <dl><dt>所在地</dt><dd>コオリナ・リゾート内</dd></dl>
-                <dl><dt>運営会社</dt><dd>ワタベウエディング</dd></dl>
+                <dl><dt>運営会社</dt><dd>ワタベウェディング</dd></dl>
               </div>
 
               <div class="pgarea_chapels_cmn_links">

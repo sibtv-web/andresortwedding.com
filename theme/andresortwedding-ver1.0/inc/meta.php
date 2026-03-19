@@ -17,4 +17,5 @@ $ogp = get_theme_file_uri('assets/images/ogp.png');
 <meta property="og:image" content="<?php echo esc_url($ogp); ?>">
 <meta property="og:site_name" content="<?php echo esc_attr($title); ?>">
 <meta property="og:locale" content="ja_JP">
+<meta name="format-detection" content="telephone=no,email=no">
 <meta name="twitter:card" content="summary_large_image">

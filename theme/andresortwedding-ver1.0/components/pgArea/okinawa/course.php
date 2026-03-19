@@ -10,7 +10,7 @@
 
     <div class="pgarea_course_cont">
       <ul class="pgarea_course_list">
-        <li class="pgarea_course_cmn">
+        <li class="pgarea_course_cmn fade-anime" data-fade="fade-up">
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_ttl cls-grn"><span>DAY <span>1</span></span><strong>到着・沖縄を満喫</strong></p>
             <div class="pgarea_course_cmn_wrap">
@@ -28,7 +28,7 @@
           </div>
         </li>
 
-        <li class="pgarea_course_cmn">
+        <li class="pgarea_course_cmn fade-anime" data-fade="fade-up">
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_ttl cls-blu"><span>DAY <span>2</span></span><strong>ウェディング当日</strong></p>
             <p class="pgarea_course_cmn_subttl"><span>8:00~11:00</span><strong>お支度</strong></p>
@@ -53,7 +53,7 @@
             </div>
           </div>
         </li>
-        <li class="pgarea_course_cmn cls-s">
+        <li class="pgarea_course_cmn cls-s fade-anime" data-fade="fade-up">
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_subttl"><span>11:00~12:30</span><strong>挙式</strong></p>
             <div class="pgarea_course_cmn_wrap">
@@ -79,7 +79,7 @@
             </div>
           </div>
         </li>
-        <li class="pgarea_course_cmn cls-s">
+        <li class="pgarea_course_cmn cls-s fade-anime" data-fade="fade-up">
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_subttl"><span>12:30~16:00</span><strong>アフターパーティ</strong></p>
             <div class="pgarea_course_cmn_wrap">
@@ -89,7 +89,7 @@
                   <dt>12:30~14:00</dt>
                   <dd>
                     <strong>アフタータイム＆フォトタイム</strong>
-                    <p>ビーチでドリンクや写真撮影を。プランや挙式会場によって過ごし方はさまざま。<br>結婚式のみを行う場合は、このお時間お過ごしたのち、解散となります。</p>
+                    <p>ビーチでドリンクや写真撮影を。プランや挙式会場によって過ごし方はさまざま。<br>結婚式のみを行う場合は、このお時間を過ごしたのち、解散となります。</p>
                   </dd>
                 </dl>
                 <dl class="pgarea_course_cmn_detail_time">
@@ -103,7 +103,7 @@
             </div>
           </div>
         </li>
-        <li class="pgarea_course_cmn cls-s">
+        <li class="pgarea_course_cmn cls-s fade-anime" data-fade="fade-up">
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_subttl"><span>18:00~</span><strong>余韻を楽しむリラックスのひととき</strong></p>
             <div class="pgarea_course_cmn_wrap">
@@ -118,7 +118,7 @@
             </div>
           </div>
         </li>
-        <li class="pgarea_course_cmn">
+        <li class="pgarea_course_cmn fade-anime" data-fade="fade-up">
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_ttl cls-org"><span>DAY <span>3~</span></span><strong>ハネムーン＆沖縄観光</strong></p>
             <div class="pgarea_course_cmn_wrap">
@@ -139,7 +139,7 @@
             </div>
           </div>
         </li>
-        <li class="pgarea_course_cmn">
+        <li class="pgarea_course_cmn fade-anime" data-fade="fade-up">
           <div class="pgarea_course_cmn_inner">
             <p class="pgarea_course_cmn_ttl cls-pnk"><span>LAST DAY</span><strong>旅の締めくくり</strong></p>
             <div class="pgarea_course_cmn_wrap">

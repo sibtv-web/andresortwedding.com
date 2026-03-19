@@ -42,13 +42,13 @@ if ($current_terms && !is_wp_error($current_terms)) :
 			?>
 			<li class="reco_list_cmn">
 				<a href="<?php echo home_url();?>/article/<?php echo $slug;?>">
-					<div class="image" style="background-image: url(
+					<div class="image">
 						<?php if (has_post_thumbnail()) : ?>
-						<?php the_post_thumbnail_url(); ?>
+						<img src="<?php the_post_thumbnail_url(); ?>" alt="記事イメージ">
 						<?php else : ?>
-							<?php echo esc_url(get_theme_file_uri('assets/images/idx/magazine/imgs_sample_thumbnail.jpg')); ?>
-							<?php endif; ?>
-					)"></div>
+						<img src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/magazine/imgs_sample_thumbnail.jpg')); ?>" alt="記事イメージ">
+						<?php endif; ?>
+					</div>
 					<div class="detail">
 						<div class="label">
 						<div class="cat">
