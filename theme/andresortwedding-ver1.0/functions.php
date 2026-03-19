@@ -172,34 +172,34 @@ function build_filter_remove_url($taxonomy, $term_id, $selected_categories, $sel
 
 //ACF ブロックエディター追加
 // if ( function_exists( 'acf_custom_block_add_1' ) && function_exists( 'acf_custom_block_add_2' ) ) {
-// if ( function_exists( 'acf_register_block_type' ) ) {
-// 	add_action( 'acf/init', 'acf_custom_block_add_1' );
-// }
-// add_filter('block_categories_all', function ($categories) {
-//   $new_category = [
-//       'slug' => 'acf-block',
-//       'title' => 'ACFブロック',
-//   ];
-//   array_splice($categories, 1, 0, [$new_category]);
-//   return $categories;
-// });
+if ( function_exists( 'acf_register_block_type' ) ) {
+	add_action( 'acf/init', 'acf_custom_block_add_1' );
+}
+add_filter('block_categories_all', function ($categories) {
+  $new_category = [
+      'slug' => 'acf-block',
+      'title' => 'ACFブロック',
+  ];
+  array_splice($categories, 1, 0, [$new_category]);
+  return $categories;
+});
 
 //カードブロック
-// function acf_custom_block_add_1() {
-//   if ( function_exists( 'acf_register_block_type' ) ) {
-//     acf_register_block_type(
-//       array(
-//       'name'            => 'bg-block',
-//       'title'           => __( 'カードデザイン' ),
-//       'description'     => __( 'カードレイアウトを作成できます。' ),
-//       'render_template' => 'acf-blocks/acf-block/cade-block.php',
-//       'category'        => 'acf-block',
-//       'icon'            => 'media-default',
-//       'keywords'        => array( 'カードレイアウト' ),
-//       // 'enqueue_style'   => get_template_directory_uri() . '/acf-blocks/acf-block/acf-block.css',
-//       'enqueue_style'   => get_template_directory_uri() . '/assets/css/acf-block.css',
-//       'mode'            => 'auto',
-//       )
-//     );
-//   }
-// }
+function acf_custom_block_add_1() {
+  if ( function_exists( 'acf_register_block_type' ) ) {
+    acf_register_block_type(
+      array(
+      'name'            => 'bg-block',
+      'title'           => __( 'カードデザイン' ),
+      'description'     => __( 'カードレイアウトを作成できます。' ),
+      'render_template' => 'acf-blocks/acf-block/cade-block.php',
+      'category'        => 'acf-block',
+      'icon'            => 'media-default',
+      'keywords'        => array( 'カードレイアウト' ),
+      // 'enqueue_style'   => get_template_directory_uri() . '/acf-blocks/acf-block/acf-block.css',
+      'enqueue_style'   => get_template_directory_uri() . '/assets/css/acf-block.css',
+      'mode'            => 'auto',
+      )
+    );
+  }
+}
