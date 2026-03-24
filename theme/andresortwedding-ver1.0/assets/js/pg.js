@@ -564,3 +564,50 @@ if (sliders.length) {
 }
 
 });
+
+// =================================================================
+// Infoページ：Navアコーディオン
+// =================================================================
+document.addEventListener('DOMContentLoaded', () => {
+  const accordionInfo = document.querySelector('.pginfo_kv_nav');
+  const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+  if (!accordionInfo) return;
+
+  function accordionInitInfo(e) {
+    const trigger = accordionInfo.querySelector('.pginfo_kv_nav_label');
+    const content = accordionInfo.querySelector('.pginfo_kv_nav_wrap');
+
+    if (!trigger || !content) return;
+
+    if (e.matches) {
+      content.style.maxHeight = '0px';
+      accordionInfo.classList.remove('is-open');
+
+      trigger.onclick = function () {
+        const isOpen = accordionInfo.classList.contains('is-open');
+
+        if (isOpen) {
+          content.style.maxHeight = '0px';
+          accordionInfo.classList.remove('is-open');
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          accordionInfo.classList.add('is-open');
+        }
+      };
+    } else {
+      content.style.maxHeight = 'none';
+      accordionInfo.classList.remove('is-open');
+      trigger.onclick = null;
+    }
+  }
+
+  accordionInitInfo(mediaQuery);
+
+  if (mediaQuery.addEventListener) {
+    mediaQuery.addEventListener('change', accordionInitInfo);
+  } else {
+    mediaQuery.addListener(accordionInitInfo);
+  }
+});
+

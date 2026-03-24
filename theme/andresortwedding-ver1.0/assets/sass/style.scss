@@ -33,5 +33,7 @@
 
 @use "pg/document";
 
+@use "pg/pginfo";
+
 @use "single/single";
 @use "single/toc";
