@@ -12,6 +12,9 @@
     <li class="itm">
       <a href="<?php echo esc_url(home_url());?>/link/">サイトリンク掲載について</a>
     </li>
+    <li class="itm">
+      <a class="exlink" href="https://andguam.com/" target="_blank">姉妹サイト『& Guam』</a>
+    </li>
   </ul>
   <p class="f__copy">©2026 Shibuya Television</p>
 </div>
