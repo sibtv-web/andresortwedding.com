@@ -36,7 +36,7 @@
           ],
           [
             'name' => 'bnr_260310-4.jpg',
-            'link' => '',
+            'link' => 'https://www.arluis.com/fair-cp/chapel/',
             'title' => '挙式料 50% OFF',
           ],
         ];
