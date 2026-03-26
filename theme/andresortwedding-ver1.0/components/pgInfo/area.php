@@ -8,6 +8,7 @@
 			<p class="pginfo_head_txt">人気のエリアは、ハワイ、グアム、沖縄の3つ。<br>それぞれのベストシーズンや招待人数などが異なるので、ふたりの理想に合わせて選びましょう。<br>エリアを決めずに、ウェディング会社に相談するのもおすすめ。</p>
 		</div>
 
+		<div class="sp pginfo_area_scroll"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/scroll.svg')); ?>" alt="SCROLL"></div>
 		<div class="pginfo_area_table fade-anime" data-fade="fade-up">
 			<table>
 				<tbody>

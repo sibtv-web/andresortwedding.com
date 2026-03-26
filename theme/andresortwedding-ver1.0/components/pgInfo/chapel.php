@@ -11,7 +11,7 @@
 		</div>
 
 		<div class="pginfo_chapel_cont pginfo_chapel_point fade-anime" data-fade="fade-up">
-			<h3 class="pginfo_chapel_subttl pginfo_subttl cls-pnk"><span>申し込み前に<br class="sp">必ずチェックすべきポイント</span></h3>
+			<h3 class="pginfo_chapel_subttl pginfo_subttl cls-pnk sp-w"><span>申し込み前に<br class="sp">必ずチェックすべきポイント</span></h3>
 			<p class="pginfo_chapel_subttl_txt pginfo_subttl_txt">挙式日の天候リスク（台風シーズンなど）、ゲストの移動手段、現地での過ごし方などは事前に確認しましょう。<br>特に海外の場合は、パスポートの有効期限もチェックしておくことが重要です。</p>
 
 			<ul class="pginfo_chapel_point_list pginfo_list">
@@ -39,7 +39,7 @@
 		</div>
 
 		<div class="pginfo_chapel_cont pginfo_chapel_other fade-anime" data-fade="fade-up">
-			<h3 class="pginfo_chapel_subttl pginfo_subttl cls-pnk">
+			<h3 class="pginfo_chapel_subttl pginfo_subttl cls-pnk sp-w">
 				<img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/chapel_other_subttl_sub.svg')); ?>" alt="さらに">
 				<span>挙式選びで大切にしたい<br class="sp">「こだわり」別のポイント</span>
 			</h3>
@@ -53,7 +53,7 @@
 							<img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/chapel_point_01_sp.jpg')); ?>" alt="イメージ">
 						</picture>
 					</div>
-					<p>チャペオーシャンビュー<br><small>を重視したい方は…</small></p>
+					<p>オーシャンビュー<br><small>を重視したい方は…</small></p>
 					<ul>
 						<li>祭壇の向き</li>
 						<li>窓の大きさ</li>

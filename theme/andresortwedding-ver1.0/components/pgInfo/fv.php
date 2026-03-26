@@ -2,7 +2,7 @@
 	<div class="pginfo_kv_container">
 		<div class="pginfo_kv_ttl section__title fade-anime" data-fade="fade-up">
 			<p class="en ft-blu-1">Information</p>
-			<h2 class="jp">リゾートウェディングの基本情報</h2>
+			<h2 class="jp">リゾートウェディングの<br class="sp">基本情報</h2>
 		</div>
 
 		<div class="pginfo_kv_nav">

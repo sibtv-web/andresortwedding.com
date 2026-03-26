@@ -13,6 +13,7 @@
 
 			<div class="pginfo_money_table">
 				<div class="pginfo_money_table_wrap">
+					<div class="sp pginfo_money_table_scroll"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/scroll.svg')); ?>" alt="SCROLL"></div>
 					<div class="pginfo_money_table_main">
 						<table>
 							<thead>

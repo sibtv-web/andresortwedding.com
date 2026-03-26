@@ -93,6 +93,7 @@
 		position: relative;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		gap: 1.6rem;
 		height: fit-content;
 		@include bp(m) {
@@ -105,17 +106,17 @@
 			background-color: $color-blu-2;
 			content: "";
 			display: block;
+			// aspect-ratio: 1/1;
 			width: 4px;
-			min-height: 28px;
+			height: 28px;
+			// margin: 0.6rem 0;
 			// height: 100%;
 			mask-image: url(../images/common/svg/rec_02.svg);
 			-webkit-mask-image: url(../images/common/svg/rec_02.svg);
-			mask-position: center center;
-			-webkit-mask-position: center center;
-			mask-size: 100% 100%;
-			-webkit-mask-size: 100% 100%;
-			// mask-size: cover;
-			// -webkit-mask-size: cover;
+			mask-position: center bottom;
+			-webkit-mask-position: center bottom;
+			mask-size: cover;
+			-webkit-mask-size: cover;
 			mask-repeat: no-repeat;
 			-webkit-mask-repeat: no-repeat;
 			@include bp(m) {
@@ -123,6 +124,14 @@
 				height: 32px;
 				min-height: unset;
 			}
+		}
+
+		&.sp-w {
+			&::before,
+			&::after {
+				height:4.8rem;
+			}
+
 		}
 
 		span {
@@ -620,7 +629,7 @@
 					}
 					dt {
 						font-size: clamp(10px, 1.6rem, 16px);
-						line-height: 1.3em;
+						line-height: 1.5em;
 						letter-spacing: 0.05em;
 						font-weight: 700;
 						@include bp(m) {
@@ -710,7 +719,7 @@
 			position: relative;
 			padding: 1.8rem 1.2rem;
 
-			font-size: clamp(0px, 1.2rem, 12px);
+			font-size: clamp(0px, 1.4rem, 14px);
 			line-height: 1em;
 			letter-spacing: 0.03em;
 			font-weight: 500;
@@ -955,35 +964,71 @@
 
 		/* フェードアニメーション */
 		@keyframes imgFade01 {
-		0%   { opacity: 1; }
-		40%  { opacity: 1; }
-		50%  { opacity: 0; }
-		90%  { opacity: 0; }
-		100% { opacity: 1; }
+			0%, 40% { opacity: 1; }
+			50%, 90% { opacity: 0; }
+			100% { opacity: 1; }
 		}
 
 		@keyframes imgFade02 {
-		0%   { opacity: 0; }
-		40%  { opacity: 0; }
-		50%  { opacity: 1; }
-		90%  { opacity: 1; }
-		100% { opacity: 0; }
+			0%, 40% { opacity: 0; }
+			50%, 90% { opacity: 1; }
+			100% { opacity: 0; }
+		}
+		@keyframes imgSlide01 {
+			0%   { transform: translateX(0%); }
+			100% { transform: translateX(-10%); }
+			// 0%, 40% { transform: translateX(-10%); }
+			// 50%, 90% { transform: translateX(0%); }
+			// 100% { transform: translateX(-10%); }
+		}
+		@keyframes imgSlide02 {
+			0%   { transform: translateX(0%); }
+			100% { transform: translateX(-10%); }
+			// 0%, 40% { transform: translateX(0%); }
+			// 50%, 90% { transform: translateX(-10%); }
+			// 100% { transform: translateX(0%); }
 		}
 		&_img {
 			position: relative;
-			& img {
-				width: 100%;
-				opacity: 1;
+			overflow: hidden;
+			&_wrap {
+				width: 110%;
+				will-change: transform;
+				// animation: imgSlide 6s linear infinite;
 				&:nth-child(1) {
-					animation: imgFade01 6s infinite;
-					// animation-delay: 0s;
+					// animation: imgSlide01 5.7s linear infinite;
+					img {
+						animation: imgFade01 6s linear infinite;
+					}
 				}
+
 				&:nth-child(2) {
-					animation: imgFade02 6s infinite;
 					position: absolute;
-					top: 0;
-					left: 0;
+					inset: 0;
+					// position: absolute;
+					// inset: 0;
+					// animation: imgSlide02 5.7s linear infinite;
+					// animation-delay: -4s;
+					img {
+						animation: imgFade02 6s linear infinite;
+					}
 				}
+			}
+
+			& img {
+				display: block;
+				width: 100%;
+				height: auto;
+				will-change: opacity;
+				backface-visibility: hidden;
+
+				// &:nth-child(1) {
+				// 	animation: imgFade01 6s linear infinite;
+				// }
+
+				// &:nth-child(2) {
+				// 	animation: imgFade02 6s linear infinite;
+				// }
 			}
 		}
 		&_cont {
@@ -1010,7 +1055,7 @@
 				font-size: clamp(0px, 1.6rem, 16px);
 				line-height: 1.3em;
 				letter-spacing: 0.05em;
-				font-weight: 700;
+				font-weight: 500;
 				text-align: center;
 				color: $color_blk-2;
 				@include bp(m) {
@@ -1117,8 +1162,10 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 4.8rem 2.4rem;
+			margin-top: 2.4rem;
 			@include bp(m) {
 				gap: 6.4rem 2.4rem;
+				margin-top: 4.8rem;
 			}
 		}
 
@@ -1232,6 +1279,12 @@
 }
 
 .pginfo_area {
+	&_scroll {
+		width: 7.4rem;
+		margin-left: auto;
+		margin-right: 0;
+		margin-bottom: 1.2rem;
+	}
 	&_table {
 		color: $color_blk-2;
 		position: relative;
@@ -1303,7 +1356,7 @@
 					padding: 1.4rem 0;
 					border-bottom: 1px solid $color_beg-1;
 
-					width: 14.8rem;
+					width: 15.4rem;
 
 					font-size: clamp(10px, 1.4rem, 14px);
 					line-height: 1.5em;
@@ -1404,6 +1457,9 @@
 
 .pginfo_money {
 	&_cont {
+		@include bp(m) {
+			margin-top: 8.0rem;
+		}
 		& + & {
 			margin-top: 6.4rem;
 			@include bp(m) {
@@ -1422,6 +1478,13 @@
 				flex-direction: row;
 				gap: 1.2rem;
 			}
+		}
+
+		&_scroll {
+			width: 7.4rem;
+			margin-left: auto;
+			margin-right: 0;
+			// margin-bottom: 1.2rem;
 		}
 
 		table {
@@ -1541,7 +1604,7 @@
 						padding: 0.4rem 0;
 						border-bottom: 1px solid $color_beg-1;
 
-						min-width: 14.8rem;
+						min-width: 15.0rem;
 						min-height: 6.0rem;
 						font-size: clamp(10px, 1.4rem, 14px);
 						line-height: 1.5em;
@@ -1558,8 +1621,11 @@
 
 						}
 						small {
-							font-size: clamp(10px, 1.2rem, 12px);
+							font-size: clamp(10px, 102rem, 10px);
 							line-height: 1em;
+							@include bp(m) {
+								font-size: clamp(10px, 1.2rem, 12px);
+							}
 						}
 					}
 				}
@@ -1575,7 +1641,7 @@
 				width: 4.8rem;
 			}
 			img {
-				width: 4.8rem;
+				width: 3.2rem;
 				transform: rotate(90deg);
 				@include bp(m) {
 					width: 100%;
@@ -1682,8 +1748,11 @@
 							line-height: 1em;
 						}
 						small {
-							font-size: clamp(10px, 1.2rem, 12px);
+							font-size: clamp(10px, 1.0rem, 10px);
 							line-height: 1em;
+							@include bp(m) {
+								font-size: clamp(10px, 1.2rem, 12px);
+							}
 						}
 
 					}
@@ -1780,8 +1849,11 @@
 						text-align: center;
 
 						small {
-							font-size: clamp(10px, 1.2rem, 12px);
+							font-size: clamp(10px, 1.0rem, 10px);
 							line-height: 1em;
+							@include bp(m) {
+								font-size: clamp(10px, 1.2rem, 12px);
+							}
 						}
 					}
 				}
@@ -1804,6 +1876,10 @@
 	}
 
 	&_txtbox {
+		margin-top: 4.8rem!important;
+		@include bp(m) {
+			margin-top: 6.4rem;
+		}
 		&::before {
 			content: "";
 			display: block;
@@ -1811,9 +1887,10 @@
 			height: 2.4rem;
 			background: center center /cover no-repeat;
 			background-image: url(../../assets/images/common/svg/cource_flow-s.svg);
-			margin: 0 auto 4.8rem;
+			margin: 0 auto 2.4rem;
 
 			@include bp(m) {
+				margin: 0 auto 4.8rem;
 				width: 2.4rem;
 				height: 2.4rem;
 			}
@@ -1874,6 +1951,10 @@
 	}
 
 	&_other {
+		margin-top: 6.4rem;
+		@include bp(m) {
+			margin-top: 8.0rem;
+		}
 		&_list {
 			margin-top: 2.4rem;
 		}
@@ -1882,7 +1963,10 @@
 
 .pginfo_guest {
 	&_cont {
-		margin-top: 8.0rem;
+		margin-top: 6.4rem;
+		@include bp(m) {
+			margin-top: 8.0rem;
+		}
 		& .pginfo_rowcont,
 		& .pginfo_guest_list {
 			margin-top: 2.4rem;
@@ -1905,7 +1989,11 @@
 
 .pginfo_daybefore {
 	&_cont {
-		margin-top: 8.0rem;
+		margin-top: 6.4rem;
+
+		@include bp(m) {
+			margin-top: 8.0rem;
+		}
 		& .pginfo_rowcont,
 		& .pginfo_daybefore_list {
 			margin-top: 2.4rem;

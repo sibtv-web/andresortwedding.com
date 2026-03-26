@@ -12,4 +12,6 @@
   <?php get_template_part('components/pgArea/hawaii/other'); ?>
   <?php get_template_part('components/idx/saleinformation'); ?>
 
+  <?php get_template_part('components/parts/backtotop'); ?>
+
 </main>
