@@ -287,9 +287,6 @@ $has_filter = !empty($selected_categories) || !empty($selected_tags);
     </div>
   </div>
 </article>
-
-<?php get_template_part('components/parts/backtotop'); ?>
-
 <script>
   document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('js-magazine-filter');

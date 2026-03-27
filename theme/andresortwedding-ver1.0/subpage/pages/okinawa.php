@@ -11,7 +11,4 @@
   <?php get_template_part('components/pgArea/okinawa/magazine'); ?>
   <?php get_template_part('components/pgArea/okinawa/other'); ?>
   <?php get_template_part('components/idx/saleinformation'); ?>
-
-  <?php get_template_part('components/parts/backtotop'); ?>
-
 </main>

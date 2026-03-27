@@ -9,6 +9,11 @@
       </div>
       <?php get_template_part('components/footer/copy'); ?>
     </footer>
+    <div class="toTop">
+      <a href="#" class="bg-blk-2">
+        <span class="ft-wht-1">TOP</span>
+      </a>
+    </div>
     <?php wp_footer(); ?>
   </body>
 </html>

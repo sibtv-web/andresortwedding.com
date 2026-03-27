@@ -1,5 +1,6 @@
 // gnav toggle
 var windowW = window.outerWidth;
+var dur01;
 const header = document.getElementById('header');
 const hm = document.getElementById('hm');
 const nav = document.getElementById('nav');
@@ -7,6 +8,11 @@ const menu = document.querySelectorAll('#nav li.nav__menu-itm a');
 const toggleItem = document.querySelectorAll('#nav .nav__menu-itm .ttl');
 const loadFunction = () => {
   windowW = window.outerWidth;
+  if(windowW > 750) {
+    dur01 = 0.7;
+  } else {
+    dur01 = 0.45;
+  }
 }
 const toggleMenu = async (el) => {
   windowW = window.outerWidth;
@@ -49,6 +55,22 @@ if(toggleItem.length > 0) {
 }
 window.addEventListener('load',loadFunction);
 window.addEventListener('resize',loadFunction);
+
+const toTop = document.querySelector(".toTop");
+if(toTop) {
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking && window.scrollY > 500) {
+      window.requestAnimationFrame(() => {
+        toTop.classList.add("active");
+        ticking = false;
+      });
+      ticking = true;
+    } else {
+      toTop.classList.remove("active");
+    }
+  });
+}
 
 // // smooth scroll
 // const headerHeight = nav ? nav.offsetHeight : 0;
@@ -199,6 +221,7 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
     var targetMask = [];
     targets.forEach((el,i) => {
       let mask = el.querySelector(".mask");
+      let triggered = false;
       targetMask.push(mask);
       gsap.fromTo(mask,
         {
@@ -214,33 +237,18 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
             trigger: el,
             start: "top center"
           },
-          onComplete: function() {
-            callBack_01(el);
+          onUpdate: function() {
+            if (!triggered && this.progress() > dur01) {
+              triggered = true;
+              callBack_01(el);
+            }
           }
+          // onComplete: function() {
+          //   callBack_01(el);
+          // }
         }
       );
     })
-    // gsap.fromTo(targetMask,
-    //   {
-    //     scaleY: 1,
-    //     transformOrigin: "top"
-    //   },
-    //   {
-    //     scaleY: 0,
-    //     ease: "power4.out",
-    //     duration:1.5,
-    //     stagger:{
-    //       each: 0.3
-    //     },
-    //     scrollTrigger:{
-    //       trigger:targets,
-    //       start:'top center'
-    //     },
-    //     onComplete: () => {
-    //       callBack_01(this.targets()[0]);
-    //     }
-    //   }
-    // )
   }
   if(fade == "slide-up-cont-02"){
     var targets = el.querySelectorAll(':scope > *');
@@ -286,4 +294,19 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
       },
     )
   }
+  if(fade == "z-in"){
+    gsap.fromTo(el,
+      {scale:0.8,opacity:0},
+      {scale:1,opacity:1,
+        scrollTrigger: {
+          trigger: el,
+          start: 'top center',
+          toggleActions: 'play none none none',
+        },
+        ease: "power4.out",
+        duration:0.8,
+      },
+    )
+  }
+
 });

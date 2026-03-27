@@ -40,17 +40,27 @@
       <ul class="charm__block-ls flex-bt">
         <?php 
           for ($i = 1; $i <= 3; $i++) :
+          $main = [
+            "平均<strong>190</strong>万円",
+            "全部まとめて<strong>完結</strong>",
+            "<strong>ふたり</strong>でもてなす",
+          ];
+          $sub = [
+            "平均<strong>330</strong>万円",
+            "手配・準備が<strong>複雑</strong>",
+            "<strong>両家</strong>が主催",
+          ];
           $title = [
             "結婚式・ハネムーン費用が<br/><strong>リーズナブル！</strong>",
             "手配や準備にかかる<br/><strong>負担が少ない！</strong>",
             "ルールやマナーにとらわれない<br/><strong>ふたりらしさ</strong>",
           ];
         ?>
-        <li class="itm">
-          <h3 class="itm__catch fade-anime" data-fade="fade-up"><?php echo $title[$i - 1];?></h3>
-          <div class="flex fade-anime" data-fade="slide-up-cont-02">
+        <li class="itm fade-anime" data-fade="z-in">
+          <div class="flex">
             <div class="itm__1 flex bg-blu-4">
-              <p class="ft-wht-1 bg-blu-4">リゾートウェディング</p>
+              <p class="ft-wht-1 bg-blu-4 ttl">リゾートウェディング</p>
+              <p class="ft-wht-1 bg-blu-4 main"><?php echo $main[$i - 1];?></p>
               <div class="img">
                 <img
                   src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_comparison_0'.$i.'_a.jpg')); ?>"
@@ -60,7 +70,8 @@
               <span class="mask bg-beg-2"></span>
             </div>
             <div class="itm__2 bg-brn-2">
-              <p class="ft-wht-1 bg-brn-2">近場ウェディング</p>
+              <p class="ft-wht-1 bg-brn-2 ttl">近場ウェディング</p>
+              <p class="ft-wht-1 bg-brn-2 sub"><?php echo $sub[$i - 1];?></p>
               <div class="img">
                 <img
                   src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/charm/img_comparison_0'.$i.'_b.jpg')); ?>"
@@ -70,6 +81,7 @@
               <span class="mask bg-beg-2"></span>
             </div>
           </div>
+          <h3 class="itm__catch"><?php echo $title[$i - 1];?></h3>
         </li>
         <?php endfor; ?>
       </ul>
