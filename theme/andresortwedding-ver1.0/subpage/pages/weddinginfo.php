@@ -12,6 +12,4 @@
   <?php get_template_part('components/pgInfo/closing'); ?>
   <?php get_template_part('components/idx/saleinformation'); ?>
 
-  <?php get_template_part('components/parts/backtotop'); ?>
-
 </main>

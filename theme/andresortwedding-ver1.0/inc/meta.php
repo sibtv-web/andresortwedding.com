@@ -8,13 +8,13 @@ $ogp = get_theme_file_uri('assets/images/ogp.png');
 <meta name="title" content="<?php echo is_front_page() ? $title : wp_title('|', true, 'right').$title; ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="format-detection" content="telephone=no">
-<meta name="description" content="<?php echo is_front_page() ? esc_attr($description) : $pgDsc; ?>">
+<!-- <meta name="description" content="<?php echo is_front_page() ? esc_attr($description) : $pgDsc; ?>"> -->
 <meta name="theme-color" content="#FFFFFF">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?php echo esc_url(home_url()); ?>">
 <meta property="og:title" content="<?php echo is_front_page() ? $title : wp_title('|', true, 'right').$title; ?>">
-<meta property="og:description" content="<?php echo is_front_page() ? esc_attr($description) : $pgDsc; ?>">
-<meta property="og:image" content="<?php echo esc_url($ogp); ?>">
+<!-- <meta property="og:description" content="<?php echo is_front_page() ? esc_attr($description) : $pgDsc; ?>"> -->
+<!-- <meta property="og:image" content="<?php echo esc_url($ogp); ?>"> -->
 <meta property="og:site_name" content="<?php echo esc_attr($title); ?>">
 <meta property="og:locale" content="ja_JP">
 <meta name="format-detection" content="telephone=no,email=no">

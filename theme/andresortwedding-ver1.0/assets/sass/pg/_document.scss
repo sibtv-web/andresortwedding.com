@@ -75,6 +75,26 @@
 						width: calc(100% - 160px - 40px);
 						font-size: 16px;
 					}
+
+					a {
+						display: block;
+						width: fit-content;
+						opacity: 1;
+						@include transition;
+						&:hover {
+							opacity: 0.7;
+						}
+						img {
+							display: block;
+							margin-top: 8px;
+							&.img-logo {
+								width: 94px;
+								@include bp(m) {
+									width: 126px;
+								}
+							}
+						}
+					}
 				}
 			}
 		}

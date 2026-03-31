@@ -14,6 +14,7 @@
 				<div class="pginfo_charm_intro_img">
 					<div class="pginfo_charm_intro_img_wrap"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/charm_overseas_01.jpg')); ?>" alt="イメージ"></div>
 					<div class="pginfo_charm_intro_img_wrap"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/charm_overseas_02.jpg')); ?>" alt="イメージ"></div>
+					<div class="pginfo_charm_intro_img_wrap"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/charm_overseas_03.jpg')); ?>" alt="イメージ"></div>
 				</div>
 				<dl class="pginfo_charm_intro_cont">
 					<dt class="pginfo_charm_intro_cont_label">ハワイ・グアム　<small>ほか</small></dt>
@@ -25,6 +26,7 @@
 				<div class="pginfo_charm_intro_img">
 					<div class="pginfo_charm_intro_img_wrap"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/charm_domestic_01.jpg')); ?>" alt="イメージ"></div>
 					<div class="pginfo_charm_intro_img_wrap"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/charm_domestic_02.jpg')); ?>" alt="イメージ"></div>
+					<div class="pginfo_charm_intro_img_wrap"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/charm_domestic_03.jpg')); ?>" alt="イメージ"></div>
 				</div>
 				<dl class="pginfo_charm_intro_cont">
 					<dt class="pginfo_charm_intro_cont_label">沖縄　<small>ほか</small></dt>

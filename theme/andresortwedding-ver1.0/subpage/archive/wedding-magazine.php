@@ -238,6 +238,12 @@ $has_filter = !empty($selected_categories) || !empty($selected_tags);
                 'taxonomy'   => 'magazine_category',
                 'hide_empty' => true
               ]);
+
+              $order = ['section1', 'section2', 'section3', 'section4'];
+
+              usort($categories, function ($a, $b) use ($order) {
+                return array_search($a->slug, $order) - array_search($b->slug, $order);
+              });
               foreach ($categories as $category):
                 $is_checked = in_array($category->term_id, $selected_categories, true);
               ?>
@@ -265,6 +271,18 @@ $has_filter = !empty($selected_categories) || !empty($selected_tags);
               'taxonomy'   => 'magazine_tag',
               'hide_empty' => true
             ]);
+
+            $order = ['ハワイ', 'グアム', '沖縄'];
+
+            usort($tags, function ($a, $b) use ($order) {
+              $pos_a = array_search($a->name, $order, true);
+              $pos_b = array_search($b->name, $order, true);
+
+              $pos_a = ($pos_a === false) ? 999 : $pos_a;
+              $pos_b = ($pos_b === false) ? 999 : $pos_b;
+
+              return $pos_a - $pos_b;
+            });
             foreach ($tags as $tag):
               $is_checked = in_array($tag->term_id, $selected_tags, true);
             ?>

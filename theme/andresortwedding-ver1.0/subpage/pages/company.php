@@ -44,6 +44,13 @@
               Kアリーナ横浜周辺事業
             </td>
           </tr>
+          <tr>
+            <th>姉妹サイト</th>
+            <td>
+              グアム情報サイト『& Guam』
+              <a href="https://andguam.com/" target="_blank"><img class="img-logo" src="<?php echo esc_url(get_theme_file_uri('assets/images/common/logo_andguam.svg')); ?>" alt="アンドグアム"></a>
+            </td>
+          </tr>
         </tbody>
       </table>
 

@@ -20,7 +20,7 @@
         <img src="<?php echo esc_url(get_theme_file_uri('assets/images/ico/ico_payment.svg')); ?>" alt="stay">
         <p class="pgarea_info_about_cmn_label">旅行代金</p>
         <p class="pgarea_info_about_cmn_txt"><strong>40~50</strong>万円</p>
-        <small>(2泊3日)</small>
+        <small>(3泊5日)</small>
       </li>
       <li class="pgarea_info_about_cmn">
         <img src="<?php echo esc_url(get_theme_file_uri('assets/images/ico/ico_time.svg')); ?>" alt="stay">
