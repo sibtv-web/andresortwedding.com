@@ -73,39 +73,39 @@ if(toTop) {
 }
 
 // // smooth scroll
-// const headerHeight = nav ? nav.offsetHeight : 0;
-// const urlHash = window.location.hash;
-// if (urlHash) {
-//   window.addEventListener('load', () => {
-//     window.scrollTo(0, 0);
-//     setTimeout(() => {
-//       const target = document.querySelector(urlHash);
-//       if (!target) return;
-//       const position = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-//       window.scrollTo({
-//         top: position,
-//         behavior: 'auto'
-//       });
-//     }, 0);
-//   });
-// }
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     const href = this.getAttribute('href');
-//     const target = href === '#' || href === ''
-//       ? document.documentElement
-//       : document.querySelector(href);
-//     if (!target) return;
-//     const position = target.getBoundingClientRect().top + window.scrollY;
-//     const headHeight = document.querySelector('#nav')?.offsetHeight || 0;
-//     const targetPosition = position - headHeight;
-//     window.scrollTo({
-//       top: targetPosition,
-//       behavior: 'smooth'
-//     });
-//   });
-// });
+const headerHeight = nav ? nav.offsetHeight : 0;
+const urlHash = window.location.hash;
+if (urlHash) {
+  window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+      const target = document.querySelector(urlHash);
+      if (!target) return;
+      const position = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      window.scrollTo({
+        top: position,
+        behavior: 'auto'
+      });
+    }, 0);
+  });
+}
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const href = this.getAttribute('href');
+    const target = href === '#' || href === ''
+      ? document.documentElement
+      : document.querySelector(href);
+    if (!target) return;
+    const position = target.getBoundingClientRect().top + window.scrollY;
+    const headHeight = document.querySelector('#nav')?.offsetHeight || 0;
+    const targetPosition = position - headHeight;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
 
 // fadein animation
 gsap.registerPlugin(SplitText);

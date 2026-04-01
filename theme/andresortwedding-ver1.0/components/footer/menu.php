@@ -2,7 +2,7 @@
   <div class="f__nav-container flex">
     <ul class="f__list">
       <li class="f__list-ttl">
-        <a href="<?php echo esc_url(home_url());?>"><span>リゾートウェディングの基本情報</span></a>
+        <a href="<?php echo esc_url(home_url());?>/weddinginfo/"><span>リゾートウェディングの基本情報</span></a>
       </li>
       <li class="f__list-itm">
         <a href="<?php echo esc_url(home_url());?>/weddinginfo/#pgInfo_charm"><span>リゾート挙式の魅力</span></a>
@@ -54,7 +54,7 @@
         <a href="<?php echo esc_url(home_url());?>/article/"><span>お役立ち記事</span></a>
       </li>
       <li class="f__list-ttl">
-        <a class="exlink" href="/"><span>公式Instagram</span></a>
+        <a class="exlink" href="https://www.instagram.com/and_resortwedding/" target="_blank"><span>公式Instagram</span></a>
       </li>
     </ul>
   </div>
