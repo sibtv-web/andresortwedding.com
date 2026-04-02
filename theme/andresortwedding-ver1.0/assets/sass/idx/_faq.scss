@@ -7,7 +7,7 @@
     .jp {
       margin-top: -16px;
       @include bp(m) {
-        margin-top: -38px;
+        margin-top: -29px;
       }
     }
   }
@@ -107,6 +107,7 @@
             &__desc {
               font-size: 14px;
               margin-top: 10px;
+              font-weight: 500;
               @include bp(m) {
                 margin-top: 12px;
               }

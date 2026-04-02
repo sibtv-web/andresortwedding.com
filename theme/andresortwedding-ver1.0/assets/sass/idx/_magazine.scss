@@ -5,6 +5,13 @@
   @include bp(m) {
     padding-bottom: 120px;
   }
+  &__title {
+    .jp {
+      margin-top: -6px;
+      @include bp(m) {
+      }
+    }
+  }
   &__slider {
     margin-top: 40px;
     @include bp(m) {
@@ -48,6 +55,7 @@
         align-items: center;
         column-gap: 4px;
         display: inline-flex;
+        flex-wrap: wrap;
         font-size: 10px;
         margin-top: 4px;
         @include bp(m) {
@@ -75,13 +83,18 @@
         transform-origin: left top;
         @include transition;
         &:hover {
-          opacity: 0.6;
+          // opacity: 0.6;
           .magazine__slider-img {
             img {
               transform: scale(1.1);
             }
           }
         }
+      }
+      &--clone {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
       }
     }
     .splide__slide.is-next {
@@ -135,7 +148,7 @@
         }
         &:hover {
           opacity: 0.6;
-        }        
+        }
       }
       .splide__arrow--prev {
         transform: rotate(180deg);

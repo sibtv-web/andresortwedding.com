@@ -1,7 +1,7 @@
 <section id="slider-1" class="slider-1">
   <div class="slider-1__inner splide">
     <div class="splide__track">
-      <ul class="splide__list fade-anime" data-fade="fade-up-cont">
+      <ul class="splide__list">
         <?php for ($i = 1; $i <= 8; $i++) : ?>
           <li class="splide__slide flex">
             <div class="img <?php echo 'img-'.$i;?>">

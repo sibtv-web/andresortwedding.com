@@ -1,0 +1,26 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.fade-anime {
+  &[data-fade="slide-up-cont-01"],&[data-fade="slide-up-cont-02"] {
+    .mask {
+      display: inline-block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 20;
+    }
+  }
+  &[data-fade="fade-up-text"] {
+    .split-txt {
+      div, span {
+        div {
+          div {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

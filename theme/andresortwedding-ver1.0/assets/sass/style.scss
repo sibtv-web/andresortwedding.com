@@ -7,14 +7,17 @@
 @use "base/ft";
 @use "base/layouts";
 @use "base/section";
+@use "base/animation";
 
 @use "parts/btn";
 @use "parts/svg";
-// @use "parts/form";
+@use "parts/backtotop";
+@use "parts/totop";
 
 @use "glb/header";
 @use "glb/nav";
 @use "glb/footer";
+@use "glb/reco";
 
 @use "idx/kv";
 @use "idx/slider";
@@ -25,9 +28,14 @@
 @use "idx/faq";
 @use "idx/saleinformation";
 @use "idx/magazine";
-// @use "idx/contact";
 
-// @use "pg/thanks";
-// @use "pg/error";
+@use "pg/area/areaKv";
 
-// @use "sg/news" as sgNews;
+@use "pg/wedding-magazine";
+
+@use "pg/document";
+
+@use "pg/pginfo";
+
+@use "single/single";
+@use "single/toc";

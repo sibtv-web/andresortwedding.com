@@ -29,9 +29,15 @@
               "ft-org-1",
               "ft-pnk-1",
             ];
+            $link = [
+              "#pgInfo_charm",
+              "#pgInfo_area",
+              "#pgInfo_money",
+              "#pgInfo_chapel",
+            ];
           ?>
             <div class="itm">
-              <a class="bg-wht-1" href="<?php echo esc_url(home_url());?>">
+              <a class="bg-wht-1" href="<?php echo esc_url(home_url());?>/weddinginfo/<?php echo $link[$i - 1]; ?>">
                 <div class="ico <?php echo 'ico-'.$i; ?>">
                   <p class="ttl <?php echo $color[$i - 1]; ?>"><?php echo $title[$i - 1]; ?></p>
                 </div>
@@ -48,7 +54,7 @@
           基本情報
         </h2>
         <p class="info__btn btn__more pc">
-          <a class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>"><span>すべて見る</span></a>
+          <a class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>/weddinginfo/"><span>すべて見る</span></a>
         </p>
       </div>
       <div class="info__right">
@@ -67,9 +73,15 @@
               "ft-org-1",
               "ft-pnk-1",
             ];
+            $link = [
+              "#pgInfo_guest",
+              "#pgInfo_preparation",
+              "#pgInfo_daybefore",
+              "#pgInfo_ontheday",
+            ];
           ?>
             <div class="itm">
-              <a class="bg-wht-1" href="<?php echo esc_url(home_url());?>">
+              <a class="bg-wht-1" href="<?php echo esc_url(home_url());?>/weddinginfo/<?php echo $link[$i - 5]; ?>">
                 <div class="ico <?php echo 'ico-'.$i; ?>">
                   <p class="ttl <?php echo $color[$i - 5]; ?>"><?php echo $title[$i - 5]; ?></p>
                 </div>
@@ -79,7 +91,7 @@
         </nav>
       </div>
       <p class="info__btn btn__more sp fade-anime" data-fade="fade-up">
-        <a class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>"><span>すべて見る</span></a>
+        <a class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>/weddinginfo/"><span>すべて見る</span></a>
       </p>
     </div>
     <div class="svg-2">

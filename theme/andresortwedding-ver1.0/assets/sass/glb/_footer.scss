@@ -18,6 +18,12 @@
       max-width: none;
       width: 12.03%;
     }
+    a {
+      @include transition;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
   &__nav {
     @include bp(m) {
@@ -63,6 +69,16 @@
               content: "";
               display: inline-block;
               width: clamp(0px,1.44vw,6px);
+            }
+            &.exlink {
+              &::after {
+                aspect-ratio: 1/1;
+                background-image: url(../images/ico/ico_arrow_04.png);
+                width: clamp(0px,2.89vw,12px);
+                @include bp(m) {
+                  width: 12px;
+                }
+              }
             }
             &:hover {
               opacity: 0.6;
@@ -123,15 +139,41 @@
           font-size: 12px;
           line-height: 1;
           @include transition;
+          &:hover {
+            opacity: 0.6;
+          }
+          &.exlink {
+            align-items: center;
+            column-gap: 4px;
+            display: inline-flex;
+            &::after {
+              aspect-ratio: 1/1;
+              background-image: url(../images/ico/ico_arrow_04.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              content: "";
+              display: inline-block;
+              width: clamp(0px,2.89vw,12px);
+              @include bp(m) {
+                width: 12px;
+              }
+            }
+          }
         }
       }
     }
   }
   &__copy {
     font-size: 12px;
+    flex-direction: column;
     line-height: 1;
     margin-top: 40px;
+    row-gap: 16px;
     @include bp(m) {
+      column-gap: 24px;
+      flex-direction: row;
+      row-gap: 0;
       margin-top: 0;
     }
   }

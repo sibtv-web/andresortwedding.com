@@ -1,0 +1,155 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+
+.pgdocument {
+	padding: 94px 0 80px;
+	background-color: $color_wht-1;
+	@include bp(m) {
+		padding: 128px 0 160px;
+	}
+	&_kv {
+		h1 {
+			font-size: 24px;
+			line-height: 1.3em;
+			letter-spacing: 0.05em;
+			font-weight: 700;
+			text-align: center;
+
+			@include bp(m) {
+				font-size: 36px;
+			}
+		}
+	}
+	&_container {
+		max-width: 800px;
+		width: calc(100% - 48px);
+		margin: 0 auto;
+		&-s {
+			max-width: 590px;
+			width: calc(100% - 48px);
+			margin: 0 auto;
+		}
+	}
+	&_cont {
+		margin-top: 60px;
+		@include bp(m) {
+			margin-top: 80px;
+		}
+		table {
+			display: block;
+			width: 100%;
+			& + * {
+				margin-top: 80px;
+			}
+			tbody {
+				display: block;
+				width: 100%;
+				border-top: 1px solid $color_beg-1;
+				tr {
+					display: flex;
+					gap: 20px;
+					padding: 24px 0;
+					border-bottom: 1px solid $color_beg-1;
+					@include bp(m) {
+						gap: 40px;
+					}
+				}
+				th {
+					min-width: 120px;
+					width: 120px;
+					font-size: 14px;
+					line-height: 1.7em;
+					letter-spacing: 0.05em;
+					@include bp(m) {
+						min-width: 160px;
+						width: 160px;
+						font-size: 16px;
+					}
+				}
+				td {
+					width: calc(100% - 120px - 20px);
+					font-size: 14px;
+					line-height: 1.7em;
+					letter-spacing: 0.05em;
+					@include bp(m) {
+						width: calc(100% - 160px - 40px);
+						font-size: 16px;
+					}
+
+					a {
+						display: block;
+						width: fit-content;
+						opacity: 1;
+						@include transition;
+						&:hover {
+							opacity: 0.7;
+						}
+						img {
+							display: block;
+							margin-top: 8px;
+							&.img-logo {
+								width: 94px;
+								@include bp(m) {
+									width: 126px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		dl {
+			display: block;
+			& + * {
+				margin-top: 80px;
+			}
+			& + dl {
+				margin-top: 40px;
+				@include bp(m) {
+					margin-top: 48px;
+				}
+			}
+			dt {
+				display: block;
+				font-size: 16px;
+				line-height: 1.7em;
+				letter-spacing: 0.05em;
+				font-weight: 700;
+			}
+			dd {
+				display: block;
+				margin-top: 8px;
+				font-size: 16px;
+				line-height: 1.7em;
+				letter-spacing: 0.05em;
+			}
+		}
+
+		p {
+			& + * {
+				margin-top: 80px;
+			}
+			& + p {
+				margin-top: 40px;
+				@include bp(m) {
+					margin-top: 48px;
+				}
+			}
+			font-size: 16px;
+			line-height: 1.7em;
+			letter-spacing: 0.05em;
+			strong {
+				font-size: 16px;
+				line-height: 1.7em;
+				letter-spacing: 0.05em;
+				font-weight: 700;
+			}
+		}
+	}
+	&_backBtn {
+		margin-top: 60px;
+		@include bp(m) {
+			margin-top: 80px;
+		}
+	}
+}

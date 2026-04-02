@@ -1,10 +1,10 @@
 <section id="area" class="area">
   <div class="area__inner section__inner">
-    <div class="section__title fade-anime" data-fade="fade-up">
+    <div class="area__title section__title fade-anime" data-fade="fade-up">
       <p class="en ft-blu-1">Area guides</p>
       <h2 class="jp">エリア別ガイド</h2>
     </div>
-    <?php 
+    <?php
       $data = [
         [
           'catch' => 'ハネムーンも大人気！<br/>誰もが憧れる海外リゾート',
@@ -32,11 +32,31 @@
       foreach ($data as $item):
       $count++;
     ?>
-    <div class="area__block" class="<?php echo $item['link'];?>">
+    <div class="area__block slider-3" class="<?php echo $item['link'];?>">
+      <div class="area__slide splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <?php for ($i = 1; $i <= 2; $i++) :?>
+              <li class="splide__slide">
+                <picture>
+                  <source
+                    media="(min-width: 750px)"
+                    srcset="<?php echo esc_url(get_theme_file_uri('assets/images/idx/area/bg_'.$item['link'].'_0'.$i.'_pc.jpg')); ?>"
+                  >
+                  <img
+                    src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/area/bg_'.$item['link'].'_0'.$i.'_sp.jpg')); ?>"
+                    alt="背景画像<?php echo $i ;?>"
+                  >
+                </picture>
+              </li>
+            <?php endfor; ?>
+          </ul>
+        </div>
+      </div>
       <div class="area__block-inner flex">
         <a href="<?php echo esc_url(home_url('/'.$item['link']));?>">
           <div class="cl">
-            <div class="fade-anime" data-fade="fade-op">
+            <div>
               <div class="cl__map">
                 <img
                   src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/area/img_map_0'.$count.'.png')); ?>"
@@ -49,7 +69,7 @@
                 <span class="jp"><?php echo $item['name-jp'];?></span>
               </h3>
               <p class="cl__tag ft-wht-1">
-                <?php 
+                <?php
                   $count2 = 1;
                   foreach ($item['tag'] as $tag):
                 ?>
@@ -59,11 +79,11 @@
                   }?>
                 <?php
                 $count2++;
-                  endforeach; 
+                  endforeach;
                 ?>
               </p>
               <p class="cl__btn btn__more">
-                <span class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>"><span>くわしく見る</span></ｓ>
+                <span class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>"><span>くわしく見る</span></span>
               </p>
             </div>
           </div>

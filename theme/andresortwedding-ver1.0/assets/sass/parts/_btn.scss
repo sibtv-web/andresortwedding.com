@@ -33,5 +33,35 @@
         background-image: url(../images/ico/ico_arrow_02.png);
       }
     }
+    &-3-b {
+      > a, > button, > span {
+        font-size: 18px;
+        @include bp(m) {
+          font-size: 24px;
+        }
+      }
+      &::after {
+        display: none!important;
+      }
+      &::before {
+        aspect-ratio: 64/28;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        display: inline-block;
+        width: 48px;
+        @include transition;
+        transform: rotate(180deg);
+        background-image: url(../images/ico/ico_arrow_02.png);
+        @include bp(m) {
+          width: 64px;
+        }
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
 }

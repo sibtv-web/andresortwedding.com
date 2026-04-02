@@ -1,7 +1,93 @@
 @use "../lib/mixin" as *;
 @use "../lib/color" as *;
 .svg {
+  &-kv {
+    bottom: 0;
+    left: -1%;
+    overflow: hidden;
+    position: absolute;
+    width: 102.5%;
+    @include bp(m) {
+      bottom: -0.5px;
+      left: 0;
+      width: 100%;
+    }
+    picture {
+      display: block;
+      width: 100%;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  &-1 {
+    overflow: hidden;
+    width: 100%;
+    @include bp(m) {
+      transform: translateY(-1px) rotate(180deg);
+      width: 100%;
+    }
+    picture {
+      display: block;
+      left: -1%;
+      position: relative;
+      width: 102.5%;
+      @include bp(m) {
+        bottom: -1px;
+        left: 0;
+        transform: translateY(-1px);
+        width: 100%;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
   &-2 {
-    transform: rotate(180deg) translateY(-1px);
+    bottom: -0.7px;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(180deg);
+    width: 100%;
+    @include bp(m) {
+      transform: none;
+    }
+    picture {
+      left: -1%;
+      display: block;
+      position: relative;
+      width: 102.5%;
+      @include bp(m) {
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+      }
+      img {
+        display: block;
+      }
+    }
+  }
+  &-3 {
+    overflow: hidden;
+    width: 100%;
+    @include bp(m) {
+      transform: translateY(-1px);
+    }
+    picture {
+      display: block;
+      left: -1%;
+      position: relative;
+      width: 102.5%;
+      @include bp(m) {
+        left: 0;
+        width: 100%;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }    
   }
 }

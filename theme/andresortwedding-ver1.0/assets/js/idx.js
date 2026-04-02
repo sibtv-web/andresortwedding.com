@@ -4,7 +4,7 @@ if(slider1) {
   new Splide(slider1,{
     type: string = 'loop',
     rewind: boolean = true,
-    speed: number = 400,
+    speed: number = 700,
     autoWidth: boolean = false,
     arrows: boolean = false,
     pagination: boolean = false,
@@ -14,6 +14,7 @@ if(slider1) {
     autoScroll: {
       pauseOnHover: false,
       pauseOnFocus: boolean = false,
+      speed: 0.5,
     },
     breakpoints: {
       750: {
@@ -43,6 +44,7 @@ if(slider2) {
     autoScroll: {
       pauseOnHover: false,
       pauseOnFocus: boolean = false,
+      speed: 0.5,
     },
     breakpoints: {
       750: {
@@ -56,22 +58,49 @@ if(slider2) {
   }).mount(window.splide.Extensions);
 }
 
+//slide-3
+const slider3 = document.querySelectorAll(".slider-3 .splide");
+if(slider3.length > 1) {
+  slider3.forEach((element) => {
+    new Splide(element,{
+      type: 'fade',
+      rewind: boolean = true,
+      autoplay: boolean = true,
+      interval: number = 5000,
+      speed: 5000,
+      arrows: boolean = false,
+      drag: boolean = true,
+      pagination: boolean = false,
+      pauseOnHover: boolean = false,
+      pauseOnFocus: boolean = false,
+      updateOnMove: true,
+      breakpoints: {
+        750: {
+          interval: number = 4000,
+          pagination: boolean = false,
+        },
+      },
+    }).mount();
+  })
+}
+
+
 //magazine slider
 const magazineSlide = document.querySelector(".magazine .splide");
 if(magazineSlide) {
-  console.log("test")
   new Splide(magazineSlide,{
-    type: string = 'slide',
-    rewind: boolean = false,
+    type: string = 'loop',
+    rewind: boolean = true,
     speed: number = 400,
     autoWidth: boolean = false,
     arrows: boolean = true,
     pagination: boolean = false,
-    drag: boolean = false,
+    drag: boolean = true,
     gap: string = '48px',
     padding: { left: '5.55%', right: '24.44%' },
     padding: { left: '5.55%', right: '55.55%' },
     perPage: number = 1,
+    // perPage: number = 2,
     perMove: number = 1,
     updateOnMove: true,
     breakpoints: {

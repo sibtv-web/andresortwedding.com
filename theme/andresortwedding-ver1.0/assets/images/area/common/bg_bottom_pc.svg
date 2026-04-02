@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" width="1440" height="84" viewBox="0 0 1440 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2740_3310)">
+<path d="M0 0C0.153186 0.0461465 265.631 79.9999 720 80H0V0ZM1440 80H720C1174.47 80.0001 1439.97 0.0101495 1440 0V80Z" fill="#F8F2ED"/>
+<rect y="80" width="1440" height="32" fill="#F8F2ED"/>
+</g>
+<defs>
+<clipPath id="clip0_2740_3310">
+<rect width="1440" height="84" fill="white"/>
+</clipPath>
+</defs>
+</svg>

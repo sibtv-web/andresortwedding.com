@@ -22,7 +22,7 @@
     <div class="h__container flex-bt bg-wht-1">
       <div class="h__logo">
         <a href="<?php echo esc_url(home_url());?>">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/logo_main_01.png')); ?>" alt="& Resort Wedding ロゴ" fetchpriority="high">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/logo_main_01.svg')); ?>" alt="& Resort Wedding ロゴ" fetchpriority="high">
         </a>
       </div>
       <?php get_template_part('components/header/nav'); ?>

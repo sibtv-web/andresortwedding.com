@@ -2,13 +2,18 @@
       <div class="f__block flex-bt">
         <div class="f__logo">
           <a href="<?php echo esc_url(home_url());?>">
-            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/logo_main_01.png')); ?>" alt="& Resort Wedding ロゴ" fetchpriority="high">
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/common/logo_main_01.svg')); ?>" alt="& Resort Wedding ロゴ" fetchpriority="high">
           </a>
         </div>
         <?php get_template_part('components/footer/menu'); ?>
       </div>
       <?php get_template_part('components/footer/copy'); ?>
     </footer>
+    <div class="toTop">
+      <a href="#" class="bg-blk-2">
+        <span class="ft-wht-1">TOP</span>
+      </a>
+    </div>
     <?php wp_footer(); ?>
   </body>
 </html>

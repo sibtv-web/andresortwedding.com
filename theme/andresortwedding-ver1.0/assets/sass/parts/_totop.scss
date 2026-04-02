@@ -1,0 +1,63 @@
+@use "../lib/mixin" as *;
+@use "../lib/color" as *;
+.toTop {
+  aspect-ratio: 1/1;
+  bottom: 12px;
+  opacity: 0;
+  position: fixed;
+  right: 12px;
+  visibility: hidden;
+  width: 40px;
+  z-index: 500;
+  @include transition;
+  @include bp(m) {
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+  }
+  a {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    @include transition;
+    &::before {
+      aspect-ratio: 1/2;
+      background-color: $color_wht-1;
+      content: "";
+      display: inline-block;
+      mask-image: url(../images/ico/ico_arrow_01.svg);
+      -webkit-mask-image: url(../images/ico/ico_arrow_01.svg);
+      mask-position: center;
+      -webkit-mask-position: center;
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      transform: rotate(-90deg);
+      width: 5px;
+      @include bp(m) {
+        width: 6px;
+      }
+    }
+    span {
+      font-size: 10px;
+      letter-spacing: 0.05em;
+      line-height: 1;
+      @include ft_Optima;
+      @include bp(m) {
+        font-size: 12px;
+      }
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
