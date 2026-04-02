@@ -131,7 +131,7 @@
             </dl>
             <dl class="clm-2">
               <div>
-                <dt>イルミネクリスマス＆<br class="sp">マラソンーション</dt>
+                <dt>クリスマス＆<br class="sp">マラソン</dt>
                 <dd>11月はクリスマスのホリデーシーズンで、街中はクリスマスムード一色！12月はホノルルマラソンもあり、街中がお祭りモードに。</dd>
               </div>
               <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/hawaii/season_img_05.jpg')); ?>" alt="stay">

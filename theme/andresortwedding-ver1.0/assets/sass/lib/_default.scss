@@ -95,11 +95,11 @@ video{
 }
 //base
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: calc(28px + 10.37%);
-  @include bp(m) {
-    scroll-padding-top: calc(32px + 3.34%);
-  }
+  // scroll-behavior: smooth;
+  // scroll-padding-top: calc(28px + 10.37%);
+  // @include bp(m) {
+  //   scroll-padding-top: calc(32px + 3.34%);
+  // }
 
   font-size: calc(10 / 414 * 100vw);
   @include bp(m) {

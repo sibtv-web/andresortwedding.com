@@ -91,7 +91,7 @@
         </nav>
       </div>
       <p class="info__btn btn__more sp fade-anime" data-fade="fade-up">
-        <a class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>"><span>すべて見る</span></a>
+        <a class="ft-wht-1 btn__more-1" href="<?php echo esc_url(home_url());?>/weddinginfo/"><span>すべて見る</span></a>
       </p>
     </div>
     <div class="svg-2">

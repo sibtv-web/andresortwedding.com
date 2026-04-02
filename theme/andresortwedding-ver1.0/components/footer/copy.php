@@ -16,5 +16,5 @@
       <a class="exlink" href="https://andguam.com/" target="_blank">姉妹サイト『& Guam』</a>
     </li>
   </ul>
-  <p class="f__copy">©2026 Shibuya Television</p>
+  <p class="f__copy flex"><span>©2026 Shibuya Television</span><span>画像出典：アールイズ・ウエディング</span></p>
 </div>

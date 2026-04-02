@@ -95,7 +95,7 @@ if(magazineSlide) {
     autoWidth: boolean = false,
     arrows: boolean = true,
     pagination: boolean = false,
-    drag: boolean = false,
+    drag: boolean = true,
     gap: string = '48px',
     padding: { left: '5.55%', right: '24.44%' },
     padding: { left: '5.55%', right: '55.55%' },

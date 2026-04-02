@@ -76,7 +76,7 @@
             <button class="splide__arrow splide__arrow--next"></button>
           </div>
           <p class="magazine__btn btn__more">
-            <a class="btn__more-2" href="<?php echo esc_url(home_url());?>"><span>すべて見る</span></a>
+            <a class="btn__more-2" href="<?php echo esc_url(home_url());?>/article/"><span>すべて見る</span></a>
           </p>
         </div>
       </div>
