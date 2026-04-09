@@ -20,14 +20,14 @@
       <?php 
         $bnrImages = [
           [
-            'name' => 'bnr_260310-1.jpg',
-            'link' => 'https://www.his-wedding.com/fair/the_sale/',
-            'title' => '春キャンペーン',
+            'name' => 'bnr_260409-1.jpg',
+            'link' => 'https://www.jtb.co.jp/wed/campaign/',
+            'title' => 'キャンペーンフェア',
           ],
           [
-            'name' => 'bnr_260310-2.jpg',
-            'link' => 'https://www.jtb.co.jp/wed/coupon/',
-            'title' => '割引クーポン',
+            'name' => 'bnr_260409-2.jpg',
+            'link' => 'https://www.his-wedding.com/special/event/',
+            'title' => 'ブライダルフェア',
           ],
           [
             'name' => 'bnr_260310-3.jpg',
