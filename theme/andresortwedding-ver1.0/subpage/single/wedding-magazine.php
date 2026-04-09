@@ -1,8 +1,8 @@
 <?php
 $termsTag = get_the_terms($post->ID, 'magazine_tag');
 $termsCat = get_the_terms($post->ID, 'magazine_category');
+//$headline = get_field('special_headline');
 ?>
-<?php //$headline = get_field('special_headline');?>
 <article id="single_magazine">
   <section class="single_magazine">
     <div class="single_magazine-thumbnail">
@@ -39,10 +39,10 @@ $termsCat = get_the_terms($post->ID, 'magazine_category');
           endif;
         ?>
       </div>
-      <div class="single_magazine-container-title <?php echo $headline;?>">
+      <div class="single_magazine-container-title">
         <h1 class="single_magazine-container-title-main"><?php the_title(); ?></h1>
       </div>
-      <div class="single_magazine-container-content <?php echo $headline;?>" id="cont">
+      <div class="single_magazine-container-content" id="cont">
         <?php the_content(); ?>
       </div>
 
