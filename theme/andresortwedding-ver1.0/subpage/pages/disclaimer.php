@@ -17,9 +17,8 @@
       </dl>
       <dl>
         <dt>画像出典元について</dt>
-        <dd>本サイトに掲載している画像の一部は、アールイズ・ウエディング株式会社、グアム政府観光局より提供いただいております。</dd>
+        <dd>本サイトに掲載している画像の一部は、アールイズ・ウエディング株式会社、グアム政府観光局など各社より提供いただいております。</dd>
       </dl>
-
       <div class="btn__more pgdocument_backBtn">
         <a class="btn__more-3-b" href="<?php echo esc_url(home_url());?>"><span>TOPページにもどる</span></a>
       </div>
