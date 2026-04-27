@@ -30,14 +30,14 @@
             'title' => 'ブライダルフェア',
           ],
           [
-            'name' => 'bnr_260310-3.jpg',
-            'link' => 'https://www.arluis.com/fair-cp/premierphotowedding/?argument=IcQhoQ8q&dmai=a69c34b26c5315',
-            'title' => '他にない新しいフォトウェディング',
+            'name' => 'bnr_260421-1.jpg',
+            'link' => 'https://www.arluis.com/fair-cp/chapel/?argument=IcQhoQ8q&dmai=a69c34b271c4e7',
+            'title' => 'バナー画像 3',
           ],
           [
-            'name' => 'bnr_260310-4.jpg',
-            'link' => 'https://www.arluis.com/fair-cp/chapel/?argument=IcQhoQ8q&dmai=a69c34b271c4e7',
-            'title' => '挙式料 50% OFF',
+            'name' => 'bnr_260421-2.jpg',
+            'link' => 'https://www.arluis.com/fair-cp/premierphotowedding/?argument=IcQhoQ8q&dmai=a69c34b26c5315',
+            'title' => 'バナー画像 4',
           ],
         ];
         $counter = 1;
