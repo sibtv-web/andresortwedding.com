@@ -20,24 +20,24 @@
       <?php 
         $bnrImages = [
           [
-            'name' => 'bnr_260409-1.jpg',
-            'link' => 'https://www.jtb.co.jp/wed/campaign/',
-            'title' => 'キャンペーンフェア',
+            'name' => 'bnr_260428-1.jpg',
+            'link' => 'https://www.jtb.co.jp/wed/plan/early_summer/',
+            'title' => 'バナー画像 1',
           ],
           [
-            'name' => 'bnr_260409-2.jpg',
-            'link' => 'https://www.his-wedding.com/special/event/',
-            'title' => 'ブライダルフェア',
+            'name' => 'bnr_260428-2.jpg',
+            'link' => 'https://www.his-wedding.com/fair/sss/',
+            'title' => 'バナー画像 2',
           ],
           [
-            'name' => 'bnr_260310-3.jpg',
-            'link' => 'https://www.arluis.com/fair-cp/premierphotowedding/?argument=IcQhoQ8q&dmai=a69c34b26c5315',
-            'title' => '他にない新しいフォトウェディング',
-          ],
-          [
-            'name' => 'bnr_260310-4.jpg',
+            'name' => 'bnr_260428-3.jpg',
             'link' => 'https://www.arluis.com/fair-cp/chapel/?argument=IcQhoQ8q&dmai=a69c34b271c4e7',
-            'title' => '挙式料 50% OFF',
+            'title' => 'バナー画像 3',
+          ],
+          [
+            'name' => 'bnr_260421-2.jpg',
+            'link' => 'https://www.arluis.com/fair-cp/premierphotowedding/?argument=IcQhoQ8q&dmai=a69c34b26c5315',
+            'title' => 'バナー画像 4',
           ],
         ];
         $counter = 1;
