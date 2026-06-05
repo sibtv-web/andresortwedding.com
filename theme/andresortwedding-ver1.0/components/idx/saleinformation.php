@@ -25,17 +25,17 @@
             'title' => 'バナー画像 1',
           ],
           [
-            'name' => 'bnr_260428-2.jpg',
+            'name' => 'bnr_260520-1.jpg',
             'link' => 'https://www.his-wedding.com/fair/sss/',
             'title' => 'バナー画像 2',
           ],
           [
-            'name' => 'bnr_260428-3.jpg',
+            'name' => 'bnr_260528-1.jpg',
             'link' => 'https://www.arluis.com/fair-cp/chapel/?argument=IcQhoQ8q&dmai=a69c34b271c4e7',
             'title' => 'バナー画像 3',
           ],
           [
-            'name' => 'bnr_260421-2.jpg',
+            'name' => 'bnr_260520-2.jpg',
             'link' => 'https://www.arluis.com/fair-cp/premierphotowedding/?argument=IcQhoQ8q&dmai=a69c34b26c5315',
             'title' => 'バナー画像 4',
           ],
