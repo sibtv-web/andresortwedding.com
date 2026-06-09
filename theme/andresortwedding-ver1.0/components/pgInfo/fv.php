@@ -5,7 +5,7 @@
 			<h2 class="jp">リゾートウェディングの<br class="sp">基本情報</h2>
 		</div>
 
-		<div class="pginfo_kv_nav">
+		<div class="pginfo_kv_nav j-navPg">
 			<p class="pginfo_kv_nav_label sp js-navToggle">目次</p>
 			<ul class="pginfo_kv_nav_wrap js-navCont">
 				<li class="pginfo_kv_nav_cmn cls-blu"><a href="./#pgInfo_charm"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/info/icon_ring.svg')); ?>" alt="アイコン">リゾート挙式の<br class="sp">魅力</span></a></li>
