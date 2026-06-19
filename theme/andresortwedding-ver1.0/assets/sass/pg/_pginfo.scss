@@ -814,6 +814,7 @@
 					line-height: 1.4em;
 					letter-spacing: 0.05em;
 					font-weight: 700;
+					color: $color_blk-2;
 					@include bp(m) {
 						gap: 0.8rem;
 						font-size: 1.6rem;
@@ -830,7 +831,7 @@
 
 				&::after {
 					aspect-ratio: 1/1;
-					background-color: $color_blk-1;
+					background-color: $color_blk-2;
 					content: "";
 					display: inline-block;
 					height: 100%;
@@ -852,46 +853,46 @@
 				}
 			}
 
-			&.cls-blu {
-				a {
-					&::after {
-						background-color: $color_blu-2;
-					}
-					& span {
-						color: $color_blu-2;
-					}
-				}
-			}
-			&.cls-grn {
-				a {
-					&::after {
-						background-color: $color_grn-1;
-					}
-					& span {
-						color: $color_grn-1;
-					}
-				}
-			}
-			&.cls-org {
-				a {
-					&::after {
-						background-color: $color_org-1;
-					}
-					& span {
-						color: $color_org-1;
-					}
-				}
-			}
-			&.cls-pnk {
-				a {
-					&::after {
-						background-color: $color_pnk-1;
-					}
-					& span {
-						color: $color_pnk-1;
-					}
-				}
-			}
+			// &.cls-blu {
+			// 	a {
+			// 		&::after {
+			// 			background-color: $color_blu-2;
+			// 		}
+			// 		& span {
+			// 			color: $color_blu-2;
+			// 		}
+			// 	}
+			// }
+			// &.cls-grn {
+			// 	a {
+			// 		&::after {
+			// 			background-color: $color_grn-1;
+			// 		}
+			// 		& span {
+			// 			color: $color_grn-1;
+			// 		}
+			// 	}
+			// }
+			// &.cls-org {
+			// 	a {
+			// 		&::after {
+			// 			background-color: $color_org-1;
+			// 		}
+			// 		& span {
+			// 			color: $color_org-1;
+			// 		}
+			// 	}
+			// }
+			// &.cls-pnk {
+			// 	a {
+			// 		&::after {
+			// 			background-color: $color_pnk-1;
+			// 		}
+			// 		& span {
+			// 			color: $color_pnk-1;
+			// 		}
+			// 	}
+			// }
 		}
 	}
 }

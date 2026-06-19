@@ -569,14 +569,14 @@ if (sliders.length) {
 // Infoページ：Navアコーディオン
 // =================================================================
 document.addEventListener('DOMContentLoaded', () => {
-  const accordionInfo = document.querySelector('.pginfo_kv_nav');
+  const accordionInfo = document.querySelector('.j-navPg');
   const mediaQuery = window.matchMedia('(max-width: 767px)');
 
   if (!accordionInfo) return;
 
   function accordionInitInfo(e) {
-    const trigger = accordionInfo.querySelector('.pginfo_kv_nav_label');
-    const content = accordionInfo.querySelector('.pginfo_kv_nav_wrap');
+    const trigger = accordionInfo.querySelector('.js-navToggle');
+    const content = accordionInfo.querySelector('.js-navCont');
 
     if (!trigger || !content) return;
 

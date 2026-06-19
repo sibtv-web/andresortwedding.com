@@ -117,7 +117,7 @@ $(function(){
     $('body,html').animate({scrollTop:position}, 400, 'swing');
     return false;
   });
-}); 
+});
 
 // fadein animation
 gsap.registerPlugin(SplitText);
@@ -317,6 +317,22 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
         },
         ease: "power4.out",
         duration:0.8,
+      },
+    )
+  }
+  if(fade == "z-in2"){
+    gsap.fromTo(el,
+      {scale:0.8,opacity:0},
+      {scale:1,opacity:1,
+        scrollTrigger: {
+          trigger: el,
+          start: 'top center',
+          toggleActions: 'play none none none',
+        },
+        ease: "power4.out",
+        duration:0.8,
+        delay: 0.3,
+
       },
     )
   }
