@@ -30,8 +30,8 @@
             'title' => 'バナー画像 2',
           ],
           [
-            'name' => 'bnr_260528-1.jpg',
-            'link' => 'https://www.arluis.com/fair-cp/chapel/?argument=IcQhoQ8q&dmai=a69c34b271c4e7',
+            'name' => 'bnr_260623-1.jpg',
+            'link' => 'https://www.arluis.com/fair-cp/travel_litestay/',
             'title' => 'バナー画像 3',
           ],
           [
