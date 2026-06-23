@@ -1,5 +1,5 @@
 <div id="kv" class="pgvs_kv">
-	<div class="pgvs_kv_ttl br-b-wht fade-anime" data-fade="fade-up">
+	<div class="pgvs_kv_ttl br-b-wht">
 		<div class="pgvs_kv_ttl_bg">
 			<picture>
 				<source media="(min-width: 750px)" srcset="<?= esc_url(get_theme_file_uri('assets/images/vs/fv_bg.jpg')) ?>">
