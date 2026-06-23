@@ -7,7 +7,7 @@
 			</picture>
 		</div>
 		<h2>
-			<span class="ja cls-1">リゾートウェディングの事前準備・費用を総まとめ</span>
+			<span class="ja cls-1">リゾートウェディングの<br class="sp"/>事前準備・費用を総まとめ</span>
 		</h2>
 	</div>
 	<div class="pgPreparation_kv_container">

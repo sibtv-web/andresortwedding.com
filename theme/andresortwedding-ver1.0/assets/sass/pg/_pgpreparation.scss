@@ -24,20 +24,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-  
         display: flex;
         align-items: center;
         gap: 5.0rem;
         padding: 0.5rem 0;
         border-top: 1px solid $color_wht-1;
         border-bottom: 1px solid $color_wht-1;
-  
-  
         max-width: 118.0rem;
         width: 118.0rem;
         background-color: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(8px);
-  
         @include sp {
           margin-top: -2.0rem;
           flex-direction: column;
@@ -1446,22 +1442,48 @@
   &-cnt {
     .cnt__item {
       border-top: solid 1px $color_beg-1;
+      flex-direction: column;
       margin-top: 48px;
       padding-top: 48px;
+      @include bp(m) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 24px;
+        padding-top: 24px;
+      }
       &:first-child {
         border-top: none;
         margin-top: 64px;
         padding-top: 0;
+        @include bp(m) {
+          margin-top: 48px;
+        }
       }
       .context {
+        @include bp(m) {
+          width: 69.76%;
+        }
         .ttl {
           flex-direction: column;
+          row-gap: 12px;
+          @include bp(m) {
+            align-items: baseline;
+            column-gap: 12px;
+            flex-direction: row;
+            row-gap: 0;
+          }
           &__tag {
             aspect-ratio: 5 / 1;
+            font-size: 14px;
             max-width: 200px;
             padding: 2px;
             position: relative;
             width: 100%;
+            z-index: 2;
+            @include bp(m) {
+              font-size: clamp(0px,1.11vw,16px);
+              width: 22.39%;
+            }
             &::before {
               background-image: url(../images/preparation/bg_schedule_ttl.png);
               background-position: center;
@@ -1474,6 +1496,7 @@
               position: absolute;
               top: 0;
               width: 100%;
+              z-index: -1;
             }
             > span {
               border: solid 1px $color_blk-1;
@@ -1485,18 +1508,75 @@
             }
           }
           &__main {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;
+            text-align: left;
+            @include bp(m) {
+              font-size: clamp(0px,1.66vw,24px);
+            }
           }
         }
-        .desc {}
-        .price {
-          &__ttl {}
-          &__ls {
-            &-item {}
+        .desc {
+          font-size: 16px;
+          line-height: 1.7;
+          margin-top: 24px;
+          @include bp(m) {
+            font-size: clamp(0px,1.11vw,16px);
           }
-          &__notes {}
+        }
+        .price {
+          margin-top: 24px;
+          padding: 12px 6.55%;
+          @include bp(m) {
+            padding: 12px 2.68%;
+          }
+          &__ttl {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.7;
+            @include bp(m) {
+              font-size: clamp(0px,1.11vw,16px);
+            }
+            }
+          &__ls {
+            &-item {
+              align-items: baseline;
+              flex-wrap: nowrap;
+              font-size: 14px;
+              margin-top: 8px;
+              column-gap: 8px;
+              @include bp(m) {
+                font-size: clamp(0px,0.997vw,14px);
+              }
+              &::before {
+                aspect-ratio: 1/1;
+                background-color: $color-grn-1;
+                content: "";
+                display: inline-block;
+                height: 6px;
+                min-height: 6px;
+                min-width: 6px;
+                transform: rotate(45deg);
+                width: 6px;
+              }
+            }
+          }
+          &__notes {
+            font-size: 14px;
+            margin-top: 8px;
+            @include bp(m) {
+              font-size: clamp(0px,0.997vw,14px);
+            }
+          }
         }
       }
-      .image {}
+      .image {
+        margin-top: 24px;
+        @include bp(m) {
+          width: 23.98%;
+        }
+      }
     }
   }
 }
