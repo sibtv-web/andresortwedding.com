@@ -1,4 +1,4 @@
-<section id="pgPreparation_about" class="pgPreparation__about pgPreparation_section bg-beg-2">
+<section id="pgPreparation_about" class="pgPreparation__about pgPreparation_section bg-beg-4">
 	<div class="pgPreparation_container">
 		<div class="pgPreparation_head fade-anime" data-fade="fade-up">
 			<h2 class="pgPreparation_head_ttl cls-pnk">
