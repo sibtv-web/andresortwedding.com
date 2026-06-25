@@ -134,7 +134,7 @@
         <div id="schedule-<?php echo $count;?>" class="cnt__item flex">
           <div class="context">
             <div class="ttl flex">
-              <p class="ttl__tag"><span><?php echo $item['tag'];?></span></p>
+              <p class="ttl__tag ttl__tag-0<?php echo $count;?>"><span><?php echo $item['tag'];?></span></p>
               <p class="ttl__main"><?php echo $item['title'];?></p>
             </div>
             <p class="desc"><?php echo $item['desc'];?></p>

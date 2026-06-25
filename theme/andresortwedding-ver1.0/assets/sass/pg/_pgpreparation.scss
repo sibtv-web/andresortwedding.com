@@ -27,6 +27,7 @@
         display: flex;
         align-items: center;
         gap: 5.0rem;
+        justify-content: center;
         padding: 0.5rem 0;
         border-top: 1px solid $color_wht-1;
         border-bottom: 1px solid $color_wht-1;
@@ -42,7 +43,6 @@
           max-width: 36.6rem;
           width: 36.6rem;
         }
-  
         span {
           display: block;
           color: $color_wht-1;
@@ -1595,6 +1595,26 @@
               text-align: center;
               width: 100%;
             }
+            &-01 {
+              &::before {
+                background-image: url(../images/preparation/bg_schedule_ttl_01.png);
+              }
+            }
+            &-02 {
+              &::before {
+                background-image: url(../images/preparation/bg_schedule_ttl_02.png);
+              }
+            }
+            &-03 {
+              &::before {
+                background-image: url(../images/preparation/bg_schedule_ttl_03.png);
+              }
+            }
+            &-04 {
+              &::before {
+                background-image: url(../images/preparation/bg_schedule_ttl_04.png);
+              }
+            }
           }
           &__main {
             font-size: 18px;
@@ -1755,7 +1775,7 @@
         border-left: solid 1px $color_beg-1;
         border-top: none;
         margin-top: 0;
-        padding: 5px 24px 32px;
+        padding: 5px 2.81% 32px;
         width: calc(100% / 3);
       }
       &:first-child {
@@ -1764,7 +1784,7 @@
         @include bp(m) {
           border-left: none;
           margin-top: 0;
-          padding: 5px 24px 32px;
+          padding: 5px 2.81% 32px;
         }
       }
       &__num {
@@ -1796,6 +1816,167 @@
           font-size: clamp(0px,1.11vw,16px);
           margin-top: 16px;
           text-align: center;
+        }
+      }
+    }
+  }
+  &-summary {
+    flex-direction: column;
+    margin-top: 64px;
+    row-gap: 24px;
+    @include bp(m) {
+      align-items: center;
+      column-gap: 1.87%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-top: 43px;
+      row-gap: 0;
+    }
+    .ls__img {
+      margin-left: calc(50% - 50vw);
+			margin-right: calc(50% - 50vw);
+      @include bp(m) {
+        margin: 0;
+        width: 23.04%;
+      }
+      .item {
+        width: 50%;
+        @include bp(m) {
+          width: 100%;
+        }
+        &.lt-1 {
+          padding-right: 30px;
+          @include bp(m) {
+            padding-right: 24.74%;
+          }
+        }
+        &.lt-2 {
+          padding-left: 30px;
+          padding-top: 24px;
+          @include bp(m) {
+            padding-left: 0;
+            padding-right: 24.74%;
+          }
+        }
+        &.rt-1 {
+          padding-top: 24px;
+          padding-right: 24px;
+          @include bp(m) {
+            padding-left: 16.27%;
+            padding-right: 8.47%;
+          }
+        }
+        &.rt-2 {
+          padding-left: 30px;
+          @include bp(m) {
+            padding-left: 24.74%;
+          }
+        }
+      }
+    }
+    .ls__context {
+      p {
+        font-size: 16px;
+        line-height: 2;
+        @include bp(m) {
+          text-align: center;
+        }
+        strong {
+          font-weight: 600;
+          @include bp(m) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.pgPreparation__other {
+  padding: 80px 0;
+  @include bp(m) {
+    padding: 120px 0;
+  }
+  &-ls {
+    flex-direction: column;
+    margin-top: 40px;
+    @include bp(m) {
+      margin-top: 80px;
+      flex-direction: row;
+    }
+    .item {
+      align-self: flex-start;
+      aspect-ratio: 414/280;
+      padding: 0 17px;
+      width: 100%;
+      @include bp(m) {
+        aspect-ratio: 72 / 32;
+        width: 50%;
+      }
+      &.bg {
+        &-01 {
+          background-image: url(../images/preparation/bg_other_01.jpg);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          @include bp(m) {
+            background-image: url(../images/preparation/bg_other_01_pc.jpg);
+          }
+        }
+        &-02 {
+          background-image: url(../images/preparation/bg_other_02.jpg);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          @include bp(m) {
+            background-image: url(../images/preparation/bg_other_02_pc.jpg);
+          }
+        }
+      }
+      a {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        @include transition;
+        &::hover {
+          opacity: 0.6;
+        }
+      }
+      &__ttl {
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid $color_wht-1;
+        border-top: 1px solid $color_wht-1;
+        padding: 8px 0.5px;
+        text-align: center;
+        @include bp(m) {
+          width: 81.94%;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 600;
+          @include bp(m) {
+            font-size: clamp(0px,1.64vw,24px);
+          }
+        }
+        h4 {
+          font-size: 24px;
+          font-weight: 600;
+          @include bp(m) {
+            font-size: clamp(0px,2.22vw,32px);
+          }
+        }
+      }
+      &__btn {
+        margin-top: 11px;
+        @include bp(m) {
+          margin-top: 32px;
+        }
+        p {
+          font-size: 18px;
+          @include bp(m) {
+            font-size: 16px;
+          }
         }
       }
     }

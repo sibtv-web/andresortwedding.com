@@ -39,5 +39,32 @@
         </li>
       <?php endforeach; ?>
     </ul>
+    <div class="pgPreparation__tips-summary flex fade-anime" data-fade="fade-up-cont">
+      <ul class="ls__img flex">
+        <li class="item lt-1">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/preparation/img_tips_01.jpg')); ?>" alt="イメージ画像1">
+        </li>
+        <li class="item rt-1">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/preparation/img_tips_02.jpg')); ?>" alt="イメージ画像2">
+        </li>
+      </ul>
+      <div class="ls__context">
+        <p>
+          青い海や白いチャペル、大切な人たちに囲まれた特別な日──。<br/>
+          リゾートウェディングなら、夢のような結婚式が思っているよりもずっと身近に実現できます。<br/>
+          &nbsp;<br/>
+          <strong>準備が大変そうという理由だけで諦めるのは、もったいない！<br/>
+          おふたりらしいリゾートウェディングを、叶えてみませんか？</strong>
+        </p>
+      </div>
+      <ul class="ls__img flex">
+        <li class="item rt-2">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/preparation/img_tips_03.jpg')); ?>" alt="イメージ画像1">
+        </li>
+        <li class="item lt-2">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/preparation/img_tips_04.jpg')); ?>" alt="イメージ画像2">
+        </li>
+      </ul>
+    </div>
 	</div>
 </section>
