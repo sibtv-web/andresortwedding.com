@@ -20,8 +20,8 @@
       <?php 
         $bnrImages = [
           [
-            'name' => 'bnr_260428-1.jpg',
-            'link' => 'https://www.jtb.co.jp/wed/plan/early_summer/',
+            'name' => 'bnr_260310-2.jpg',
+            'link' => 'https://www.jtb.co.jp/wed/coupon/',
             'title' => 'バナー画像 1',
           ],
           [
