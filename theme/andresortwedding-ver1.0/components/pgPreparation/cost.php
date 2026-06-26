@@ -59,7 +59,7 @@
 			</h2>
 			<p class="pgPreparation_head_txt">
         リゾートウェディングの総額は、ゲスト人数やプラン、エリアで大きく変わります。<br/>
-        ゲスト20名を招いた場合の一般的な費用イメージを見ながら、費用の全体像をざっくり把握していきましょう。        
+        <span class="ft-bl">ゲスト20名を招いた場合の一般的な費用イメージ</span>を見ながら、費用の全体像をざっくり把握していきましょう。        
 			</p>
 		</div>
     <ul class="pgPreparation__cost-ls flex fade-anime" data-fade="fade-up-cont">

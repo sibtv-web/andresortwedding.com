@@ -107,13 +107,13 @@ if(toTop) {
 //   });
 // });
 // smooth scroll
+const headerHeight = header ? header.offsetHeight : 0;
 $(function(){
   $('a[href^="#"]').on('click' , function() {
-    console.log('test');
 
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
+    var position = target.offset().top - headerHeight;
     $('body,html').animate({scrollTop:position}, 400, 'swing');
     return false;
   });

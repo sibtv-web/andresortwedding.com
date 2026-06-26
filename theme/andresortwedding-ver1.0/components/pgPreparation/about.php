@@ -75,10 +75,14 @@
 		</div>
     <div class="pgPreparation__about-summary fade-anime" data-fade="fade-up">
       <div class="summary__wrap bg-beg-3">
-        <p>
+        <p class="pc">
           リゾートウェディングは、“やること”がコンパクトに整理されているのが魅力。<br/>
           打合せ回数も少ないので、忙しいおふたりでも無理なく進められます。<br/>
           それでは、実際にどんなダンドリで準備が進むのか、一緒に見ていきましょう。
+        </p>
+        <p class="sp">
+          リゾートウェディングは、“やること”がコンパクトに整理されているのが魅力。<br/>
+          打合せ回数も少ないので、忙しいおふたりでも無理なく進められます。<br/>
         </p>
       </div>
     </div>

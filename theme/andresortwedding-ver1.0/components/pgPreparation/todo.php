@@ -1,6 +1,7 @@
 <?php
   $data = [
     [
+      'id' => 'A',
       'title' => 'ゲストに関わること',
       'list' => [
         '報告・招待ゲストの決定',
@@ -25,6 +26,7 @@
       ],
     ],
     [
+      'id' => 'B',
       'title' => '衣装・美容に関わること',
       'list' => [
         'ドレス・タキシードの試着・決定',
@@ -39,11 +41,12 @@
         [
           'main' => 'リゾートに映える衣装を日本にいる間に確認できる会社も多い',
           'notes' => '※リゾートまで衣装を自分で運ぶ必要があるか、同じものが現地に用意されているかは会社により異なるため事前に確認！',
-          'result' => '日本で試着したものと同じ衣装を現地に用意し、<br/>手ぶら移動が叶う会場も！',
+          'result' => '日本で試着したものと同じ衣装を現地に用意し、<br class="pc"/>手ぶら移動が叶う会場も！',
         ],
       ],
     ],
     [
+      'id' => 'C',
       'title' => 'アイテム決め',
       'list' => [
         'ブーケ・ブートニア',
@@ -63,13 +66,14 @@
           'result' => '',
         ],
         [
-          'main' => '自然が彩る素敵な空間が用意されているので、<br/>好きなアイテムをカタログから選ぶだけでOK',
+          'main' => '自然が彩る素敵な空間が用意されているので、<br class="pc"/>好きなアイテムをカタログから選ぶだけでOK',
           'notes' => '',
           'result' => '',
         ],
       ],
     ],
     [
+      'id' => 'D',
       'title' => '演出に関わること',
       'list' => [
         '演出の検討・確定',
@@ -77,7 +81,7 @@
       ],
       'point' => [
         [
-          'main' => 'リゾートウェディングはすべて会場のスタッフが担ってくれるから、司会者の手配やすり合わせは不要',
+          'main' => 'リゾートウェディングはすべて会場のスタッフが担ってくれるから、<br class="pc"/>司会者の手配やすり合わせは不要',
           'notes' => '',
           'result' => '',
         ],
@@ -129,11 +133,18 @@
         <div class="flex notes">
           <ul class="notes__list">
             <?php
+              $input = 0;
               foreach ($item['list'] as $notes) :
+              $input++;
             ?>
             <li class="notes__list-item flex">
-              <input type="checkbox">
-              <p><?php echo $notes;?></p>
+              <input id="chk-<?php echo $item['id'];?>-<?php echo $input;?>" type="checkbox" name="chk-<?php echo $item['id'];?>-<?php echo $input;?>" value="">
+              <label for="chk-<?php echo $item['id'];?>-<?php echo $input;?>">
+                <p class="flex">
+                  <span class="input"></span>                
+                  <span><?php echo $notes;?></span>
+                </p>
+              </label>
             </li>
             <?php endforeach; ?>
           </ul>
