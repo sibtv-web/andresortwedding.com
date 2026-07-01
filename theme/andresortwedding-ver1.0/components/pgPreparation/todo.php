@@ -41,7 +41,7 @@
         [
           'main' => 'リゾートに映える衣装を日本にいる間に確認できる会社も多い',
           'notes' => '※リゾートまで衣装を自分で運ぶ必要があるか、同じものが現地に用意されているかは会社により異なるため事前に確認！',
-          'result' => '日本で試着したものと同じ衣装を現地に用意し、<br class="pc"/>手ぶら移動が叶う会場も！',
+          'result' => '日本で試着したものと同じ衣装を現地に用意し、手ぶら移動が叶う会場も！',
         ],
       ],
     ],
@@ -126,7 +126,7 @@
         foreach ($data as $item) :
         $count++;
       ?>
-      <li class="item">
+      <li class="item <?php echo 'item-'.$count;?>">
         <div class="ttl__container">
           <h3 class="ttl__container-main bg-blu-6 flex"><?php echo $item['title'];?></h3>
         </div>
