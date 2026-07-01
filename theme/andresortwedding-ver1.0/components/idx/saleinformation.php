@@ -20,12 +20,12 @@
       <?php 
         $bnrImages = [
           [
-            'name' => 'bnr_260310-2.jpg',
-            'link' => 'https://www.jtb.co.jp/wed/coupon/',
+            'name' => 'bnr_260701-1.jpg',
+            'link' => 'https://www.jtb.co.jp/wed/campaign/plaza-plan/',
             'title' => 'バナー画像 1',
           ],
           [
-            'name' => 'bnr_260520-1.jpg',
+            'name' => 'bnr_260701-2.jpg',
             'link' => 'https://www.his-wedding.com/fair/sss/',
             'title' => 'バナー画像 2',
           ],
