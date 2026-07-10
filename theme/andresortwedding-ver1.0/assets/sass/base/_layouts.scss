@@ -3,6 +3,9 @@
 html {
   &:has(#header.fixed) {
     overflow: hidden;
+    @include bp(m) {
+      overflow-y: auto;
+    }
   }
 }
 main {

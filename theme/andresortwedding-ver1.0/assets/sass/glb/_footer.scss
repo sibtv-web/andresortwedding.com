@@ -99,6 +99,7 @@
             align-items: center;
             display: inline-flex;
             column-gap: 4px;
+            line-height: 1.5;
             @include transition;
             @include bp(m) {
               column-gap: 8px;
