@@ -332,7 +332,17 @@ font-weight: 700;
 .pgarea_info {
 	margin-top: 12.0rem;
 	&_title {
-
+    .en {
+      max-width: 263px;
+      // top: 32%;
+      top: -37%;
+      width: 94.92%;
+      @include bp(m) {
+        max-width: none;
+        top: -39%;
+        width: auto;
+      }
+    }
 	}
 	&_about {
 		display: flex;
@@ -1040,7 +1050,19 @@ font-weight: 700;
 	@include bp(m) {
 		padding: 14.0rem 0 12.0rem;
 	}
-	&_ttl {}
+	&_ttl {
+    .en {
+      max-width: 386.1px;
+      // top: 32%;
+      top: -37%;
+      width: 93.26%;
+      @include bp(m) {
+        max-width: none;
+        top: -50%;
+        width: auto;
+      }
+    }
+  }
 	&_cont {
 		margin-top: 4.0rem;
 		@include bp(m) {
@@ -1541,6 +1563,17 @@ font-weight: 700;
 				font-size: clamp(0px, 2.4rem, 24px);
 			}
 		}
+    .en {
+      max-width: 311.25px;
+      // top: 32%;
+      top: -22%;
+      width: 75.18%;
+      @include bp(m) {
+        max-width: none;
+        top: -19%;
+        width: auto;
+      }
+    }
 	}
 	&_cont {
 		margin-top: 4.0rem;

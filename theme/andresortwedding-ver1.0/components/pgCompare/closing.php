@@ -2,8 +2,11 @@
 	<div class="pgvs_closing_container">
 		<p class="pgvs_closing_subttl"><span>さいごに</span></p>
 
-		<div class="pgvs_closing_ttl fade-anime" data-fade="fade-up">
-			<p class="en ft-blu-1">Find your style</p>
+		<div class="pgvs_closing_ttl section__title fade-anime" data-fade="fade-up">
+			<!-- <p class="en ft-blu-1">Find your style</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_find-your-style.svg')); ?>" alt="Find your style">
+      </div>
 			<h2 class="jp">自分たちにあった<br class="sp">結婚式のスタイルを探そう！</h2>
 		</div>
 		<p class="pgvs_closing_ttl-txt fade-anime" data-fade="fade-up">結婚式のスタイルは大きく分けて、リゾート地で挙げるリゾートウェディングと、自宅から行きやすいエリアで挙げる近場ウェディングのふたつ。<br>まずはそれぞれの特徴を押さえておきましょう。</p>

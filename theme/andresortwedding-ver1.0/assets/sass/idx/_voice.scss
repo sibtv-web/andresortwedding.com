@@ -4,9 +4,20 @@
   position: relative;
   z-index: 10;
   &__title {
-    .jp {
-      margin-top: -24px;
+    .en {
+      max-width: 129.6px;
+      // top: 32%;
+      top: -6%;
+      width: 46.76%;
+      @include bp(m) {
+        max-width: none;
+        top: -5%;
+        width: auto;
+      }
     }
+    // .jp {
+    //   margin-top: -24px;
+    // }
   }
   &__inner {
     background-image: url(../images/idx/voice/bg_main_01.png);

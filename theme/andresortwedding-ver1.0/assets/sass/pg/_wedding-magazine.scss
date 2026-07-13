@@ -27,8 +27,21 @@
 			max-width: 128.0rem;
 			width: 90%;
 		}
-	}
-	&_ttl {
+    .section__title {
+      .en {
+        left: 49%;
+        max-width: 255.12px;
+        // top: 32%;
+        top: -32%;
+        width: 61.62%;
+        @include bp(m) {
+          left: 50%;
+          max-width: none;
+          top: -28%;
+          width: auto;
+        }
+      }
+    }
 	}
 	&_con {
 		display: flex;

@@ -72,40 +72,6 @@ if(toTop) {
   });
 }
 
-// // smooth scroll
-// const headerHeight = nav ? nav.offsetHeight : 0;
-// const urlHash = window.location.hash;
-// if (urlHash) {
-//   window.addEventListener('load', () => {
-//     window.scrollTo(0, 0);
-//     setTimeout(() => {
-//       const target = document.querySelector(urlHash);
-//       if (!target) return;
-//       const position = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-//       window.scrollTo({
-//         top: position,
-//         behavior: 'auto'
-//       });
-//     }, 0);
-//   });
-// }
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     const href = this.getAttribute('href');
-//     const target = href === '#' || href === ''
-//       ? document.documentElement
-//       : document.querySelector(href);
-//     if (!target) return;
-//     const position = target.getBoundingClientRect().top + window.scrollY;
-//     const headHeight = document.querySelector('#nav')?.offsetHeight || 0;
-//     const targetPosition = position - headHeight;
-//     window.scrollTo({
-//       top: targetPosition,
-//       behavior: 'smooth'
-//     });
-//   });
-// });
 // smooth scroll
 const headerHeight = header ? header.offsetHeight : 0;
 $(function(){
@@ -338,3 +304,31 @@ gsap.utils.toArray(".fade-anime").forEach((el) => {
   }
 
 });
+
+//feature slider
+const featureSlide = document.querySelector(".feature .splide");
+if(featureSlide) {
+  new Splide(featureSlide,{
+    type: string = 'loop',
+    rewind: boolean = true,
+    speed: number = 400,
+    autoWidth: boolean = false,
+    arrows: boolean = true,
+    pagination: boolean = false,
+    drag: boolean = true,
+    gap: string = '48px',
+    padding: { left: '5.55%', right: '24.44%' },
+    padding: { left: '5.55%', right: '55.55%' },
+    perPage: number = 1,
+    // perPage: number = 2,
+    perMove: number = 1,
+    updateOnMove: true,
+    breakpoints: {
+      750: {
+      gap: string = '12px',
+      perPage: number = 1,
+      padding: { left: '2.89%', right: '19.8%' },
+      },
+    }
+  }).mount();
+}

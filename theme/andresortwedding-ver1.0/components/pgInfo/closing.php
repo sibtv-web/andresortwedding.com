@@ -2,11 +2,13 @@
 	<div class="pginfo_closing_container">
 		<p class="pginfo_closing_subttl"><span>さいごに</span></p>
 
-		<div class="pginfo_closing_ttl fade-anime" data-fade="fade-up">
-			<p class="en ft-blu-1">Resort Wedding</p>
+		<div class="pginfo_closing_ttl section__title fade-anime" data-fade="fade-up">
+			<!-- <p class="en ft-blu-1">Resort Wedding</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_resort-wedding.svg')); ?>" alt="Resort Wedding">
+      </div>
 			<h2 class="jp">リゾートウェディングで叶える、<br class="sp">特別な旅</h2>
 		</div>
-
 		<div class="pginfo_closing_cont fade-anime" data-fade="fade-up">
 			<picture class="pginfo_closing_img cls-1">
 				<source media="(min-width: 750px)" srcset="<?= esc_url(get_theme_file_uri('assets/images/info/closing_01.png')) ?>">

@@ -55,7 +55,7 @@
           a {
             align-items: center;
             display: inline-flex;
-            column-gap: 4px;
+            column-gap: 11px;
             @include transition;
             @include bp(m) {
               column-gap: 8px;
@@ -98,7 +98,7 @@
           a {
             align-items: center;
             display: inline-flex;
-            column-gap: 4px;
+            column-gap: 11px;
             line-height: 1.5;
             @include transition;
             @include bp(m) {

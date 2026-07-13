@@ -1,7 +1,10 @@
 <section class="pgarea_info" id="area-info">
   <div class="pgarea_container">
     <div class="pgarea_info_title section__title fade-anime" data-fade="fade-up">
-      <p class="en ft-blu-1">Information</p>
+      <!-- <p class="en ft-blu-1">Information</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_information.svg')); ?>" alt="Information">
+      </div>
       <h2 class="jp">基本情報</h2>
     </div>
     <ul class="pgarea_info_about fade-anime" data-fade="fade-up">
