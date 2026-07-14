@@ -62,10 +62,10 @@
         <span><span>特集コンテンツ</span></span>
       </li>
       <li class="f__list-itm">
-        <a href="<?php echo esc_url(home_url());?>/compare/"><span>近場ウェディングと<br/>徹底比較</span></a>
+        <a href="<?php echo esc_url(home_url());?>/compare/"><span>近場ウェディングと<br class="pc"/>徹底比較</span></a>
       </li>
       <li class="f__list-itm">
-        <a href="<?php echo esc_url(home_url());?>/preparation/"><span>事前準備・費用を<br/>総まとめ</span></a>
+        <a href="<?php echo esc_url(home_url());?>/preparation/"><span>事前準備・費用を<br class="pc"/>総まとめ</span></a>
       </li>
     </ul>
     <ul class="f__list">
