@@ -1,7 +1,10 @@
 <section id="faq" class="faq">
   <div class="faq__inner section__inner">
     <div class="faq__title section__title fade-anime" data-fade="fade-up">
-      <p class="en ft-blu-1">Faq</p>
+      <!-- <p class="en ft-blu-1">Faq</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_faq.svg')); ?>" alt="Faq">
+      </div>
       <h2 class="jp"><span class="ft-sm">リゾートウェディングのリアル！</span><br/>みんなのQ&Aを総まとめ</h2>
     </div>
     <ul class="faq__block fade-anime" data-fade="fade-up-cont">

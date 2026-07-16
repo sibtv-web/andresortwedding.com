@@ -1,7 +1,10 @@
 <section class="pgarea_other">
   <div>
     <div class="pgarea_other_ttl section__title fade-anime" data-fade="fade-up">
-      <p class="en ft-blu-1">Other areas</p>
+      <!-- <p class="en ft-blu-1">Other areas</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_other-areas.svg')); ?>" alt="Other areas">
+      </div>
       <h2 class="jp">その他の人気エリア</h2>
     </div>
 

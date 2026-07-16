@@ -1,7 +1,10 @@
 <section id="voice" class="voice bg-wht-1">
   <div class="voice__inner section__inner">
     <div class="voice__title section__title fade-anime" data-fade="fade-up">
-      <p class="en ft-blu-1">Voice</p>
+      <!-- <p class="en ft-blu-1">Voice</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_voice.svg')); ?>" alt="Voice">
+      </div>
       <h2 class="jp"><span class="ft-sm">リゾートウェディングを挙げた</span><br/>先輩カップルの声</h2>
     </div>
     <div class="voice__comment flex">

@@ -14,7 +14,10 @@ $has_filter = !empty($selected_categories) || !empty($selected_tags);
   <section class="pg_magazine_ttl">
     <div class="pg_magazine_container">
       <div class="section__title fade-anime" data-fade="fade-up">
-        <p class="en ft-blu-1">Magazine</p>
+        <!-- <p class="en ft-blu-1">Magazine</p> -->
+        <div class="en">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_magazine.svg')); ?>" alt="Magazine">
+        </div>
         <h2 class="jp">お役立ち記事</h2>
       </div>
     </div>

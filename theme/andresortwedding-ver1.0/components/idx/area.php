@@ -1,7 +1,10 @@
 <section id="area" class="area">
   <div class="area__inner section__inner">
     <div class="area__title section__title fade-anime" data-fade="fade-up">
-      <p class="en ft-blu-1">Area guides</p>
+      <!-- <p class="en ft-blu-1">Area guides</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_area.svg')); ?>" alt="Area guides">
+      </div>
       <h2 class="jp">エリア別ガイド</h2>
     </div>
     <?php

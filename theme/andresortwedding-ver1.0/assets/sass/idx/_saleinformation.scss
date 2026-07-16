@@ -8,6 +8,19 @@
   @include bp(m) {
     background-image: url(../images/idx/bnr/bg_main_pc.png);
   }
+  &__title {
+    .en {
+      max-width: 366.44px;
+      // top: 32%;
+      top: -36%;
+      width: 88.51%;
+      @include bp(m) {
+        max-width: none;
+        top: -61%;
+        width: auto;
+      }
+    }
+  }
   &__list {
     flex-direction: column;
     margin: 0 auto;

@@ -72,7 +72,7 @@
     </p>
     <div id="nav-2" class="submenu">
       <ul class="submenu__ls area flex-bt">
-        <li class="submenu__ls-ttl flex">
+        <li class="submenu__ls-ttl flex pc">
           <p class="pc">エリア別ガイド</p>
           <!-- <a href="/"><span>TOPを見る</span></a> -->
         </li>
@@ -98,10 +98,33 @@
     </div>
   </li>
   <li class="nav__menu-itm">
+    <p class="ttl flex ft-blk-2" data-nav="nav-3">
+      <span>特集コンテンツ</span>
+    </p>
+    <div id="nav-3" class="submenu">
+      <ul class="submenu__ls feature flex-bt">
+        <li class="submenu__ls-ttl flex pc">
+          <p class="pc">特集コンテンツ</p>
+          <!-- <a href="/"><span>TOPを見る</span></a> -->
+        </li>
+        <li class="submenu__ls-feature">
+          <a class="compare" href="<?php echo esc_url(home_url());?>/compare/">
+            <p class="jp ft-wht-1"><span></span>リゾート VS 近場 徹底比較</p>
+          </a>
+        </li>
+        <li class="submenu__ls-feature">
+          <a class="preparation" href="<?php echo esc_url(home_url());?>/preparation/">
+            <p class="jp ft-wht-1">事前準備・費用を総まとめ</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <!-- <li class="nav__menu-itm">
     <a class="ttl flex ft-blk-2" href="<?php echo $baseUrl?>#voice">
       <span>先輩カップルの声</span>
     </a>
-  </li>
+  </li> -->
   <li class="nav__menu-itm">
     <a class="ttl flex ft-blk-2" href="<?php echo $baseUrl?>#faq">
       <span>よくある質問</span>

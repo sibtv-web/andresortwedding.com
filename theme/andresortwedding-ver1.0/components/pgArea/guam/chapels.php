@@ -1,7 +1,10 @@
 <section class="pgarea_chapels" id="area-chapels">
   <div class="pgarea_container">
     <div class="pgarea_chapels_ttl section__title fade-anime" data-fade="fade-up">
-      <p class="en ft-blu-1">Wedding chapels</p>
+      <!-- <p class="en ft-blu-1">Wedding chapels</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_wedding-chapels.svg')); ?>" alt="Wedding chapels">
+      </div>
       <h2 class="jp">グアムのおすすめ<br class="sp">挙式会場・チャペル</h2>
     </div>
 

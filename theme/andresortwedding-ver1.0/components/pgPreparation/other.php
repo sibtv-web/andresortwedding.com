@@ -1,8 +1,11 @@
 <section class="pgPreparation__other">
   <div class="pgPreparation__other-container fade-anime" data-fade="fade-up">
     <div class="pgPreparation__other-ttl section__title">
-      <p class="en ft-blu-1">Special</p>
-      <h2 class="jp">リゾートウェディング特集コンテンツ</h2>
+      <!-- <p class="en ft-blu-1">Special</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_special.svg')); ?>" alt="Special">
+      </div>
+      <h2 class="jp">リゾートウェディング<br class="sp"/>特集コンテンツ</h2>
     </div>
     <ul class="pgPreparation__other-ls flex">
       <li class="item bg-01 flex">

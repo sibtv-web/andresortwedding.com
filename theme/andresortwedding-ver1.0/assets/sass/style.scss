@@ -13,6 +13,7 @@
 @use "parts/svg";
 @use "parts/backtotop";
 @use "parts/totop";
+@use "parts/feature";
 
 @use "glb/header";
 @use "glb/nav";
@@ -30,13 +31,9 @@
 @use "idx/magazine";
 
 @use "pg/area/areaKv";
-
 @use "pg/wedding-magazine";
-
 @use "pg/document";
-
 @use "pg/pginfo";
-
 @use "pg/pgvs";
 @use "pg/pgpreparation";
 

@@ -1,7 +1,10 @@
 <section id="magazine" class="magazine bg-wht-1">
   <div class="magazine__inner section__inner">
     <div class="magazine__title section__title fade-anime" data-fade="fade-up">
-      <p class="en ft-blu-1">Magazine</p>
+      <!-- <p class="en ft-blu-1">Magazine</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_magazine.svg')); ?>" alt="Magazine">
+      </div>
       <h2 class="jp">ハワイ お役立ち記事</h2>
     </div>
     <div class="magazine__slider splide">

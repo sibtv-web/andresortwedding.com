@@ -1,7 +1,10 @@
 <section class="pgarea_course" id="area-course">
   <div class="pgarea_container pgarea_container-spmax">
     <div class="pgarea_course_ttl section__title fade-anime" data-fade="fade-up">
-      <p class="en ft-blu-1">Model course</p>
+      <!-- <p class="en ft-blu-1">Model course</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_model-course.svg')); ?>" alt="Model course">
+      </div>
       <h2 class="jp">
         <small>ハワイで叶える結婚式＆ハネムーン</small><br>
         モデルコース
