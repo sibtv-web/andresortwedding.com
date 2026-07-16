@@ -129,25 +129,25 @@ body {
 }
 .pc {
   display: none !important;
-  &-il {
+  &-inline {
     display: none !important;
   }
 }
 .sp {
-  &-il {
+  &-inline {
     display: inline !important;
   }
 }
 @include bp(m) {
   .pc {
     display: block !important;
-    &-il {
+    &-inline {
       display: inline !important;
     }
   }
   .sp {
     display: none !important;
-    &-il {
+    &-inline {
       display: none !important;
     }
   }
