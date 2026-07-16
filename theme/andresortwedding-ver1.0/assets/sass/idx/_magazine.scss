@@ -6,11 +6,24 @@
     padding-bottom: 120px;
   }
   &__title {
-    .jp {
-      margin-top: -6px;
+    .en {
+      left: 49%;
+      max-width: 255.12px;
+      // top: 32%;
+      top: -32%;
+      width: 61.62%;
       @include bp(m) {
+        left: 50%;
+        max-width: none;
+        top: -28%;
+        width: auto;
       }
     }
+    // .jp {
+    //   margin-top: -6px;
+    //   @include bp(m) {
+    //   }
+    // }
   }
   &__slider {
     margin-top: 40px;

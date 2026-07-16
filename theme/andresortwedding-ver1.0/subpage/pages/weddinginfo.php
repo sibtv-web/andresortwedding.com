@@ -1,15 +1,16 @@
 <main class="pginfo">
-
-  <?php get_template_part('components/pgInfo/fv'); ?>
-  <?php get_template_part('components/pgInfo/charm'); ?>
-  <?php get_template_part('components/pgInfo/area'); ?>
-  <?php get_template_part('components/pgInfo/money'); ?>
-  <?php get_template_part('components/pgInfo/chapel'); ?>
-  <?php get_template_part('components/pgInfo/guest'); ?>
-  <?php get_template_part('components/pgInfo/preparation'); ?>
-  <?php get_template_part('components/pgInfo/daybefore'); ?>
-  <?php get_template_part('components/pgInfo/ontheday'); ?>
-  <?php get_template_part('components/pgInfo/closing'); ?>
-  <?php get_template_part('components/idx/saleinformation'); ?>
-
+  <?php 
+    get_template_part('components/pgInfo/fv'); 
+    get_template_part('components/pgInfo/charm');
+    get_template_part('components/pgInfo/area');
+    get_template_part('components/pgInfo/money');
+    get_template_part('components/pgInfo/chapel');
+    get_template_part('components/pgInfo/guest');
+    get_template_part('components/pgInfo/preparation');
+    get_template_part('components/pgInfo/daybefore');
+    get_template_part('components/pgInfo/ontheday');
+    get_template_part('components/pgInfo/closing');
+    get_template_part('components/parts/feature');
+    get_template_part('components/idx/saleinformation');
+  ?>
 </main>

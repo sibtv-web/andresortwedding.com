@@ -2,9 +2,15 @@
 @use "../lib/color" as *;
 .charm {
   &__title {
-    .jp {
-      margin-top: -6px;
+    .en {
+      max-width: 162.55px;
+      // top: 32%;
+      top: -14%;
+      width: 39.26%;
       @include bp(m) {
+        max-width: none;
+        top: -23%;
+        width: auto;
       }
     }
   }

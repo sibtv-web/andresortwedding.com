@@ -1958,6 +1958,19 @@
   @include bp(m) {
     padding: 120px 0;
   }
+  &-ttl {
+    .en {
+      max-width: 177.32px;
+      // top: 32%;
+      top: -14%;
+      width: 42.83%;
+      @include bp(m) {
+        max-width: none;
+        top: -12%;
+        width: auto;
+      }
+    }
+  }
   &-ls {
     flex-direction: column;
     margin-top: 40px;

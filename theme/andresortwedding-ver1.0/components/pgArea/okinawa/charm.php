@@ -1,7 +1,10 @@
 <section id="charm" class="charm pgarea_charm pgarea_charm-okinawa">
   <div class="charm__inner section__inner">
     <div class="charm__title section__title fade-anime" data-fade="fade-up">
-      <p class="en ft-blu-1">Charm</p>
+      <!-- <p class="en ft-blu-1">Charm</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_charm.svg')); ?>" alt="Charm">
+      </div>
       <h2 class="jp">沖縄でのウェディングの魅力</h2>
     </div>
     <ul class="charm__list flex fade-anime" data-fade="slide-up-cont-01">

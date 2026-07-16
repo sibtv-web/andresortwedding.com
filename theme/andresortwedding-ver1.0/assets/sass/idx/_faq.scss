@@ -4,12 +4,24 @@
   position: relative;
   z-index: 12;
   &__title {
-    .jp {
-      margin-top: -16px;
+    .en {
+      max-width: 104.44px;
+      // top: 32%;
+      top: 0;
+      // width: 25.22%;
       @include bp(m) {
-        margin-top: -29px;
+        left: 50.2%;
+        max-width: none;
+        top: -6%;
+        width: auto;
       }
     }
+    // .jp {
+    //   margin-top: -16px;
+    //   @include bp(m) {
+    //     margin-top: -29px;
+    //   }
+    // }
   }
   &__block {
     margin: 40px auto 0;

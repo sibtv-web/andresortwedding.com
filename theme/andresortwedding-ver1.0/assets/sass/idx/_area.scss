@@ -4,11 +4,22 @@
   position: relative;
   z-index: 2;
   &__title {
-    .jp {
-      margin-top: -8px;
+    .en {
+      max-width: 277.77px;
+      // top: 32%;
+      top: -41%;
+      width: 67.09%;
       @include bp(m) {
+        max-width: none;
+        top: -40%;
+        width: auto;
       }
     }
+    // .jp {
+    //   margin-top: -8px;
+    //   @include bp(m) {
+    //   }
+    // }
   }
   &__block {
     flex-wrap: nowrap;

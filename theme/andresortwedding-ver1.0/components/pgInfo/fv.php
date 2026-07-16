@@ -1,10 +1,12 @@
 <div id="kv" class="pginfo_kv">
 	<div class="pginfo_kv_container">
 		<div class="pginfo_kv_ttl section__title fade-anime" data-fade="fade-up">
-			<p class="en ft-blu-1">Information</p>
+			<!-- <p class="en ft-blu-1">Information</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_information.svg')); ?>" alt="Information">
+      </div>
 			<h2 class="jp">リゾートウェディングの<br class="sp">基本情報</h2>
 		</div>
-
 		<div class="pginfo_kv_nav j-navPg">
 			<p class="pginfo_kv_nav_label sp js-navToggle">目次</p>
 			<ul class="pginfo_kv_nav_wrap js-navCont">

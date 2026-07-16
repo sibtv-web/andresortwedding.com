@@ -1,10 +1,6 @@
 @use "../lib/mixin" as *;
 @use "../lib/color" as *;
 
-// .pgarea_kv {
-
-// }
-
 @mixin sp($width: 767px) {
 	@media screen and (max-width: $width) {
 		@content;
@@ -1596,9 +1592,7 @@
 	}
 }
 
-
 .pgvs_schedule {
-
 	&_container {
 		max-width: 136.0rem;
 		width: 100%;
@@ -1610,9 +1604,6 @@
 			}
 		}
 	}
-
-	// $bp-sp: 766px;
-
 	$blue: #27A6EC;
 	$gray: #A4998C;
 	$cream: #F4EAE2;
@@ -1623,277 +1614,253 @@
 	$text: #42382B;
 	$pink: #F8E6F3;
 	$green: #E3F4E9;
+  .weddingSchedule {
+    width: 100%;
+    max-width: 80.0rem;
+    margin: 0 auto;
+    .weddingSchedule__tabs {
+      display: grid;
+      grid-template-columns: 1fr 18.0rem 1fr;
+      align-items: stretch;
+      @include sp {
+        grid-template-columns: 7.0rem 1fr 1fr;
+        align-items: end;
+        position: sticky;
+        top: 9.6%;
+        left: 0;
+        background: #fff;
+        z-index: 10;
+      }
+    }
+    .weddingSchedule__tabsSpacer {
+      display: none;
+      @include sp {
+        display: block;
+        // background: $black;
+      }
+    }
+    .weddingSchedule__tabsCenter {
+      @include sp {
+        display: none;
+      }
+    }
+    .weddingSchedule__tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 4.0rem;
+      border: 0;
+      background: $gray;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+      @include ft_DNP-shuei;
+      cursor: default;
+      &.is-active {
+        background: $blue;
+      }
+      @include sp {
+        cursor: pointer;
+        &.cls-resort {
+          margin-right: 0.2rem;
+          background: #93D2F5;
+          &.is-active {
+            background: #27A6EC;
+          }
+        }
+        &.cls-nearby {
+          margin-left: 0.2rem;
+          background: #D1CCC5;
+          &.is-active {
+            background: #A4998C;
+          }
+        }
+        height: 4.4rem;
+        width: 15.0rem;
+        font-size: 1.2rem;
+        &.is-active {
+          height: 5.4rem;
+          width: 19.0rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
 
-	.weddingSchedule {
-	  width: 100%;
-	  max-width: 80.0rem;
-	  margin: 0 auto;
-	  .weddingSchedule__tabs {
-		display: grid;
-		grid-template-columns: 1fr 18.0rem 1fr;
-		align-items: stretch;
+    .weddingSchedule__pc {
+      display: block;
+      @include sp {
+        display: none;
+      }
+    }
 
-		@include sp {
-		  grid-template-columns: 7.0rem 1fr 1fr;
-			align-items: end;
-			position: sticky;
-			top: 7.0rem;
-			left: 0;
-			background: #fff;
-			z-index: 10;
-		}
-	  }
+    .weddingSchedule__sp {
+      display: none;
+      @include sp {
+        display: block;
+        // background: $black;
+      }
+    }
 
-	  .weddingSchedule__tabsSpacer {
-		display: none;
+    .weddingSchedule__dayTitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4.0rem;
+      background: $cream;
+      border-top: 1px solid $cream;
+      border-bottom: 1px solid $cream;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
 
-		@include sp {
-		  display: block;
-		  // background: $black;
-		}
-	  }
+      @include sp {
+        height: 44px;
+        font-size: 1.4rem;
+      }
+    }
 
-	  .weddingSchedule__tabsCenter {
-		@include sp {
-		  display: none;
-		}
-	  }
+    .weddingSchedule__pcBody {
+      display: grid;
+      grid-template-columns: 1fr 18.0rem 1fr;
+    }
 
-	  .weddingSchedule__tab {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 4.0rem;
-		border: 0;
-		background: $gray;
-		color: #fff;
-		font-size: 1.8rem;
-		font-weight: 700;
-		@include ft_DNP-shuei;
-		cursor: default;
+    .weddingSchedule__col,
+    .weddingSchedule__timeCol,
+    .weddingSchedule__spTime,
+    .weddingSchedule__spContent {
+      min-width: 0;
+    }
 
-		&.is-active {
-		  background: $blue;
-		}
+    .weddingSchedule__timeCol {
+      background: $cream-light;
+    }
 
-		@include sp {
-			cursor: pointer;
-			&.cls-resort {
-				margin-right: 0.2rem;
-				background: #93D2F5;
-				&.is-active {
-					background: #27A6EC;
-				}
-			}
-			&.cls-nearby {
-				margin-left: 0.2rem;
-				background: #D1CCC5;
-				&.is-active {
-					background: #A4998C;
-				}
-			}
+    .weddingSchedule__spBody {
+      display: grid;
+      grid-template-columns: 9.0rem 1fr;
+    }
 
-			height: 4.4rem;
-			width: 15.0rem;
-			font-size: 1.2rem;
-			&.is-active {
-				height: 5.4rem;
-				width: 19.0rem;
-				font-size: 1.4rem;
-			}
-		}
-	  }
+    .weddingSchedule__spTime {
+      background: $cream-light;
+    }
 
-	  .weddingSchedule__pc {
-		display: block;
+    .weddingSchedule__panel {
+      display: none;
+      &.is-active {
+        display: block;
+      }
+    }
 
-		@include sp {
-		  display: none;
-		}
-	  }
+    .scheduleCell {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-bottom: 1px solid $line;
+      overflow: hidden;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.7;
+      letter-spacing: 0.05em;
+      @include sp {
+        font-size: 1.4rem;
+      }
 
-	  .weddingSchedule__sp {
-		display: none;
+      &.cls-20,
+      &.cls-15 {
+        font-size: 1.2rem;
+        line-height: 1.5em;
+      }
+    }
 
-		@include sp {
-		  display: block;
-		  // background: $black;
-		}
-	  }
+    .scheduleCell--time {
+      // align-items: flex-start;
+      // justify-content: flex-start;
+      align-items: center;
+      justify-content: center;
+      // padding-top: 16px;
+      // padding-left: 30px;
+      background: $cream-light;
+      color: $text;
+      font-size: 1.8rem;
+      font-weight: 700;
 
-	  .weddingSchedule__dayTitle {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 4.0rem;
-		background: $cream;
-		border-top: 1px solid $cream;
-		border-bottom: 1px solid $cream;
-		font-size: 1.8rem;
-		font-weight: 700;
-		letter-spacing: 0.12em;
+      @include sp {
+        font-size: 1.35rem;
+      }
+    }
 
-		@include sp {
-		  height: 44px;
-		  font-size: 1.4rem;
-		}
-	  }
+    .scheduleCell--pink {
+      background: $pink;
+      color: $text;
+    }
 
-	  .weddingSchedule__pcBody {
-		display: grid;
-		grid-template-columns: 1fr 18.0rem 1fr;
-	  }
+    .scheduleCell--green {
+      background: $green;
+      color: $text;
+    }
 
-	  .weddingSchedule__col,
-	  .weddingSchedule__timeCol,
-	  .weddingSchedule__spTime,
-	  .weddingSchedule__spContent {
-		min-width: 0;
-	  }
+    .scheduleCell--empty {
+      background: #fff;
+    }
 
-	  .weddingSchedule__timeCol {
-		background: $cream-light;
-	  }
+    .scheduleCell--diagonal,
+    .scheduleCell--diagonalReverse {
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+      }
+    }
 
-	  .weddingSchedule__spBody {
-		display: grid;
-		grid-template-columns: 9.0rem 1fr;
-	  }
+    .scheduleCell--diagonal {
+      &::before {
+        background: linear-gradient(
+        to top right,
+        transparent calc(50% - 1px),
+        $line 50%,
+        transparent calc(50% + 1px)
+        );
+      }
+    }
 
-	  .weddingSchedule__spTime {
-		background: $cream-light;
-	  }
+    .scheduleCell--diagonalReverse {
+      &::before {
+        background: linear-gradient(
+        to top right,
+        transparent calc(50% - 1px),
+        $line 50%,
+        transparent calc(50% + 1px)
+        );
+      }
+    }
 
-	  .weddingSchedule__spContent {
-	  //   background: $black;
-	  }
+    .weddingSchedule__note {
+      margin-top: 1.2rem;
+      color: $text;
+      font-size: 1.4rem;
+      letter-spacing: 0.04em;
+      text-align: right;
+      @include sp {
+        margin-top: 1.2rem;
+        padding: 0 2.4rem;
+        font-size: 1.2rem;
+        text-align: left;
+      }
+    }
 
-	  .weddingSchedule__panel {
-		display: none;
-
-		&.is-active {
-		  display: block;
-		}
-	  }
-
-	  .scheduleCell {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		border-bottom: 1px solid $line;
-		overflow: hidden;
-		text-align: center;
-		font-size: 1.6rem;
-		font-weight: 500;
-		line-height: 1.7;
-		letter-spacing: 0.05em;
-
-		@include sp {
-		  font-size: 1.4rem;
-		}
-
-		&.cls-20,
-		&.cls-15 {
-			font-size: 1.2rem;
-			line-height: 1.5em;
-		}
-	  }
-
-	  .scheduleCell--black {
-	  //   background: $black;
-		// color: $gold;
-	  }
-
-	  .scheduleCell--time {
-		// align-items: flex-start;
-		// justify-content: flex-start;
-		align-items: center;
-		justify-content: center;
-		// padding-top: 16px;
-		// padding-left: 30px;
-		background: $cream-light;
-		color: $text;
-		font-size: 1.8rem;
-		font-weight: 700;
-
-		@include sp {
-		  font-size: 1.35rem;
-		}
-	  }
-
-	  .scheduleCell--pink {
-		background: $pink;
-		color: $text;
-	  }
-
-	  .scheduleCell--green {
-		background: $green;
-		color: $text;
-	  }
-
-	  .scheduleCell--empty {
-		background: #fff;
-	  }
-
-	  .scheduleCell--diagonal,
-	  .scheduleCell--diagonalReverse {
-		&::before {
-		  content: "";
-		  position: absolute;
-		  inset: 0;
-		  pointer-events: none;
-		}
-	  }
-
-	  .scheduleCell--diagonal {
-		&::before {
-		  background: linear-gradient(
-			to top right,
-			transparent calc(50% - 1px),
-			$line 50%,
-			transparent calc(50% + 1px)
-		  );
-		}
-	  }
-
-	  .scheduleCell--diagonalReverse {
-		&::before {
-		  background: linear-gradient(
-			to top right,
-			transparent calc(50% - 1px),
-			$line 50%,
-			transparent calc(50% + 1px)
-		  );
-		}
-	  }
-
-	  .weddingSchedule__note {
-		margin-top: 1.2rem;
-		color: $text;
-		font-size: 1.4rem;
-		letter-spacing: 0.04em;
-		text-align: right;
-
-		@include sp {
-		margin-top: 1.2rem;
-		padding: 0 2.4rem;
-		  font-size: 1.2rem;
-		  text-align: left;
-		}
-	  }
-
-		/* 高さ指定用クラス */
-		$heights: 10, 15, 20, 30, 40, 50, 60, 80, 90, 120, 300, 360;
-
-		@each $height in $heights {
-			.cls-#{$height} {
-				height: calc($height / 10) * 1rem;
-				min-height: calc($height / 10) * 1rem;
-			}
-		}
-	}
+    /* 高さ指定用クラス */
+    $heights: 10, 15, 20, 30, 40, 50, 60, 80, 90, 120, 300, 360;
+    @each $height in $heights {
+      .cls-#{$height} {
+        height: calc($height / 10) * 1rem;
+        min-height: calc($height / 10) * 1rem;
+      }
+    }
+  }
 
 	&_main {
 		position: relative;
@@ -2155,47 +2122,56 @@
 		position: relative;
 		@include bp(m) {
 			margin-top: 4.8rem;
-
 		}
-
+    .en {
+      max-width: 327px;
+      // top: 32%;
+      top: 5%;
+      width: 78.98%;
+      @include bp(m) {
+        max-width: none;
+        top: -9%;
+        width: auto;
+      }
+    }
 		// @include bp(m) {
 		// 	padding-top: 55px;
 		// }
 
-		.en {
-			z-index: 1;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%) rotate(-10deg);
-			// width: 96%;
+		// .en {
+		// 	z-index: 1;
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	left: 50%;
+		// 	transform: translate(-50%, -50%) rotate(-10deg);
+		// 	// width: 96%;
 
-			@include ft_Javacom;
-			font-size: clamp(0px, 3.8rem, 38px);
-			font-weight: 400;
-			line-height: 1;
-			text-align: center;
-			white-space: nowrap;
+		// 	@include ft_Javacom;
+		// 	font-size: clamp(0px, 3.8rem, 38px);
+		// 	font-weight: 400;
+		// 	line-height: 1;
+		// 	text-align: center;
+		// 	white-space: nowrap;
 
-			@include bp(m) {
-				font-size: clamp(0px, 6.0rem, 60px);
-			}
-		}
+		// 	@include bp(m) {
+		// 		font-size: clamp(0px, 6.0rem, 60px);
+		// 	}
+		// }
 
-		.jp {
-			position: relative;
-			z-index: 2;
-			font-size: clamp(0px, 2.4rem, 24px);
-			font-weight: 700;
-			letter-spacing: 0.04em;
-			line-height: 1.3;
-			text-align: center;
+		// .jp {
+		// 	position: relative;
+		// 	z-index: 2;
+		// 	font-size: clamp(0px, 2.4rem, 24px);
+		// 	font-weight: 700;
+		// 	letter-spacing: 0.04em;
+		// 	line-height: 1.3;
+		// 	text-align: center;
 
-			@include bp(m) {
-				font-size: clamp(0px, 3.6rem, 36px);
-			}
+		// 	@include bp(m) {
+		// 		font-size: clamp(0px, 3.6rem, 36px);
+		// 	}
 
-		}
+		// }
 	}
 
 	&_ttl-txt {

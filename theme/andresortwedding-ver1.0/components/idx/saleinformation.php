@@ -13,7 +13,10 @@
   </div>
   <div class="sale-information__inner section__inner fade-anime" data-fade="fade-up">
     <div class="sale-information__title section__title">
-      <p class="en ft-blu-4">Sale information</p>
+      <!-- <p class="en ft-blu-4">Sale information</p> -->
+      <div class="en">
+        <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_sale-information.svg')); ?>" alt="Sale information">
+      </div>
       <h2 class="jp">ブライダルフェア・<br class="sp"/>キャンペーン情報</h2>
     </div>
     <ul class="sale-information__list flex-bt">

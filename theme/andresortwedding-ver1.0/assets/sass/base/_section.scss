@@ -27,10 +27,12 @@
       position: absolute;
       text-align: center;
       top: 0;
-      transform: translateX(-50%) rotate(-10deg);
-      width: 96%;
+      // transform: translateX(-50%) rotate(-10deg);
+      transform: translateX(-50%);
+      // width: 96%;
+      width: auto;
       z-index: 1;
-      @include ft_Javacom;
+      // @include ft_Javacom;
       @include bp(m) {
         font-size: 60px;
       }
