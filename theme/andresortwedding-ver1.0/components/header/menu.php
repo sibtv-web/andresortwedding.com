@@ -109,7 +109,7 @@
         </li>
         <li class="submenu__ls-feature">
           <a class="compare" href="<?php echo esc_url(home_url());?>/compare/">
-            <p class="jp ft-wht-1"><span>リゾート VS 近場</span><br/>徹底比較</p>
+            <p class="jp ft-wht-1"><span></span>リゾート VS 近場 徹底比較</p>
           </a>
         </li>
         <li class="submenu__ls-feature">
