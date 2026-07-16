@@ -490,8 +490,8 @@
                 border-radius: 6px;
               }
               p {
-                backdrop-filter: blur(7.5px);
-                -webkit-backdrop-filter: blur(7.5px);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
                 border-bottom: solid 1px $color_wht-1;
                 border-top: solid 1px $color_wht-1;
                 font-weight: 600;
@@ -501,6 +501,11 @@
                 text-align: center;
                 width: 87.97%;
                 z-index: 2;
+                @include bp(m) {
+                  backdrop-filter: none;
+                  backdrop-filter: none;
+                  background-color: rgba($color: $color_wht-1, $alpha: .05);
+                }
                 &.jp {
                   font-size: clamp(0px,4.83vw,20px);
                   @include bp(m) {
