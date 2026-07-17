@@ -1,4 +1,30 @@
 <?php
+  $data = [
+    [
+      'img' => 'img_result_okinawa.jpg',
+      'class' => '#F8ECF4',
+      'flight' => '約2.5時間',
+      'cost' => '約123万円',
+      'avg' => '19人',
+      'link' => 'okinawa',
+    ],
+    [
+      'img' => 'img_result_guam.jpg',
+      'class' => '#E4F1E9',
+      'flight' => '約3.5時間',
+      'cost' => '約146万円',
+      'avg' => '8.7人',
+      'link' => 'guam',
+    ],
+    [
+      'img' => 'img_result_hawaii.jpg',
+      'class' => '#D9EBF5',
+      'flight' => '約7時間',
+      'cost' => '約156万円',
+      'avg' => '7.8人',
+      'link' => 'hawaii',
+    ],
+  ];
 ?>
 <section id="pgAreaCompare_diagnosis" class="pgAreaCompare__diagnosis pginfo_section">
 	<div class="pgAreaCompare_container">
@@ -23,7 +49,7 @@
         ハワイ・グアム・沖縄、それぞれの魅力や特徴をふまえて、理想のリゾートウェディングを叶えられるエリアをチェックしてみましょう！
 			</p>
 		</div>
-    <ul class="pgAreaCompare__diagnosis-grid">
+    <ul class="pgAreaCompare__diagnosis-grid fade-anime" data-fade="fade-up">
       <li class="grid__item grid__item-1">
         <div class="inner-1">
           <p class="no">Q1</p>
@@ -103,6 +129,22 @@
         </div>
       </li>
     </ul>
-
+    <ul class="pgAreaCompare__diagnosis-result flex fade-anime" data-fade="fade-up-cont">
+      <?php foreach ($data as $item) :?>
+        <li class="item">
+          <div class="img">
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $item["img"])); ?>" alt="イメージ画像">
+          </div>
+          <div class="item__inner" style="background-color: <?php echo $item["class"]; ?>;">
+            <p class="flex"><span class="main">フライト時間</span><br class="sp"/><span><?php echo $item["flight"]; ?></span></p>
+            <p class="flex"><span class="main">平均挙式総額</span><br class="sp"/><span><?php echo $item["cost"]; ?></span></p>
+            <p class="flex"><span class="main">平均ゲスト人数</span><br class="sp"/><span><?php echo $item["avg"]; ?></span></p>
+          </div>
+          <p class="link">
+            <a href="<?php echo esc_url(home_url($item["link"]));?>"><span>くわしく見る</span></a>
+          </p>
+        </li>
+      <?php endforeach;?>
+    </ul>
 	</div>
 </section>
