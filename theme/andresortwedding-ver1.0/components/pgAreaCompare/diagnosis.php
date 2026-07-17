@@ -1,3 +1,5 @@
+<?php
+?>
 <section id="pgAreaCompare_diagnosis" class="pgAreaCompare__diagnosis pginfo_section">
 	<div class="pgAreaCompare_container">
 		<div class="pgAreaCompare_head fade-anime" data-fade="fade-up">
@@ -24,11 +26,11 @@
     <ul class="pgAreaCompare__diagnosis-grid">
       <li class="grid__item grid__item-1">
         <div class="inner-1">
-          <p>Q1</p>
-          <p>費用と特別感、どちらが優先？</p>
-          <div class="q">
-            <p class="q__a a flex"><span class="a">A</span><span>できるだけ費用を抑えたい</span></p>
-            <p class="q__b b flex"><span class="b">B</span><span>金額より特別感を重視したい</span></p>
+          <p class="no">Q1</p>
+          <p class="main">費用と特別感、どちらが優先？</p>
+          <div class="q flex">
+            <p class="q__a flex bg-wht-1"><span class="a ft-wht-1 bg-org-3">A</span><span>できるだけ費用を抑えたい</span></p>
+            <p class="q__b flex bg-wht-1"><span class="b ft-wht-1 bg-blu-7">B</span><span>金額より特別感を重視したい</span></p>
           </div>
         </div>
       </li>
@@ -44,21 +46,21 @@
       </li>
       <li class="grid__item grid__item-4">
         <div class="inner-2">
-          <p>Q2</p>
-          <p>ゲストの規模は？</p>
-          <div class="q">
-            <p class="q__a flex"><span class="a">A</span><span>友人も含めてたくさん招待</span></p>
-            <p class="q__b flex"><span class="b">B</span><span>家族や親族を招待</span></p>
+          <p class="no">Q2</p>
+          <p class="main">ゲストの規模は？</p>
+          <div class="q flex">
+            <p class="q__a flex bg-wht-1"><span class="a ft-wht-1 bg-org-3">A</span><span>友人も含めて<br class="sp"/>たくさん招待</span></p>
+            <p class="q__b flex bg-wht-1"><span class="b ft-wht-1 bg-blu-7">B</span><span>家族や親族を<br class="sp"/>招待</span></p>
           </div>
         </div>
       </li>
       <li class="grid__item grid__item-5">
         <div class="inner-2">
-          <p>Q2</p>
-          <p>滞在期間は？</p>
-          <div class="q">
-            <p class="q__a flex"><span class="a">A</span><span>コンパクトに滞在</span></p>
-            <p class="q__b flex"><span class="b">B</span><span>じっくり1週間</span></p>
+          <p class="no">Q2</p>
+          <p class="main">滞在期間は？</p>
+          <div class="q flex">
+            <p class="q__a flex bg-wht-1"><span class="a ft-wht-1 bg-org-3">A</span><span>コンパクトに<br class="sp"/>滞在</span></p>
+            <p class="q__b flex bg-wht-1"><span class="b ft-wht-1 bg-blu-7">B</span><span>じっくり<br class="sp"/>1週間</span></p>
           </div>
         </div>
       </li>
@@ -74,15 +76,15 @@
       </li>
       <li class="grid__item grid__item-8">
         <div class="inner-3">
-          <p>Q3</p>
-          <p>滞在中の過ごし方で<be/>理想的なのは？</p>
-          <div class="q">
-            <p class="q__a flex"><span class="a">A</span><span>海＆文化体験</span></p>
-            <p class="q__b flex"><span class="b">B</span><span>海＆ショッピング</span></p>
+          <p class="no">Q3</p>
+          <p class="main">滞在中の過ごし方で<br/>理想的なのは？</p>
+          <div class="q flex">
+            <p class="q__a flex bg-wht-1"><span class="a ft-wht-1 bg-org-3">A</span><span>海＆文化体験</span></p>
+            <p class="q__b flex bg-wht-1"><span class="b ft-wht-1 bg-blu-7">B</span><span>海＆ショッピング</span></p>
           </div>
         </div>
       </li>
-      <li class="grid__item grid__item-9">
+      <li class="grid__item grid__item-9 flex">
         <div class="arr__short-a">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_a.png')); ?>" alt="A">
         </div>
@@ -90,7 +92,7 @@
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b.png')); ?>" alt="B">
         </div>
       </li>
-      <li class="grid__item grid__item-10 flex">
+      <li class="grid__item grid__item-10">
         <div class="arr__long-a">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_a.png')); ?>" alt="A">
         </div>
@@ -101,5 +103,6 @@
         </div>
       </li>
     </ul>
+
 	</div>
 </section>
