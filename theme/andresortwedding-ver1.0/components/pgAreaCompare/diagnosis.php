@@ -62,12 +62,24 @@
       </li>
       <li class="grid__item grid__item-2">
         <div class="arr__short-a">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_a.png')); ?>" alt="A">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_a_pc.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_a.png')); ?>" alt="A">
+          </picture>
         </div>
       </li>
       <li class="grid__item grid__item-3">
         <div class="arr__short-b">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b.png')); ?>" alt="B">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b_pc.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b.png')); ?>" alt="B">
+          </picture>
         </div>
       </li>
       <li class="grid__item grid__item-4">
@@ -92,12 +104,24 @@
       </li>
       <li class="grid__item grid__item-6">
         <div class="arr__long-a">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_a.png')); ?>" alt="A">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_a_pc.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_a.png')); ?>" alt="A">
+          </picture>
         </div>
       </li>
       <li class="grid__item grid__item-7">
         <div class="arr__short-b">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b.png')); ?>" alt="B">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b_pc.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b.png')); ?>" alt="B">
+          </picture>
         </div>
       </li>
       <li class="grid__item grid__item-8">
@@ -112,20 +136,44 @@
       </li>
       <li class="grid__item grid__item-9 flex">
         <div class="arr__short-a">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_a.png')); ?>" alt="A">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_a_pc.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_a.png')); ?>" alt="A">
+          </picture>
         </div>
         <div class="arr__short-b">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b.png')); ?>" alt="B">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b_pc.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_short_b.png')); ?>" alt="B">
+          </picture>
         </div>
       </li>
       <li class="grid__item grid__item-10">
         <div class="arr__long-a">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_a.png')); ?>" alt="A">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_a_pc.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_a.png')); ?>" alt="A">
+          </picture>
         </div>
       </li>
       <li class="grid__item grid__item-11">
         <div class="arr__long-b">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_b.png')); ?>" alt="B">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_b_pc.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/img_arrow_long_b.png')); ?>" alt="B">
+          </picture>
         </div>
       </li>
     </ul>

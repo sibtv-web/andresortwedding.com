@@ -1743,8 +1743,10 @@
           row-gap: 1.93vw;
           @include bp(m) {
             column-gap: 1.66vw;
+            column-gap: 0;
             flex-direction: row;
             justify-content: center;
+            justify-content: space-between;
             margin-top: 1.66vw;
             row-gap: 0;
           }
@@ -1752,11 +1754,13 @@
             align-items: baseline;
             column-gap: 8px;
             font-size: 2.89vw;
+            font-weight: 600;
             flex-wrap: nowrap;
             padding: 2.89vw 2vw;
             width: 100%;
             @include bp(m) {
               font-size: 1.11vw;
+              justify-content: center;
               padding: 1.11vw 1.25vw;
             }
             .a, .b {
@@ -1765,6 +1769,7 @@
               border-radius: 50%;
               display: inline-flex;
               flex-direction: column;
+              font-weight: 600;
               justify-content: center;
               line-height: 1;
               text-align: center;
@@ -1828,17 +1833,21 @@
         @include bp(m) {
           aspect-ratio: 314 / 186;
           background-image: url(../images/area/compare/bg_beg_03_pc.png);
+          left: -7.5%;
           width: 98.125%;
         }
         .q {
           width: 85.71%;
           @include bp(m) {
+            flex-wrap: nowrap;
             width: 87.26%;
           }
           &__a, &__b {
             @include bp(m) {
+              column-gap: 0.27vw;
+              flex-wrap: nowrap;
               font-size: 0.833vw;
-              padding: 0.55vw 1.11vw;
+              padding: 0.55vw 0.27vw;
               width: 47.81%;
             }
             .a, .b {
@@ -1859,6 +1868,8 @@
           margin: auto;
           width: 9.83%;
           @include bp(m) {
+            margin: 0;
+            margin-left: 75.15%;
             width: 3.75%;
           }
         }
@@ -1869,6 +1880,8 @@
           margin: auto;
           width: 9.83%;
           @include bp(m) {
+            margin-left: auto;
+            margin-right: 75.15%;
             width: 3.75%;
           }
         }
@@ -1904,6 +1917,7 @@
           position: relative;
           width: 19.67%;
           @include bp(m) {
+            left: 47.18%;
             width: 7.5%;
           }
         }
@@ -1915,6 +1929,7 @@
           position: relative;
           width: 19.67%;
           @include bp(m) {
+            left: 37.81%;
             width: 7.5%;
           }
         }
@@ -1932,11 +1947,12 @@
         justify-content: space-between;
         margin-left: -30.05%;
         width: 138.33%;
+        @include bp(m) {
+          margin-left: 15.62%;
+          width: 52.18%;
+        }
         .arr__short-a, .arr__short-b {
           width: 14.37%;
-          @include bp(m) {
-            width: 7.5%;
-          }
         }
       }
       &-10 {
@@ -1967,25 +1983,51 @@
     margin-left: calc(50% - 50vw);
     margin-top: 12px;
     margin-right: calc(50% - 50vw);
+    @include bp(m) {
+      justify-content: space-between;
+      margin-left: 0;
+      margin-right: 0;
+    }
     .item {
       width: calc(100% / 3);
+      @include bp(m) {
+        width: 28.48%;
+      }
       .img {
         width: 100%;
       }
       &__inner {
         padding: 12px 12.68%;
+        @include bp(m) {
+          padding: 24px 2px;
+        }
         p {
+          flex-direction: column;
           margin-top: 8px;
           text-align: left;
+          @include bp(m) {
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+          }
           .main {
             font-size: 14px;
             font-weight: 600;
+            @include bp(m) {
+              order: 1;
+            }
           }
           span:not(.main) {
             font-size: 14px;
+            @include bp(m) {
+              order: 3;
+            }
           }
           &:first-child {
             margin-top: 12px;
+            @include bp(m) {
+              margin-top: 24px;
+            }
           }
         }
       }
