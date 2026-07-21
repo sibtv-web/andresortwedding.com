@@ -270,10 +270,12 @@
 			flex-direction: column;
 			justify-content: center;
       margin-top: 24px;
+      margin: 24px calc(50% - 50vw) 0;
       text-align: center;
 			@include bp(m) {
 				flex-direction: row;
 				gap: 1.2rem;
+        margin: 24px 0 0;
         text-align: left;
 			}
 			img {
@@ -1501,6 +1503,7 @@
   }
 }
 .pgAreaCompare__photo {
+  overflow-x: hidden;
   &-gallery {
     margin-top: 80px;
     &:first-child {
@@ -1856,10 +1859,11 @@
           font-weight: 600;
           gap: 0.6rem;
           justify-content: center;
+          line-height: 1;
           text-align: center;
           width: 100%;
           @include bp(m) {
-            align-items: flex-end;
+            align-items: center;
             font-size: clamp(0px,1.38vw,18px);
             gap: 4px;
           }
@@ -2244,7 +2248,10 @@
           &::before {
             @include bp(m) {
               aspect-ratio: 3 / 18;
-              background-color: $color_gry-1;
+              background-image: url(../images/ico/ico_border_01.svg);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
               content: "";
               display: block;
               margin-right: 5.81%;
@@ -2315,17 +2322,21 @@
     margin: 38px calc(50% - 50vw) 0;
     padding-bottom: 24px;
     @include bp(m) {
+      background-color: transparent;
       flex-direction: row;
       gap: 3.75%;
       justify-content: center;
       margin: 48px auto 0;
+      padding-top: 0;
     }
     .inner {
       &__gourmet , &__culture {
         padding-top: 24px;
         width: 100%;
         @include bp(m) {
-          width: 42.58%;
+          padding: 24px 1.875%;
+          // width: 42.58%;
+          width: 48.125%;
         }
         .main {
           align-items: flex-end;

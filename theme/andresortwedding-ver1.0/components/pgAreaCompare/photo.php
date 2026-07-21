@@ -110,7 +110,7 @@
 		<div class="pgAreaCompare_head fade-anime" data-fade="fade-up">
 			<h2 class="pgAreaCompare_head_ttl cls-grn">
 				<img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/nav_icon_camera.svg')); ?>" alt="アイコン">
-				<span>エリアごとに撮れる写真も違う！フォト比較</span>
+				<span>エリアごとに撮れる写真も違う！<br class="sp"/>フォト比較</span>
 			</h2>
 			<p class="pgAreaCompare_head_txt">
         同じリゾートウェディングでも、エリアによって写真の雰囲気は大きく変わります。<br class="sp"/>理想の世界観からエリアを選ぶのもおすすめです。

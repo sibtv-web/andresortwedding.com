@@ -1,5 +1,4 @@
 <main class="pgarea">
-
   <?php get_template_part('components/pgArea/hawaii/kv'); ?>
   <?php get_template_part('components/pgArea/hawaii/slider'); ?>
   <?php get_template_part('components/pgArea/hawaii/nav'); ?>

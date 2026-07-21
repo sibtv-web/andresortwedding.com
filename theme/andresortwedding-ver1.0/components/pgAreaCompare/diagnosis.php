@@ -215,7 +215,7 @@
       <?php endforeach;?>
     </ul>
     <div class="pgAreaCompare__diagnosis-recommend bg-beg-3 flex fade-anime" data-fade="fade-up">
-      <div class="inner__gourmet">
+      <div class="inner__gourmet bg-beg-3">
         <p class="main flex"><span>おすすめグルメ</span></p>
         <ul class="ls flex">
           <?php foreach ($recommend['gourmet'] as $gourmet) : ?>
@@ -225,7 +225,7 @@
           <?php endforeach;?>
         </ul>
       </div>
-      <div class="inner__culture">
+      <div class="inner__culture bg-beg-3">
         <p class="main flex"><span>おすすめの過ごし方</span></p>
         <ul class="ls flex">
           <?php foreach ($recommend['culture'] as $culture) : ?>
