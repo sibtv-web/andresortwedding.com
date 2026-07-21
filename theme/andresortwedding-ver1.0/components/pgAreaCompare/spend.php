@@ -2,6 +2,7 @@
   $data = [
     [
       'catch' => 'ハワイアン料理や街歩き・<br class="sp"/>ショッピングを楽しめる！',
+      'catch-pc' => '',
       'en' => 'Hawaii',
       'jp' => 'ハワイ',
       'class' => 'blu-2',
@@ -40,6 +41,7 @@
     ],
     [
       'catch' => 'チャモロ料理と<br class="sp"/>マリンアクティビティを堪能',
+      'catch-pc' => '',
       'en' => 'Guam',
       'jp' => 'グアム',
       'class' => 'grn-1',
@@ -78,6 +80,7 @@
     ],
     [
       'catch' => '透き通る海や<br/>地域ならではの伝統・文化も',
+      'catch-pc' => '沖縄ならではのグルメ・文化を楽しむ！',
       'en' => 'Okinawa',
       'jp' => '沖縄',
       'class' => 'pnk-1',
@@ -121,7 +124,12 @@
 		</div>
     <?php foreach ($data as $item) :?>
       <div class="pgAreaCompare__spend-block fade-anime" data-fade="fade-up">
-        <p class="catch"><?php echo $item["catch"]; ?></p>
+        <?php if ($item['catch-pc'] !== '') : ?>
+          <p class="catch sp"><?php echo $item["catch"]; ?></p>
+          <p class="catch pc"><?php echo $item["catch-pc"]; ?></p>
+        <?php else : ?>
+          <p class="catch"><?php echo $item["catch"]; ?></p>
+        <?php endif; ?>
         <div class="title ft-<?php echo $item["class"]; ?>"><strong><?php echo $item["en"]; ?></strong><span><?php echo $item["jp"]; ?></span></div>
         <ul class="day flex">
           <?php 

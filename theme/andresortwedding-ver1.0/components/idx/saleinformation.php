@@ -1,15 +1,28 @@
 <section id="sale-information" class="sale-information">
   <div class="svg-3">
-    <picture>
-      <source
-        media="(min-width: 750px)"
-        srcset="<?= esc_url(get_theme_file_uri('assets/images/idx/bnr/bg_top_pc_01.svg')) ?>"
-      >
-      <img
-        src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/bnr/bg_top_sp_01.svg')); ?>"
-        alt="背景1"
-      >
-    </picture>
+    <?php if ( is_page('area') ): ?>
+      <picture>
+        <source
+          media="(min-width: 750px)"
+          srcset="<?= esc_url(get_theme_file_uri('assets/images/idx/bnr/bg_top_pc_02.png')) ?>"
+        >
+        <img
+          src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/bnr/bg_top_sp_02.png')); ?>"
+          alt="背景1"
+        >
+      </picture>
+    <?php else : ?>
+      <picture>
+        <source
+          media="(min-width: 750px)"
+          srcset="<?= esc_url(get_theme_file_uri('assets/images/idx/bnr/bg_top_pc_01.svg')) ?>"
+        >
+        <img
+          src="<?php echo esc_url(get_theme_file_uri('assets/images/idx/bnr/bg_top_sp_01.svg')); ?>"
+          alt="背景1"
+        >
+      </picture>
+    <?php endif; ?>
   </div>
   <div class="sale-information__inner section__inner fade-anime" data-fade="fade-up">
     <div class="sale-information__title section__title">

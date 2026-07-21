@@ -1,7 +1,8 @@
 <?php
   $data = [
     [
-      'img' => 'img_result_okinawa.jpg',
+      'img-sp' => 'img_result_okinawa.jpg',
+      'img-pc' => 'img_area_03.jpg',
       'class' => '#F8ECF4',
       'flight' => '約2.5時間',
       'cost' => '約123万円',
@@ -9,7 +10,8 @@
       'link' => 'okinawa',
     ],
     [
-      'img' => 'img_result_guam.jpg',
+      'img-sp' => 'img_result_guam.jpg',
+      'img-pc' => 'img_area_02.jpg',
       'class' => '#E4F1E9',
       'flight' => '約3.5時間',
       'cost' => '約146万円',
@@ -17,12 +19,25 @@
       'link' => 'guam',
     ],
     [
-      'img' => 'img_result_hawaii.jpg',
+      'img-sp' => 'img_result_hawaii.jpg',
+      'img-pc' => 'img_area_01.jpg',
       'class' => '#D9EBF5',
       'flight' => '約7時間',
       'cost' => '約156万円',
       'avg' => '7.8人',
       'link' => 'hawaii',
+    ],
+  ];
+  $recommend = [
+    'gourmet' => [
+      'img_hawaii_gourmet_04.jpg',
+      'img_guam_gourmet_04.jpg',
+      'img_okinawa_gourmet_04.jpg',
+    ],
+    'culture' => [
+      'img_hawaii_spend_01.jpg',
+      'img_guam_spend_01.jpg',
+      'img_okinawa_spend_01.jpg',
     ],
   ];
 ?>
@@ -181,12 +196,17 @@
       <?php foreach ($data as $item) :?>
         <li class="item">
           <div class="img">
-            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $item["img"])); ?>" alt="イメージ画像">
+            <picture>
+              <source media="(min-width: 750px)" srcset="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $item["img-pc"])); ?>">
+              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $item["img-sp"])); ?>" alt="イメージ画像">
+            </picture>
           </div>
           <div class="item__inner" style="background-color: <?php echo $item["class"]; ?>;">
-            <p class="flex"><span class="main">フライト時間</span><br class="sp"/><span><?php echo $item["flight"]; ?></span></p>
-            <p class="flex"><span class="main">平均挙式総額</span><br class="sp"/><span><?php echo $item["cost"]; ?></span></p>
-            <p class="flex"><span class="main">平均ゲスト人数</span><br class="sp"/><span><?php echo $item["avg"]; ?></span></p>
+            <div class="item__inner-f">
+              <p class="flex"><span class="main">フライト時間</span><br class="sp"/><span><?php echo $item["flight"]; ?></span></p>
+              <p class="flex"><span class="main">平均挙式総額</span><br class="sp"/><span><?php echo $item["cost"]; ?></span></p>
+              <p class="flex"><span class="main">平均ゲスト人数</span><br class="sp"/><span><?php echo $item["avg"]; ?></span></p>
+            </div>
           </div>
           <p class="link">
             <a href="<?php echo esc_url(home_url($item["link"]));?>"><span>くわしく見る</span></a>
@@ -194,5 +214,33 @@
         </li>
       <?php endforeach;?>
     </ul>
+    <div class="pgAreaCompare__diagnosis-recommend bg-beg-3 flex fade-anime" data-fade="fade-up">
+      <div class="inner__gourmet">
+        <p class="main flex"><span>おすすめグルメ</span></p>
+        <ul class="ls flex">
+          <?php foreach ($recommend['gourmet'] as $gourmet) : ?>
+            <li class="ls__item">
+              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $gourmet)); ?>" alt="グルメイメージ">
+            </li>
+          <?php endforeach;?>
+        </ul>
+      </div>
+      <div class="inner__culture">
+        <p class="main flex"><span>おすすめの過ごし方</span></p>
+        <ul class="ls flex">
+          <?php foreach ($recommend['culture'] as $culture) : ?>
+            <li class="ls__item">
+              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $culture)); ?>" alt="カルチャーイメージ">
+            </li>
+          <?php endforeach;?>
+        </ul>
+      </div>
+    </div>
+    <p class="pgAreaCompare__diagnosis-summary pc fade-anime" data-fade="fade-up">
+      ハワイ・グアム・沖縄、それぞれに違った魅力があるリゾートウェディング。<br/>
+      費用や移動時間、招待したいゲストの人数など、ふたりが大切にしたいポイントから選べば、理想の結婚式が叶います。<br/>
+      &nbsp;<br/>
+      まずは気になるエリアを見つけ、具体的な準備を始めて行きましょう！
+    </p>
 	</div>
 </section>

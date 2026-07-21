@@ -7,7 +7,7 @@
 			</picture>
 		</div>
 		<h2>
-			<span class="ja cls-1">リゾートウェディングの<br class="sp"/>事前準備・費用を総まとめ</span>
+			<span class="ja cls-1">ハワイ・グアム・沖縄　<br class="sp"/>人気エリア徹底比較！</span>
 		</h2>
 	</div>
 	<div class="pgAreaCompare_kv_container">
