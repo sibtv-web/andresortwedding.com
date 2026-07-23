@@ -168,12 +168,13 @@
   &__copy {
     font-size: 12px;
     flex-direction: column;
-    line-height: 1;
+    line-height: 1.5;
     margin-top: 40px;
     row-gap: 16px;
     @include bp(m) {
       column-gap: 24px;
       flex-direction: row;
+      line-height: 1;
       row-gap: 0;
       margin-top: 0;
     }

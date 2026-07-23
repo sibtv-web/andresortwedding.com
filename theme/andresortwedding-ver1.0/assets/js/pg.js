@@ -385,7 +385,7 @@ if( pgAreaCompare__slider.length > 0 ) {
       arrows: boolean = false,
       wheel: boolean = false,
       autoScroll: {
-        speed: 1.2,
+        speed: 1,
         pauseOnHover: true,
         pauseOnFocus: false,
       },
@@ -394,7 +394,7 @@ if( pgAreaCompare__slider.length > 0 ) {
           perPage: number = 2,
           gap: number = 20,
           autoScroll: {
-            speed: 0.4,
+            speed: 0.8,
             pauseOnHover: true,
             pauseOnFocus: false,
           },

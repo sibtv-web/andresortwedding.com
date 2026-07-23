@@ -297,7 +297,7 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            bottom: 0;
+            bottom: -0.05em;
             content: "";
             display: inline-block;
             left: 0;
@@ -306,6 +306,7 @@
             z-index: -1;
             @include bp(m) {
               aspect-ratio: 222 / 17;
+              bottom: -0.1em;
             }
           }
         }
@@ -1167,7 +1168,7 @@
           padding: 13px 0;
           text-align: center;
           @include bp(m) {
-            padding: 10px 0;
+            padding: 20px 0;
           }
         }
         th {
@@ -1514,6 +1515,10 @@
       font-weight: 600;
       line-height: 1.7;
       text-align: center;
+      @include bp(m) {
+        font-size: clamp(0px,1.66vw,24px);
+        line-height: 1.5;
+      }
     }
     .title {
       h3 {
@@ -1537,9 +1542,17 @@
       line-height: 1.7;
       margin: 24px auto 0;
       width: 88.4%;
+      @include bp(m) {
+        font-size: clamp(0px,1.11vw,16px);
+        margin: 48px auto 0;
+        text-align: center;
+      }
     }
     .slider {
       margin-top: 24px;
+      @include bp(m) {
+        margin-top: 48px;
+      }
       .splide__track {
         @include bp(m) {
           overflow: visible;
@@ -1798,12 +1811,22 @@
         }
         &-img {
           margin-top: 12px;
+          @include bp(m) {
+            aspect-ratio: 700 / 382;
+          }
+          img {
+            @include bp(m) {
+              height: 100%;
+              object-fit: cover;
+            }
+          }
         }
         &-ttl {
           font-size: 18px;
           font-weight: 600;
           line-height: 1.7;
           margin-top: 12px;
+          text-align: center;
           @include bp(m) {
             font-size: clamp(0px,1.25vw,18px);
           }
