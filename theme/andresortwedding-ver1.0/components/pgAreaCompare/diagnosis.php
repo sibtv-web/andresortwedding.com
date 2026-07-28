@@ -8,6 +8,8 @@
       'cost' => '約123万円',
       'avg' => '19人',
       'link' => 'okinawa',
+      'gourmet' => 'img_okinawa_gourmet_04.jpg',
+      'culture' => 'img_okinawa_spend_01.jpg',
     ],
     [
       'img-sp' => 'img_result_guam.jpg',
@@ -17,6 +19,8 @@
       'cost' => '約146万円',
       'avg' => '8.7人',
       'link' => 'guam',
+      'gourmet' => 'img_guam_gourmet_04.jpg',
+      'culture' => 'img_guam_spend_01.jpg',
     ],
     [
       'img-sp' => 'img_result_hawaii.jpg',
@@ -26,18 +30,20 @@
       'cost' => '約156万円',
       'avg' => '7.8人',
       'link' => 'hawaii',
+      'gourmet' => 'img_hawaii_gourmet_04.jpg',
+      'culture' => 'img_hawaii_spend_01.jpg',
     ],
   ];
   $recommend = [
     'gourmet' => [
-      'img_hawaii_gourmet_04.jpg',
-      'img_guam_gourmet_04.jpg',
       'img_okinawa_gourmet_04.jpg',
+      'img_guam_gourmet_04.jpg',
+      'img_hawaii_gourmet_04.jpg',
     ],
     'culture' => [
-      'img_hawaii_spend_01.jpg',
-      'img_guam_spend_01.jpg',
       'img_okinawa_spend_01.jpg',
+      'img_guam_spend_01.jpg',
+      'img_hawaii_spend_01.jpg',
     ],
   ];
 ?>
@@ -208,32 +214,46 @@
               <p class="flex"><span class="main">平均ゲスト人数</span><br class="sp"/><span><?php echo $item["avg"]; ?></span></p>
             </div>
           </div>
+          <div class="pc">
+            <div class="item__recommend flex bg-beg-3">
+              <div class="item__recommend-inner">
+                <p class="flex"><span>おすすめグルメ</span></p>
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $item["gourmet"])); ?>" alt="おすすめグルメ">
+              </div>
+              <div class="item__recommend-inner">
+                <p class="flex"><span>おすすめの過ごし方</span></p>
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $item["culture"])); ?>" alt="おすすめの過ごし方">
+              </div>
+            </div>
+          </div>
           <p class="link">
             <a href="<?php echo esc_url(home_url($item["link"]));?>"><span>くわしく見る</span></a>
           </p>
         </li>
       <?php endforeach;?>
     </ul>
-    <div class="pgAreaCompare__diagnosis-recommend bg-beg-3 flex fade-anime" data-fade="fade-up">
-      <div class="inner__gourmet bg-beg-3">
-        <p class="main flex"><span>おすすめグルメ</span></p>
-        <ul class="ls flex">
-          <?php foreach ($recommend['gourmet'] as $gourmet) : ?>
-            <li class="ls__item">
-              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $gourmet)); ?>" alt="グルメイメージ">
-            </li>
-          <?php endforeach;?>
-        </ul>
-      </div>
-      <div class="inner__culture bg-beg-3">
-        <p class="main flex"><span>おすすめの過ごし方</span></p>
-        <ul class="ls flex">
-          <?php foreach ($recommend['culture'] as $culture) : ?>
-            <li class="ls__item">
-              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $culture)); ?>" alt="カルチャーイメージ">
-            </li>
-          <?php endforeach;?>
-        </ul>
+    <div class="sp">
+      <div class="pgAreaCompare__diagnosis-recommend bg-beg-3 flex fade-anime" data-fade="fade-up">
+        <div class="inner__gourmet bg-beg-3">
+          <p class="main flex"><span>おすすめグルメ</span></p>
+          <ul class="ls flex">
+            <?php foreach ($recommend['gourmet'] as $gourmet) : ?>
+              <li class="ls__item">
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $gourmet)); ?>" alt="グルメイメージ">
+              </li>
+            <?php endforeach;?>
+          </ul>
+        </div>
+        <div class="inner__culture bg-beg-3">
+          <p class="main flex"><span>おすすめの過ごし方</span></p>
+          <ul class="ls flex">
+            <?php foreach ($recommend['culture'] as $culture) : ?>
+              <li class="ls__item">
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/images/area/compare/'. $culture)); ?>" alt="カルチャーイメージ">
+              </li>
+            <?php endforeach;?>
+          </ul>
+        </div>
       </div>
     </div>
     <p class="pgAreaCompare__diagnosis-summary pc fade-anime" data-fade="fade-up">

@@ -2299,6 +2299,51 @@
           }
         }
       }
+      &__recommend {
+        padding: 1.66vw;
+        justify-content: space-between;
+        &-inner {
+          width: 51.63%;
+          p {
+            align-items: flex-end;
+            font-size: 12px;
+            font-weight: 600;
+            gap: 2.23%;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            @include bp(m) {
+              font-size: clamp(0px,1.11vw,16px);
+            }
+            &::before,
+            &::after {
+              aspect-ratio: 1/2;
+              background: url(../../assets/images/area/compare/ttl_accent_blk.svg) center center /contain no-repeat;
+              content: "";
+              display: block;
+              margin-bottom: 0;
+              @include bp(m) {
+                max-width: 10px;
+                width: 0.69vw;
+              }
+            }
+            &::after {
+              transform: scale(-1, 1);
+            }
+          }
+          img {
+            display: block;
+            margin: 24px auto 0;
+            width: 85.04%;
+          }
+          &:first-child {
+            width: 47.57%;
+            img {
+              width: 92.3%;
+            }
+          }
+        }
+      }
       .link {
         margin: 24px 0;
         @include bp(m) {
