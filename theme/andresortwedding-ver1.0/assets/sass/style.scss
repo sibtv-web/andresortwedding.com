@@ -30,12 +30,14 @@
 @use "idx/saleinformation";
 @use "idx/magazine";
 
+@use "pg/error";
 @use "pg/area/areaKv";
 @use "pg/wedding-magazine";
 @use "pg/document";
 @use "pg/pginfo";
 @use "pg/pgvs";
 @use "pg/pgpreparation";
+@use "pg/pgareacompare";
 
 @use "single/single";
 @use "single/toc";

@@ -18,10 +18,10 @@
   </ul>
   <p class="f__copy flex">
     <span>©2026 Shibuya Television</span>
-    <!-- <?php if(is_page("guam")) : ?>
-      <span>画像出典：アールイズ・ウエディング / グアム政府観光局</span>
+    <?php if(is_page("area")) : ?>
+      <span>画像出典：グアム政府観光局 / ハワイ政府観光局 / アールイズ・ウエディング</span>
     <?php else : ?> 
       <span>画像出典：アールイズ・ウエディング</span>
-    <?php endif; ?> -->
+    <?php endif; ?>
   </p>
 </div>

@@ -10,7 +10,7 @@
     ],
     [
       'src' => 'img_feature_03.jpg',
-      'link' => '',
+      'link' => 'area',
     ],
     [
       'src' => 'img_feature_01.jpg',
@@ -22,7 +22,7 @@
     ],
     [
       'src' => 'img_feature_03.jpg',
-      'link' => '',
+      'link' => 'area',
     ],
   ];
   $counter = 1;
