@@ -1018,7 +1018,7 @@
 			}
 			&_ttl {
 				// padding-top: 30px;
-				// position: relative;
+				position: relative;
 				// @include bp(m) {
 				// padding-top: 55px;
 				// }
@@ -1029,23 +1029,29 @@
 					line-height: 1;
 					position: absolute;
 					text-align: center;
-					top: 0;
-					transform: translateX(-50%) rotate(-10deg);
-					width: 96%;
+					top: 38.36%;
+					transform: translate(-50%,-50%);
+					width: auto;
 					z-index: 1;
 					@include ft_Javacom;
-					// @include bp(m) {
-					// 	font-size: 60px;
-					// }
-					@include sp {
-						font-size: 2.8rem;
+					@include bp(m) {
+						font-size: 60px;
+            top: 41.02%;
+            width: auto;
 					}
-
 					&.cls-blu {
 						color: $color_blu-1;
+            width: 28.68%;
+            @include bp(m) {
+              width: auto;
+            }
 					}
 					&.cls-gray {
 						color: $color_beg-1;
+            width: 35.24%;
+            @include bp(m) {
+              width: auto;
+            }
 					}
 				}
 				.jp {
