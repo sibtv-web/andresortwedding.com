@@ -14,22 +14,24 @@
 		<div class="pgvs_vs_about_main">
 			<div class="pgvs_vs_about_main_cmn fade-anime" data-fade="fade-up">
 				<div class="pgvs_vs_about_main_cmn_ttl">
-					<p class="en cls-blu">Resort</p>
+					<!-- <p class="en cls-blu">Resort</p> -->
+          <div class="en cls-blu">
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_resort.svg')); ?>" alt="Resort">
+          </div>
 					<h3 class="jp">リゾートウェディングとは</h2>
 				</div>
 				<picture class="pgvs_vs_about_main_cmn_img">
 					<source media="(min-width: 750px)" srcset="<?= esc_url(get_theme_file_uri('assets/images/vs/about_img_resort.jpg')) ?>">
 					<img src="<?php echo esc_url(get_theme_file_uri('assets/images/vs/about_img_resort_sp.jpg')); ?>" alt="背景1">
 				</picture>
-
 				<p class="pgvs_vs_about_main_cmn_txt">リゾートウェディングとは、観光地や自然豊かなに非日常のロケーションで挙げる結婚式のこと。国内なら沖縄・軽井沢・北海道など、海外ならハワイやグアム、バリ・ヨーロッパ・オーストラリアなど、さまざまなエリアが代表例です。</p>
-				<!-- <div class="pgvs_vs_about_main_cmn_check">
-					<p>なかでも最も人気が高いのが、ハワイ・グアム・沖縄のビーチリゾート。<br>どこまでも続く海と空をバックにした結婚式は、どんなにこだわった会場にも再現できない開放感や雰囲気があります。</p>
-				</div> -->
 			</div>
 			<div class="pgvs_vs_about_main_cmn fade-anime" data-fade="fade-up">
 				<div class="pgvs_vs_about_main_cmn_ttl">
-					<p class="en cls-gray">Nearby</p>
+					<!-- <p class="en cls-gray">Nearby</p> -->
+          <div class="en cls-gray">
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_nearby.svg')); ?>" alt="Nearby">
+          </div>
 					<h3 class="jp">近場ウェディングとは</h2>
 				</div>
 				<picture class="pgvs_vs_about_main_cmn_img">
