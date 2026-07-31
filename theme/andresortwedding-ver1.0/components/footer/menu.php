@@ -67,6 +67,11 @@
       <li class="f__list-itm">
         <a href="<?php echo esc_url(home_url());?>/preparation/"><span>事前準備・費用を<br class="pc"/>総まとめ</span></a>
       </li>
+      <li class="f__list-itm">
+        <a href="<?php echo esc_url(home_url());?>/area/"><span>人気エリア徹底比較！</span></a>
+      </li>
+
+      
     </ul>
     <ul class="f__list">
       <li class="f__list-ttl">

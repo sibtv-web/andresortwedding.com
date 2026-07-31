@@ -117,6 +117,11 @@
             <p class="jp ft-wht-1">事前準備・費用を総まとめ</p>
           </a>
         </li>
+        <li class="submenu__ls-feature">
+          <a class="area" href="<?php echo esc_url(home_url());?>/area/">
+            <p class="jp ft-wht-1">人気エリア徹底比較</p>
+          </a>
+        </li>
       </ul>
     </div>
   </li>

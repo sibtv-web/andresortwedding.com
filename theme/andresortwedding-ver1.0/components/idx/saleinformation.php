@@ -46,8 +46,8 @@
             'title' => 'バナー画像 2',
           ],
           [
-            'name' => 'bnr_260623-1.jpg',
-            'link' => 'https://www.arluis.com/fair-cp/travel_litestay/',
+            'name' => 'bnr_260729-2.jpg',
+            'link' => 'https://www.arluis.com/fair-cp/chapel_summerfesta2026/',
             'title' => 'バナー画像 3',
           ],
           [
