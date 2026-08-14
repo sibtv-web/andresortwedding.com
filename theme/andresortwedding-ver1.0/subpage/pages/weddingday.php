@@ -1,0 +1,14 @@
+<main>
+  <?php 
+    get_template_part('components/pgWeddingDay/fv');
+    get_template_part('components/pgWeddingDay/schedule');
+    get_template_part('components/pgWeddingDay/previous');
+    get_template_part('components/pgWeddingDay/preparation');
+    get_template_part('components/pgWeddingDay/after');
+    get_template_part('components/pgWeddingDay/voice');
+    get_template_part('components/pgWeddingDay/night');
+    get_template_part('components/pgWeddingDay/close');
+    get_template_part('components/parts/feature');
+    get_template_part('components/idx/saleinformation');
+  ?>
+</main>

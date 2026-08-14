@@ -34,10 +34,12 @@
 @use "pg/area/areaKv";
 @use "pg/wedding-magazine";
 @use "pg/document";
-@use "pg/pginfo";
-@use "pg/pgvs";
-@use "pg/pgpreparation";
-@use "pg/pgareacompare";
+@use "pg/pgInfo";
+@use "pg/pgVs";
+@use "pg/pgPreparation";
+@use "pg/pgAreaCompare";
+@use "pg/pgWeddingDay";
+
 
 @use "single/single";
 @use "single/toc";
