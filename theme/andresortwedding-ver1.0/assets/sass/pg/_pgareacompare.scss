@@ -1,6 +1,6 @@
 @use "../lib/mixin" as *;
 @use "../lib/color" as *;
-@mixin sp($width: 767px) {
+@mixin sp($width: 749px) {
 	@media screen and (max-width: $width) {
 		@content;
 	}

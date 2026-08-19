@@ -1,6 +1,6 @@
 @use "../lib/mixin" as *;
 @use "../lib/color" as *;
-@mixin sp($width: 767px) {
+@mixin sp($width: 749px) {
 	@media screen and (max-width: $width) {
 		@content;
 	}
@@ -627,7 +627,6 @@
 		display: flex;
 		// gap: 4.8rem;
 		flex-direction: column;
-
 		@include bp(m) {
 			flex-direction: row;
 		}
