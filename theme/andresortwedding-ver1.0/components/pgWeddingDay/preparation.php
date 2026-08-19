@@ -51,7 +51,7 @@
             <source media="(min-width: 750px)" srcset="<?php echo esc_url(get_theme_file_uri('assets/images/weddingDay/') . $item['imgSrcPc']); ?>">
             <img
               src="<?php echo esc_url(get_theme_file_uri('assets/images/weddingDay/') . $item['imgSrcSp']); ?>"
-              alt="<?php echo $item['title'] ;?>"
+              alt="朝〜挙式 イメージ"
             >
           </picture>
         </div>
