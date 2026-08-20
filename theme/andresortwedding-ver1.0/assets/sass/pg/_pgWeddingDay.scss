@@ -971,7 +971,7 @@
             }
             &::before {
               aspect-ratio: 1 / 1;
-              background-color: $color-org-1;
+              background-color: $color-pnk-1;
               content: "";
               display: block;
               margin-top: 2.16%;
@@ -1032,7 +1032,7 @@
       }
     }
     &::before {
-      background-color: $color-org-1;
+      background-color: $color-pnk-1;
       content: "";
       display: block;
       height: 100%;
@@ -1051,6 +1051,7 @@
   }
   .schedule__notes {
     font-size: 12px;
+    font-size: clamp(0px,2.89vw,12px);
     margin-top: 48px;
     text-align: right;
     @include bp(m) {
@@ -1201,8 +1202,11 @@
         font-size: 16px;
         line-height: 1.7;
         margin-top: 12px;
+        text-align: left;
         @include bp(m) {
           font-size: 1.11vw;
+          // font-size: clamp(0px,1.11vw,16px);
+          letter-spacing: 5%;
         }
       }
       &:last-of-type {
@@ -1216,6 +1220,10 @@
   }
 }
 .pgWeddingDay__after {
+  padding-top: 0;
+  @include bp(m) {
+    padding-top: 12rem;
+  }
   &-ls {
     flex-direction: column;
     margin-top: 48px;
@@ -1284,8 +1292,11 @@
         font-size: 16px;
         line-height: 1.7;
         margin-top: 12px;
+        text-align: left;
         @include bp(m) {
           font-size: 1.11vw;
+          // font-size: clamp(0px,1.11vw,16px);
+          letter-spacing: 5%;
         }
       }
       &:last-of-type {
@@ -1383,10 +1394,14 @@
               width: auto;
             }
             p {
-              font-size: 2.89vw;
+              background-color: $color_beg-2;
+              border-radius: 1.44vw;
+              font-size: clamp(12px,2.89vw,2.89vw);
               font-weight: 600;
               text-align: center;
               @include bp(m) {
+                background-color: transparent;
+                border-radius: 0;
                 font-size: 1.11vw;
               }
             }
@@ -1413,6 +1428,11 @@
               background-image: url(../images/weddingDay/bg_comment_pc_01.png);
               margin-right: 4.42%;
               width: 78.59%;
+            }
+            br {
+              @media screen and (max-width: 379px) {
+                display: none !important;
+              }
             }
           }
           .bg-pc-2 {
@@ -1446,6 +1466,11 @@
               margin-right: 6.32%;
               width: 70.78%;
             }
+            br {
+              @media screen and (max-width: 342px) {
+                display: none !important;
+              }
+            }
           }
           .bg-pc-6 {
             @include bp(m) {
@@ -1461,12 +1486,32 @@
           @include bp(m) {
             margin-top: 3.47vw;
           }
+          .txt {
+            p {
+              margin-left: auto;
+              width: 96.5%;
+              @include bp(m) {
+                margin-left: 0;
+                width: 100%;
+              }
+            }
+          }
         }
         &__right {
           flex-direction: row-reverse;
           margin-top: 12px;
           @include bp(m) {
             margin-top: 3.47vw;
+          }
+          .txt {
+            p {
+              margin-right: auto;
+              width: 96.5%;
+              @include bp(m) {
+                margin-right: 0;
+                width: 100%;
+              }
+            }
           }
         }
       }
@@ -1519,6 +1564,7 @@
         font-size: 16px;
         line-height: 1.7;
         margin-top: 24px;
+        text-align: left;
         @include bp(m) {
           font-size: clamp(0px,1.25vw,18px);
           margin-top: 32px;
@@ -1606,18 +1652,22 @@
             width: max-content;
           }
           li {
-            align-items: center;
+            align-items: baseline;
             column-gap: 8px;
             margin-top: 8px;
+            @include bp(m) {
+              align-items: center;
+            }
             &::before {
               aspect-ratio: 1 / 1;
               background-color: black;
               content: "";
               display: block;
-              transform: rotate(45deg);
+              transform: translate(-50% , -50%) rotate(45deg);
               width: 6.73px;
               @include bp(m) {
                 max-width: 6px;
+                transform: rotate(45deg);
                 width: 0.46vw;
               }
             }
@@ -1801,9 +1851,10 @@
       font-size: 16px;
       line-height: 2;
       margin-top: 24px;
+      text-align: left;
       @include bp(m) {
-        text-align: center;
         margin-top: 0;
+        text-align: center;
       }
     }
   }
