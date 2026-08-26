@@ -6,7 +6,7 @@
       'title-jp' => 'ハワイ',
       'title-en' => 'Hawaii',
       'catch' => '街の夜景とハワイアングルメで華やかに',
-      'lead' => '挙式後はワイキキの街へ。海沿いのレストランやライトアップされた街並みで、にぎやかな夜を満喫できます。',
+      'lead' => '挙式後はワイキキの街へ。<br class="sp"/>海沿いのレストランやライトアップされた街並みで、にぎやかな夜を満喫できます。',
       'link' => 'hawaii',
       'imgSrc' => [
         'img_night_hawaii_01.jpg',
@@ -105,8 +105,11 @@
               <?php endforeach;?>
             </ul>
           </div>
-          <p class="link">
+          <p class="link pc">
             <a href="<?php echo esc_url(home_url() . '/' . $item["link"]);?>"><span><?php echo $item["title-jp"]; ?>ウェディングの基本情報を見る</span></a>
+          </p>
+          <p class="link sp">
+            <a href="<?php echo esc_url(home_url() . '/' . $item["link"]);?>"><span><?php echo $item["title-jp"]; ?>挙式の基本情報を見る</span></a>
           </p>
         </div>
       </div>

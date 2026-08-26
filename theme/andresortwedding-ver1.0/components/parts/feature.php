@@ -13,6 +13,10 @@
       'link' => 'area',
     ],
     [
+      'src' => 'img_feature_04.jpg',
+      'link' => 'weddingday',
+    ],
+    [
       'src' => 'img_feature_01.jpg',
       'link' => 'compare',
     ],
@@ -23,6 +27,10 @@
     [
       'src' => 'img_feature_03.jpg',
       'link' => 'area',
+    ],
+    [
+      'src' => 'img_feature_04.jpg',
+      'link' => 'weddingday',
     ],
   ];
   $counter = 1;

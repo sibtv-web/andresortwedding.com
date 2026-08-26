@@ -505,6 +505,8 @@
                   backdrop-filter: none;
                   backdrop-filter: none;
                   background-color: rgba($color: $color_wht-1, $alpha: .05);
+                  padding: 1.16% 3.17%;
+                  width: auto;
                 }
                 &.jp {
                   font-size: clamp(0px,4.83vw,20px);
@@ -547,6 +549,11 @@
               &.area {
                 &::after {
                   background-image: url(../images/header/bg_feature_sp_03.jpg);
+                }
+              }
+              &.weddingDay {
+                &::after {
+                  background-image: url(../images/header/bg_feature_sp_04.jpg);
                 }
               }
               &:hover {

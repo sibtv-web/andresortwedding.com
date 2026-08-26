@@ -93,8 +93,8 @@
         リゾートウェディングの当日は、朝の支度から夜のディナーまで、まる1日かけてゆったり進むのが魅力。<br/>
         朝から夜までの過ごし方を、時間を追ってご紹介します。
       </p>
-			<h2 class="pgWeddingDay_head_ttl cls-org">
-				<img src="<?php echo esc_url(get_theme_file_uri('assets/images/weddingDay/nav_icon_ring-2.svg')); ?>" alt="アイコン">
+			<h2 class="pgWeddingDay_head_ttl cls-pnk">
+				<img src="<?php echo esc_url(get_theme_file_uri('assets/images/weddingDay/nav_icon_ring.svg')); ?>" alt="アイコン">
 				<span>【早見表】<br class="sp">リゾートウェディング挙式<br class="sp">当日の運び</span>
 			</h2>
 			<p class="pgWeddingDay_head_txt">​​まずは挙式当日の過ごし方を、早見表でざっくりつかんでみましょう。下記はリゾートウェディングでの一般的なタイムラインです。</p>
@@ -131,7 +131,7 @@
       </ul>
     </div>
     <div class="fade-anime" data-fade="fade-up">
-      <p class="schedule__notes">※上記は一例です。挙式スタイルや会場・演出内容によって時間は変動します。</p>
+      <p class="schedule__notes">※上記は一例です。<br class="sp"/>挙式スタイルや会場・演出内容によって時間は変動します。</p>
       <p class="schedule__summary">
         近場ウェディングでは当日が3〜4時間ほどでお開きになるのに対し、リゾートウェディングは滞在中まるごとが結婚式の時間。<br/>
         <span class="sp-inline">&nbsp;</span><br class="sp"/>
