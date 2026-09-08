@@ -51,8 +51,8 @@
             'title' => 'バナー画像 3',
           ],
           [
-            'name' => 'bnr_260520-2.jpg',
-            'link' => 'https://www.arluis.com/fair-cp/premierphotowedding/?argument=IcQhoQ8q&dmai=a69c34b26c5315',
+            'name' => 'bnr_260902-1.jpg',
+            'link' => 'https://beokinawa-couple-anniversary.jp/2026/campaign/fair/',
             'title' => 'バナー画像 4',
           ],
         ];
