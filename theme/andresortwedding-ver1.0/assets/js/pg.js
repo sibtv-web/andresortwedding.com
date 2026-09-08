@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // =================================================================
 document.addEventListener('DOMContentLoaded', () => {
   const accordionInfo = document.querySelector('.j-navPg');
-  const mediaQuery = window.matchMedia('(max-width: 767px)');
+  const mediaQuery = window.matchMedia('(max-width: 749px)');
 
   if (!accordionInfo) return;
 

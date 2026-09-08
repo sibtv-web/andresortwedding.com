@@ -13,6 +13,10 @@
       'link' => 'area',
     ],
     [
+      'src' => 'img_feature_04.jpg',
+      'link' => 'weddingday',
+    ],
+    [
       'src' => 'img_feature_01.jpg',
       'link' => 'compare',
     ],
@@ -24,10 +28,18 @@
       'src' => 'img_feature_03.jpg',
       'link' => 'area',
     ],
+    [
+      'src' => 'img_feature_04.jpg',
+      'link' => 'weddingday',
+    ],
   ];
   $counter = 1;
+  $bgClass = 'bg-wht-1';
+  if (is_page('weddingday')) {
+    $bgClass = 'bg-beg-4';
+  }
 ?>
-<section id="feature" class="feature bg-wht-1">
+<section id="feature" class="feature <?php echo $bgClass; ?>">
   <div class="feature__container">
     <div class="feature__title section__title fade-anime" data-fade="fade-up">
       <!-- <p class="en ft-blu-1">Special contents</p> -->

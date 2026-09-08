@@ -1,6 +1,6 @@
 <section id="sale-information" class="sale-information">
   <div class="svg-3">
-    <?php if ( is_page('area') ): ?>
+    <?php if ( is_page('area') || is_page('weddingday') ): ?>
       <picture>
         <source
           media="(min-width: 750px)"

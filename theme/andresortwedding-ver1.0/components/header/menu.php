@@ -122,6 +122,11 @@
             <p class="jp ft-wht-1">人気エリア徹底比較</p>
           </a>
         </li>
+        <li class="submenu__ls-feature">
+          <a class="weddingDay" href="<?php echo esc_url(home_url());?>/weddingday/">
+            <p class="jp ft-wht-1">当日のスケジュール</p>
+          </a>
+        </li>
       </ul>
     </div>
   </li>
