@@ -946,7 +946,7 @@
             background-repeat: no-repeat;
             content: "";
             display: block;
-            margin-top: -0.5px;
+            margin-top: -0.3px;
             width: 100%;
           }
           &:has(.bg-beg-1) {
@@ -954,9 +954,9 @@
               background-image: url(../images/weddingDay/deco_brn.svg);
             }
           }
-          &:has(.bg-org-1) {
+          &:has(.bg-pnk-1) {
             &::after {
-              background-image: url(../images/weddingDay/deco_org.svg);
+              background-image: url(../images/weddingDay/deco_pnk.svg);
             }
           }
         }
