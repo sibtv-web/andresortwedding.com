@@ -14,7 +14,7 @@
     ],
     [
       'title' => '当日朝',
-      'titleClass' => 'bg-org-1',
+      'titleClass' => 'bg-pnk-1',
       'content' => [
         [
           'time' => '8:00~10:00',
@@ -38,7 +38,7 @@
     ],
     [
       'title' => '挙式',
-      'titleClass' => 'bg-org-1',
+      'titleClass' => 'bg-pnk-1',
       'content' => [
         [
           'time' => '11:30~12:30',
@@ -50,7 +50,7 @@
     ],
     [
       'title' => '挙式後',
-      'titleClass' => 'bg-org-1',
+      'titleClass' => 'bg-pnk-1',
       'content' => [
         [
           'time' => '12:30~14:00',
