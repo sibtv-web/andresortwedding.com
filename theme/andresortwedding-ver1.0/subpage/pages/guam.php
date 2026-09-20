@@ -1,5 +1,4 @@
 <main class="pgarea">
-
   <?php get_template_part('components/pgArea/guam/kv'); ?>
   <?php get_template_part('components/pgArea/guam/slider'); ?>
   <?php get_template_part('components/pgArea/guam/nav'); ?>

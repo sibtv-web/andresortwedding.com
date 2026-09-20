@@ -4,7 +4,6 @@
       <h1>著作権および免責事項</h1>
     </div>
   </div>
-
   <section class="pgdocument_cont">
     <div class="pgdocument_container">
       <dl>
