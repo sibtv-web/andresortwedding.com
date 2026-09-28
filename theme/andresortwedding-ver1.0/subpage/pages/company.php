@@ -4,7 +4,6 @@
       <h1>運営会社</h1>
     </div>
   </div>
-
   <section class="pgdocument_cont">
     <div class="pgdocument_container-s">
       <table>

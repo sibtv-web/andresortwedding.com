@@ -127,6 +127,11 @@
             <p class="jp ft-wht-1">当日のスケジュール</p>
           </a>
         </li>
+        <li class="submenu__ls-feature">
+          <a class="guest" href="<?php echo esc_url(home_url());?>/guest/">
+            <p class="jp ft-wht-1">ゲスト招待ガイド</p>
+          </a>
+        </li>
       </ul>
     </div>
   </li>

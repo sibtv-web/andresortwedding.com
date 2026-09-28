@@ -1,5 +1,4 @@
 <main class="pgarea">
-
   <?php get_template_part('components/pgArea/okinawa/kv'); ?>
   <?php get_template_part('components/pgArea/okinawa/slider'); ?>
   <?php get_template_part('components/pgArea/okinawa/nav'); ?>

@@ -556,6 +556,11 @@
                   background-image: url(../images/header/bg_feature_sp_04.jpg);
                 }
               }
+              &.guest {
+                &::after {
+                  background-image: url(../images/header/bg_feature_sp_05.jpg);
+                }
+              }
               &:hover {
                 &::after {
                   transform: scale(1.1);
