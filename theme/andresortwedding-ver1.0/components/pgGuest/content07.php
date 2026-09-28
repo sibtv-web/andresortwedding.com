@@ -19,7 +19,7 @@
         <div class="en">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_resort-wedding.svg')); ?>" alt="Resort Wedding">
         </div>
-        <h2 class="jp">ゲスト招待の不安を解消して、<br />大切な人と最幸の思い出を</h2>
+        <h2 class="jp ft-md">ゲスト招待の不安を解消して、<br />大切な人と最幸の思い出を</h2>
       </div>
     </div>
   </div>
@@ -39,9 +39,9 @@
     </ul>
     <p class="summary">
       「遠くまで来てもらうのは申し訳ない」と感じるカップルは多いですが、<br/>
-      実際は旅行を兼ねた結婚式としてゲストに喜ばれることがほとんど！<br/>
+      実際は旅行を兼ねた結婚式として<br class="pc" />ゲストに喜ばれることがほとんど！<br/>
       &nbsp;<br/>
-      招待範囲とお金の方針さえ決まれば、あとは会場がしっかりサポートしてくれます。<br/>
+      招待範囲とお金の方針さえ決まれば、<br class="pc" />あとは会場がしっかりサポートしてくれます。<br/>
       まずはふたりに合うエリア選びから、<br/>
       理想のリゾートウェディングへの一歩を踏み出してみませんか？
     </p>

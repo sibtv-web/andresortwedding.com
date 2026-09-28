@@ -1113,6 +1113,7 @@
         td {
           // border-bottom: solid 1px $color_beg-1;
           font-size: 14px;
+          font-weight: 700;
           height: 60px;
           min-height: 60px;
           min-width: 147px;
@@ -1702,6 +1703,7 @@
             td {
               // border-bottom: solid 1px $color_beg-1;
               font-size: 14px;
+              font-weight: 700;
               height: 60px;
               min-height: 60px;
               min-width: 147px;
@@ -1815,7 +1817,11 @@
               width: 93.17%;
             }
             span {
-              background: linear-gradient(transparent 45%, #FBCBEC 65%);
+              background: linear-gradient(transparent 65%, #FBCBEC 25%);
+              padding-bottom: 2px;
+              @include bp(m) {
+                padding-bottom: 4px;
+              }
             }
           }
         }
@@ -1998,7 +2004,8 @@
             small {
               font-size: 18px;
               @include bp(m) {
-                font-size: clamp(0px,1.25vw,18px);
+                // font-size: clamp(0px,1.25vw,18px);
+                font-size: clamp(0px,1.23vw,18px);
               }
             }
           }
@@ -2009,6 +2016,7 @@
           text-align: left;
           @include bp(m) {
             font-size: clamp(0px,1.11vw,16px);
+            margin-bottom: 16px;
             margin-top: 16px;
           }
           .ft-bd, strong {
@@ -2021,9 +2029,10 @@
           position: relative;
           @include bp(m) {
             flex-direction: column;
-            flex-grow: 1;
+            // flex-grow: 1;
             justify-content: center;
             margin-top: 16px;
+            margin-top: auto;
             padding: 7.31% 5.85%;
             @include flexbox;
           }
@@ -2105,7 +2114,7 @@
       align-items: center;
       flex-direction: row;
       justify-content: space-between;
-      margin: 80px auto 0;
+      margin: 20px auto 0;
       width: 94.44%;
     }
     .img__ls {
@@ -2145,7 +2154,7 @@
           margin-top: 24px;
           @include bp(m) {
             margin-left: auto;
-            margin-top: 75px;
+            margin-top: 45px;
           }
         }
         &-03 {
@@ -2159,7 +2168,7 @@
           border-radius: 6px 0 0 6px;
           @include bp(m) {
             border-radius: 6px;
-            margin-top: 53px;
+            margin-top: 45px;
             margin-left: auto;
           }
         }

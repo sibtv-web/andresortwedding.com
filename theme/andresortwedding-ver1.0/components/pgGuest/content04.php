@@ -35,7 +35,7 @@
 				<span>気になるお金の話！<br class="sp"/>ゲストの旅費は誰が負担する？</span>
 			</h2>
 			<p class="pgGuest_head_txt">
-        リゾートウェディングで一番の悩みどころが、ゲストの旅費・宿泊費。実は、誰が負担するかに決まったルールはありません。<br/>
+        リゾートウェディングで一番の悩みどころが、ゲストの旅費・宿泊費。<strong>実は、誰が負担するかに決まったルールはありません。</strong><br/>
         &nbsp;<br/>
         負担のパターンとご祝儀の考え方、気まずくならない伝え方まで紹介します！
 			</p>
@@ -106,7 +106,7 @@
         <div class="block__title">
           <h3 class="flex"><span>気まずくならない伝え方＆<br class="sp"/>メッセージ例</span></h3>
         </div>
-        <p class="block__lead">お金の話はあいまいにせず、招待の打診と同じタイミングで方針をはっきり伝えるのが正解です。</p>
+        <p class="block__lead">お金の話はあいまいにせず、<strong>招待の打診と同じタイミングで方針をはっきり伝えるのが正解です。</strong></p>
         <ul class="block__ls">
           <?php foreach ($list02 as $item) :?>
             <li class="flex bg-wht-2">

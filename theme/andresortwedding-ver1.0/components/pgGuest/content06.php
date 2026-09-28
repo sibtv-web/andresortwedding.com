@@ -35,10 +35,22 @@
 			</h2>
       <ul class="pgGuest_head_comment flex fade-anime" data-fade="fade-up-cont">
         <li class="no1">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/guest/img_comment_02.png')); ?>" alt="おじいちゃん・おばあちゃんは大丈夫？">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/guest/img_comment_02.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/guest/img_comment_02-sp.png')); ?>" alt="おじいちゃん・おばあちゃんは大丈夫？">
+          </picture>
         </li>
         <li class="no2">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/guest/img_comment_01.png')); ?>" alt="子ども連れでも平気？">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/guest/img_comment_01.png')); ?>"
+            >
+            <img src="<?php echo esc_url(get_theme_file_uri('assets/images/guest/img_comment_01-sp.png')); ?>" alt="子ども連れでも平気？">
+          </picture>
         </li>
       </ul>
       <p class="pgGuest_head_bubble flex fade-anime" data-fade="fade-up">
