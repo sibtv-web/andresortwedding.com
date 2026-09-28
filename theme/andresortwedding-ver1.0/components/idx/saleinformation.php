@@ -46,7 +46,7 @@
             'title' => 'バナー画像 2',
           ],
           [
-            'name' => 'bnr_260827-3.webp',
+            'name' => 'bnr_260928-2.jpg',
             'link' => 'https://www.arluis.com/fair-cp/chapel_awfair/',
             'title' => 'バナー画像 3',
           ],
