@@ -41,8 +41,8 @@
             'title' => 'バナー画像 1',
           ],
           [
-            'name' => 'bnr_260827-2.png',
-            'link' => 'https://www.his-wedding.com/fair/avanti_agtcpn/',
+            'name' => 'bnr_260928-1.jpg',
+            'link' => 'https://www.his-wedding.com/fair/kessan/',
             'title' => 'バナー画像 2',
           ],
           [
