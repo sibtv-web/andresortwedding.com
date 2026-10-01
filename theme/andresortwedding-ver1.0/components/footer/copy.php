@@ -7,6 +7,9 @@
       <a class="exlink" href="https://www.sib.tv/privacy/" target="_blank"><span>プライバシーポリシー</span></a>
     </li>
     <li class="itm">
+      <a class="exlink" href="https://www.sib.tv/customer-harassment/" target="_blank"><span>カスタマーハラスメントに対する基本指針</span></a>
+    </li>
+    <li class="itm">
       <a href="<?php echo esc_url(home_url());?>/disclaimer/">著作権および免責事項</a>
     </li>
     <li class="itm">
