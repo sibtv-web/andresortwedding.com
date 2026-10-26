@@ -16,12 +16,13 @@
 		<div class="pgGallery_kv_nav j-navPg">
 			<p class="pgGallery_kv_nav_label sp js-navToggle">目次</p>
 			<ul class="pgGallery_kv_nav_wrap js-navCont">
-				<li class="pgGallery_kv_nav_cmn cls-pnk"><a href="#beachPhoto"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_dusk.svg')); ?>" alt="アイコン">ビーチフォト</span></a></li>
-				<li class="pgGallery_kv_nav_cmn cls-org"><a href="#chapelPhoto"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_chapel.svg')); ?>" alt="アイコン">オーシャン<br class="sp">チャペルフォト</span></a></li>
-				<li class="pgGallery_kv_nav_cmn cls-grn"><a href="#naturePhoto"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_nature.svg')); ?>" alt="アイコン">大自然フォト</span></a></li>
-				<li class="pgGallery_kv_nav_cmn cls-blu"><a href="#townPhoto"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_town.svg')); ?>" alt="アイコン">街並みフォト</span></a></li>
-				<li class="pgGallery_kv_nav_cmn cls-blu"><a href="#about"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_camera.svg')); ?>" alt="アイコン">リゾートフォトの<br class="sp">ポイント</span></a></li>
-				<li class="pgGallery_kv_nav_cmn cls-blu"><a href="#faq"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_couple.svg')); ?>" alt="アイコン">リゾートフォトの<br class="sp">よくある質問</span></a></li>
+				<li class="pgGallery_kv_nav_cmn"><a href="#beachPhoto"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_dusk.svg')); ?>" alt="アイコン">ビーチフォト</span></a></li>
+				<li class="pgGallery_kv_nav_cmn"><a href="#chapelPhoto"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_chapel.svg')); ?>" alt="アイコン">チャペルフォト</span></a></li>
+				<li class="pgGallery_kv_nav_cmn"><a href="#partyPhoto"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_cake.svg')); ?>" alt="アイコン">パーティフォト</span></a></li>
+				<li class="pgGallery_kv_nav_cmn"><a href="#naturePhoto"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_nature.svg')); ?>" alt="アイコン">大自然フォト</span></a></li>
+				<li class="pgGallery_kv_nav_cmn"><a href="#townPhoto"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_town.svg')); ?>" alt="アイコン">街並みフォト</span></a></li>
+				<li class="pgGallery_kv_nav_cmn"><a href="#about"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_camera.svg')); ?>" alt="アイコン">リゾートフォトの<br class="sp">ポイント</span></a></li>
+				<li class="pgGallery_kv_nav_cmn"><a href="#faq"><span><img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/nav_icon_couple.svg')); ?>" alt="アイコン">リゾートフォトの<br class="sp">よくある質問</span></a></li>
 			</ul>
 		</div>
 	</div>

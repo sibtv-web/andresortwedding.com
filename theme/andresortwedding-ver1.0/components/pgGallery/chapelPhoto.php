@@ -2,19 +2,19 @@
 $data = [
   [
     'area' => 'guam',
-    'title' => 'ttl_guam.png',
+    'title' => 'ttl_guam.webp',
     'popup' => 'img_chapel_popup-01.png',
     'main' => 'img_chapel-01'
   ],
   [
     'area' => 'okinawa',
-    'title' => 'ttl_okinawa.png',
+    'title' => 'ttl_okinawa.webp',
     'popup' => 'img_chapel_popup-02.png',
     'main' => 'img_chapel-02'
   ],
   [
     'area' => 'hawaii',
-    'title' => 'ttl_hawaii.png',
+    'title' => 'ttl_hawaii.webp',
     'popup' => 'img_chapel_popup-03.png',
     'main' => 'img_chapel-03'
   ],
@@ -30,7 +30,7 @@ $counter = 1;
       </h2>
     </div>
     <div class="photoArea__title-image image-mask-wrap">
-      <img class="masked-image" data-fade="mask-down" src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/ttl_chapel-photo.png')); ?>" alt="chapel Photo">
+      <img class="masked-image" data-fade="mask-down" src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/ttl_chapel-photo.webp')); ?>" alt="chapel Photo">
     </div>
     <div class="photoArea__slider splide">
       <div class="photoArea__arrow flex fade-anime" data-fade="fade-up-top">
@@ -48,7 +48,7 @@ $counter = 1;
                 <img class="photoArea__slider-popup <?php echo $item["area"]; ?>" src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/' . $item["popup"])); ?>" alt="">
                 <picture class="photoArea__slider-main">
                   <source media="(max-width: 750px)" srcset="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/' . $item["main"])); ?>_sp.png">
-                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/' . $item["main"])); ?>.png" alt="">
+                  <img src="<?php echo esc_url(get_theme_file_uri('assets/images/gallery/' . $item["main"])); ?>.webp" alt="">
                 </picture>
               </div>
             </li>

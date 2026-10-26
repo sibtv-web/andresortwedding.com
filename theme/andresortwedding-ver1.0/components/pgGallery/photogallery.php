@@ -2,6 +2,7 @@
   <?php
   get_template_part('components/pgGallery/beachPhoto');
   get_template_part('components/pgGallery/chapelPhoto');
+  get_template_part('components/pgGallery/partyPhoto');
   get_template_part('components/pgGallery/naturePhoto');
   get_template_part('components/pgGallery/townPhoto');
 
