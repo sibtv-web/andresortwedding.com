@@ -72,12 +72,6 @@ $counter = 1;
           <p>ビーチウェディングフォトの魅力｜人気ロケーション・費用・ポーズを紹介</p>
           <span>記事を見る</span>
         </div>
-        <!-- <div class="photoArea__article-link-inner">
-          <div class="photoArea__article-text bg-beg-2">
-            <p>ビーチウェディングフォトの魅力｜人気ロケーション・費用・ポーズを紹介</p>
-            <span>記事を見る</span>
-          </div>
-        </div> -->
       </a>
     </div>
   </div>

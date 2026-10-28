@@ -196,9 +196,17 @@ body:has(.pgGallery) {
       &_cmn {
         aspect-ratio: 177 / 60;
         width: calc(100% / 2 - (1.2rem / 2));
+        &:last-child {
+          width: 100%;
+          aspect-ratio: 366 / 60;
+        }
         @include bp(m) {
-          aspect-ratio: 410.67 / 80;
-          width: 32%;
+          aspect-ratio: 302 / 80;
+          width: 23.5%;
+          &:nth-child(n + 5) {
+            aspect-ratio: 410.67 / 80;
+            width: 32%;
+          }
         }
         a {
           display: flex;
@@ -401,31 +409,29 @@ body:has(.pgGallery) {
       &__title {
         &-image {
           position: absolute;
-          padding-left: 3.86vw;
+          padding-left: 4.35vw;
           margin-top: 24px;
           z-index: 10;
           @include bp(m) {
             margin-top: 48px;
-            padding-left: 6.39vw;
+            padding-left: 6.25vw;
           }
           img {
-            // width: 50%;
             width: 7.25vw;
             height: auto;
-            @include bp(m) {
-              // width: 100%;
-              width: 4.4vw;
-            }
           }
         }
       }
       &__slider {
         margin-top: 24px;
+        display: flex;
+        flex-direction: column-reverse;
         @include bp(m) {
+          flex-direction: column;
           margin-top: 48px;
         }
         &-track {
-          margin-top: 12px;
+          margin-top: 24px;
           @include bp(m) {
             margin-top: 36px;
           }
@@ -435,15 +441,7 @@ body:has(.pgGallery) {
           overflow: hidden;
           position: relative;
           width: 88.95vw;
-          &.okinawa {
-            width: 84.33vw;
-          }
-          @include bp(m) {
-            width: auto;
-            &.okinawa {
-              width: auto;
-            }
-          }
+          width: auto;
           img {
             @include transition;
           }
@@ -456,34 +454,32 @@ body:has(.pgGallery) {
         &-title {
           clip-path: inset(0% 100% 0% 0%);
           transition: clip-path 0s;
-          left: 0.77%;
+          left: 2.9%;
+          bottom: 3.45%;
           @include bp(m) {
             left: 1.14%;
           }
           &.okinawa {
             aspect-ratio: 236/61;
-            width: 22.46vw;
+            width: 29.95vw;
             @include bp(m) {
               width: 16.39vw;
             }
           }
           &.hawaii {
             aspect-ratio: 188/61;
-            width: 17.63vw;
+            width: 23.43vw;
             @include bp(m) {
               width: 12.78vw;
             }
           }
           &.guam {
             aspect-ratio: 163/61;
-            width: 15.7vw;
+            width: 20.77vw;
             @include bp(m) {
               width: 11.32vw;
             }
           }
-        }
-        &-popup {
-          // width: 25%;
         }
         .splide__slide {
           &--clone {
@@ -499,7 +495,7 @@ body:has(.pgGallery) {
           margin-left: 0 !important;
           .photoArea__slider-popup {
             animation: popup 2000ms step-end;
-            animation-delay: 800ms;
+            animation-delay: 1200ms;
             animation-iteration-count: 1;
           }
           .photoArea__slider-title {
@@ -511,68 +507,99 @@ body:has(.pgGallery) {
       }
       // 画像位置
       &.beachPhoto {
+        .photoArea__title-image {
+          img {
+            aspect-ratio: 127/789;
+            @include bp(m) {
+              width: 4.31vw;
+            }
+          }
+        }
         .photoArea__slider-popup {
           &.okinawa {
             aspect-ratio: 236/255;
-            width: 22.46vw;
+            width: 40.34vw;
             bottom: 0;
-            right: 14.3%;
+            right: 2.9vw;
             @include bp(m) {
               width: 16.36vw;
+              bottom: 0;
+              right: 14.3%;
             }
           }
           &.hawaii {
             aspect-ratio: 26/15;
-            width: 33.45vw;
-            top: 3.4%;
+            width: 62.8vw;
+            bottom: 12.44%;
             left: 0;
             @include bp(m) {
               width: 24.37vw;
+              bottom: auto;
+              top: 3.4%;
             }
           }
           &.guam {
             aspect-ratio: 323/230;
-            top: 3.71%;
-            right: 3.74%;
-            width: 30.8vw;
+            top: 0;
+            right: 2.65%;
+            width: 53.96vw;
             @include bp(m) {
               width: 22.43vw;
+              top: 3.71%;
+              right: 3.74%;
             }
           }
         }
         .photoArea__slider-title {
-          bottom: 12%;
           @include bp(m) {
             bottom: 14.44%;
           }
         }
       }
       &.chapelPhoto {
+        .photoArea__title-image {
+          padding-left: 1.69vw;
+          @include bp(m) {
+            padding-left: 5vw;
+          }
+          img {
+            aspect-ratio: 164/843;
+            width: 9.66vw;
+            @include bp(m) {
+              width: 5.56vw;
+            }
+          }
+        }
         .photoArea__slider-popup {
           &.guam {
             aspect-ratio: 474/611;
-            width: 22.56vw;
-            top: 0;
-            left: 0;
+            width: 40.24vw;
+            top: 3.45%;
+            left: 1.03vw;
             @include bp(m) {
               width: 16.43vw;
+              top: 0;
+              left: 0;
             }
           }
           &.okinawa {
             aspect-ratio: 491/648;
-            top: 0;
-            right: 6.5%;
-            width: 23.21vw;
+            bottom: 11.91%;
+            left: -4.35vw;
+            width: 43.12vw;
             @include bp(m) {
               width: 17.02vw;
+              left: auto;
+              bottom: auto;
+              top: 0;
               right: 10.69%;
             }
           }
           &.hawaii {
             aspect-ratio: 630/563;
-            right: 5.45%;
-            bottom: 2.79%;
-            width: 30.03vw;
+            right: 0;
+            bottom: 0;
+            width: 43.12vw;
             @include bp(m) {
               width: 21.87vw;
               right: 5.13%;
@@ -581,19 +608,87 @@ body:has(.pgGallery) {
           }
         }
         .photoArea__slider-title {
-          bottom: 12.55%;
+          @include bp(m) {
+            bottom: 12.92%;
+          }
+        }
+      }
+      &.partyPhoto {
+        .photoArea__title-image {
+          padding-left: 1.69vw;
+          @include bp(m) {
+            padding-left: 5vw;
+          }
+          img {
+            aspect-ratio: 83/355;
+            width: 9.66vw;
+            @include bp(m) {
+              width: 5.56vw;
+            }
+          }
+        }
+        .photoArea__slider-popup {
+          &.hawaii {
+            aspect-ratio: 131/112;
+            top: 1.55%;
+            right: 10.51vw;
+            width: 42.87vw;
+            @include bp(m) {
+              width: 18.19vw;
+              right: auto;
+              top: 0;
+              left: 0;
+            }
+          }
+          &.guam {
+            aspect-ratio: 584/589;
+            width: 42.75vw;
+            left: 7.25vw;
+            top: 0;
+            @include bp(m) {
+              width: 20.28vw;
+              left: auto;
+              top: auto;
+              bottom: 0;
+              right: 0;
+            }
+          }
+          &.okinawa {
+            aspect-ratio: 286/295;
+            bottom: 12.02%;
+            left: 3.14vw;
+            width: 41.06vw;
+            @include bp(m) {
+              width: 19.83vw;
+              bottom: auto;
+              left: auto;
+              top: 0;
+              right: 0;
+            }
+          }
+        }
+        .photoArea__slider-title {
+          // bottom: 12.55%;
           @include bp(m) {
             bottom: 12.92%;
           }
         }
       }
       &.naturePhoto {
+        .photoArea__title-image {
+          img {
+            aspect-ratio: 127/836;
+            @include bp(m) {
+              width: 4.31vw;
+            }
+          }
+        }
         .photoArea__slider-popup {
           &.okinawa {
             aspect-ratio: 35/43;
             top: 0;
-            right: 0;
-            width: 21.65vw;
+            right: 5.19vw;
+            width: 36.23vw;
             @include bp(m) {
               width: 15.77vw;
               right: 2.14%;
@@ -601,19 +696,20 @@ body:has(.pgGallery) {
           }
           &.hawaii {
             aspect-ratio: 485/604;
-            top: 5.58%;
+            bottom: 12.58%;
             left: 0;
-            width: 23.1vw;
+            width: 39.77vw;
             @include bp(m) {
+              bottom: auto;
               width: 16.82vw;
               top: 5.71%;
             }
           }
           &.guam {
             aspect-ratio: 545/646;
-            width: 25.96vw;
-            bottom: 4.39%;
-            right: 3.46%;
+            width: 41.06vw;
+            bottom: 0;
+            right: 0;
             @include bp(m) {
               width: 18.91vw;
               right: 3.47%;
@@ -622,45 +718,58 @@ body:has(.pgGallery) {
           }
         }
         .photoArea__slider-title {
-          bottom: 11.55%;
+          // bottom: 11.55%;
           @include bp(m) {
             bottom: 12.93%;
           }
         }
       }
       &.townPhoto {
+        .photoArea__title-image {
+          img {
+            aspect-ratio: 127/738;
+            @include bp(m) {
+              width: 4.31vw;
+            }
+          }
+        }
         .photoArea__slider-popup {
           &.hawaii {
             aspect-ratio: 631/527;
-            width: 30.07vw;
-            top: 3.07%;
-            right: 0;
+            width: 51.45vw;
+            left: 0;
+            bottom: 9.96%;
             @include bp(m) {
               width: 21.9vw;
+              left: auto;
+              bottom: auto;
               top: 3.14%;
+              right: 0;
             }
           }
           &.guam {
             aspect-ratio: 591/622;
-            width: 28.17vw;
+            width: 48.31vw;
             bottom: 0;
-            right: 4.07%;
+            right: 0.97%;
             @include bp(m) {
               width: 20.52vw;
+              right: 4.7%;
             }
           }
           &.okinawa {
             aspect-ratio: 338/253;
-            width: 32.21vw;
-            top: 0;
+            width: 55.25vw;
+            top: 11.26%;
             left: 0;
             @include bp(m) {
               width: 23.46vw;
+              top: 0;
             }
           }
         }
         .photoArea__slider-title {
-          bottom: 11.93%;
+          // bottom: 11.93%;
           @include bp(m) {
             bottom: 13.23%;
           }
@@ -670,7 +779,7 @@ body:has(.pgGallery) {
       &__arrow {
         align-items: flex-end;
         flex-direction: column;
-        margin-top: 27.5px;
+        margin-top: 24px;
         padding: 0 24px;
         @include bp(m) {
           align-items: center;
@@ -734,11 +843,12 @@ body:has(.pgGallery) {
       }
       &__article {
         position: relative;
-        margin: 80px auto 0;
+        margin: 0 auto;
         width: 88.41%;
+
         @include bp(m) {
           width: 58.19%;
-          margin-top: 120px;
+          // margin-top: 120px;
         }
         &-popup {
           position: absolute;
@@ -772,7 +882,7 @@ body:has(.pgGallery) {
           @include bp(m) {
             &:hover {
               .photoArea__article-img {
-                img {
+                &:before {
                   scale: (1.1);
                 }
               }
@@ -785,23 +895,34 @@ body:has(.pgGallery) {
         &-img {
           width: 35.52%;
           overflow: hidden;
-
-          height: 100%;
           aspect-ratio: 1;
-          img {
-            -webkit-transition: all 0.4s;
-            transition: all 0.4s;
-          }
+          position: relative;
           @include bp(m) {
             width: 38.31%;
             aspect-ratio: 3/2;
-            // min-width: 170px;
+          }
+          &::before {
+            background-image: url(../images/gallery/img_town_article_sp.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: block;
+            content: "";
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            @include bp(m) {
+              aspect-ratio: 3/2;
+              background-image: url(../images/gallery/img_town_article.jpg);
+            }
           }
         }
         &-text {
           transition: 0.4s;
-          padding: 0 16px;
-          gap: 16px;
+          padding: clamp(0px, 1.6rem, 16px);
+          gap: 1em;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -815,16 +936,16 @@ body:has(.pgGallery) {
             font-weight: 600;
             line-height: 1.4;
             letter-spacing: 5%;
-            font-size: clamp(0px, 1.6rem, 16px);
+            font-size: clamp(0px, 1.4rem, 16px);
             @include bp(m) {
               font-size: clamp(0px, 2.4rem, 24px);
             }
           }
           span {
-            font-size: 14px;
+            font-size: clamp(0px, 1.4rem, 14px);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 0.5em;
             @include bp(m) {
               font-size: clamp(0px, 1.8rem, 18px);
             }
@@ -835,8 +956,8 @@ body:has(.pgGallery) {
               background-size: contain;
               content: "";
               display: inline-block;
-              margin-left: 8px;
-              width: 40px;
+              margin-left: 0.5em;
+              width: 2em;
               aspect-ratio: 40 / 16.84;
               @include bp(m) {
                 width: 48px;
@@ -844,6 +965,27 @@ body:has(.pgGallery) {
             }
           }
         }
+        // &-inner {
+        //   display: flex;
+        //   &::before {
+        //     width: 35.52%;
+        //     overflow: hidden;
+        //     background-image: url(../images/gallery/img_town_article_sp.jpg);
+        //     background-position: center;
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     display: block;
+        //     content: "";
+        //     -webkit-transition: all 0.4s;
+        //     transition: all 0.4s;
+        //     aspect-ratio: 1;
+        //     @include bp(m) {
+        //       width: 38.31%;
+        //       aspect-ratio: 3/2;
+        //       background-image: url(../images/gallery/img_town_article.jpg);
+        //     }
+        //   }
+        // }
       }
     }
   }
@@ -934,7 +1076,8 @@ body:has(.pgGallery) {
                 position: relative;
                 z-index: 2;
                 display: block;
-                aspect-ratio: 332 / 17;
+                letter-spacing: 0;
+                // aspect-ratio: 332 / 17;
                 &::after {
                   aspect-ratio: 332 / 17;
                   background-image: url(../images/gallery/img_line_wave.svg);
@@ -950,10 +1093,12 @@ body:has(.pgGallery) {
                   max-width: 300px;
                   transform: translateX(-50%);
                   z-index: -1;
+                  height: 16.15px;
                   @include bp(m) {
+                    height: 17px;
                     width: 80.98%;
-                    bottom: -0.3em;
-                    max-width: 100%;
+                    bottom: -20%;
+                    max-width: 332px;
                   }
                 }
               }

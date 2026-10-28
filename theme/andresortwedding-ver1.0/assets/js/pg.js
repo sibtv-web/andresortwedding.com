@@ -459,8 +459,10 @@ document.addEventListener("DOMContentLoaded", function () {
     new Splide(slide, {
       type: (string = "loop"),
       rewind: (boolean = true),
-      speed: (number = 400),
-      autoWidth: (boolean = false),
+      speed: (number = 500),
+      // autoWidth: (boolean = false),
+      autoplay: (boolean = true),
+      interval: (number = 4000),
       arrows: (boolean = true),
       pagination: (boolean = false),
       drag: (boolean = true),
@@ -471,10 +473,9 @@ document.addEventListener("DOMContentLoaded", function () {
       updateOnMove: true,
       breakpoints: {
         750: {
-          autoWidth: (boolean = true),
-          gap: (string = "18px"),
+          gap: (string = "48px"),
           perPage: (number = 1),
-          padding: { left: "5.8%", right: "5.25%" },
+          padding: { left: "5.8%", right: "0%" },
         },
       },
     }).mount();
