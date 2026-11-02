@@ -1,16 +1,16 @@
 <?php
-  $baseUrl;
-  $infoUrl;
-  if(is_home() || is_front_page()) {
-    $baseUrl = '';
-  } else {
-    $baseUrl = home_url() . '/';
-  }
-  if (is_page('weddinginfo')) {
-    $infoUrl = '';
-  } else {
-    $infoUrl = home_url() . '/weddinginfo/';
-  }
+$baseUrl;
+$infoUrl;
+if (is_home() || is_front_page()) {
+  $baseUrl = '';
+} else {
+  $baseUrl = home_url() . '/';
+}
+if (is_page('weddinginfo')) {
+  $infoUrl = '';
+} else {
+  $infoUrl = home_url() . '/weddinginfo/';
+}
 ?>
 <ul class="nav__menu flex-bt">
   <li class="nav__menu-itm">
@@ -21,46 +21,46 @@
       <ul class="submenu__ls info flex-bt">
         <li class="submenu__ls-ttl flex">
           <p class="pc">リゾートウェディングの基本情報</p>
-          <a href="<?php echo esc_url(home_url());?>/weddinginfo/"><span>TOPを見る</span></a>
+          <a href="<?php echo esc_url(home_url()); ?>/weddinginfo/"><span>TOPを見る</span></a>
         </li>
         <li class="submenu__ls-itm">
-          <a class="bg-wht-1" href="<?php echo $infoUrl;?>#pgInfo_charm">
-            <p class="itm__name flex ft-blu-1 ico-1"><span>リゾート挙式の<br class="sp"/>魅力</span></p>
+          <a class="bg-wht-1" href="<?php echo $infoUrl; ?>#pgInfo_charm">
+            <p class="itm__name flex ft-blu-1 ico-1"><span>リゾート挙式の<br class="sp" />魅力</span></p>
           </a>
         </li>
         <li class="submenu__ls-itm">
-          <a class="bg-wht-1" href="<?php echo $infoUrl;?>#pgInfo_area">
-            <p class="itm__name flex ft-grn-1 ico-2"><span>人気エリアと<br class="sp"/>選び方</span></p>
+          <a class="bg-wht-1" href="<?php echo $infoUrl; ?>#pgInfo_area">
+            <p class="itm__name flex ft-grn-1 ico-2"><span>人気エリアと<br class="sp" />選び方</span></p>
           </a>
         </li>
         <li class="submenu__ls-itm">
-          <a class="bg-wht-1" href="<?php echo $infoUrl;?>#pgInfo_money">
-            <p class="itm__name flex ft-org-1 ico-3"><span>お金の<br class="sp"/>ハナシ</span></p>
+          <a class="bg-wht-1" href="<?php echo $infoUrl; ?>#pgInfo_money">
+            <p class="itm__name flex ft-org-1 ico-3"><span>お金の<br class="sp" />ハナシ</span></p>
           </a>
         </li>
         <li class="submenu__ls-itm">
-          <a class="bg-wht-1" href="<?php echo $infoUrl;?>#pgInfo_chapel">
-            <p class="itm__name flex ft-pnk-1 ico-4"><span>チャペル・式場の<br class="sp"/>選び方</span></p>
+          <a class="bg-wht-1" href="<?php echo $infoUrl; ?>#pgInfo_chapel">
+            <p class="itm__name flex ft-pnk-1 ico-4"><span>チャペル・式場の<br class="sp" />選び方</span></p>
           </a>
         </li>
         <li class="submenu__ls-itm">
-          <a class="bg-wht-1" href="<?php echo $infoUrl;?>#pgInfo_guest">
-            <p class="itm__name flex ft-blu-1 ico-5"><span>ゲストの<br class="sp"/>招待</span></p>
+          <a class="bg-wht-1" href="<?php echo $infoUrl; ?>#pgInfo_guest">
+            <p class="itm__name flex ft-blu-1 ico-5"><span>ゲストの<br class="sp" />招待</span></p>
           </a>
         </li>
         <li class="submenu__ls-itm">
-          <a class="bg-wht-1" href="<?php echo $infoUrl;?>#pgInfo_preparation">
-            <p class="itm__name flex ft-grn-1 ico-6"><span>事前準備と<br class="sp"/>ダンドリ</span></p>
+          <a class="bg-wht-1" href="<?php echo $infoUrl; ?>#pgInfo_preparation">
+            <p class="itm__name flex ft-grn-1 ico-6"><span>事前準備と<br class="sp" />ダンドリ</span></p>
           </a>
         </li>
         <li class="submenu__ls-itm">
-          <a class="bg-wht-1" href="<?php echo $infoUrl;?>#pgInfo_daybefore">
-            <p class="itm__name flex ft-org-1 ico-7"><span>挙式前日の<br class="sp"/>過ごし方</span></p>
+          <a class="bg-wht-1" href="<?php echo $infoUrl; ?>#pgInfo_daybefore">
+            <p class="itm__name flex ft-org-1 ico-7"><span>挙式前日の<br class="sp" />過ごし方</span></p>
           </a>
         </li>
         <li class="submenu__ls-itm">
-          <a class="bg-wht-1" href="<?php echo $infoUrl;?>#pgInfo_ontheday">
-            <p class="itm__name flex ft-pnk-1 ico-8"><span>挙式当日の<br class="sp"/>スケジュール</span></p>
+          <a class="bg-wht-1" href="<?php echo $infoUrl; ?>#pgInfo_ontheday">
+            <p class="itm__name flex ft-pnk-1 ico-8"><span>挙式当日の<br class="sp" />スケジュール</span></p>
           </a>
         </li>
       </ul>
@@ -77,19 +77,19 @@
           <!-- <a href="/"><span>TOPを見る</span></a> -->
         </li>
         <li class="submenu__ls-area">
-          <a class="hawaii" href="<?php echo esc_url(home_url());?>/hawaii/">
+          <a class="hawaii" href="<?php echo esc_url(home_url()); ?>/hawaii/">
             <p class="jp ft-wht-1">ハワイ</p>
             <p class="en ft-wht-1">Hawaii</p>
           </a>
         </li>
         <li class="submenu__ls-area">
-          <a class="guam" href="<?php echo esc_url(home_url());?>/guam/">
+          <a class="guam" href="<?php echo esc_url(home_url()); ?>/guam/">
             <p class="jp ft-wht-1">グアム</p>
             <p class="en ft-wht-1">Guam</p>
           </a>
         </li>
         <li class="submenu__ls-area">
-          <a class="okinawa" href="<?php echo esc_url(home_url());?>/okinawa/">
+          <a class="okinawa" href="<?php echo esc_url(home_url()); ?>/okinawa/">
             <p class="jp ft-wht-1">沖縄</p>
             <p class="en ft-wht-1">Okinawa</p>
           </a>
@@ -108,45 +108,50 @@
           <!-- <a href="/"><span>TOPを見る</span></a> -->
         </li>
         <li class="submenu__ls-feature">
-          <a class="compare" href="<?php echo esc_url(home_url());?>/compare/">
+          <a class="compare" href="<?php echo esc_url(home_url()); ?>/compare/">
             <p class="jp ft-wht-1"><span></span>リゾート VS 近場 徹底比較</p>
           </a>
         </li>
         <li class="submenu__ls-feature">
-          <a class="preparation" href="<?php echo esc_url(home_url());?>/preparation/">
+          <a class="preparation" href="<?php echo esc_url(home_url()); ?>/preparation/">
             <p class="jp ft-wht-1">事前準備・費用を総まとめ</p>
           </a>
         </li>
         <li class="submenu__ls-feature">
-          <a class="area" href="<?php echo esc_url(home_url());?>/area/">
+          <a class="area" href="<?php echo esc_url(home_url()); ?>/area/">
             <p class="jp ft-wht-1">人気エリア徹底比較</p>
           </a>
         </li>
         <li class="submenu__ls-feature">
-          <a class="weddingDay" href="<?php echo esc_url(home_url());?>/weddingday/">
+          <a class="weddingDay" href="<?php echo esc_url(home_url()); ?>/weddingday/">
             <p class="jp ft-wht-1">当日のスケジュール</p>
           </a>
         </li>
         <li class="submenu__ls-feature">
-          <a class="guest" href="<?php echo esc_url(home_url());?>/guest/">
+          <a class="guest" href="<?php echo esc_url(home_url()); ?>/guest/">
             <p class="jp ft-wht-1">ゲスト招待ガイド</p>
+          </a>
+        </li>
+        <li class="submenu__ls-feature">
+          <a class="gallery" href="<?php echo esc_url(home_url()); ?>/gallery/">
+            <p class="jp ft-wht-1">フォトギャラリー</p>
           </a>
         </li>
       </ul>
     </div>
   </li>
   <!-- <li class="nav__menu-itm">
-    <a class="ttl flex ft-blk-2" href="<?php echo $baseUrl?>#voice">
+    <a class="ttl flex ft-blk-2" href="<?php echo $baseUrl ?>#voice">
       <span>先輩カップルの声</span>
     </a>
   </li> -->
   <li class="nav__menu-itm">
-    <a class="ttl flex ft-blk-2" href="<?php echo $baseUrl?>#faq">
+    <a class="ttl flex ft-blk-2" href="<?php echo $baseUrl ?>#faq">
       <span>よくある質問</span>
     </a>
   </li>
   <li class="nav__menu-itm">
-    <a class="ttl flex ft-blk-2" href="<?php echo esc_url(home_url());?>/article/">
+    <a class="ttl flex ft-blk-2" href="<?php echo esc_url(home_url()); ?>/article/">
       <span>お役立ち記事</span>
     </a>
   </li>

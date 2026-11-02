@@ -1,51 +1,55 @@
-<?php 
-  $data = [
-    [
-      'src' => 'img_feature_01.jpg',
-      'link' => 'compare',
-    ],
-    [
-      'src' => 'img_feature_02.jpg',
-      'link' => 'preparation',
-    ],
-    [
-      'src' => 'img_feature_03.jpg',
-      'link' => 'area',
-    ],
-    [
-      'src' => 'img_feature_04.jpg',
-      'link' => 'weddingday',
-    ],
-    [
-      'src' => 'img_feature_05.jpg',
-      'link' => 'guest',
-    ],
-    [
-      'src' => 'img_feature_01.jpg',
-      'link' => 'compare',
-    ],
-    [
-      'src' => 'img_feature_02.jpg',
-      'link' => 'preparation',
-    ],
-    [
-      'src' => 'img_feature_03.jpg',
-      'link' => 'area',
-    ],
-    [
-      'src' => 'img_feature_04.jpg',
-      'link' => 'weddingday',
-    ],
-    [
-      'src' => 'img_feature_05.jpg',
-      'link' => 'guest',
-    ],
-  ];
-  $counter = 1;
-  $bgClass = 'bg-wht-1';
-  if (is_page('weddingday')) {
-    $bgClass = 'bg-beg-4';
-  }
+<?php
+$data = [
+  [
+    'src' => 'img_feature_01.jpg',
+    'link' => 'compare',
+  ],
+  [
+    'src' => 'img_feature_02.jpg',
+    'link' => 'preparation',
+  ],
+  [
+    'src' => 'img_feature_03.jpg',
+    'link' => 'area',
+  ],
+  [
+    'src' => 'img_feature_04.jpg',
+    'link' => 'weddingday',
+  ],
+  [
+    'src' => 'img_feature_05.jpg',
+    'link' => 'guest',
+  ],
+  [
+    'src' => 'img_feature_01.jpg',
+    'link' => 'compare',
+  ],
+  [
+    'src' => 'img_feature_02.jpg',
+    'link' => 'preparation',
+  ],
+  [
+    'src' => 'img_feature_03.jpg',
+    'link' => 'area',
+  ],
+  [
+    'src' => 'img_feature_04.jpg',
+    'link' => 'weddingday',
+  ],
+  [
+    'src' => 'img_feature_05.jpg',
+    'link' => 'guest',
+  ],
+  [
+    'src' => 'img_feature_06.jpg',
+    'link' => 'gallery',
+  ],
+];
+$counter = 1;
+$bgClass = 'bg-wht-1';
+if (is_page('weddingday')) {
+  $bgClass = 'bg-beg-4';
+}
 ?>
 <section id="feature" class="feature <?php echo $bgClass; ?>">
   <div class="feature__container">
@@ -57,29 +61,27 @@
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/font/ft_ttl_feature_sp.svg')); ?>" alt="Special contents">
         </picture>
       </div>
-      <h2 class="jp">リゾートウェディング<br class="sp"/>特集コンテンツ</h2>
+      <h2 class="jp">リゾートウェディング<br class="sp" />特集コンテンツ</h2>
     </div>
     <div class="feature__slider splide">
       <div class="splide__track">
         <ul class="splide__list fade-anime" data-fade="fade-up-cont">
-          <?php foreach ($data as $item):?>
+          <?php foreach ($data as $item): ?>
             <li class="splide__slide">
               <?php if ($item['link'] !== "") : ?>
-                <a href="<?php echo esc_url(home_url()) . '/' .  $item['link'] . '/' ; ?>">
+                <a href="<?php echo esc_url(home_url()) . '/' .  $item['link'] . '/'; ?>">
                   <div class="feature__slider-img">
                     <img
-                      src="<?php echo esc_url(get_theme_file_uri('assets/images/feature/'.$item['src'])); ?>"
-                      alt="記事イメージ"
-                    >
+                      src="<?php echo esc_url(get_theme_file_uri('assets/images/feature/' . $item['src'])); ?>"
+                      alt="記事イメージ">
                   </div>
                 </a>
-              <?php else :?>
+              <?php else : ?>
                 <div class="link">
                   <div class="feature__slider-img">
                     <img
-                      src="<?php echo esc_url(get_theme_file_uri('assets/images/feature/'.$item['src'])); ?>"
-                      alt="記事イメージ"
-                    >
+                      src="<?php echo esc_url(get_theme_file_uri('assets/images/feature/' . $item['src'])); ?>"
+                      alt="記事イメージ">
                   </div>
                 </div>
               <?php endif; ?>
