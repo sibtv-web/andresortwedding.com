@@ -46,8 +46,8 @@
             'title' => 'バナー画像 2',
           ],
           [
-            'name' => 'bnr_260928-2.jpg',
-            'link' => 'https://www.arluis.com/fair-cp/chapel_awfair/',
+            'name' => 'bnr_261029-1.jpg',
+            'link' => 'https://www.arluis.com/fair-cp/gnz-srg-campaign3/',
             'title' => 'バナー画像 3',
           ],
           [

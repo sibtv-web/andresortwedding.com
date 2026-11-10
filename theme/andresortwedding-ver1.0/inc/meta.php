@@ -1,5 +1,5 @@
 <?php
-$title = "＆ Resort Wedding｜リゾートウェディング情報サイト";
+$title = "リゾートウェディング情報サイト｜＆ Resort Wedding";
 $description = "リゾートウェディング情報をお届けする、＆ Resort Wedding（アンドリゾートウェディング）基本情報をはじめ、各エリアの紹介や魅力、最新情報を発信！";
 $pgDsc = get_the_excerpt();
 $ogp = get_theme_file_uri('assets/images/ogp.png');
