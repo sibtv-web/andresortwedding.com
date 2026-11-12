@@ -36,17 +36,17 @@
       <?php 
         $bnrImages = [
           [
-            'name' => 'bnr_260827-1.png',
-            'link' => 'https://www.jtb.co.jp/wed/plan/autumn-campaign/',
+            'name' => 'bnr_261113-1.png',
+            'link' => 'https://www.his-wedding.com/fair/blackfriday/',
             'title' => 'バナー画像 1',
           ],
           [
-            'name' => 'bnr_260928-1.jpg',
-            'link' => 'https://www.his-wedding.com/fair/kessan/',
+            'name' => 'bnr_261113-4.jpg',
+            'link' => 'https://www.jtb.co.jp/wed/coupon/',
             'title' => 'バナー画像 2',
           ],
           [
-            'name' => 'bnr_261029-1.jpg',
+            'name' => 'bnr_261113-3.jpg',
             'link' => 'https://www.arluis.com/fair-cp/gnz-srg-campaign3/',
             'title' => 'バナー画像 3',
           ],
