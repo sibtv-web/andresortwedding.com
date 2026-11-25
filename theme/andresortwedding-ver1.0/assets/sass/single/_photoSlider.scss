@@ -26,8 +26,8 @@
     width: max-content;
     padding: calc(var(--aw-photo-slider-w) * 48 / 320) 0;
     @media screen and (max-width: 768px) {
-      // SP：写真＋間隔でスライダー幅の1/3（一画面に3枚）
-      --aw-photo-slider-w: calc(100cqw / 3 * 320 / 344);
+      // SP：写真＋間隔でスライダー幅の1/4（一画面に4枚）
+      --aw-photo-slider-w: calc(100cqw / 4 * 320 / 344);
       --aw-photo-slider-radius: 4px;
     }
   }
