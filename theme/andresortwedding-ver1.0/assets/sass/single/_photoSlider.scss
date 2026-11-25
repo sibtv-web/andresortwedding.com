@@ -1,35 +1,35 @@
 @use "../lib/color" as *;
 
 // =================================================================
-// 投稿：写真自動スクロールスライダー（カスタムHTMLブロックで使用）
-// デザイン基準：PC 1440px幅 / 写真幅320px・間隔24px・上下余白48px
-// サイズはすべて写真幅（--aw-photo-slider-w）からの比率で計算する
+// 投稿：写真自動スクロールスライダー（#single_magazine 本文内のカスタムHTMLブロックで使用）
+// デザイン基準：帯の幅1440px / 写真幅320px・間隔24px・上下余白48px
+// 幅は本文のコンテンツ幅に合わせ、サイズはすべて写真幅（--aw-photo-slider-w）からの比率で計算する
+// 写真幅はスライダー自身の幅（cqw）が基準。cqwを子要素で解決させるため、変数は __track に置く
 // =================================================================
 .aw-photo-slider {
   --aw-photo-slider-sec-per-item: 4.5s; // 写真1枚分が流れ切る秒数（速さの調整はここ）
   --aw-photo-slider-count: 8; // 写真の枚数（複製分は含めない）
-  --aw-photo-slider-w: calc(320 / 1440 * 100vw); // 写真1枚の幅
-  --aw-photo-slider-gap: calc(var(--aw-photo-slider-w) * 24 / 320); // 写真の間隔
-  --aw-photo-slider-radius: calc(var(--aw-photo-slider-w) * 6 / 320); // 角丸
+  container-type: inline-size;
   position: relative;
-  width: 100vw;
-  margin-left: calc(50% - 50vw); // 本文の枠を越えて画面幅いっぱいに表示
-  padding: calc(var(--aw-photo-slider-w) * 48 / 320) 0;
+  width: 100%;
   background-color: $color_beg-2;
   overflow: hidden;
   -webkit-user-select: none;
   user-select: none;
-  @media screen and (max-width: 768px) {
-    // SP：写真＋間隔で画面幅の1/3（一画面に3枚）
-    --aw-photo-slider-w: calc(100vw / 3 * 320 / 344);
-    --aw-photo-slider-radius: 4px;
-  }
 
   &__track {
+    --aw-photo-slider-w: calc(100cqw * 320 / 1440); // 写真1枚の幅（PC：デザインの比率どおり）
+    --aw-photo-slider-gap: calc(var(--aw-photo-slider-w) * 24 / 320); // 写真の間隔
+    --aw-photo-slider-radius: 6px; // 角丸
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start; // 一番高い写真（1:1・上端0）で帯の高さが決まる
     width: max-content;
-    height: var(--aw-photo-slider-w); // デザイン上の写真エリア高さ（320px）
+    padding: calc(var(--aw-photo-slider-w) * 48 / 320) 0;
+    @media screen and (max-width: 768px) {
+      // SP：写真＋間隔でスライダー幅の1/3（一画面に3枚）
+      --aw-photo-slider-w: calc(100cqw / 3 * 320 / 344);
+      --aw-photo-slider-radius: 4px;
+    }
   }
   &.is-ready &__track {
     animation: aw-photo-slider-scroll calc(var(--aw-photo-slider-sec-per-item) * var(--aw-photo-slider-count)) linear infinite;
