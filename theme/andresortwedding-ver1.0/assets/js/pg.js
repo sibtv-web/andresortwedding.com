@@ -512,3 +512,40 @@ $(toggle).on("click", function () {
   $(this).toggleClass("active");
   $("#" + $(this).data("faq")).slideToggle(300);
 });
+
+// =================================================================
+// 投稿：写真自動スクロールスライダー（カスタムHTMLブロック）
+// 写真一式を複製して後ろに並べ、CSSアニメーションで-50%ずつループさせる
+// =================================================================
+document.addEventListener("DOMContentLoaded", function () {
+  const awPhotoSliders = document.querySelectorAll(".aw-photo-slider");
+  if (awPhotoSliders.length === 0) return; // 対象要素がなければ何もしない
+
+  awPhotoSliders.forEach(function (slider) {
+    const track = slider.querySelector(".aw-photo-slider__track");
+    if (!track || slider.classList.contains("is-ready")) return;
+
+    const items = Array.prototype.slice.call(track.children);
+    if (items.length === 0) return;
+
+    // ループ用の複製（読み上げ対象外・altは空）
+    items.forEach(function (item) {
+      const clone = item.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      clone.querySelectorAll("img").forEach(function (img) {
+        img.setAttribute("alt", "");
+      });
+      track.appendChild(clone);
+    });
+
+    // 画像のドラッグ・選択を無効化
+    slider.addEventListener("dragstart", function (e) {
+      e.preventDefault();
+    });
+    slider.addEventListener("selectstart", function (e) {
+      e.preventDefault();
+    });
+
+    slider.classList.add("is-ready");
+  });
+});
