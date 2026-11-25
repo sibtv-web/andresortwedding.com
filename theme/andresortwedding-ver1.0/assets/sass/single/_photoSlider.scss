@@ -1,0 +1,109 @@
+@use "../lib/color" as *;
+
+// =================================================================
+// 投稿：写真自動スクロールスライダー（#single_magazine 本文内のカスタムHTMLブロックで使用）
+// デザイン基準：帯の幅1440px / 写真幅320px・間隔24px・上下余白48px
+// 幅は本文のコンテンツ幅に合わせ、サイズはすべて写真幅（--aw-photo-slider-w）からの比率で計算する
+// 写真幅はスライダー自身の幅（cqw）が基準。cqwを子要素で解決させるため、変数は __track に置く
+// =================================================================
+.aw-photo-slider {
+  --aw-photo-slider-sec-per-item: 4.5s; // 写真1枚分が流れ切る秒数（速さの調整はここ）
+  --aw-photo-slider-count: 8; // 写真の枚数（複製分は含めない）
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  background-color: $color_beg-2;
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+
+  &__track {
+    --aw-photo-slider-w: calc(100cqw * 320 / 1440); // 写真1枚の幅（PC：デザインの比率どおり）
+    --aw-photo-slider-gap: calc(var(--aw-photo-slider-w) * 24 / 320); // 写真の間隔
+    --aw-photo-slider-radius: 6px; // 角丸
+    display: flex;
+    align-items: flex-start; // 一番高い写真（1:1・上端0）で帯の高さが決まる
+    width: max-content;
+    padding: calc(var(--aw-photo-slider-w) * 48 / 320) 0;
+    @media screen and (max-width: 768px) {
+      // SP：写真＋間隔でスライダー幅の1/4（一画面に4枚）
+      --aw-photo-slider-w: calc(100cqw / 4 * 320 / 344);
+      --aw-photo-slider-radius: 4px;
+    }
+  }
+  &.is-ready &__track {
+    animation: aw-photo-slider-scroll calc(var(--aw-photo-slider-sec-per-item) * var(--aw-photo-slider-count)) linear infinite;
+    will-change: transform;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    width: var(--aw-photo-slider-w);
+    margin-right: var(--aw-photo-slider-gap); // gapだと-50%がずれるためmarginで指定
+    border-radius: var(--aw-photo-slider-radius);
+    overflow: hidden;
+    // 比率と縦位置（margin-top＝デザイン上の上端 − 上余白48px）
+    &--01 {
+      aspect-ratio: 320 / 240;
+      margin-top: calc(var(--aw-photo-slider-w) * 64 / 320);
+      .aw-photo-slider__img {
+        object-position: 50% 67.5%;
+      }
+    }
+    &--02 {
+      aspect-ratio: 320 / 160;
+      margin-top: calc(var(--aw-photo-slider-w) * 116 / 320);
+      .aw-photo-slider__img {
+        object-position: 50% 76%;
+      }
+    }
+    &--03 {
+      aspect-ratio: 1 / 1;
+      margin-top: 0;
+      .aw-photo-slider__img {
+        object-position: 42.5% 50%;
+      }
+    }
+    &--04 {
+      aspect-ratio: 320 / 240;
+      margin-top: calc(var(--aw-photo-slider-w) * 52 / 320);
+    }
+    &--05 {
+      aspect-ratio: 320 / 213;
+      margin-top: calc(var(--aw-photo-slider-w) * 17.5 / 320);
+    }
+    &--06 {
+      aspect-ratio: 320 / 160;
+      margin-top: calc(var(--aw-photo-slider-w) * 80 / 320);
+      .aw-photo-slider__img {
+        object-position: 50% 66%;
+      }
+    }
+    &--07 {
+      aspect-ratio: 1 / 1;
+      margin-top: 0;
+    }
+    &--08 {
+      aspect-ratio: 320 / 213;
+      margin-top: calc(var(--aw-photo-slider-w) * 41.5 / 320);
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; // クリック・ドラッグ不可
+    -webkit-user-drag: none;
+  }
+}
+
+@keyframes aw-photo-slider-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
